@@ -1,0 +1,738 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{sadiku2014cloud}{article}{}
+      \name{author}{3}{}{%
+        {{hash=acd2910fdff85c25e324e4401e07500d}{%
+           family={Sadiku},
+           familyi={S\bibinitperiod},
+           given={Matthew\bibnamedelima NO},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=25764b86ca42b4aa4af03e54bb10e02b}{%
+           family={Musa},
+           familyi={M\bibinitperiod},
+           given={Sarhan\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d89428de2c0f3cc8220be8ed596d8b73}{%
+           family={Momoh},
+           familyi={M\bibinitperiod},
+           given={Omonowo\bibnamedelima D},
+           giveni={O\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{ba87cb2de8d8de70269d1100cb465d88}
+      \strng{fullhash}{20382f187d5e96f54edc2c7c0d9f1fcf}
+      \strng{bibnamehash}{20382f187d5e96f54edc2c7c0d9f1fcf}
+      \strng{authorbibnamehash}{20382f187d5e96f54edc2c7c0d9f1fcf}
+      \strng{authornamehash}{ba87cb2de8d8de70269d1100cb465d88}
+      \strng{authorfullhash}{20382f187d5e96f54edc2c7c0d9f1fcf}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE potentials}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Cloud computing: opportunities and challenges}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{33}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{34\bibrangedash 36}
+      \range{pages}{3}
+      \keyw{sadiku2014cloud}
+    \endentry
+    \entry{ribeiro2015mlaas}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=ead95c1403279a3d42cb677148284961}{%
+           family={Ribeiro},
+           familyi={R\bibinitperiod},
+           given={Mauro},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ff95c726c5e13a6b7aa9859d9856e812}{%
+           family={Grolinger},
+           familyi={G\bibinitperiod},
+           given={Katarina},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c368fd6dc8374df15073a8d68d973b2b}{%
+           family={Capretz},
+           familyi={C\bibinitperiod},
+           given={Miriam\bibnamedelima AM},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{50c49fff0f8450f3cb5c5804b189e995}
+      \strng{fullhash}{974230ca8cf6b871c2109c0b04e4d310}
+      \strng{bibnamehash}{974230ca8cf6b871c2109c0b04e4d310}
+      \strng{authorbibnamehash}{974230ca8cf6b871c2109c0b04e4d310}
+      \strng{authornamehash}{50c49fff0f8450f3cb5c5804b189e995}
+      \strng{authorfullhash}{974230ca8cf6b871c2109c0b04e4d310}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2015 IEEE 14th international conference on machine learning and applications (ICMLA)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Mlaas: Machine learning as a service}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{pages}{896\bibrangedash 902}
+      \range{pages}{7}
+      \keyw{ribeiro2015mlaas}
+    \endentry
+    \entry{hunt2018chiron}{article}{}
+      \name{author}{5}{}{%
+        {{hash=f5346c9ddc16499dc58587a8930d1004}{%
+           family={Hunt},
+           familyi={H\bibinitperiod},
+           given={Tyler},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b4778984f6540634409611e0c5414b03}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Congzheng},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fcd1e648e4facf942e34fc13811d6a6e}{%
+           family={Shokri},
+           familyi={S\bibinitperiod},
+           given={Reza},
+           giveni={R\bibinitperiod}}}%
+        {{hash=29abef6d5f9ba10547dab2eee5bceb2e}{%
+           family={Shmatikov},
+           familyi={S\bibinitperiod},
+           given={Vitaly},
+           giveni={V\bibinitperiod}}}%
+        {{hash=d5a88bc659dbc8d53fb7f0958de11f7f}{%
+           family={Witchel},
+           familyi={W\bibinitperiod},
+           given={Emmett},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{a35b2911111ec30f0073a95ec0e08acd}
+      \strng{fullhash}{9d778b56131af12d683bee90fcc7f049}
+      \strng{bibnamehash}{0731e57809a7a7c823ff9533e846f3be}
+      \strng{authorbibnamehash}{0731e57809a7a7c823ff9533e846f3be}
+      \strng{authornamehash}{a35b2911111ec30f0073a95ec0e08acd}
+      \strng{authorfullhash}{9d778b56131af12d683bee90fcc7f049}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1803.05961}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Chiron: Privacy-preserving machine learning as a service}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \keyw{hunt2018chiron}
+    \endentry
+    \entry{ahmed2020k}{article}{}
+      \name{author}{3}{}{%
+        {{hash=7fb2375082bc9ad06db36522c8341d67}{%
+           family={Ahmed},
+           familyi={A\bibinitperiod},
+           given={Mohiuddin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3e9eb092a4c6bf87881693570b7f6ed3}{%
+           family={Seraj},
+           familyi={S\bibinitperiod},
+           given={Raihan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3ee8e8e5547e93d9903b670f2d7b2e45}{%
+           family={Islam},
+           familyi={I\bibinitperiod},
+           given={Syed\bibnamedelimb Mohammed\bibnamedelima Shamsul},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{318df2b2189293585fdf4f1830173eca}
+      \strng{fullhash}{acb47d59a7a3c6337fe7fab2af63c704}
+      \strng{bibnamehash}{acb47d59a7a3c6337fe7fab2af63c704}
+      \strng{authorbibnamehash}{acb47d59a7a3c6337fe7fab2af63c704}
+      \strng{authornamehash}{318df2b2189293585fdf4f1830173eca}
+      \strng{authorfullhash}{acb47d59a7a3c6337fe7fab2af63c704}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Electronics}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{8}
+      \field{title}{The k-means algorithm: A comprehensive survey and performance evaluation}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{9}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{1295}
+      \range{pages}{1}
+      \keyw{ahmed2020k}
+    \endentry
+    \entry{cramer2015secure}{book}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=e712b1b3271b096addfc108a5acd1bcb}{%
+           family={Cramer},
+           familyi={C\bibinitperiod},
+           given={Ronald},
+           giveni={R\bibinitperiod}}}%
+        {{hash=14f9bdb855aa40873ff3dce506ed6fff}{%
+           family={Damg{å}rd},
+           familyi={D\bibinitperiod},
+           given={Ivan\bibnamedelima Bjerre},
+           giveni={I\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{b43797e83d2277b0c07e1e8b5a209cf3}
+      \strng{fullhash}{e98f46d4ea8d1cb3d9f9e83d35263fdb}
+      \strng{bibnamehash}{e98f46d4ea8d1cb3d9f9e83d35263fdb}
+      \strng{authorbibnamehash}{e98f46d4ea8d1cb3d9f9e83d35263fdb}
+      \strng{authornamehash}{b43797e83d2277b0c07e1e8b5a209cf3}
+      \strng{authorfullhash}{e98f46d4ea8d1cb3d9f9e83d35263fdb}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Secure multiparty computation}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \keyw{cramer2015secure}
+    \endentry
+    \entry{li2018privacy}{article}{}
+      \name{author}{6}{}{%
+        {{hash=456dd6a18b8241b9d36da968a7c4d624}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Ping},
+           giveni={P\bibinitperiod}}}%
+        {{hash=1639dadb1da2bffb2d77f43c6d3247b6}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c0b97e05047fb743aa97527d9dc9931e}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Zhengan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=6c1bcb3b60f5d0ef0a7798941c8492ef}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Chong-Zhi},
+           giveni={C\bibinithyphendelim Z\bibinitperiod}}}%
+        {{hash=28936b61671d2dfde643f40067056a07}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wen-Bin},
+           giveni={W\bibinithyphendelim B\bibinitperiod}}}%
+        {{hash=ee3f7d7b96add98106db907e189d6c13}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{7f0221976d31be92bbcb6eec826d5209}
+      \strng{fullhash}{c6dc33600fd6c9ee3ba7372ec814efb7}
+      \strng{bibnamehash}{62cadfa8c2d94244537d7c8e17b95f69}
+      \strng{authorbibnamehash}{62cadfa8c2d94244537d7c8e17b95f69}
+      \strng{authornamehash}{7f0221976d31be92bbcb6eec826d5209}
+      \strng{authorfullhash}{c6dc33600fd6c9ee3ba7372ec814efb7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cluster Computing}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Privacy-preserving outsourced classification in cloud computing}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{21}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{277\bibrangedash 286}
+      \range{pages}{10}
+      \keyw{li2018privacy}
+    \endentry
+  \enddatalist
+\endrefsection
+
+\refsection{1}
+  \datalist[entry]{none/global//global/global}
+    \entry{ref-1-1-Yang}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=865de0ad624b442a018417bf6b85083e}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c8b71d106155f016ce09d7e71e4f7fe9}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={T\bibnamedelima L},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=01ca1ee2088e28096a1097df00af8523}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={L\bibnamedelima T},
+           giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{958aa08ccff585684f3852063103799b}
+      \strng{fullhash}{b22b3f0b038e14a0d3366a521f3a0a7a}
+      \strng{bibnamehash}{b22b3f0b038e14a0d3366a521f3a0a7a}
+      \strng{authorbibnamehash}{b22b3f0b038e14a0d3366a521f3a0a7a}
+      \strng{authornamehash}{958aa08ccff585684f3852063103799b}
+      \strng{authorfullhash}{b22b3f0b038e14a0d3366a521f3a0a7a}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{SCI 收录, 检索号:758FZ}
+      \field{journaltitle}{Integrated Ferroelectrics}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Miniature microphone with silicon-based ferroelectric thin films}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{52}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{229\bibrangedash 235}
+      \range{pages}{7}
+      \keyw{ref-1-1-Yang}
+    \endentry
+    \entry{ref-2-1-杨轶}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=136ae1b01c73fed5655b99cfedfd0fc8}{%
+           family={杨轶},
+           familyi={杨\bibinitperiod}}}%
+        {{hash=4519049cecc7e389a4049ef7b37c7708}{%
+           family={张宁欣},
+           familyi={张\bibinitperiod}}}%
+        {{hash=0a16cd1084611b2d1dea23cef1089699}{%
+           family={任天令},
+           familyi={任\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{ce9c6c414974174af6461185ec29a045}
+      \strng{fullhash}{f2c51857ea5066a2c536e3956b73dcc8}
+      \strng{bibnamehash}{f2c51857ea5066a2c536e3956b73dcc8}
+      \strng{authorbibnamehash}{f2c51857ea5066a2c536e3956b73dcc8}
+      \strng{authornamehash}{ce9c6c414974174af6461185ec29a045}
+      \strng{authorfullhash}{f2c51857ea5066a2c536e3956b73dcc8}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{EI 收录, 检索号:0534931 2907}
+      \field{journaltitle}{中国机械工程}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{number}{14}
+      \field{title}{硅基铁电微声学器件中薄膜残余应力的研究}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{16}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{1289\bibrangedash 1291}
+      \range{pages}{3}
+      \keyw{ref-2-1-杨轶}
+    \endentry
+    \entry{ref-3-1-杨轶}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=136ae1b01c73fed5655b99cfedfd0fc8}{%
+           family={杨轶},
+           familyi={杨\bibinitperiod}}}%
+        {{hash=4519049cecc7e389a4049ef7b37c7708}{%
+           family={张宁欣},
+           familyi={张\bibinitperiod}}}%
+        {{hash=0a16cd1084611b2d1dea23cef1089699}{%
+           family={任天令},
+           familyi={任\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{ce9c6c414974174af6461185ec29a045}
+      \strng{fullhash}{f2c51857ea5066a2c536e3956b73dcc8}
+      \strng{bibnamehash}{f2c51857ea5066a2c536e3956b73dcc8}
+      \strng{authorbibnamehash}{f2c51857ea5066a2c536e3956b73dcc8}
+      \strng{authornamehash}{ce9c6c414974174af6461185ec29a045}
+      \strng{authorfullhash}{f2c51857ea5066a2c536e3956b73dcc8}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{EI 源刊}
+      \field{journaltitle}{仪器仪表学报}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{number}{S4}
+      \field{title}{集成铁电器件中的关键工艺研究}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{24}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{192\bibrangedash 193}
+      \range{pages}{2}
+      \keyw{ref-3-1-杨轶}
+    \endentry
+    \entry{ref-4-1-Yang}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=865de0ad624b442a018417bf6b85083e}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c8b71d106155f016ce09d7e71e4f7fe9}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={T\bibnamedelima L},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=4cadfa54c3c0f82e2b1afaac0bd06819}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Y\bibnamedelima P},
+           giveni={Y\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{958aa08ccff585684f3852063103799b}
+      \strng{fullhash}{aca515cb1582deb46c5d0a1491233f8f}
+      \strng{bibnamehash}{aca515cb1582deb46c5d0a1491233f8f}
+      \strng{authorbibnamehash}{aca515cb1582deb46c5d0a1491233f8f}
+      \strng{authornamehash}{958aa08ccff585684f3852063103799b}
+      \strng{authorfullhash}{aca515cb1582deb46c5d0a1491233f8f}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{已被 Integrated Ferroelectrics 录用. SCI 源刊.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{pubstate}{In press}
+      \field{title}{PMUTs for handwriting recognition}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \true{nocite}
+      \keyw{ref-4-1-Yang}
+    \endentry
+    \entry{ref-5-1-Wu}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=3c9680d23db2e8871132aa85ff0c1153}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={X\bibnamedelima M},
+           giveni={X\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=865de0ad624b442a018417bf6b85083e}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bf602901e0f57363742a43cdffb8ab42}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{3c97f4727d052c04f43bca1a78e5046f}
+      \strng{fullhash}{42d16bf4aa4c7ca871ca395bf64a09a4}
+      \strng{bibnamehash}{42d16bf4aa4c7ca871ca395bf64a09a4}
+      \strng{authorbibnamehash}{42d16bf4aa4c7ca871ca395bf64a09a4}
+      \strng{authornamehash}{3c97f4727d052c04f43bca1a78e5046f}
+      \strng{authorfullhash}{42d16bf4aa4c7ca871ca395bf64a09a4}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{SCI 收录, 检索号 :896KM.}
+      \field{journaltitle}{Integrated Ferroelectrics}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Measurements of ferroelectric MEMS microphones}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{69}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{417\bibrangedash 429}
+      \range{pages}{13}
+      \keyw{ref-5-1-Wu}
+    \endentry
+    \entry{ref-6-1-贾泽}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=822289451717e9a7cb5340d4b1b3b7dc}{%
+           family={贾泽},
+           familyi={贾\bibinitperiod}}}%
+        {{hash=136ae1b01c73fed5655b99cfedfd0fc8}{%
+           family={杨轶},
+           familyi={杨\bibinitperiod}}}%
+        {{hash=0376f59bdad5ced44ddcb9479253cdd4}{%
+           family={陈兢},
+           familyi={陈\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{0c681a9fe6a8665720756848ff441663}
+      \strng{fullhash}{ccb261d82c53e4f1e181e71edd2c94ea}
+      \strng{bibnamehash}{ccb261d82c53e4f1e181e71edd2c94ea}
+      \strng{authorbibnamehash}{ccb261d82c53e4f1e181e71edd2c94ea}
+      \strng{authornamehash}{0c681a9fe6a8665720756848ff441663}
+      \strng{authorfullhash}{ccb261d82c53e4f1e181e71edd2c94ea}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{EI 收录, 检索号:06129773469.}
+      \field{journaltitle}{压电与声光}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{number}{1}
+      \field{title}{用于压电和电容微麦克风的体硅腐蚀相关研究}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{28}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{117\bibrangedash 119}
+      \range{pages}{3}
+      \keyw{ref-6-1-贾泽}
+    \endentry
+    \entry{ref-7-1-伍晓明}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=dc16a73077c793641a2c408c84e83fb2}{%
+           family={伍晓明},
+           familyi={伍\bibinitperiod}}}%
+        {{hash=136ae1b01c73fed5655b99cfedfd0fc8}{%
+           family={杨轶},
+           familyi={杨\bibinitperiod}}}%
+        {{hash=4519049cecc7e389a4049ef7b37c7708}{%
+           family={张宁欣},
+           familyi={张\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{dbc463b918e2e9e1d66426c2b5e12a1c}
+      \strng{fullhash}{2ac04a14d19b9fae335aff5a3e55960d}
+      \strng{bibnamehash}{2ac04a14d19b9fae335aff5a3e55960d}
+      \strng{authorbibnamehash}{2ac04a14d19b9fae335aff5a3e55960d}
+      \strng{authornamehash}{dbc463b918e2e9e1d66426c2b5e12a1c}
+      \strng{authorfullhash}{2ac04a14d19b9fae335aff5a3e55960d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{中国集成电路}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{title}{基于MEMS技术的集成铁电硅微麦克风}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{53}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{59\bibrangedash 61}
+      \range{pages}{3}
+      \keyw{ref-7-1-伍晓明}
+    \endentry
+  \enddatalist
+\endrefsection
+
+\refsection{2}
+  \datalist[entry]{none/global//global/global}
+    \entry{ref-8-1-任天令}{patent}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=0a16cd1084611b2d1dea23cef1089699}{%
+           family={任天令},
+           familyi={任\bibinitperiod}}}%
+        {{hash=136ae1b01c73fed5655b99cfedfd0fc8}{%
+           family={杨轶},
+           familyi={杨\bibinitperiod}}}%
+        {{hash=642354570f4e4fc9b5513926854447d3}{%
+           family={朱一平},
+           familyi={朱\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{f550c833ff25fa022e00f69cb418daa6}
+      \strng{fullhash}{338974f65e3caf37708aed3a64adb81e}
+      \strng{bibnamehash}{338974f65e3caf37708aed3a64adb81e}
+      \strng{authorbibnamehash}{338974f65e3caf37708aed3a64adb81e}
+      \strng{authornamehash}{f550c833ff25fa022e00f69cb418daa6}
+      \strng{authorfullhash}{338974f65e3caf37708aed3a64adb81e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{中国专利公开号.}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{number}{中国, CN1602118A}
+      \field{title}{硅基铁电微声学传感器畴极化区域控制和电极连接的方法}
+      \field{usera}{P}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \true{nocite}
+      \keyw{ref-8-1-任天令}
+    \endentry
+    \entry{ref-9-1-Ren}{patent}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=c8b71d106155f016ce09d7e71e4f7fe9}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={T\bibnamedelima L},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=865de0ad624b442a018417bf6b85083e}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=4cadfa54c3c0f82e2b1afaac0bd06819}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Y\bibnamedelima P},
+           giveni={Y\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7e31b5f12f1248283f1dcd0bf5d6ecfe}
+      \strng{fullhash}{4752bcf863e665dc9759bfb1b55b113e}
+      \strng{bibnamehash}{4752bcf863e665dc9759bfb1b55b113e}
+      \strng{authorbibnamehash}{4752bcf863e665dc9759bfb1b55b113e}
+      \strng{authornamehash}{7e31b5f12f1248283f1dcd0bf5d6ecfe}
+      \strng{authorfullhash}{4752bcf863e665dc9759bfb1b55b113e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{美国发明专利申请号.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{USA, No.11/215, 102}
+      \field{title}{Piezoelectric micro acoustic sensor based on ferroelectric materials}
+      \field{usera}{P}
+      \field{userd}{english}
+      \field{userf}{english}
+      \true{nocite}
+      \keyw{ref-9-1-Ren}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

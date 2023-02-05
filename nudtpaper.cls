@@ -5,40 +5,40 @@
 %% The original source files were:
 %%
 %% nudtpaper.dtx  (with options: `cls')
-%% 
+%%
 %% This is a generated file.
-%% 
-%% Copyright (C) 2018 by Liu Benyuan <liubenyuan@gmail.com> & TomHeaven <hanlin_tan@nudt.edu.cn>
-%% 
+%%
+%% Copyright (C) 2020 by Liu Benyuan <liubenyuan@gmail.com>
+%%
 %% This file may be distributed and/or modified under the
 %% conditions of the LaTeX Project Public License, either version 1.3a
 %% of this license or (at your option) any later version.
 %% The latest version of this license is in:
-%% 
+%%
 %% http://www.latex-project.org/lppl.txt
-%% 
+%%
 %% and version 1.3a or later is part of all distributions of LaTeX
 %% version 2004/10/01 or later.
-%% 
+%%
 %% To produce the documentation run the original source files ending with `.dtx'
 %% through LaTeX.
-%% 
-%% Any Suggestions : TomHeaven <hanlin_tan@nudt.edu.cn>
+%%
+%% Any Suggestions : LiuBenYuan <liubenyuan@gmail.com>
 %% Thanks Xue Ruini <xueruini@gmail.com> for the thuthesis class!
 %% Thanks sofoot for the original NUDT paper class!
-%% 
+%%
 \NeedsTeXFormat{LaTeX2e}[1999/12/01]
 \ProvidesClass{nudtpaper}
-[2017/06/15 v2.7 NUDT paper template]
+[2020/07/01 v2.8 NUDT paper template]
 \newif\ifismaster\ismastertrue
-%\newif\ifismacos\ismacosfalse
-%\DeclareOption{macos}{\ismacostrue}
 \DeclareOption{master}{\ismastertrue}
 \DeclareOption{doctor}{\ismasterfalse}
 \newif\ifisanon\isanonfalse
 \DeclareOption{anon}{\isanontrue}
 \newif\ifistwoside\istwosidefalse
 \DeclareOption{twoside}{\istwosidetrue}
+\newif\ifisprof\isproffalse
+\DeclareOption{prof}{\isproftrue}
 \DeclareOption*{\PackageWarning{nudtpaper}{Unknown Option '\CurrentOption'}}
 \newif\ifisttf\isttffalse
 \newif\ifisotf\isotffalse
@@ -48,6 +48,14 @@
 \DeclareOption{otf}{\isotftrue}
 \DeclareOption{fz}{\isfztrue}
 \DeclareOption{fandol}{\isfandoltrue}
+%add biber option
+%if biber is set, use biblatex to generate bibliography
+\newif\ifisbiber\isbiberfalse
+\DeclareOption{biber}{\isbibertrue}
+%add resumebib option
+%if resumebib is set, use biblatex to generate resume
+\newif\ifisresumebib\isresumebibfalse
+\DeclareOption{resumebib}{\isresumebibtrue}
 \ProcessOptions\relax
 \RequirePackage{ifthen,calc}
 \ifistwoside
@@ -79,52 +87,136 @@
 \RequirePackage[CJKchecksingle,no-math]{xeCJK}
 \RequirePackage{zhnumber}
 \RequirePackage{indentfirst}
+\RequirePackage{xunicode-addon}
+\RequirePackage{notoccite}
+\newcommand{\fttilde}{\fontspec{FreeSerif}\selectfont}
+\ifisbiber
+\RequirePackage[backend=biber,style=gb7714-2015,gbalign=gb7714-2015,%
+gbnamefmt=lowercase,gbpub=false]{biblatex}%
+\setlength{\bibitemsep}{1pt}
+\setlength{\bibnamesep}{0ex}
+\setlength{\bibinitsep}{0ex}
+\setlength{\biblabelsep}{6pt}
+\newlength{\refindent}
+\setlength{\refindent}{24pt}
+\renewcommand{\itemcmd}{%
+\setlength{\lengthid}{0cm}%
+\setlength{\lengthlw}{\textwidth}%
+\addtolength{\lengthlw}{-\lengthid}%
+\addvspace{\bibitemsep}%恢复\bibitemsep的作用 %\parshape 2 0em \textwidth \lengthid \lengthlw
+\hangindent\lengthid%
+\hspace{\refindent}\mkgbnumlabel{\printfield{labelnumber}}%
+\hspace{\biblabelsep}}
+\DefineBibliographyExtras{english}{\renewcommand*{\bibrangedash}{{\fttilde\textsim}}}%将页码间隔符替换会英文的短横线
+%比如：～$\sim$\symbol{"FF5E}\symbol{"223C}\symbol{"2053}\symbol{"02DC}\symbol{"02F7}
+%\textsim \textbacksim \texttildebelow \texttildelow \texttilde
+\defbibheading{subbibliography}[\bibname]{%
+\section*{#1}}
+\DeclareDelimFormat{streditortypes}{\bibopenparen%
+  \edef\userfieldabcde{userd}%
+  \ifcurrentname{editor}{\edef\userfieldabcde{userc}}{}%
+  \ifcurrentname{bookauthor}{\edef\userfieldabcde{userb}}{}%
+  \ifcase\value{gbbiblocalcase}%
+    \iffieldequalstr{\userfieldabcde}{chinese}{\bibstring{\thefield{editortype}scn}}{}%
+    \iffieldequalstr{\userfieldabcde}{korean}{\bibstring{\thefield{editortype}skr}}{}%
+    \iffieldequalstr{\userfieldabcde}{japanese}{\bibstring{\thefield{editortype}sjp}}{}%
+    \iffieldequalstr{\userfieldabcde}{english}{\bibstring{\thefield{editortype}s}}{}%
+    \iffieldequalstr{\userfieldabcde}{french}{\bibstring{\thefield{editortype}s}}{}%
+    \iffieldequalstr{\userfieldabcde}{russian}{\bibstring{\thefield{editortype}s}}{}%
+  \or%
+  \bibstring{\thefield{editortype}scn}%
+  \or%
+  \bibstring{\thefield{editortype}s}%
+  \fi\bibcloseparen}
+\DeclareDelimFormat{streditortype}{\bibopenparen%
+  \edef\userfieldabcde{userd}%
+  \ifcurrentname{editor}{\edef\userfieldabcde{userc}}{}%
+  \ifcurrentname{bookauthor}{\edef\userfieldabcde{userb}}{}%
+  \ifcase\value{gbbiblocalcase}%
+    \iffieldequalstr{\userfieldabcde}{chinese}{\bibstring{\thefield{editortype}cn}}{}%
+    \iffieldequalstr{\userfieldabcde}{korean}{\bibstring{\thefield{editortype}kr}}{}%
+    \iffieldequalstr{\userfieldabcde}{japanese}{\bibstring{\thefield{editortype}jp}}{}%
+    \iffieldequalstr{\userfieldabcde}{english}{\bibstring{\thefield{editortype}}}{}%
+    \iffieldequalstr{\userfieldabcde}{french}{\bibstring{\thefield{editortype}}}{}%
+    \iffieldequalstr{\userfieldabcde}{russian}{\bibstring{\thefield{editortype}}}{}%
+  \or%
+  \bibstring{\thefield{editortype}cn}%
+  \or%
+  \bibstring{\thefield{editortype}}%
+  \fi\bibcloseparen}
+\renewbibmacro*{in:}{%
+ \iftoggle{bbx:gbpunctin}{\printtext{\textbf{//}\allowbreak}}%\addthinspace
+                         {\setunit{\adddot\addspace}%
+                         \iffieldequalstr{userd}{chinese}%
+                         {\printtext{\bibstring{incn}}}%
+                         {\printtext{\bibstring{in}}}%
+                         }}%\newunit\newblock\intitlepunct
+\ifisresumebib
+\defbibenvironment{resumebib}%修改对齐环境-调整缩进
+  {\list
+     {\printtext[labelnumberwidth]{%
+        \printfield{labelprefix}%
+        \printfield{labelnumber}}}
+{\setlength{\labelwidth}{\labelnumberwidth}%
+      \setlength{\labelsep}{\biblabelsep}%
+      \setlength{\leftmargin}{\bibhang}%
+      \addtolength{\leftmargin}{\labelnumberwidth}%
+      \setlength{\itemindent}{\bibitemindent}%
+      \setlength{\itemsep}{\bibitemsep}%
+      \setlength{\parsep}{\bibparsep}}%
+      \renewcommand*{\makelabel}[1]{\hss##1}}
+  {\endlist}
+  {\item}
+\fi
+\else
 \RequirePackage[numbers,sort&compress,square]{natbib}
+\let\newcite=\cite
+\let\parencite=\newcite
+\let\inlinecite=\newcite
+\newcommand{\upcite}[1]{\textsuperscript{\newcite{#1}}} % 上标形式引用
+\renewcommand{\cite}[1]{\textsuperscript{\newcite{#1}}} % 上标形式引用
+\fi
 \RequirePackage[colorlinks=true,linkcolor=blue,citecolor=red,pdfborder=0 1 1]{hyperref}
 \RequirePackage{datetime}
 \defaultfontfeatures{Mapping=tex-text}
 \xeCJKsetcharclass{"0}{"2E7F}{0}
 \xeCJKsetcharclass{"2E80}{"FFFF}{1}
 
-% ttf字体 (Windows)
-  \newcommand{\installttf}{
-    %%%%   Thesis Fonts
-    \setmainfont{Times New Roman}
+\newcommand{\installttf}{
+    %%%% Windows Thesis Fonts
+    \setmainfont{Times New Roman PS Std}
     \setsansfont{Arial}
     \setmonofont{Courier New}
     %%%% Using Office Family Fonts
     \setCJKmainfont[BoldFont={STZhongsong}]{SimSun}
     \setCJKsansfont{SimHei} % Hei
-    \setCJKmonofont{FangSong_GB2312} % Fangsong
+    \setCJKmonofont{FangSong} % Fangsong
     %%%% alias
     \setCJKfamilyfont{song}{SimSun}
     \setCJKfamilyfont{hei}{SimHei}
-    \setCJKfamilyfont{fs}{FangSong_GB2312} % fang-song
+    \setCJKfamilyfont{fs}{FangSong} % fang-song
     \setCJKfamilyfont{kai}{KaiTi} % Kai
-    \setCJKfamilyfont{times}{Times New Roman} % times
 }
 
-% otf字体（Adobe）
 \newcommand{\installotf}{
-	%%%%   Thesis Fonts
-	\setmainfont{Times New Roman}
-	\setsansfont{Arial}
-	\setmonofont{Courier New}
-	%%%% Using Adobe Family Fonts
-	\setCJKmainfont[BoldFont={STZhongsong}]{Adobe Song Std}
-	\setCJKsansfont{Adobe Heiti Std} % Hei
-	\setCJKmonofont{Adobe Fangsong Std} % Fangsong
-	%%%% alias
-	\setCJKfamilyfont{song}{Adobe Song Std}
-	\setCJKfamilyfont{hei}{Adobe Heiti Std}
-	\setCJKfamilyfont{fs}{Adobe Fangsong Std} % fang-song
-	\setCJKfamilyfont{kai}{Adobe Kaiti Std} % Kai
-	\setCJKfamilyfont{times}{Times New Roman} % times
+    %%%% Windows Thesis Fonts
+    \setmainfont{Times New Roman PS Std}
+    \setsansfont{Arial}
+    \setmonofont{Courier New}
+    %%%% Using Adobe Family Fonts
+    \setCJKmainfont[BoldFont={STZhongsong}]{Adobe Song Std}
+    \setCJKsansfont{Adobe Heiti Std} % Hei
+    \setCJKmonofont{Adobe Fangsong Std} % Fangsong
+    %%%% alias
+    \setCJKfamilyfont{song}{Adobe Song Std}
+    \setCJKfamilyfont{hei}{Adobe Heiti Std}
+    \setCJKfamilyfont{fs}{Adobe Fangsong Std} % fang-song
+    \setCJKfamilyfont{kai}{Adobe Kaiti Std} % Kai
 }
 
 \newcommand{\installfz}{
-    %%%% Thesis Fonts
-    \setmainfont{Times New Roman}
+    %%%% Windows Thesis Fonts
+    \setmainfont{Times New Roman PS Std}
     \setsansfont{Arial}
     \setmonofont{Courier New}
     %%%% Using Founder Family Fonts
@@ -136,12 +228,11 @@
     \setCJKfamilyfont{hei}{FZHei-B01}
     \setCJKfamilyfont{fs}{FZFangSong-Z02} % fang-song
     \setCJKfamilyfont{kai}{FZKai-Z03} % Kai
-    \setCJKfamilyfont{times}{Times New Roman} % times
 }
 
 \newcommand{\installfandol}{
     %%%% Windows Thesis Fonts
-    \setmainfont{Times New Roman}
+    \setmainfont{Times New Roman PS Std}
     \setsansfont{Arial}
     \setmonofont{Courier New}
     %%%% Using Fandol Family Fonts
@@ -153,7 +244,6 @@
     \setCJKfamilyfont{hei}{FandolHei}
     \setCJKfamilyfont{fs}{FandolFang} % fang-song
     \setCJKfamilyfont{kai}{FandolKai} % Kai
-    \setCJKfamilyfont{times}{Times New Roman} % times
 }
 
 \ifisttf
@@ -177,7 +267,6 @@
 \newcommand{\fs}{\CJKfamily{fs}}         % 仿宋体
 \newcommand{\kai}{\CJKfamily{kai}}       % 楷体
 \newcommand{\hei}{\CJKfamily{hei}}       % 黑体
-\newcommand{\timesnr}{\CJKfamily{times}}   % times new roman
 \def\songti{\song}
 \def\fangsong{\fs}
 \def\kaishu{\kai}
@@ -207,7 +296,6 @@
 \thu@define@fontsize{xiaoliu}{6.5bp}
 \thu@define@fontsize{qihao}{5.5bp}
 \thu@define@fontsize{bahao}{5bp}
-\newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}} % 上标形式引用
 \newcommand{\china}{中华人民共和国}
 \def\nudtpaper{\textsc{Nudt}\textsc{Paper}}
 \newcommand{\pozhehao}{\kern0.2em\rule[0.8ex]{1.6em}{0.1ex}\kern0.2em}
@@ -236,7 +324,7 @@
     \rule{\linewidth}{1.5pt}}%
   \fi}
 \renewpagestyle{plain}{
-\sethead{}{\raisebox{.65\baselineskip}{\songti \wuhao \ifisanon{~}\else{国防科技大学研究生院\@optionpaperclass{}学位论文}\fi}}{}%
+\sethead{}{\raisebox{.65\baselineskip}{\songti \wuhao \ifisanon{~}\else{国防科技大学研究生院{\ifisprof{专业学位}\else{}\fi}\@optionpaperclass{}学位论文}\fi}}{}%
 \setfoot{}{{\songti \wuhao 第~\thepage~页}}{}%
 \headrule%
 \footrule%
@@ -317,11 +405,11 @@
   \fi
 }
 \newcommand\cabstractname{摘\hspace{1em}要}
-\newcommand\eabstractname{Abstract}
+\newcommand\eabstractname{ABSTRACT}
 \newcommand\ckeywordsname{关键词}
-\newcommand\ckeywords[1]{{\hei\xiaosi \ckeywordsname: #1}}
+\newcommand\ckeywords[1]{{\hei\xiaosi \ckeywordsname：#1}}
 \newcommand\ekeywordsname{Key Words}
-\newcommand\ekeywords[1]{\textbf{\textsf{\xiaosi \ekeywordsname: #1}}}
+\newcommand\ekeywords[1]{\textsf{\xiaosi \ekeywordsname：#1}}
 \newenvironment{cabstract}{%
     \chapter{\cabstractname}
     \xiaosi
@@ -434,13 +522,6 @@
     \xiaosi
     \@afterheading}
     {\par\vspace{2em}\par}
-\newenvironment{reviewinfo}{%
-	\chapter*{公开评阅信息}
-	\addcontentsline{toc}{chapter}{公开评阅信息}
-	\xiaosi
-	\@afterheading}
-{\par\vspace{2em}\par}
-
 \renewtheoremstyle{nonumberplain}%
 {\item[\hspace*{2em} \theorem@headerfont ##1\ \theorem@separator]}%
 {\item[\hspace*{2em} \theorem@headerfont ##1\ (##3)\theorem@separator]}
@@ -524,14 +605,16 @@
   \thispagestyle{empty}%
   \begin{center}\leavevmode % 表格环境
   {\fangsong \wuhao[1.25]%
-	\begin{tabular}{clcll} 
-		\makebox[1.2cm][s]{\ 分类号\ } & \entry{1}{3.2cm}{\@classification} & \hspace*{4.8cm} & 学号 & \entry{1}{3.2cm}{\@serialno} \\[5mm] 
-		\makebox[1.2cm][s]{\ U\ D\ C\ }& \entry{1}{3.2cm}{\@UDC} & \hspace*{4.8cm} & 密级 & \entry{1}{3.2cm}{\@confidentiality} 
-	\end{tabular}
+    \begin{tabular}{llcll}
+    分类号  & \entry{1}{3.2cm}{\@classification} & \hspace*{4.8cm}%
+    学号    & \entry{1}{3.2cm}{\@serialno}         \\[5mm]    %
+    U\ D\ C & \entry{1}{3.2cm}{\@UDC} &            \hspace*{4.8cm}
+    密级 & \entry{1}{3.2cm}{\@confidentiality}
+    \end{tabular}
   }
   \par
   \vspace*{2.5cm} %插入空白
-  {\heiti\sanhao \@papertype{}\@optionpaperclass{}学位论文}\\
+  {\heiti\sanhao \ifisprof{专业学位}\else\@papertype{}\fi\@optionpaperclass{}学位论文}\\
   \vspace{12bp}
   {\cusong\erhao[1.25] \@title \par}%
   \vspace{45bp} %从WORD中得来
@@ -544,10 +627,18 @@
       \fi
         {\fs \hfil\raisebox{-3.7ex}[0pt]{\@author}\hfil{}} & \\[3.2ex]
         \cline{2-2}
+        \ifisprof
+        \raisebox{-3.7ex}[0pt]{\makebox[3cm][s]{专\hfill{}业\hfill{}学\hfill{}位\hfill{}类\hfill{}别}} &
+        \else
         \raisebox{-3.7ex}[0pt]{\makebox[3cm][s]{学\hfill{}科\hfill{}专\hfill{}业}} &
+        \fi
         {\fs \hfil\raisebox{-3.7ex}[0pt]{\@subject}\hfil{}} & \\[3.2ex]
         \cline{2-2}
+        \ifisprof
+        \raisebox{-3.7ex}[0pt]{\makebox[3cm][s]{专\hfill{}业\hfill{}学\hfill{}位\hfill{}领\hfill{}域}} &
+        \else
         \raisebox{-3.7ex}[0pt]{\makebox[3cm][s]{研\hfill{}究\hfill{}方\hfill{}向}} &
+        \fi
         {\fs \hfil\raisebox{-3.7ex}[0pt]{\@researchfield}\hfil{}} & \\[3.2ex]
         \cline{2-2}
         \raisebox{-3.7ex}[0pt]{\makebox[3cm][s]{指\hfill{}导\hfill{}教\hfill{}师}} &
@@ -573,9 +664,10 @@
   \thispagestyle{empty}%
 
   \begin{center}\leavevmode
-  \vfill\bfseries 
-  {\bf \erhao[1.25] \@entitle \par   \vfill\vfill\vfill\vfill\vfill}
-  {\bf \sanhao[1.25] %调整与word一致
+  \vfill\bfseries
+  {\erhao[1.25] \@entitle \par}
+  {\sanhao[1.25]
+  \vfill\vfill\vfill\vfill\vfill\vfill
   \begin{tabular}{rl}
     Candidate:\ & {\textsf{\@enauthor}}\\
     \@optionas{}:\ & {\textsf{\@ensupervisor}}\\
@@ -583,11 +675,11 @@
       Associate \@optionas{}:\ & {\textsf{\@encosupervisor}} \\
     \fi
   \end{tabular}}
-  \vfill\vfill\vfill\vfill\vfill
-  {\bf \sanhao[1.5] %调整与word一致
-A dissertation\\
+  \vfill\vfill\vfill\vfill
+  {\sanhao[1.5]
+A \ifisprof{thesis}\else{dissertation} \fi \\
 Submitted in partial fulfillment of the requirements\\
-for the degree of \@optionpaperclassen{} of \textsf{\@enpapertype}\\
+for the \ifisprof{professional }\else{}\fi degree of \textsf{\@optionpaperclassen{} of \@enpapertype}\\
 in \textsf{\@ensubject}\\
 \makebox[\textwidth]{\ifisanon{~}\else{Graduate School of National University of %
 Defense Technology}\fi}\\
@@ -595,33 +687,32 @@ Defense Technology}\fi}\\
 ~\@endate~
   }
   \end{center}\vfill
-  
-\renewcommand{\baselinestretch}{1.5}%
 
-\ifisanon{~}\else{
+\renewcommand{\baselinestretch}{1.5}%
+\ifisanon{~}\else{%
   \cleardoublepage%
   \newpage
   \thispagestyle{empty}
-  {\cusong \xiaoer \centering \ziju{12pt} 独创性声明 \par\vspace{0.5cm}}
-  {\fangsong\xiaosi[1.8] %
-本人声明所呈交的学位论文是我本人在导师指导下进行的研究工作及取得的
-研究成果。尽我所知，除了文中特别加以标注和致谢的地方外，论文中不包含其
-他人已经发表和撰写过的研究成果，也不包含为获得国防科技大学或其它教育机
-构的学位或证书而使用过的材料。与我一同工作的同志对本研究所做的任何贡献
-均已在论文中作了明确的说明并表示谢意。\par
+  {\cusong \erhao \centering \ziju{12pt} 独创性声明 \par\vspace{2cm}}
+  {\fangsong\xiaosi %
+本人声明所呈交的学位论文是我本人在导师指导下进行的研究工
+作及取得的研究成果。尽我所知，除文中特别加以标注和致谢的地方外，论文中
+不包含其他人已经发表和撰写过的研究成果，也不包含为获得国防科技大学或
+其他教育机构的学位或证书而使用过的材料。与我一同工作的同志对本研究所做的
+任何贡献均已在论文中作了明确的说明并表示谢意。\par
 学位论文题目：\vbox{\hbox to11cm{\hfil \the\displaytitle \hfil}
   \protect\vspace{0.6truemm}\relax
   \hrule depth0pt height0.15truemm width11cm}\par
 学位论文作者签名：\hrulefill\hrulefill\hrulefill\hrulefill\hrulefill
   \hfill 日期：\hfill\hfill 年\hfill 月 \hfill 日\hspace{1cm}\par}
 
-  \vspace*{1.4cm}
-  {\cusong \xiaoer \centering 学位论文版权使用授权书\par\vspace{0.5cm}}
-  {\fangsong\xiaosi[1.8] %
-本人完全了解国防科技大学有关保留、使用学位论文的规定。本人授权国防
-科技大学可以保留并向国家有关部门或机构送交论文的复印件和电子文档，允许
-论文被查阅和借阅;可以将学位论文的全部或部分内容编入有关数据库进行检索，
-可以采用影印、缩印或扫描等复制手段保存、汇编学位论文。\par
+  \vspace*{2cm}
+  {\cusong \erhao \centering 学位论文版权使用授权书\par\vspace{2cm}}
+  {\fangsong\xiaosi %
+本人完全了解国防科技大学有关保留、使用学位论文的规定。
+本人授权国防科技大学可以保留并向国家有关部门或机构送交论文的复印件和电子
+文档，允许论文被查阅和借阅; 可以将学位论文的全部或部分内容编入有关数据库
+进行检索，可以采用影印、缩印或扫描等复制手段保存、汇编学位论文。\par
 （保密学位论文在解密后适用本授权书。）\par
 学位论文题目：\vbox{\hbox to11cm{\hfil \the\displaytitle \hfil}
   \protect\vspace{0.6truemm}\relax
@@ -639,8 +730,6 @@ Defense Technology}\fi}\\
   \thispagestyle{empty}
 
 } % QED
-
-
 \endinput
 %%
 %% End of file `nudtpaper.cls'.
