@@ -430,6 +430,363 @@
       \field{dateera}{ce}
       \keyw{el2020kd}
     \endentry
+    \entry{yao1986generate}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=bdf7dbd523c5db366c4ffbc0ea3dc192}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Andrew\bibnamedelima Chi-Chih},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinithyphendelim C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
+      \strng{fullhash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
+      \strng{bibnamehash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
+      \strng{authorbibnamehash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
+      \strng{authornamehash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
+      \strng{authorfullhash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{27th annual symposium on foundations of computer science (Sfcs 1986)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{How to generate and exchange secrets}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1986}
+      \field{dateera}{ce}
+      \field{pages}{162\bibrangedash 167}
+      \range{pages}{6}
+      \keyw{yao1986generate}
+    \endentry
+    \entry{rivest2001leak}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=3a964821f97ee17f8bb285bc61c52899}{%
+           family={Rivest},
+           familyi={R\bibinitperiod},
+           given={Ronald\bibnamedelima L},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=71b77dd8ab33fe646ef25cded49e9881}{%
+           family={Shamir},
+           familyi={S\bibinitperiod},
+           given={Adi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cab670977e5430bd6de9a9948b5f3e88}{%
+           family={Tauman},
+           familyi={T\bibinitperiod},
+           given={Yael},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{40bc8b4fa99fd3229ead4b931058d71d}
+      \strng{fullhash}{429f82e866d85dda3102f0a30deaa506}
+      \strng{bibnamehash}{429f82e866d85dda3102f0a30deaa506}
+      \strng{authorbibnamehash}{429f82e866d85dda3102f0a30deaa506}
+      \strng{authornamehash}{40bc8b4fa99fd3229ead4b931058d71d}
+      \strng{authorfullhash}{429f82e866d85dda3102f0a30deaa506}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Cryptology—ASIACRYPT 2001: 7th International Conference on the Theory and Application of Cryptology and Information Security Gold Coast, Australia, December 9--13, 2001 Proceedings 7}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{How to leak a secret}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{pages}{552\bibrangedash 565}
+      \range{pages}{14}
+      \keyw{rivest2001leak}
+    \endentry
+    \entry{blakley1979safeguarding}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=6b0254448181499ed022c4bdfc5d6813}{%
+           family={Blakley},
+           familyi={B\bibinitperiod},
+           given={George\bibnamedelima Robert},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{6b0254448181499ed022c4bdfc5d6813}
+      \strng{fullhash}{6b0254448181499ed022c4bdfc5d6813}
+      \strng{bibnamehash}{6b0254448181499ed022c4bdfc5d6813}
+      \strng{authorbibnamehash}{6b0254448181499ed022c4bdfc5d6813}
+      \strng{authornamehash}{6b0254448181499ed022c4bdfc5d6813}
+      \strng{authorfullhash}{6b0254448181499ed022c4bdfc5d6813}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Managing Requirements Knowledge, International Workshop on}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Safeguarding cryptographic keys}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1979}
+      \field{dateera}{ce}
+      \field{pages}{313\bibrangedash 313}
+      \range{pages}{1}
+      \keyw{blakley1979safeguarding}
+    \endentry
+    \entry{beaver1992efficient}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=8293acfe90aa8eaf9b54bb2d780b215f}{%
+           family={Beaver},
+           familyi={B\bibinitperiod},
+           given={Donald},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{8293acfe90aa8eaf9b54bb2d780b215f}
+      \strng{fullhash}{8293acfe90aa8eaf9b54bb2d780b215f}
+      \strng{bibnamehash}{8293acfe90aa8eaf9b54bb2d780b215f}
+      \strng{authorbibnamehash}{8293acfe90aa8eaf9b54bb2d780b215f}
+      \strng{authornamehash}{8293acfe90aa8eaf9b54bb2d780b215f}
+      \strng{authorfullhash}{8293acfe90aa8eaf9b54bb2d780b215f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Cryptology—CRYPTO’91: Proceedings 11}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Efficient multiparty protocols using circuit randomization}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1992}
+      \field{dateera}{ce}
+      \field{pages}{420\bibrangedash 432}
+      \range{pages}{13}
+      \keyw{beaver1992efficient}
+    \endentry
+    \entry{schneider2013gmw}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=5d62da517b335078f08436fbab3a5f69}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4ef91305cf3e296815bbb67ee9321367}{%
+           family={Zohner},
+           familyi={Z\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{226b5ac9f15f6cc898a817b281ed1e3f}
+      \strng{fullhash}{785d8c81b13ac7db10566bad391632ea}
+      \strng{bibnamehash}{785d8c81b13ac7db10566bad391632ea}
+      \strng{authorbibnamehash}{785d8c81b13ac7db10566bad391632ea}
+      \strng{authornamehash}{226b5ac9f15f6cc898a817b281ed1e3f}
+      \strng{authorfullhash}{785d8c81b13ac7db10566bad391632ea}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Financial Cryptography and Data Security: 17th International Conference, FC 2013, Okinawa, Japan, April 1-5, 2013, Revised Selected Papers 17}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{GMW vs. Yao? Efficient secure two-party computation with low depth circuits}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{275\bibrangedash 292}
+      \range{pages}{18}
+      \keyw{schneider2013gmw}
+    \endentry
+    \entry{riazi2018chameleon}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=47afa55ac4aa3cb95f7113dc42bb25ea}{%
+           family={Riazi},
+           familyi={R\bibinitperiod},
+           given={M\bibnamedelima Sadegh},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=007aa09887a19dbd2180cc89d1e0f287}{%
+           family={Weinert},
+           familyi={W\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e8e24783371187687a39bcede4a4482f}{%
+           family={Tkachenko},
+           familyi={T\bibinitperiod},
+           given={Oleksandr},
+           giveni={O\bibinitperiod}}}%
+        {{hash=a7fe70032d603b93b8ae4dbb88799927}{%
+           family={Songhori},
+           familyi={S\bibinitperiod},
+           given={Ebrahim\bibnamedelima M},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=5d62da517b335078f08436fbab3a5f69}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d1642679ae78814302ce585a8ca745a8}{%
+           family={Koushanfar},
+           familyi={K\bibinitperiod},
+           given={Farinaz},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{70d18fce84b19b58ece4fee10b4305b5}
+      \strng{fullhash}{b9b8c3c618162af7cd89be2e131f35f8}
+      \strng{bibnamehash}{fa6af8bbcbb2d57f8af7e6941ec9f1bf}
+      \strng{authorbibnamehash}{fa6af8bbcbb2d57f8af7e6941ec9f1bf}
+      \strng{authornamehash}{70d18fce84b19b58ece4fee10b4305b5}
+      \strng{authorfullhash}{b9b8c3c618162af7cd89be2e131f35f8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2018 on Asia conference on computer and communications security}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Chameleon: A hybrid secure computation framework for machine learning applications}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{707\bibrangedash 721}
+      \range{pages}{15}
+      \keyw{riazi2018chameleon}
+    \endentry
+    \entry{wu2020secure}{article}{}
+      \name{author}{5}{}{%
+        {{hash=7bb2d83991df51fab82e334ba89d1132}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=fd903bc507de58459375d974764ab4ea}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cd570b41a3ff94c93d1d92e0ad1d83db}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Huimei},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a0ce66c0251714375d3c99a363557f88}{%
+           family={Hao},
+           familyi={H\bibinitperiod},
+           given={Jialu},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9ad5edbaf65c5c46ad1ce93d343e3adc}{%
+           family={Xian},
+           familyi={X\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{95a5b9d20e620247996b4690be15bbe3}
+      \strng{fullhash}{59092763d077ace42677051136382e7f}
+      \strng{bibnamehash}{31185cbd96d7e7d59c7788b6e1fe747a}
+      \strng{authorbibnamehash}{31185cbd96d7e7d59c7788b6e1fe747a}
+      \strng{authornamehash}{95a5b9d20e620247996b4690be15bbe3}
+      \strng{authorfullhash}{59092763d077ace42677051136382e7f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Knowledge and Data Engineering}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{10}
+      \field{title}{Secure and efficient outsourced k-means clustering using fully homomorphic encryption with ciphertext packing technique}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{33}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{3424\bibrangedash 3437}
+      \range{pages}{14}
+      \keyw{wu2020secure}
+    \endentry
+    \entry{bunn2007secure}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=cedfe091dee6ee5e46bbfc7ea4877e92}{%
+           family={Bunn},
+           familyi={B\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a9721cf40a3150cd65a1b3d65d86fe94}{%
+           family={Ostrovsky},
+           familyi={O\bibinitperiod},
+           given={Rafail},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{18b04314293f95b540a4da41447b41de}
+      \strng{fullhash}{cd13082afa7020f23354a2b82a3b35f3}
+      \strng{bibnamehash}{cd13082afa7020f23354a2b82a3b35f3}
+      \strng{authorbibnamehash}{cd13082afa7020f23354a2b82a3b35f3}
+      \strng{authornamehash}{18b04314293f95b540a4da41447b41de}
+      \strng{authorfullhash}{cd13082afa7020f23354a2b82a3b35f3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 14th ACM conference on Computer and communications security}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Secure two-party k-means clustering}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{486\bibrangedash 497}
+      \range{pages}{12}
+      \keyw{bunn2007secure}
+    \endentry
   \enddatalist
 \endrefsection
 

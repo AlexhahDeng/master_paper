@@ -40,15 +40,43 @@ kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
 \subsubsection{过滤算法}
 本小节我们详细介绍\cite{kanungo2002efficient}的核心，过滤算法。给定$ n $个点，构造的kd-tree包含$ O(n) $个节点，长度为$ O(\log n) $。对于kd-tree中每个节点$ u $，计算包含的数据个数$ u.count $以及加权质心$ u.wgtCent $，即包含点数据之和。中心的计算方式为$ u.wgtCent/u.count $，在构造kd-tree的过程中可以连带计算上述内容。初始簇中心采取随机从数据集中选择的方式。
 
-对于kd-tree中每个节点，我们维护一个候选簇集合，该集合中的簇均有可能为节点中数据的最终所属簇。对于根节点，候选簇为随机选择的$ k $个簇。我们按照如下方式来选择每个点的候选簇集合：对于每个节点$ u $，令$ C $为包含数据集合，$ Z $为候选簇集合。首先计算$ C $的中心点，然后找到候选簇中距离中心最近的簇$ z^*\in Z $。对于剩余的候选簇$ z\in Z\\ \{z^*\} $，
+对于kd-tree中每个节点，我们维护一个候选簇集合，该集合中的簇均有可能为节点中数据的最终所属簇。对于根节点，候选簇为随机选择的$ k $个簇。我们按照如下方式来选择每个点的候选簇集合：对于每个节点$ u $，令$ C $为包含数据集合，$ Z $为候选簇集合。首先计算$ C $的中心点，然后找到候选簇中距离中心最近的簇$ z^*\in Z $。对比剩余的候选簇$ z\in Z\backslash\{z^*\} $，若$ C $中所有数据均距离$ z^* $更近，则我们认为$ z $不是节点$ u $中任何一个数据的最近所属簇，因此我们进行剪枝，即从候选簇中删除$ z $。若$ u $仅剩一个候选簇，即$ z^* $，则我们认为$ z^* $就是$ u $中所有数据的所属簇。我们可以将这些数据划分进$ z^* $，并且将相关的$ u.wgtCent $和$ u.count $添加到$ z^* $中。否则，若$ u $为非叶节点，我们对其子节点重复上述过程。若$ u $为叶节点，我们计算它到所有候选簇的距离，并分配到最近簇中。
 \subsection{基于秘密共享的安全多方计算}
-\subsubsection{加性秘密共享}
+安全多方计算（SMC）首先由\cite{yao1986generate}提出，它能够使多个参与方在不泄露自身输入数据的前提下协同进行计算获取结果，广泛用于各种隐私保护方案中。秘密共享是安全多方计算中一个常用工具，最早由Shamir\cite{rivest2001leak}和Blakley\cite{blakley1979safeguarding}于1979年分别提出。秘密共享的基本思路是：将秘密$ s $划分为$ n $份，分发给$ n $个不同的参与方，至少需要$ t $个不同的参与者才能够重构秘密，否则失败。接下来，我们以两个参与方$ A $与$ B $为例，详细介绍秘密共享相关计算。
 
+假设所有数据的范围在环$ \mathbb{Z}_P $上，对于$ x $的加性秘密共享值$ \langle x \rangle $，有$ \langle x \rangle^A + \langle x \rangle^B = x(\mod P)$。参与方$ A $拥有$ \langle x \rangle^A $，参与方B同理。重构秘密$ x $（$ Rec(\cdot, \cdot) $)，其中一个参与方将分配给自己的秘密发送给另一方，然后计算$ x=\langle x\rangle^A+\langle x\rangle^B(\mod P) $。接下来的说明中，为了简洁我们省略$ \mod P $操作。
+
+\subsubsection{加性秘密共享加法}
+为计算两个秘密共享值$ \langle x \rangle $（$ \langle x \rangle^A,\langle x \rangle^B $）和$ \langle y \rangle $（$ \langle y\rangle^A,\langle y\rangle^B $）之和，参与方$ A $与$ B $分别计算$\langle z\rangle^A=\langle x\rangle^A+\langle y\rangle^A$和$\langle z\rangle^B=\langle x\rangle^B+\langle y\rangle^B$。对于秘密共享值$ \langle x \rangle $与常量$ c $的加法，参与方$ A $在本地计算$\langle z\rangle^A=\langle x\rangle+c$，参与方$ B $计算$\langle z\rangle^B=\langle x\rangle^B$。
 \subsection{秘密共享乘法}
+秘密共享的安全乘法协议首先由Beaver\cite{beaver1992efficient}提出，为计算乘积$\langle z\rangle=\langle x\rangle \cdot\langle y\rangle$，我们需要一个预计算的乘法三元组$\langle c\rangle=\langle a\rangle \cdot\langle b\rangle$。其中参与方$ i $计算$ \langle e \rangle^i = \langle x \rangle^i - \langle a \rangle^i $和$\langle f\rangle^i=\langle y\rangle^i-\langle b\rangle^i$,其中$ i \in \{A, B\}$。参与方均运行$ Rec(\cdot, \cdot) $来恢复$ e $和$ f $。最后，参与方$ A $令$\langle z\rangle^A=f \cdot\langle a\rangle^A+e \cdot\langle b\rangle^A+\langle c\rangle^A$，参与方$ B $令$\langle z\rangle^B=e \cdot f+f \cdot\langle a\rangle^B+e \cdot\langle b\rangle^B+\langle c\rangle^B$，即计算完成。
 
+值得注意的是，乘法主要分为两个阶段。离线阶段中，预计算的乘法三元组每次进行乘法时都要更新，但是三元组生成的过程是离线的，可以由两方通过不经意传输（Oblivious Transfer）生成\cite{schneider2013gmw}，也可以由可信第三方提供\cite{riazi2018chameleon}。更多关于预计算乘法三元组的细节可以参考\cite{beaver1992efficient}。在线阶段中，两个参与方相互通信以获得最终的计算结果。
 \section{问题描述}
 \label{s3-wenti}
+\subsection{系统模型}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=3in]{img/fig5.png}%width=\linewidth
+	\caption{System Model}
+	\label{sys model}
+\end{figure}
+如图\ref{sys model}所示，我们的系统由两个部分组成：用户和云服务器。这样的系统模型广泛用于隐私保护研究中\cite{wu2020secure}\cite{bunn2007secure}。这里的客户指的是，持有隐私数据需要聚类来进行数据分析和挖掘的独立用户，他们通常没有足够的计算资源来聚类海量数据，因此需要将计算任务外包以获取结果。常见的实际用户有医疗机构、金融机构等。服务器端通常指的是拥有大量计算资源，提供付费计算服务的云服务器运营厂商例如阿里云、腾讯云等，他们提供机器学习即服务（MLaaS）这一付费模式，用户上传数据后即可离线等待机器学习计算结果。下面我们详细介绍方案中的每一部分：
 
+\begin{itemize}
+	\item \textbf{双云服务器}：我们在系统中有两个不共谋的云服务器，标识为$ C_0 $和$ C_1 $，而且均持有用户秘密共享后的数据。他们会在此基础上执行一系列安全协议来实现隐私保护k-means聚类，最后将秘密共享的结果发送给用户。
+	\item \textbf{用户}：用户首先在原始数据上构造kd-tree，然后选择随机数来将数据划分为两份秘密共享值，分别发送给双云服务器。在k-means聚类结束后，获取服务器返回的秘密共享结果，运行$ Rec(\cdot,\cdot) $来还原最终结果。
+\end{itemize}
+
+\subsection{安全模型}
+服务器端与客户端均为半诚实的实体，即二者均会遵循协议内容，不会蓄意停止执行安全协议或是篡改中间计算结果，但会好奇彼此的隐私数据，并尝试从获取的信息中推断其他参与方的信息。虽然云服务器无法还原原始数据，但是可能会企图从计算中间结果中推测数据的分布信息，具体的应对策略为设计安全全面的计算协议，以防止服务器推断原始信息。
+\subsection{设计目标}
+本节所述隐私保护外包k-means聚类方案设计目标如下：
+\begin{itemize}
+	\item \textbf{隐私和安全性}：所有外包数据和中间计算结果都不应泄露给双云服务器。同时，服务器无法从秘密共享值推断出原始数据内容以及相关数据特征，例如数据分布。在我们的方案中，上述内容均处于加密状态。
+	\item \textbf{高效性}：方案应具备高效性，整个聚类过程主要由双云服务器进行，二者具有丰富的计算和通信资源，能够对海量数据进行处理，极大降低用户计算开销。
+	\item \textbf{正确性}：方案应保证计算精度。双云服务器应当能够返回和明文聚类方案一致的计算结果。
+\end{itemize}
 \section{基于秘密共享的隐私保护计算模块}
 \label{s3-mokuai}
 为了使用户与云端能够进行安全的交互，我们基于秘密共享技术设计了一系列基本的计算模块。用户通过产生随机值将明文数据拆分为两份密文发送给双云服务器，两方在秘密共享值的基础上进行系列计算和交互，获取最终结果。

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.21)  6 FEB 2023 11:34
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  6 FEB 2023 22:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1834,25 +1834,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
 [5] [6]
+File: img/fig5.png Graphic file (type bmp)
+<img/fig5.png>
+ [7] [8]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 97.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
+put line 125.
+ [9]
 File: img/fig4.png Graphic file (type bmp)
 <img/fig4.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]
+ [10]
 File: img/fig1.png Graphic file (type bmp)
 <img/fig1.png>
 
-[9] [10]) (./data/chap04.tex [11] [12
+[11]
+Underfull \vbox (badness 4846) has occurred while \output is active []
+
+ [12])
+(./data/chap04.tex [13] [14
 
 
-] [13]) (./data/ack.tex [14]) [15
+] [15]) (./data/ack.tex [16]) [17
 
 ]
 
@@ -1884,10 +1888,15 @@ x-text;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 
-(./data/resume.tex [16
+Underfull \hbox (badness 1348) in paragraph at lines 117--117
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [12] []Beaver D. Efficient multiparty p
+rotocols using circuit randomization[C]//
+ []
+
+[18
 
 
-]
+] (./data/resume.tex [19]
 \blx@maxsegment@1=\count564
 \blx@sectionciteorder@1=\count565
 Package biblatex Info: Reference section=1 on input line 14.
@@ -1898,13 +1907,13 @@ Package biblatex Info: Reference section=0 on input line 23.
 Package biblatex Info: Reference section=2 on input line 26.
 Package biblatex Info: Setting label 'refsection:2' on input line 26.
 Package biblatex Info: Reference section=0 on input line 35.
-) [17
+) [20
 
 ] (./data/appendix01.tex)
 \tf@thm=\write9
 \openout9 = `thesis.thm'.
 
- [18
+ [21
 
 
 
@@ -1917,18 +1926,18 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 783B052F3E03FFB8608E273BC165E20C;5064.
+(rerunfilecheck)             Checksum: 988250B4F9B9A978722DF0CA5D46BF67;5346.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35329 strings out of 476919
- 659146 string characters out of 5825423
- 1589465 words of memory out of 5000000
- 54712 multiletter control sequences out of 15000+600000
+ 35393 strings out of 476919
+ 662313 string characters out of 5825424
+ 1589002 words of memory out of 5000000
+ 54775 multiletter control sequences out of 15000+600000
  432864 words of font info for 211 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,11n,130p,1151b,4807s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,11n,130p,1151b,4858s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (28 pages).
+Output written on thesis.pdf (31 pages).
