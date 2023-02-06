@@ -320,6 +320,116 @@
       \range{pages}{10}
       \keyw{li2018privacy}
     \endentry
+    \entry{kanungo2002efficient}{article}{}
+      \name{author}{6}{}{%
+        {{hash=e25d52378b577de37f722cdd0a99647a}{%
+           family={Kanungo},
+           familyi={K\bibinitperiod},
+           given={Tapas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=827b83f56eb6ef772078b4c0c8d497aa}{%
+           family={Mount},
+           familyi={M\bibinitperiod},
+           given={David\bibnamedelima M},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ad1aab57432f622d5ec53161cfe9b366}{%
+           family={Netanyahu},
+           familyi={N\bibinitperiod},
+           given={Nathan\bibnamedelima S},
+           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=418ad13796514073604f60b744f17cd2}{%
+           family={Piatko},
+           familyi={P\bibinitperiod},
+           given={Christine\bibnamedelima D},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=63937971a65222d15155d3b83cbb477c}{%
+           family={Silverman},
+           familyi={S\bibinitperiod},
+           given={Ruth},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9ac5ae372527081632cbd23275ac73df}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Angela\bibnamedelima Y},
+           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{2031ec6cd75aa881391c32ad36d3f59a}
+      \strng{fullhash}{6a782ddcd6599cad0360bb19693bee96}
+      \strng{bibnamehash}{586de81b1db67d80f9ec8f75776a4b9c}
+      \strng{authorbibnamehash}{586de81b1db67d80f9ec8f75776a4b9c}
+      \strng{authornamehash}{2031ec6cd75aa881391c32ad36d3f59a}
+      \strng{authorfullhash}{6a782ddcd6599cad0360bb19693bee96}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE transactions on pattern analysis and machine intelligence}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{7}
+      \field{title}{An efficient k-means clustering algorithm: Analysis and implementation}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{24}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{pages}{881\bibrangedash 892}
+      \range{pages}{12}
+      \keyw{kanungo2002efficient}
+    \endentry
+    \entry{el2020kd}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=d3d960744d4ba08eec3f835256aee2f2}{%
+           family={El\bibnamedelima Malki},
+           familyi={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Nabil},
+           giveni={N\bibinitperiod}}}%
+        {{hash=cfea07d97bfe6c92933bb1c48faced94}{%
+           family={Ravat},
+           familyi={R\bibinitperiod},
+           given={Franck},
+           giveni={F\bibinitperiod}}}%
+        {{hash=5336189ba3376758072f71d1f1d421bb}{%
+           family={Teste},
+           familyi={T\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {CEUR-WS}%
+      }
+      \strng{namehash}{f2058525d1423b070ddc2fa71711aa66}
+      \strng{fullhash}{93394e8fa73313f23b7cd0c070d18429}
+      \strng{bibnamehash}{93394e8fa73313f23b7cd0c070d18429}
+      \strng{authorbibnamehash}{93394e8fa73313f23b7cd0c070d18429}
+      \strng{authornamehash}{f2058525d1423b070ddc2fa71711aa66}
+      \strng{authorfullhash}{93394e8fa73313f23b7cd0c070d18429}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{22nd International Workshop On Design, Optimization, Languages and Analytical Processing of Big Data-DOLAP 2020-}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{KD-means: clustering method for massive data based on kd-tree}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{2572}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \keyw{el2020kd}
+    \endentry
   \enddatalist
 \endrefsection
 

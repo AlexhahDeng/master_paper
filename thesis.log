@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  5 FEB 2023 21:56
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.21)  6 FEB 2023 11:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1833,36 +1833,23 @@ LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <8.43146> not available
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-
-LaTeX Warning: Citation 'kanungo2002efficient' on page 5 undefined on input lin
-e 26.
-
-
-LaTeX Warning: Citation 'el2020kd' on page 5 undefined on input line 28.
-
-[5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
+[5] [6]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 91.
+put line 97.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
 File: img/fig4.png Graphic file (type bmp)
 <img/fig4.png>
-File: img/fig1.png Graphic file (type bmp)
-<img/fig1.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8]
-[9]) (./data/chap04.tex [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+File: img/fig1.png Graphic file (type bmp)
+<img/fig1.png>
 
- [11]
-[12
+[9] [10]) (./data/chap04.tex [11] [12
 
 
 ] [13]) (./data/ack.tex [14]) [15
@@ -1896,7 +1883,8 @@ ng=tex-text;"
 x-text;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
- (./data/resume.tex [16
+
+(./data/resume.tex [16
 
 
 ]
@@ -1912,8 +1900,7 @@ Package biblatex Info: Setting label 'refsection:2' on input line 26.
 Package biblatex Info: Reference section=0 on input line 35.
 ) [17
 
-]
-(./data/appendix01.tex)
+] (./data/appendix01.tex)
 \tf@thm=\write9
 \openout9 = `thesis.thm'.
 
@@ -1929,25 +1916,17 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 783B052F3E03FFB8608E273BC165E20C;5064.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                thesis
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35324 strings out of 476919
- 658944 string characters out of 5825424
- 1592409 words of memory out of 5000000
- 54707 multiletter control sequences out of 15000+600000
+ 35329 strings out of 476919
+ 659146 string characters out of 5825423
+ 1589465 words of memory out of 5000000
+ 54712 multiletter control sequences out of 15000+600000
  432864 words of font info for 211 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,11n,130p,1151b,4807s stack positions out of 5000i,500n,10000p,200000b,80000s

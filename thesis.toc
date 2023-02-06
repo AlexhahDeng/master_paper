@@ -32,31 +32,35 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.2}基于kd-tree的k-means聚类方法}{5}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}基于秘密共享的安全多方计算}{5}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}kd-tree数据结构}{5}{subsubsection.3.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.3.1}加性秘密共享}{5}{subsubsection.3.2.3.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}过滤算法}{5}{subsubsection.3.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}秘密共享乘法}{5}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.3}基于秘密共享的安全多方计算}{6}{subsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}问题描述}{5}{section.3.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}加性秘密共享}{6}{subsubsection.3.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.4}秘密共享乘法}{6}{subsection.3.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}问题描述}{6}{section.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}基于秘密共享的隐私保护计算模块}{6}{section.3.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.1}安全欧式距离计算协议}{6}{subsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}安全比较协议}{6}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.2}安全比较协议}{7}{subsection.3.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}安全最值计算协议}{7}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.3}安全最值计算协议}{8}{subsection.3.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.4}安全过滤协议}{8}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.4}安全过滤协议}{9}{subsection.3.4.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.5}基于kd-tree的隐私保护k-means方案}{9}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}理论分析}{10}{section.3.6}%
+\contentsline {section}{\numberline {3.6}理论分析}{11}{section.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}实验评估}{10}{section.3.7}%
+\contentsline {section}{\numberline {3.7}实验评估}{11}{section.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.8}本章小结}{10}{section.3.8}%
+\contentsline {section}{\numberline {3.8}本章小结}{11}{section.3.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}隐私保护密度聚类方法研究}{12}{chapter.4}%
 \defcounter {refsection}{0}\relax 
