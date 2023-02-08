@@ -76,37 +76,43 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.1}DBSCAN}{15}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}问题描述}{16}{section.4.3}%
+\contentsline {subsection}{\numberline {4.2.2}改进的DBSCAN}{16}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}系统模型}{16}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.2.3}基于DBSCAN的层次聚类}{16}{subsection.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}安全模型}{16}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.3}问题描述}{17}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}设计目标}{16}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.1}系统模型}{17}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}基于秘密共享的隐私保护计算模块}{16}{section.4.4}%
+\contentsline {subsection}{\numberline {4.3.2}安全模型}{17}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}隐私保护dbscan}{17}{section.4.5}%
+\contentsline {subsection}{\numberline {4.3.3}设计目标}{17}{subsection.4.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}改进的隐私保护dbscan}{17}{section.4.6}%
+\contentsline {section}{\numberline {4.4}基于秘密共享的隐私保护计算模块}{18}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}基于dbscan的层次聚类}{17}{section.4.7}%
+\contentsline {subsubsection}{\numberline {4.4.0.1}安全排序协议}{18}{subsubsection.4.4.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}理论分析}{17}{section.4.8}%
+\contentsline {section}{\numberline {4.5}隐私保护dbscan}{18}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}实验评估}{17}{section.4.9}%
+\contentsline {section}{\numberline {4.6}改进的隐私保护dbscan}{18}{section.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.10}本章小结}{17}{section.4.10}%
+\contentsline {section}{\numberline {4.7}基于dbscan的隐私保护层次聚类}{18}{section.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{致谢}{18}{chapter*.15}%
+\contentsline {section}{\numberline {4.8}理论分析}{18}{section.4.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{参考文献}{19}{section*.16}%
+\contentsline {section}{\numberline {4.9}实验评估}{18}{section.4.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{作者在学期间取得的学术成果}{21}{chapter*.18}%
+\contentsline {section}{\numberline {4.10}本章小结}{18}{section.4.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{致谢}{19}{chapter*.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{参考文献}{20}{section*.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{作者在学期间取得的学术成果}{22}{chapter*.18}%
 \defcounter {refsection}{0}\relax 
 \ttl@change@i {\@ne }{chapter}{0pt}{\vspace {0.25\baselineskip } \heiti \xiaosi [1.25]}{附录\,\thecontentslabel \quad }{}{\hspace {.5em}\titlerule *{.}\contentspage }\relax 
 \defcounter {refsection}{0}\relax 
 \ttl@change@v {chapter}{}{}{}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}模板提供的希腊字母命令列表}{22}{appendix.A}%
+\contentsline {chapter}{\numberline {A}模板提供的希腊字母命令列表}{23}{appendix.A}%
 \contentsfinish 

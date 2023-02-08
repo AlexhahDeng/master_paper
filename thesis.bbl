@@ -787,6 +787,207 @@
       \range{pages}{12}
       \keyw{bunn2007secure}
     \endentry
+    \entry{khan2014dbscan}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=e0a37f519a4df5612cfbc152e4f9a948}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Kamran},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5662a8195a419ff2b24293d5a754344a}{%
+           family={Rehman},
+           familyi={R\bibinitperiod},
+           given={Saif\bibnamedelima Ur},
+           giveni={S\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=19ca01d532f4ca19f45360c3b58795c0}{%
+           family={Aziz},
+           familyi={A\bibinitperiod},
+           given={Kamran},
+           giveni={K\bibinitperiod}}}%
+        {{hash=75b85ef51cae301e0b2cdcdbebdeba5d}{%
+           family={Fong},
+           familyi={F\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=83254ad8ec69753b5552446a366655fb}{%
+           family={Sarasvady},
+           familyi={S\bibinitperiod},
+           given={Sababady},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{a049ebf438c0202f111ed4a518904e42}
+      \strng{fullhash}{d91074b1b30da03c6d9288c000b31793}
+      \strng{bibnamehash}{1943a219f0b9351f2e27ea8c3f9dab4f}
+      \strng{authorbibnamehash}{1943a219f0b9351f2e27ea8c3f9dab4f}
+      \strng{authornamehash}{a049ebf438c0202f111ed4a518904e42}
+      \strng{authorfullhash}{d91074b1b30da03c6d9288c000b31793}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The fifth international conference on the applications of digital information and web technologies (ICADIWT 2014)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{DBSCAN: Past, present and future}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{232\bibrangedash 238}
+      \range{pages}{7}
+      \keyw{khan2014dbscan}
+    \endentry
+    \entry{ester1996density}{inproceedings}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{4}{}{%
+        {{hash=2c062e64ed26aacc08a62155e7944f04}{%
+           family={Ester},
+           familyi={E\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9559fe65ed2c0877cf14a66fe1f8e9b3}{%
+           family={Kriegel},
+           familyi={K\bibinitperiod},
+           given={Hans-Peter},
+           giveni={H\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=802157026f850823b2027c2100cb359a}{%
+           family={Sander},
+           familyi={S\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2dda16c0a5d50fc830d0d4a3787937fa}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaowei},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{9158a41d23cb4e154e78366d59c05728}
+      \strng{fullhash}{77089c60a08eb43e856376e88849121a}
+      \strng{bibnamehash}{93f88297c66aca5bc89c3c5131ea9566}
+      \strng{authorbibnamehash}{93f88297c66aca5bc89c3c5131ea9566}
+      \strng{authornamehash}{9158a41d23cb4e154e78366d59c05728}
+      \strng{authorfullhash}{77089c60a08eb43e856376e88849121a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{kdd}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{34}
+      \field{title}{A density-based algorithm for discovering clusters in large spatial databases with noise.}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{96}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \field{pages}{226\bibrangedash 231}
+      \range{pages}{6}
+      \keyw{ester1996density}
+    \endentry
+    \entry{tran2013revised}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d33798c0558e4b22230fb94cb917d9fc}{%
+           family={Tran},
+           familyi={T\bibinitperiod},
+           given={Thanh\bibnamedelima N},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=ebeef23096c05531f28e2a1f0c975d61}{%
+           family={Drab},
+           familyi={D\bibinitperiod},
+           given={Klaudia},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f9f587e329811632f7b36be4c4da63b0}{%
+           family={Daszykowski},
+           familyi={D\bibinitperiod},
+           given={Michal},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{b481f77dfc035eaf1add490c2c87750c}
+      \strng{fullhash}{9c50ee5988fbe6b147aea117c6bb912a}
+      \strng{bibnamehash}{9c50ee5988fbe6b147aea117c6bb912a}
+      \strng{authorbibnamehash}{9c50ee5988fbe6b147aea117c6bb912a}
+      \strng{authornamehash}{b481f77dfc035eaf1add490c2c87750c}
+      \strng{authorfullhash}{9c50ee5988fbe6b147aea117c6bb912a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chemometrics and Intelligent Laboratory Systems}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Revised DBSCAN algorithm to cluster data with dense adjacent clusters}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{120}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{92\bibrangedash 96}
+      \range{pages}{5}
+      \keyw{tran2013revised}
+    \endentry
+    \entry{latifi2021dbhc}{article}{}
+      \name{author}{2}{}{%
+        {{hash=70eee1ede8c5a444b04e0a2a0fad2e7a}{%
+           family={Latifi-Pakdehi},
+           familyi={L\bibinithyphendelim P\bibinitperiod},
+           given={Alireza},
+           giveni={A\bibinitperiod}}}%
+        {{hash=01b90057238b0953d9925fc3cf0f85a2}{%
+           family={Daneshpour},
+           familyi={D\bibinitperiod},
+           given={Negin},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{2d2cbdc611257f0f72635c49aad82b44}
+      \strng{fullhash}{54db53b3f3886d326ef029a6c29b56b1}
+      \strng{bibnamehash}{54db53b3f3886d326ef029a6c29b56b1}
+      \strng{authorbibnamehash}{54db53b3f3886d326ef029a6c29b56b1}
+      \strng{authornamehash}{2d2cbdc611257f0f72635c49aad82b44}
+      \strng{authorfullhash}{54db53b3f3886d326ef029a6c29b56b1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Data \& Knowledge Engineering}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{DBHC: A DBSCAN-based hierarchical clustering algorithm}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{135}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{101922}
+      \range{pages}{1}
+      \keyw{latifi2021dbhc}
+    \endentry
   \enddatalist
 \endrefsection
 

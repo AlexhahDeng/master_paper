@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.21)  8 FEB 2023 11:35
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  8 FEB 2023 21:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1838,7 +1838,7 @@ File: img/fig5.png Graphic file (type bmp)
 <img/fig5.png>
  [7] [8]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 125.
+put line 126.
  [9]
 File: img/fig4.png Graphic file (type bmp)
 <img/fig4.png>
@@ -1849,17 +1849,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: img/fig1.png Graphic file (type bmp)
 <img/fig1.png>
 
-[11]
-Underfull \vbox (badness 4846) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12])
-(./data/chap04.tex [13] [14
+ [11]
+[12]) (./data/chap04.tex [13] [14
 
 
-] [15]
+] [15] [16]
 File: img/ch4-sysmod.png Graphic file (type bmp)
 <img/ch4-sysmod.png>
- [16]) (./data/ack.tex [17]) [18
+ [17]) (./data/ack.tex [18])
+[19
 
 ]
 
@@ -1896,10 +1896,10 @@ Underfull \hbox (badness 1348) in paragraph at lines 117--117
 rotocols using circuit randomization[C]//
  []
 
-[19
+[20
 
 
-] (./data/resume.tex [20]
+] (./data/resume.tex [21]
 \blx@maxsegment@1=\count564
 \blx@sectionciteorder@1=\count565
 Package biblatex Info: Reference section=1 on input line 14.
@@ -1910,13 +1910,13 @@ Package biblatex Info: Reference section=0 on input line 23.
 Package biblatex Info: Reference section=2 on input line 26.
 Package biblatex Info: Setting label 'refsection:2' on input line 26.
 Package biblatex Info: Reference section=0 on input line 35.
-) [21
+) [22
 
 ] (./data/appendix01.tex)
 \tf@thm=\write9
 \openout9 = `thesis.thm'.
 
- [22
+ [23
 
 
 
@@ -1929,18 +1929,18 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: C07772D1D362FE5C1CF3C2DDDA0BFF50;5346.
+(rerunfilecheck)             Checksum: 0E47AF4C0A599F34D31AE2B7230A65C1;5642.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35400 strings out of 476919
- 662440 string characters out of 5825423
- 1589049 words of memory out of 5000000
- 54781 multiletter control sequences out of 15000+600000
+ 35414 strings out of 476919
+ 662952 string characters out of 5825424
+ 1589380 words of memory out of 5000000
+ 54795 multiletter control sequences out of 15000+600000
  432864 words of font info for 211 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,11n,130p,1151b,4864s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,11n,130p,1151b,4858s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (32 pages).
+Output written on thesis.pdf (33 pages).
