@@ -54,7 +54,13 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 \section{问题描述}
 \label{s4-wenti}
 \subsection{系统模型}
-
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=3in]{img/ch4-sysmod.png}%width=\linewidth
+	\caption{System Model}
+	\label{s4-sysmod}
+\end{figure}
+如图\ref{s4-sysmod}琐事，我们的系统由两个部分组成：服务器短和用户端。与图\ref{sys model}类似，服务器端为两个云服务器，获取用户数据后执行协议，最后分发结果。不同的是，\ref{sys model}中用户为某一个持有全部明文数据的组织机构，本方案系统模型中的用户即可以与
 \subsection{安全模型}
 
 \subsection{设计目标}

@@ -86,27 +86,27 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.4}基于秘密共享的隐私保护计算模块}{16}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}隐私保护dbscan}{16}{section.4.5}%
+\contentsline {section}{\numberline {4.5}隐私保护dbscan}{17}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}改进的隐私保护dbscan}{16}{section.4.6}%
+\contentsline {section}{\numberline {4.6}改进的隐私保护dbscan}{17}{section.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}基于dbscan的层次聚类}{16}{section.4.7}%
+\contentsline {section}{\numberline {4.7}基于dbscan的层次聚类}{17}{section.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}理论分析}{16}{section.4.8}%
+\contentsline {section}{\numberline {4.8}理论分析}{17}{section.4.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}实验评估}{16}{section.4.9}%
+\contentsline {section}{\numberline {4.9}实验评估}{17}{section.4.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.10}本章小结}{16}{section.4.10}%
+\contentsline {section}{\numberline {4.10}本章小结}{17}{section.4.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{致谢}{17}{chapter*.14}%
+\contentsline {chapter}{致谢}{18}{chapter*.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{参考文献}{18}{section*.15}%
+\contentsline {chapter}{参考文献}{19}{section*.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{作者在学期间取得的学术成果}{20}{chapter*.17}%
+\contentsline {chapter}{作者在学期间取得的学术成果}{21}{chapter*.18}%
 \defcounter {refsection}{0}\relax 
 \ttl@change@i {\@ne }{chapter}{0pt}{\vspace {0.25\baselineskip } \heiti \xiaosi [1.25]}{附录\,\thecontentslabel \quad }{}{\hspace {.5em}\titlerule *{.}\contentspage }\relax 
 \defcounter {refsection}{0}\relax 
 \ttl@change@v {chapter}{}{}{}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}模板提供的希腊字母命令列表}{21}{appendix.A}%
+\contentsline {chapter}{\numberline {A}模板提供的希腊字母命令列表}{22}{appendix.A}%
 \contentsfinish 
