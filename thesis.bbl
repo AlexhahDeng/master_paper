@@ -890,6 +890,159 @@
       \field{dateera}{ce}
       \keyw{goldreich2004encryption}
     \endentry
+    \entry{bogdanov2008sharemind}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=8c11b0342d93fa9d604c23a58a719a81}{%
+           family={Bogdanov},
+           familyi={B\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a5cc0ccb6002017fea607fa13e9f3533}{%
+           family={Laur},
+           familyi={L\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=84c0ea6e2426a80d6f8ab982315010ff}{%
+           family={Willemson},
+           familyi={W\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{aa2b21384c45ddd71eef97ad183268da}
+      \strng{fullhash}{7d91546d580262606d2bfc79e55c877e}
+      \strng{bibnamehash}{7d91546d580262606d2bfc79e55c877e}
+      \strng{authorbibnamehash}{7d91546d580262606d2bfc79e55c877e}
+      \strng{authornamehash}{aa2b21384c45ddd71eef97ad183268da}
+      \strng{authorfullhash}{7d91546d580262606d2bfc79e55c877e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computer Security-ESORICS 2008: 13th European Symposium on Research in Computer Security, Málaga, Spain, October 6-8, 2008. Proceedings 13}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Sharemind: A framework for fast privacy-preserving computations}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{192\bibrangedash 206}
+      \range{pages}{15}
+      \keyw{bogdanov2008sharemind}
+    \endentry
+    \entry{rathee2020cryptflow2}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=14e26cb628c650f03e731633c8e50f37}{%
+           family={Rathee},
+           familyi={R\bibinitperiod},
+           given={Deevashwer},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a63f2dd2fdee7975466157143ac6732a}{%
+           family={Rathee},
+           familyi={R\bibinitperiod},
+           given={Mayank},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2debda592bedde9a6358ed7edc20baf2}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Nishant},
+           giveni={N\bibinitperiod}}}%
+        {{hash=6baa3adc0814bc509941c43f7aba3275}{%
+           family={Chandran},
+           familyi={C\bibinitperiod},
+           given={Nishanth},
+           giveni={N\bibinitperiod}}}%
+        {{hash=37780415c576c7e7edeac8a4a8c408cc}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Divya},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8d49ae7f95c4bbd006065b253724d1e2}{%
+           family={Rastogi},
+           familyi={R\bibinitperiod},
+           given={Aseem},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f5c184ac68798ea801914f18e49d22bd}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Rahul},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{d99840620f2d2ee41b6883d1909a7c45}
+      \strng{fullhash}{7e62807d9bb9d1c161634d4841a4c51a}
+      \strng{bibnamehash}{297b611028d7f373409f0adac0f18ad9}
+      \strng{authorbibnamehash}{297b611028d7f373409f0adac0f18ad9}
+      \strng{authornamehash}{d99840620f2d2ee41b6883d1909a7c45}
+      \strng{authorfullhash}{7e62807d9bb9d1c161634d4841a4c51a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2020 ACM SIGSAC Conference on Computer and Communications Security}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{CrypTFlow2: Practical 2-party secure inference}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{325\bibrangedash 342}
+      \range{pages}{18}
+      \keyw{rathee2020cryptflow2}
+    \endentry
+    \entry{mohassel2019practical}{article}{}
+      \name{author}{3}{}{%
+        {{hash=02526e0d710820082af3a656c511e34b}{%
+           family={Mohassel},
+           familyi={M\bibinitperiod},
+           given={Payman},
+           giveni={P\bibinitperiod}}}%
+        {{hash=98419613b7fd8103780e4fc807177469}{%
+           family={Rosulek},
+           familyi={R\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6e9b07f3abc76d401f6e5f7f7de4dd64}{%
+           family={Trieu},
+           familyi={T\bibinitperiod},
+           given={Ni},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{053693a1b8a255028a080bcc55eae36e}
+      \strng{fullhash}{84faecaed1352d3f541c5ea45597a212}
+      \strng{bibnamehash}{84faecaed1352d3f541c5ea45597a212}
+      \strng{authorbibnamehash}{84faecaed1352d3f541c5ea45597a212}
+      \strng{authornamehash}{053693a1b8a255028a080bcc55eae36e}
+      \strng{authorfullhash}{84faecaed1352d3f541c5ea45597a212}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cryptology ePrint Archive}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Practical privacy-preserving k-means clustering}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \keyw{mohassel2019practical}
+    \endentry
     \entry{khan2014dbscan}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=e0a37f519a4df5612cfbc152e4f9a948}{%
@@ -1030,8 +1183,8 @@
       \strng{authorbibnamehash}{9c50ee5988fbe6b147aea117c6bb912a}
       \strng{authornamehash}{b481f77dfc035eaf1add490c2c87750c}
       \strng{authorfullhash}{9c50ee5988fbe6b147aea117c6bb912a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Chemometrics and Intelligent Laboratory Systems}
@@ -1073,8 +1226,8 @@
       \strng{authorbibnamehash}{54db53b3f3886d326ef029a6c29b56b1}
       \strng{authornamehash}{2d2cbdc611257f0f72635c49aad82b44}
       \strng{authorfullhash}{54db53b3f3886d326ef029a6c29b56b1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Data \& Knowledge Engineering}

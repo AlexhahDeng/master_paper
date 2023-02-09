@@ -246,17 +246,84 @@ PPOKC算法的细节在\ref{alg_ppokc}中给出，虽然我们这里提供了一
 
 \subsection{讨论}
 最近，\cite{wu2020secure}提出了一种双云环境下基于密文打包技术的高效隐私保护k-means聚类方案。然而，我们发现虽然方案非常高效，但是存在一些安全性问题。在论文\cite{wu2020secure}的S3ED算法中11行，我们可以看到$D s t_{a j} \leftarrow D s t_{a j} * r_1^a+r_1^a$, for $j \in[k]$，意味着距离矩阵中行$ a $中所有值均被添加相同的噪声。根据\cite{liu2019toward}章节7.3的分析，我们发现上述方式无法保护数据的分布信息。在本方案中，不同的距离均为秘密共享值，在进行安全比较时，添加了互异的随机噪声，因此不会泄露原始数据任何相关信息。
-\section{理论分析}
+
+
+\section{安全性分析}
 \label{s3-lilun}
-本节中，根据\cite{goldreich2004encryption}中的标准模拟理论，我们假设双云服务器$ C_0$和$ C_1$为潜在的攻击者，并提供对于安全欧式距离，安全比较协议、安全最值协议、以及安全过滤协议的书面安全性证明。然后，根据组合理论，我们证明PPOKC方案在半诚实模型下是安全的。 最后，为了论证方案的安全性，我们需要用到如下：
+本节中，根据\cite{goldreich2004encryption}中的标准模拟理论，我们假设双云服务器$ C_0$和$ C_1$为潜在的攻击者，并提供对于安全欧式距离，安全比较协议、安全最值协议、以及安全过滤协议的书面安全性证明。然后，根据组合理论，我们证明PPOKC方案在半诚实模型下是安全的。 为了论证方案的安全性，我们首先介绍半诚实模型下的安全性定义\cite{bogdanov2008sharemind}：
+%https://www.cs.jhu.edu/~abhishek/classes/CS600-642-442-Fall2018/L12.pdf 偷的定义
+\begin{definition}
+参与方$ A $和$ B $在半诚实模型下计算函数$ f $，若存在一对非均匀的概率多项式模拟器$ S_A,S_B $，以使得对于每一个安全参数$ n $和所有输入$ x,y\in\{0,1\}^n $，都有以下内容成立：
+\begin{equation}
+	\begin{aligned}
+		& \left\{\mathcal{S}_A(x, f(x, y)), f(x, y)\right\} \approx\left\{e \leftarrow[A(x) \leftrightarrow B(y)]: \operatorname{View}_A(e), \operatorname{Out}_B(e)\right\} \\
+		& \left\{\mathcal{S}_B(y, f(x, y)), f(x, y)\right\} \approx\left\{e \leftarrow[A(x) \leftrightarrow B(y)]: \operatorname{View}_B(e), \operatorname{Out}_A(e)\right\}
+	\end{aligned}
+\end{equation}
+\end{definition}
 
-
+此外，我们需要用到如下引理：
 
 \begin{lemma}
+\label{s3-lemma1}
 如果一个随机元素$ c $在$ \mathbb{Z}_N $上是随机分布的，且与$ \mathbb{Z}_N $中的元素$ x $无关，则$ c\pm x$在$ \mathbb{Z}_N $也是均匀随机分布的，与$ x $的值无关。
 \end{lemma}
-	
-\section{实验评估}
+
+\subsection{安全计算模块安全性分析}
+\begin{theorem}
+	安全欧式距离计算协议在半诚实模型下是安全的。
+\end{theorem}
+\begin{proof}
+	在我们的安全欧式距离计算协议中，大部分计算由云服务器$ C_0 $和$ C_1 $分别在本地进行，没有泄露可能性。交互操作仅在乘法部分，该方法的安全性证明已经由\cite{beaver1992efficient}给出。因此，根据组合理论，本协议的安全性得证。
+\end{proof}
+
+\begin{theorem}
+	安全比较协议在半诚实模型下是安全的
+\end{theorem}
+\begin{proof}
+	该算法是基于\cite{rathee2020cryptflow2}中的百万富翁协议，对输入和输出进行改造。$ C_0 $用不同的随机数打乱数据，然后发送给$ C_1 $，这种方式根据引理\ref{s3-lemma1}是安全的。输出部分，由布尔秘密共享值转换为加性秘密共享值的安全证明依赖于乘法的安全性。因此，我们证明安全比较协议是安全的。
+\end{proof}
+\begin{theorem}
+	安全最值协议在半诚实模型下是安全的。
+\end{theorem}
+\begin{proof}
+	小数据集上的安全最值协议是安全比较协议的变形，
+\end{proof}
+\section{系统评估与性能分析}
 \label{s3-shiyan}
+我们前述协议和方案的基础上实现了高效的隐私保护k-means系统，并在本节总结分析该系统理论与实验性能。我们在多个人工合成的数据集上进行实验以观察系统的实用性和可扩展性。同时，我们也在现实数据集进行了充分的实验，以和目前最先进的隐私保护k-means聚类方案\cite{wu2020secure}\cite{mohassel2019practical}进行实验对比。
+\subsection{理论分析}
+本节中，我们主要从理论层面分析方案的计算和通信开销。安全欧式距离仅包含简单的秘密共享加法和乘法运算，因此不纳入分析。安全比较算法主要基于\cite{rathee2020cryptflow2}中的百万富翁协议，详细的效率分析已经在论文中给出，这里不再赘述。因此我们主要分析安全最值协议以及安全过滤协议。值得注意的是，乘法所需三元组的计算是离线进行的。
+\subsubsection{计算开销}
+考虑到上述两个协议，主要由安全比较和秘密共享乘法加法组成，乘法与加法相对安全比较协议来说计算开销可以忽略不计，因此我们在以下的论述中，以安全比较协议的运行次数为基准给出分析结果，如表\ref{s3-table-compucost}所示：
+\begin{table}[htbp]
+	\centering	
+	\renewcommand{\arraystretch}{1.3}
+	\label{s3-table-compucost}
+	\caption{Computation Overhead}
+	\scalebox{1.0}{
+		\begin{tabular}{|c|c|c|c|}% 通过添加 | 来表示是否需要绘制竖线c|
+			\hline  % 在表格最上方绘制横线
+			Protocol&SMin(L)&SMin(S)&SF\\%&SKD
+			\hline % 在表格最下方绘制横线
+			SC&$\log n$&$1$&$2kn$\\%$n^2\log n$
+			\hline
+		\end{tabular}	
+	}
+\end{table}
+
+借助安全比较协议，我们可以运行一轮协议比较多对数据，效率非常高。然而，随着比较数据的增加，计算开销也随之剧增。虽然小数据集上的安全最值协议只需要运行一次安全比较协议，但是当数据量变得很大时，协议运行非常耗时。因此我们设计了另一种能够减少比较数据量略微增加比较次数的协议。
+\subsubsection{通信开销}
+假设我们的数据为$ l- $比特， 我们仅分析乘法的通信开销，因为安全比较协议的通信开销分析比较复杂，并且在\cite{rathee2020cryptflow2}中已经给出。在安全比较协议，以及小数据集上的安全最值协议，通信开销分别为$ 3nl $，$ 7n(n-1)l $比特。对于大数据集上的安全最值协议，开销最多不超过$ nl\log n $比特。因为安全过滤协议的开销分析非常复杂，我们这里仅给出近似值，$ O(n^2\log n)l $比特。
+\subsection{实验分析}
+系统由c++实现，选择两种不同的机器进行实验。
+
+为了解方案的可拓展性，我们在一台服务器模拟双云对人工数据集进行实验。该机器的配置为Intel Core i9-10980XE 3.00GHz CPU and 64GB RAM。
+
+为了直观的与\cite{wu2020secure}的实验数据进行比较，我们找到论文中所提到的机器进行对比实验。该机器的配置为Inter Core i7-7700HQ 2.80 GHz CPU and 16 GB RAM。
+\subsubsection{数据集}
+
+\subsubsection{现实数据集上的实验}
+\subsubsection{人造数据集上的实验}
 \section{本章小结}
 \label{s3-xiaojie}

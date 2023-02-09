@@ -324,7 +324,7 @@ gbnamefmt=lowercase,gbpub=false]{biblatex}%
     \rule{\linewidth}{1.5pt}}%
   \fi}
 \renewpagestyle{plain}{
-\sethead{}{\raisebox{.65\baselineskip}{\songti \wuhao \ifisanon{~}\else{国防科技大学研究生院{\ifisprof{专业学位}\else{}\fi}\@optionpaperclass{}学位论文}\fi}}{}%
+\sethead{}{\raisebox{.65\baselineskip}{\songti \wuhao \ifisanon{~}\else{国防科技大学计算机学院{\ifisprof{专业学位}\else{}\fi}\@optionpaperclass{}学位论文}\fi}}{}%
 \setfoot{}{{\songti \wuhao 第~\thepage~页}}{}%
 \headrule%
 \footrule%
@@ -405,11 +405,11 @@ gbnamefmt=lowercase,gbpub=false]{biblatex}%
   \fi
 }
 \newcommand\cabstractname{摘\hspace{1em}要}
-\newcommand\eabstractname{ABSTRACT}
+\newcommand\eabstractname{Abstract}
 \newcommand\ckeywordsname{关键词}
 \newcommand\ckeywords[1]{{\hei\xiaosi \ckeywordsname：#1}}
 \newcommand\ekeywordsname{Key Words}
-\newcommand\ekeywords[1]{\textsf{\xiaosi \ekeywordsname：#1}}
+\newcommand\ekeywords[1]{\textbf{\textsf{\xiaosi \ekeywordsname：#1}}}
 \newenvironment{cabstract}{%
     \chapter{\cabstractname}
     \xiaosi
@@ -655,7 +655,7 @@ gbnamefmt=lowercase,gbpub=false]{biblatex}%
 
   \par
   \vfill
-  {\centering \cusong \sanhao \ifisanon{~}\else{国防科技大学研究生院}\fi\\[0.8em]
+  {\centering \cusong \sanhao \ifisanon{~}\else{国防科技大学计算机学院}\fi\\[0.8em]
     {\@zhdate \par}%
   }
   \vspace{1mm}

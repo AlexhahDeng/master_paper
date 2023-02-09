@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.21)  9 FEB 2023 11:22
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  9 FEB 2023 22:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1780,7 +1780,12 @@ Package fontspec Info: Font family 'SimSun(1)' created for font 'SimSun' with
 
 
 
-]) (./data/denotation.tex [2
+]
+
+LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 20.
+
+) (./data/denotation.tex [2
 
 
 ]
@@ -1857,9 +1862,6 @@ File: img/fig1.png Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13]
 
 Package fontspec Info: Could not resolve font "KaiTi/BI" (it probably doesn't
 (fontspec)             exist).
@@ -1884,16 +1886,39 @@ Package fontspec Info: Font family 'KaiTi(0)' created for font 'KaiTi' with
 "
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
+nput line 256.
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 256.
-)
-(./data/chap04.tex [14] [15
+line 268.
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
+t line 274.
+Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
+line 277.
+
+[14]
+
+Package caption Warning: \label without proper reference on input line 302.
+See the caption package documentation for explanation.
 
 
-] [16]
+LaTeX Warning: Reference `s3-table-compucost' on page 15 undefined on input lin
+e 298.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15])
+(./data/chap04.tex [16] [17
+
+
+] [18]
 File: img/ch4-sysmod.png Graphic file (type bmp)
 <img/ch4-sysmod.png>
- [17] [18]) (./data/ack.tex [19]) [20
+ [19] [20]) (./data/ack.tex [21]) [22
 
 ]
 
@@ -1930,10 +1955,10 @@ Underfull \hbox (badness 1348) in paragraph at lines 118--118
 rotocols using circuit randomization[C]//
  []
 
-[21
+[23
 
 
-] (./data/resume.tex [22]
+] (./data/resume.tex [24]
 \blx@maxsegment@1=\count564
 \blx@sectionciteorder@1=\count565
 Package biblatex Info: Reference section=1 on input line 14.
@@ -1944,13 +1969,13 @@ Package biblatex Info: Reference section=0 on input line 23.
 Package biblatex Info: Reference section=2 on input line 26.
 Package biblatex Info: Setting label 'refsection:2' on input line 26.
 Package biblatex Info: Reference section=0 on input line 35.
-) [23
+) [25
 
 ] (./data/appendix01.tex)
 \tf@thm=\write9
 \openout9 = `thesis.thm'.
 
- [24
+ [26
 
 
 
@@ -1962,19 +1987,22 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: CF619D3C5F06E8F386E9C6773ADA9FAD;5814.
+(rerunfilecheck)             Checksum: C1EFB71B62ABEED089056102DCE745C9;6200.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35460 strings out of 476919
- 664991 string characters out of 5825423
- 1589511 words of memory out of 5000000
- 54832 multiletter control sequences out of 15000+600000
- 432904 words of font info for 216 fonts, out of 8000000 for 9000
+ 35504 strings out of 476919
+ 667091 string characters out of 5825424
+ 1590848 words of memory out of 5000000
+ 54875 multiletter control sequences out of 15000+600000
+ 432912 words of font info for 217 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,11n,130p,1151b,4864s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,12n,130p,1151b,4868s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (34 pages).
+Output written on thesis.pdf (36 pages).
