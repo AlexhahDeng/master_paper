@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  8 FEB 2023 21:30
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.21)  9 FEB 2023 11:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1453,39 +1453,39 @@ Package tocbasic Info: babel extension for `nls' omitted
 (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 8
-1.
+2.
  (c:/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 81.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 81
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 82.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 82
 .
 
 (c:/texlive/2021/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1556,9 +1556,9 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
 
 (./thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 81.
-Package biblatex Info: Reference segment=0 on input line 81.
-Package hyperref Info: Link coloring ON on input line 81.
+Package biblatex Info: Reference section=0 on input line 82.
+Package biblatex Info: Reference segment=0 on input line 82.
+Package hyperref Info: Link coloring ON on input line 82.
  (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1570,9 +1570,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count562
 )
-LaTeX Info: Redefining \ref on input line 81.
-LaTeX Info: Redefining \pageref on input line 81.
-LaTeX Info: Redefining \nameref on input line 81.
+LaTeX Info: Redefining \ref on input line 82.
+LaTeX Info: Redefining \pageref on input line 82.
+LaTeX Info: Redefining \nameref on input line 82.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write5
@@ -1609,50 +1609,50 @@ Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
 xt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-LaTeX Font Info:    Calculating math sizes for size <10.53937> on input line 88
+LaTeX Font Info:    Calculating math sizes for size <10.53937> on input line 89
 .
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 88.
+(Font)              size <10.95> substituted on input line 89.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 88.
+(Font)              size <10.95> substituted on input line 89.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 88.
+(Font)              size <10.95> substituted on input line 89.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 88.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 89.
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 88.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 89.
 
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 9.48535pt on input line 88.
+(Font)              scaled to size 9.48535pt on input line 89.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 6.63971pt on input line 88.
+(Font)              scaled to size 6.63971pt on input line 89.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 4.74268pt on input line 88.
+(Font)              scaled to size 4.74268pt on input line 89.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 88.
+(Font)              size <10.95> substituted on input line 89.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 88.
+(Font)              size <10.95> substituted on input line 89.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 88.
+(Font)              size <10.95> substituted on input line 89.
 
 
 Package fontspec Info: Could not resolve font "SimHei/BI" (it probably doesn't
@@ -1681,50 +1681,50 @@ Package fontspec Info: Font family 'SimHei(0)' created for font 'SimHei' with
 
 LaTeX Font Warning: Font shape `TU/TimesNewRomanPSStd(0)/b/n' undefined
 (Font)              using `TU/TimesNewRomanPSStd(0)/m/n' instead on input line 
-88.
+89.
 
-LaTeX Font Info:    Calculating math sizes for size <14.05249> on input line 88
+LaTeX Font Info:    Calculating math sizes for size <14.05249> on input line 89
 .
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 12.64714pt on input line 88.
+(Font)              scaled to size 12.64714pt on input line 89.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 8.85295pt on input line 88.
+(Font)              scaled to size 8.85295pt on input line 89.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 6.32356pt on input line 88.
+(Font)              scaled to size 6.32356pt on input line 89.
 [1
 
 ]
-LaTeX Font Info:    Calculating math sizes for size <16.06> on input line 88.
+LaTeX Font Info:    Calculating math sizes for size <16.06> on input line 89.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16.06> not available
-(Font)              size <17.28> substituted on input line 88.
+(Font)              size <17.28> substituted on input line 89.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <16.06> not available
-(Font)              size <17.28> substituted on input line 88.
+(Font)              size <17.28> substituted on input line 89.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <16.06> not available
-(Font)              size <17.28> substituted on input line 88.
+(Font)              size <17.28> substituted on input line 89.
 
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 14.45389pt on input line 88.
+(Font)              scaled to size 14.45389pt on input line 89.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 10.11768pt on input line 88.
+(Font)              scaled to size 10.11768pt on input line 89.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 7.22694pt on input line 88.
+(Font)              scaled to size 7.22694pt on input line 89.
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <16.06> not available
-(Font)              size <17.28> substituted on input line 88.
+(Font)              size <17.28> substituted on input line 89.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <16.06> not available
-(Font)              size <17.28> substituted on input line 88.
+(Font)              size <17.28> substituted on input line 89.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <16.06> not available
-(Font)              size <17.28> substituted on input line 88.
+(Font)              size <17.28> substituted on input line 89.
 
 [2
 
@@ -1836,10 +1836,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [5] [6]
 File: img/fig5.png Graphic file (type bmp)
 <img/fig5.png>
- [7] [8]
+ [7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 126.
- [9]
+
+[9]
 File: img/fig4.png Graphic file (type bmp)
 <img/fig4.png>
 
@@ -1849,17 +1853,47 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: img/fig1.png Graphic file (type bmp)
 <img/fig1.png>
 
+[11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
-[12]) (./data/chap04.tex [13] [14
+ [12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+
+Package fontspec Info: Could not resolve font "KaiTi/BI" (it probably doesn't
+(fontspec)             exist).
 
 
-] [15] [16]
+Package fontspec Info: Could not resolve font "KaiTi/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Could not resolve font "KaiTi/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Font family 'KaiTi(0)' created for font 'KaiTi' with
+(fontspec)             options [Mapping=tex-text,Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"KaiTi/OT:script=hani;language=dflt;mapping=tex-text;
+"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
+line 256.
+)
+(./data/chap04.tex [14] [15
+
+
+] [16]
 File: img/ch4-sysmod.png Graphic file (type bmp)
 <img/ch4-sysmod.png>
- [17]) (./data/ack.tex [18])
-[19
+ [17] [18]) (./data/ack.tex [19]) [20
 
 ]
 
@@ -1891,15 +1925,15 @@ x-text;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 117--117
+Underfull \hbox (badness 1348) in paragraph at lines 118--118
 [] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [12] []Beaver D. Efficient multiparty p
 rotocols using circuit randomization[C]//
  []
 
-[20
+[21
 
 
-] (./data/resume.tex [21]
+] (./data/resume.tex [22]
 \blx@maxsegment@1=\count564
 \blx@sectionciteorder@1=\count565
 Package biblatex Info: Reference section=1 on input line 14.
@@ -1910,13 +1944,13 @@ Package biblatex Info: Reference section=0 on input line 23.
 Package biblatex Info: Reference section=2 on input line 26.
 Package biblatex Info: Setting label 'refsection:2' on input line 26.
 Package biblatex Info: Reference section=0 on input line 35.
-) [22
+) [23
 
 ] (./data/appendix01.tex)
 \tf@thm=\write9
 \openout9 = `thesis.thm'.
 
- [23
+ [24
 
 
 
@@ -1929,18 +1963,18 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 0E47AF4C0A599F34D31AE2B7230A65C1;5642.
+(rerunfilecheck)             Checksum: CF619D3C5F06E8F386E9C6773ADA9FAD;5814.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35414 strings out of 476919
- 662952 string characters out of 5825424
- 1589380 words of memory out of 5000000
- 54795 multiletter control sequences out of 15000+600000
- 432864 words of font info for 211 fonts, out of 8000000 for 9000
+ 35460 strings out of 476919
+ 664991 string characters out of 5825423
+ 1589511 words of memory out of 5000000
+ 54832 multiletter control sequences out of 15000+600000
+ 432904 words of font info for 216 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,11n,130p,1151b,4858s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,11n,130p,1151b,4864s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (33 pages).
+Output written on thesis.pdf (34 pages).

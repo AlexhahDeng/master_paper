@@ -19,19 +19,19 @@
 \label{s4-yubei}
 \subsection{DBSCAN}
 Density-based Spatial Clustering of Applications with Noise(DBSCAN)是一种基于密度的聚类算法，在密集区域聚集在一起的数据点被划分到同一个簇中，稀疏区域的数据被标记为噪声\cite{khan2014dbscan}。算法要求两个重要参数：
-\begin{itemize}
+\begin{compactitem}
 	\item $\epsilon$： 确定两个点被视为相邻的最大距离
 	\item MinPts: 确定领域内至少包含多少点才能构成一个簇
-\end{itemize}
+\end{compactitem}
 
 DBSCAN围绕每个数据点以$\epsilon$为半径构建圈，并将其划分为核心点、边界点以及噪声点。若圈内不包含任何点，则认为是噪声点。若数据点圈内包含点的数量至少为MinPts个，则认为是核心点，否则为边界点。围绕上述定义展开，DBSCAN还包含如下概念：
 
 假设样本集为$D=(x_1,x_2,...,x_m)$：
-\begin{itemize}
+\begin{compactitem}
 	\item 密度直达： 若$ x_i $位于$ x_j $的$ \epsilon- $邻域内，且$ x_j $为核心对象，则称$ x_i $由$ x_j $密度直达，反之不一定成立。
 	\item 密度可达： 对于$ x_i $和$ x_j $，若存在样本序列$ p_1,p2,...,p_t $，满足$ p_1=x_i,p_T=x_j $，且$ p_{t+1} $由$ p_t $密度直达，则称$ x_j $由$ x_i $密度可达。
 	\item 密度相连： 对于$ x_i $和$ x_j $，如果存在核心点$ x_k $，使得$ x_i $和$ x_j $均由$ x_k $密度可达，则称$ x_i $和$ x_j $密度相连。
-\end{itemize}
+\end{compactitem}
 
 
 下面我们具体阐述DBSCAN聚类算法的流程：
@@ -81,11 +81,11 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 \subsection{设计目标}
 我们的目标是设计三种针对不同场景的隐私保护DBSCAN方案，具体而言，设计目标如下：
 
-\begin{itemize}
+\begin{compactitem}
 	\item 能够高效的在密文上运行朴素的DBSCAN算法，在效率略微降低的前提下，运行结果稳定的隐私保护DBSCAN算法。在运行效率可接受的情况下， 运行参数无需提前设置的基于DBSCAN的层次聚类。
 	\item 三个密文方案运行结果与对应明文方案一致，精度无损失。
 	\item 云服务器上所有数据均在密文状态，并且无法被利用来还原初始数据信息。不同用户之间无法知悉彼此的数据和聚类结果。
-\end{itemize}
+\end{compactitem}
 \section{基于秘密共享的隐私保护计算模块}
 \label{s4-subpro}
 \subsubsection{安全排序协议}

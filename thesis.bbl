@@ -787,6 +787,109 @@
       \range{pages}{12}
       \keyw{bunn2007secure}
     \endentry
+    \entry{liu2019toward}{article}{}
+      \name{author}{7}{}{%
+        {{hash=5d07f51a51d9c2c1363bab089c022727}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Lin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=8ca90fb3f7ad0b73b26adc48cad770cc}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Jinshu},
+           giveni={J\bibinitperiod}}}%
+        {{hash=45b6bd2304cb9b1f85f702e136dc3670}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Ximeng},
+           giveni={X\bibinitperiod}}}%
+        {{hash=ed914bb04dabf90b2e6a1c05ef06f7eb}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Rongmao},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ade0b4c1c5cedeaecd33cd784e361ece}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+        {{hash=595a2b96180f7d37ee0b3ddbccafcfdd}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Robert\bibnamedelima H},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=93a575777f636107b8f65a815802b18f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiaofeng},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{14dd7bb4c792c725baea1a65a36925e0}
+      \strng{fullhash}{724a2b23483e3e77f1b266541e8cd23d}
+      \strng{bibnamehash}{127efd240588608e04083f4124108442}
+      \strng{authorbibnamehash}{127efd240588608e04083f4124108442}
+      \strng{authornamehash}{14dd7bb4c792c725baea1a65a36925e0}
+      \strng{authorfullhash}{724a2b23483e3e77f1b266541e8cd23d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Internet of Things Journal}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{6}
+      \field{title}{Toward highly secure yet efficient KNN classification scheme on outsourced cloud data}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{6}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{9841\bibrangedash 9852}
+      \range{pages}{12}
+      \keyw{liu2019toward}
+    \endentry
+    \entry{goldreich2004encryption}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b853abc93e016bf8e812e1ae477e4c6a}{%
+           family={Goldreich},
+           familyi={G\bibinitperiod},
+           given={O},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{b853abc93e016bf8e812e1ae477e4c6a}
+      \strng{fullhash}{b853abc93e016bf8e812e1ae477e4c6a}
+      \strng{bibnamehash}{b853abc93e016bf8e812e1ae477e4c6a}
+      \strng{authorbibnamehash}{b853abc93e016bf8e812e1ae477e4c6a}
+      \strng{authornamehash}{b853abc93e016bf8e812e1ae477e4c6a}
+      \strng{authorfullhash}{b853abc93e016bf8e812e1ae477e4c6a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Encryption Schemes. The Foundations of Cryptography, vol. 2}
+      \field{usera}{Z}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \keyw{goldreich2004encryption}
+    \endentry
     \entry{khan2014dbscan}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=e0a37f519a4df5612cfbc152e4f9a948}{%
@@ -827,8 +930,8 @@
       \strng{authorbibnamehash}{1943a219f0b9351f2e27ea8c3f9dab4f}
       \strng{authornamehash}{a049ebf438c0202f111ed4a518904e42}
       \strng{authorfullhash}{d91074b1b30da03c6d9288c000b31793}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{The fifth international conference on the applications of digital information and web technologies (ICADIWT 2014)}
