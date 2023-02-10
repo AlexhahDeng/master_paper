@@ -245,6 +245,7 @@ PPOKC算法的细节在\ref{alg_ppokc}中给出，虽然我们这里提供了一
 \end{algorithm}
 
 \subsection{讨论}
+\label{taolun}
 最近，\cite{wu2020secure}提出了一种双云环境下基于密文打包技术的高效隐私保护k-means聚类方案。然而，我们发现虽然方案非常高效，但是存在一些安全性问题。在论文\cite{wu2020secure}的S3ED算法中11行，我们可以看到$D s t_{a j} \leftarrow D s t_{a j} * r_1^a+r_1^a$, for $j \in[k]$，意味着距离矩阵中行$ a $中所有值均被添加相同的噪声。根据\cite{liu2019toward}章节7.3的分析，我们发现上述方式无法保护数据的分布信息。在本方案中，不同的距离均为秘密共享值，在进行安全比较时，添加了互异的随机噪声，因此不会泄露原始数据任何相关信息。
 
 
@@ -322,8 +323,60 @@ PPOKC算法的细节在\ref{alg_ppokc}中给出，虽然我们这里提供了一
 
 为了直观的与\cite{wu2020secure}的实验数据进行比较，我们找到论文中所提到的机器进行对比实验。该机器的配置为Inter Core i7-7700HQ 2.80 GHz CPU and 16 GB RAM。
 \subsubsection{数据集}
-
+为了能够进行全面的对比，我们使用了表格\ref{s3-dataset}所示数据集，其中每一个都在之前的研究工作中出现过：
+\begin{compactitem}
+	\item KEGG是一个集成的数据库，主要包含15个不同的数据库资源，包含的内容主要是分子系统的计算机表示，从基因信息到化学信息等。本方案选择的KEGG Metabolic Reaction Network（Undirected），是收录于UCI KDD条目的现实世界数据集\cite{naeem2011kegg}。我们从中提取8192条数据，5个维度（$ n=8192,m=5 $），令簇个数$ k=3 $进行实验，以和论文\cite{wu2020secure}保持一致。
+	\item Lsun数据集是来自论文\cite{franti2018k}的一个人造二维数据集，该数据集常用于聚类研究以进行对比分析和展示。其中包含400个数据，3个簇。我们将用于与论文\cite{jaschke2019unsupervised}的比较。
+	\item 我们构造了数据量为$ n $，维度为$ m $的人造数据集，随机值为整数，均匀分布在$ [0,1000] $内。簇的个数在3到15之间以方便进行实验。
+\end{compactitem}
+\begin{table}[htbp]
+	\centering	
+	\renewcommand{\arraystretch}{1.3}
+	\caption{数据集详细信息}
+	\label{s3-dataset}
+	\scalebox{1.0}{
+		\begin{tabular}{|c|c|c|c|}% 通过添加     | 来表示是否需要绘制竖线
+			\hline  % 在表格最上方绘制横线
+			数据集名称&数据集大小 $n$&簇个数 $k$&维度 $d$\\
+			\hline % 在表格最下方绘制横线
+			Lsun& $400$&$3$&$2$\\
+			\hline  %在第一行和第二行之间绘制横线
+			KEGG&$8192$&$3$&$5$\\
+			\hline
+			Synthetic&$\{10000,60000\}$&$\{3,15\}$&$\{2,20\}$\\
+			\hline
+		\end{tabular}	
+	}
+\end{table}
 \subsubsection{现实数据集上的实验}
+\textbf{与论文\cite{wu2020secure}方案对比}：为了进行最直接的比较，我们使用相同的数据集和一致的实验机器运行本系统。实验数据如表格\ref{s3-ta-duibi}所示，其中给出了PPCOM\cite{rong2017privacy}、SEOKC\cite{wu2020secure}以及本方案PPOKC进行一轮迭代的通信和计算开销。
+
+\begin{table}[htbp]
+	\centering
+	\renewcommand{\arraystretch}{1.3} % 调整行高度
+	\caption{scheme comparison ($n=8192,m=5,k=3$)}
+	\label{s3-ta-duibi}
+	\scalebox{1.0}{ % 缩放表格
+		\begin{tabular}{|c|c|c|c|}% 通过添加 | 来表示是否需要绘制竖线
+			\hline  % 在表格最上方绘制横线
+			Performance&PPCOM&SEOKC&PPOKC\\
+			\hline  %在第一行和第二行之间绘制横线
+			计算开销&401 min&17 s & 20 s\\
+			\hline % 在表格最下方绘制横线
+			通信开销& 1430 MB& 148 MB& 405MB\\
+			\hline
+		\end{tabular}		
+	}
+\end{table}
+从计算耗时角度来看，PPCOM方案和SEOKC方案迭代一轮分别需要401分钟和17s，而我们的PPOKC方案则需要20s，对比来看，比PPCOM方案要快1203倍，比SEOKC方案慢3s。从通信开销角度来看，PPCOM需要1430MB而SEOKC需要148MB，本方案则需405MB。
+
+综合来看，我们的方案的表现远远超过PPCOM，接近目前最高效的SEOKC方案。值得一提的是，从\ref{taolun}我们可以看到，SEOKC方案虽然高效但是存在不容忽视的安全性问题，会暴露数据分布。而PPOKC则更加安全，不会泄露相关信息，因此性能上略微逊色是可以接受的。
+
+\textbf{与论文\cite{jaschke2019unsupervised}的比较}：为了进行公平的比较，我们在Lsun数据集上进行实验。对比论文的机器为Inter i7-3770 3.4GHz 20GB RAM，我们的前述实验机器要慢1.3倍。
+
+论文\cite{jaschke2019unsupervised}提供了3种不同的隐私保护k-means聚类方案，分别是精确的、稳定的以及近似的方案。上述方案进行15轮迭代分别用时为545.91天、48.9小时、15.47小时。在我们的系统中，完成相同的迭代轮次总共需要20.94秒，用时远远少于前述三种方案。
+
+此外，我们设置相同的初始簇中心初始化，在Lsun数据集上分别运行明文k-means方案以及本文提出的PPOKC方案，并且
 \subsubsection{人造数据集上的实验}
 \section{本章小结}
 \label{s3-xiaojie}

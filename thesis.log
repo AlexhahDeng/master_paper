@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  9 FEB 2023 22:09
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.21)  10 FEB 2023 10:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1763,7 +1763,40 @@ Package fontspec Info: Font family 'SimSun(1)' created for font 'SimSun' with
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
- [2] (./thesis.lot)
+ [2] (./thesis.lot
+LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 7.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <8.43146> not available
+(Font)              size <8> substituted on input line 7.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <8.43146> not available
+(Font)              size <8> substituted on input line 7.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <8.43146> not available
+(Font)              size <8> substituted on input line 7.
+
+LaTeX Font Info:    Font shape `U/fsy/m/n' will be
+(Font)              scaled to size 10.84042pt on input line 7.
+LaTeX Font Info:    Font shape `U/fsy/m/n' will be
+(Font)              scaled to size 7.58826pt on input line 7.
+LaTeX Font Info:    Font shape `U/fsy/m/n' will be
+(Font)              scaled to size 5.4202pt on input line 7.
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <8.43146> not available
+(Font)              size <8> substituted on input line 7.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <8.43146> not available
+(Font)              size <8> substituted on input line 7.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <8.43146> not available
+(Font)              size <8> substituted on input line 7.
+
+)
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
@@ -1775,8 +1808,7 @@ Package fontspec Info: Font family 'SimSun(1)' created for font 'SimSun' with
 
  [4
 
-]
-(./data/abstract.tex [1
+] (./data/abstract.tex [1
 
 
 
@@ -1788,50 +1820,17 @@ LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
 ) (./data/denotation.tex [2
 
 
-]
-LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 17.
+]) [3
 
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 17.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <8.43146> not available
-(Font)              size <8> substituted on input line 17.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 17.
-
-LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 10.84042pt on input line 17.
-LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 7.58826pt on input line 17.
-LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 5.4202pt on input line 17.
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 17.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <8.43146> not available
-(Font)              size <8> substituted on input line 17.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 17.
-
-) [3
-
-] (./data/chap01.tex) (./data/chap02.tex [1
+] (./data/chap01.tex) (./data/chap02.tex
+[1
 
 
 
 ]) (./data/chap03.tex [2
 
 
-]
-[3
+] [3
 
 
 ]
@@ -1891,34 +1890,35 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 256.
+nput line 257.
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 268.
+line 269.
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 274.
+t line 275.
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
-line 277.
+line 278.
 
 [14]
 
-Package caption Warning: \label without proper reference on input line 302.
+Package caption Warning: \label without proper reference on input line 303.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `s3-table-compucost' on page 15 undefined on input lin
-e 298.
+e 299.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15])
-(./data/chap04.tex [16] [17
+ [15]
+[16]) (./data/chap04.tex [17] [18
 
 
-] [18]
+] [19]
 File: img/ch4-sysmod.png Graphic file (type bmp)
 <img/ch4-sysmod.png>
- [19] [20]) (./data/ack.tex [21]) [22
+ [20] [21]) (./data/ack.tex [22])
+[23
 
 ]
 
@@ -1955,10 +1955,22 @@ Underfull \hbox (badness 1348) in paragraph at lines 118--118
 rotocols using circuit randomization[C]//
  []
 
-[23
+[24
 
 
-] (./data/resume.tex [24]
+]
+Underfull \hbox (badness 2050) in paragraph at lines 118--118
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [23] []Fränti P, Sieranoja S. K-means p
+roperties on six clustering benchmark
+ []
+
+
+Underfull \hbox (badness 1983) in paragraph at lines 118--118
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [24] []Jäschke A, Armknecht F. Unsuperv
+ised machine learning on encrypted
+ []
+
+[25] (./data/resume.tex [26]
 \blx@maxsegment@1=\count564
 \blx@sectionciteorder@1=\count565
 Package biblatex Info: Reference section=1 on input line 14.
@@ -1969,13 +1981,13 @@ Package biblatex Info: Reference section=0 on input line 23.
 Package biblatex Info: Reference section=2 on input line 26.
 Package biblatex Info: Setting label 'refsection:2' on input line 26.
 Package biblatex Info: Reference section=0 on input line 35.
-) [25
+) [27
 
 ] (./data/appendix01.tex)
 \tf@thm=\write9
 \openout9 = `thesis.thm'.
 
- [26
+ [28
 
 
 
@@ -1991,18 +2003,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: C1EFB71B62ABEED089056102DCE745C9;6200.
+(rerunfilecheck)             Checksum: D566522264FF8CA028190883807E894F;6200.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35504 strings out of 476919
- 667091 string characters out of 5825424
- 1590848 words of memory out of 5000000
- 54875 multiletter control sequences out of 15000+600000
+ 35522 strings out of 476919
+ 667707 string characters out of 5825423
+ 1591240 words of memory out of 5000000
+ 54893 multiletter control sequences out of 15000+600000
  432912 words of font info for 217 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,12n,130p,1151b,4868s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,12n,130p,1151b,4862s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (36 pages).
+Output written on thesis.pdf (38 pages).
