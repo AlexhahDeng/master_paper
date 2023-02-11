@@ -40,8 +40,8 @@ DBSCAN围绕每个数据点以$\epsilon$为半径构建圈，并将其划分为�
 	\item 初始化核心点集合$ \Omega = \varnothing  $，初始化簇数量$ k=0 $，初始化未访问点集合$ \Gamma = D $，簇划分$ C=\varnothing $
 	\item 遍历所有点$ i=1,2,...,m $，按如下方式找到所有核心点：
 	\begin{enumerate}
-	\item 计算距离，找到样本$ x_i $的$ \epsilon- $邻域内所有点集合$ N_{\epsilon}(x_i) $
-	\item 如果集合包含数据点个数满足$ |N_{\epsilon}(x_i)| \geq MinPts $，将$ x_i $加入核心点集合：$ \Omega = \Omega \cup \{x_j\} $
+		\item 计算距离，找到样本$ x_i $的$ \epsilon- $邻域内所有点集合$ N_{\epsilon}(x_i) $
+		\item 如果集合包含数据点个数满足$ |N_{\epsilon}(x_i)| \geq MinPts $，将$ x_i $加入核心点集合：$ \Omega = \Omega \cup \{x_j\} $
 	\end{enumerate}	
 	\item 若$ \Omega = \varnothing $，则算法结束，否则转入步骤4
 	\item 在$ \Omega $中，随机选择一核心点$ o $，初始化当前簇包含核心点集合$ \Omega_{c}=\{o\} $，簇序号为$ k=k+1 $，当前簇包含点集合$ C_k=\{o\} $，更新未访问样本集合$ \Gamma = \Gamma - \{o\} $
@@ -88,11 +88,15 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 \end{compactitem}
 \section{基于秘密共享的隐私保护计算模块}
 \label{s4-subpro}
-\subsubsection{安全排序协议}
+在\ref{s3-mokuai}节所述算法的基础上，我们根据隐私保护DBSCAN方案的特点设计了如下计算模块。
+\subsection{安全排序协议}
+安全排序协议主要由安全比较协议构成，用户输入秘密共享的数组后，我们期望能够得到按照升序排列的密文结果。协议的核心思想为，将$ n $个数据上的排序拆分为$ n $次求解序列最值。
+
+具体如算法\ref{alg_sort}所示，我们进行$ n $次迭代，2行开始求解最小值，结果为秘密共享值$ \langle t \rangle_i \in \{0,1\}, i\in[1,n] $，数组中最小值的位置为1，其余均为0。4-6行开始遍历每个结果，$ res $通过累加记录最小值的具体值。6行的目的是更新原始数组，通过将最小值变为全局最大值，以消除对后续计算的影响。若当前元素为最小值（即$\langle t \rangle_i=1  $ ），则对应$ D[i] $中的值变为最大值maxv，若不是则保留原值，不做修改。
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
 	\renewcommand{\algorithmicensure}{\textbf{输出:}}
-	\caption{SC $\rightarrow (\langle \delta \rangle_0, \langle \delta \rangle_1)$}
+	\caption{安全比较协议}
 	\label{alg_sort}
 	\begin{algorithmic}[1]
 		\REQUIRE $ D = \{\langle x\rangle_1, \langle x\rangle_2,...,\langle x\rangle_n\} $
@@ -101,10 +105,8 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 		\STATE $ \{\langle t\rangle_1,...\langle t \rangle_n\} \leftarrow smin(D)$
 		\STATE $ res \leftarrow 0 $
 		\FOR {$ j=1 $ to $ n $}
-		\STATE $ D^{\prime}[j] \leftarrow  mul(\langle t \rangle_j, D[i])$
-		\STATE $ D[j] \leftarrow mul(1-\langle t \rangle_j, D[j]) $
-		\STATE $ res \leftarrow res + D^{\prime}[j] $
-		\STATE $ D[j] \leftarrow D[j] + D^{\prime}[j] $
+		\STATE $ res \leftarrow res + mul(\langle t \rangle_j, D[j]) $ 
+		\STATE $ D[j] \leftarrow mul(D[j],1-\langle t \rangle_j) + mul(maxv, \langle t \rangle_j)$
 		\ENDFOR
 		\STATE $ r[i] \leftarrow res $
 		\ENDFOR
@@ -112,6 +114,7 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 \end{algorithm}
 \section{隐私保护dbscan}
 \label{s4-t1}
+
 \section{改进的隐私保护dbscan}
 \label{s4-t2}
 \section{基于dbscan的隐私保护层次聚类}

@@ -6,5 +6,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Secure minimal on large dataset (SMin(L))\relax }}{11}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces System Model\relax }}{21}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Plaintext K-means model\relax }}{17}{figure.caption.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Privacy Preserving model\relax }}{17}{figure.caption.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces $k=3, T=20$\relax }}{18}{figure.caption.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces $m=5, T=20$\relax }}{18}{figure.caption.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces System Model\relax }}{23}{figure.caption.20}%
 \contentsfinish 

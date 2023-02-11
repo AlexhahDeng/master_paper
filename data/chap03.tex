@@ -224,7 +224,7 @@ PPOKC算法的细节在\ref{alg_ppokc}中给出，虽然我们这里提供了一
 \begin{algorithm}[htbp]
     \renewcommand{\algorithmicrequire}{\textbf{输入:}}
     \renewcommand{\algorithmicensure}{\textbf{输出:}}
-    \caption{SC $\rightarrow (\langle \delta \rangle_0, \langle \delta \rangle_1)$}
+    \caption{隐私保护外包聚类算法}
     \label{alg_ppokc}
     \begin{algorithmic}[1]
         \REQUIRE 明文数据$x_{ij},i\in[n],j\in[m]$
@@ -376,7 +376,73 @@ PPOKC算法的细节在\ref{alg_ppokc}中给出，虽然我们这里提供了一
 
 论文\cite{jaschke2019unsupervised}提供了3种不同的隐私保护k-means聚类方案，分别是精确的、稳定的以及近似的方案。上述方案进行15轮迭代分别用时为545.91天、48.9小时、15.47小时。在我们的系统中，完成相同的迭代轮次总共需要20.94秒，用时远远少于前述三种方案。
 
-此外，我们设置相同的初始簇中心初始化，在Lsun数据集上分别运行明文k-means方案以及本文提出的PPOKC方案，并且
+此外，我们设置相同的初始簇中心初始化，在Lsun数据集上分别运行明文k-means方案以及本文提出的PPOKC方案，分类结果如图\ref{f4}和\ref{f5}所示。本方案所有安全协议的正确性均以论文\cite{kanungo2002efficient}中提出的基于kd-tree的改进k-means方案为支撑。因此，最终聚类结果和明文方案完全一致。
+%todo 这里图得换一下
+\begin{figure}[htbp] %[htbp]
+	\captionsetup{font=scriptsize}
+	\begin{minipage}[t]{0.45\linewidth}
+		\includegraphics[width=\linewidth]{img/lsun_ptxt.png}
+		\caption{Plaintext K-means model}
+		\label{f4}
+	\end{minipage}%
+	\hfill%
+	\begin{minipage}[t]{0.45\linewidth}
+		\includegraphics[width=\linewidth]{img/lsun_ctxt.png}
+		\caption{Privacy Preserving model}
+		\label{f5}
+	\end{minipage} 
+\end{figure}
 \subsubsection{人造数据集上的实验}
+本节，我们在数据量跨度为$ n\in[10000,60000] $的人造数据集上进行系列对比实验。我们在生成数据时控制簇的个数在3-15之间，彼此之间没有重叠的部分。同时，聚类终止条件选择达到指定迭代次数即停止聚类比较结果。该选择主要原因如下：不同数据集收敛所需迭代次数不固定，受初始簇中心的影响较大，若按照算法中所给出的判断是否收敛来停止迭代，会导致时间分析不准确。
+
+我们考虑三个影响聚类的参数，分别是数据集大小$ n $、数据的维度$ m $以及簇的个数$ k $。为了准确的分析参数对于方案的性能影响，我们的策略是固定一个参数，然后变化另外两个参数的值来运行系统。实验运行的计算和通信开销如图\ref{f6}和\ref{f7}所示。
+%todo 合并一下这两个图
+\begin{figure}[htbp] %[htbp]
+	\captionsetup{font=scriptsize}
+	\begin{minipage}[t]{0.45\linewidth}
+		\includegraphics[width=\linewidth]{img/m.png}
+		% \caption{}
+		% \label{f6}
+	\end{minipage}%
+	\hfill%
+	\begin{minipage}[t]{0.45\linewidth}
+		\includegraphics[width=\linewidth]{img/m_comm.png}
+		%\caption{Privacy Preserving model}
+		% \label{f2}
+	\end{minipage} 
+	\caption{$k=3, T=20$}
+	\label{f6}
+\end{figure} 
+
+\begin{figure}[htbp]
+	\captionsetup{font=scriptsize}
+	\begin{minipage}[t]{0.45\linewidth}
+		\includegraphics[width=\linewidth]{img/k.png}
+		% \caption{}
+		% \label{f7}
+	\end{minipage}%
+	\hfill%
+	\begin{minipage}[t]{0.45\linewidth}
+		\includegraphics[width=\linewidth]{img/k_comm.png}
+		%\caption{Privacy Preserving model}
+		% \label{f2}
+	\end{minipage} 
+	\caption{$m=5, T=20$}
+	\label{f7}
+\end{figure} 
+
+对于图\ref{f6}，我们可以看到计算和通信开销随着数据量$ n $增加而增加。然而，数据维度$ m $的变化对于计算和通信开销的影响则非常小，因为维度多少只会影响计算中的乘法和加法次数，而不会影响比较的次数，后者才是方案的瓶颈。乘法操作可以通过并行进一步优化。
+
+对于图\ref{f7}，计算开销随着$ k $的变化呈线性变化，而$ k $对通信开销的影响则较小。值得一提的是，给定相同的$ k $值，不同的数据量对于计算开销的影响较小。
+
+通过分析实验结果，我们发现本文提出的方案兼具高效与安全性，并且能够适应大型数据集。与研究\cite{wu2020secure}\cite{rong2017privacy}相比，我们的方案在$ k $较大时，实验表现更好。基于kd-tree的改进k-means算法允许我们减少大量冗余计算，进一步加速聚类过程，此外，SIMD操作可以很轻松被引入方案来提升效率。
 \section{本章小结}
 \label{s3-xiaojie}
+% 简述存在的问题
+隐私保护k-means聚类方案的研究通常难以兼具效率与安全性，实现完全隐私保护的方案耗时通常难以接受\cite{jaschke2019unsupervised}，高效的方案则可能存在泄露隐私的风险\cite{wu2020secure}。过去研究常用到的密码学工具为秘密共享\cite{mohassel2019practical}和同态加密\cite{jaschke2019unsupervised}\cite{wu2020secure}，二者各有优缺点。秘密共享技术进行加法和乘法运算较快，但是通信开销巨大，而同态加密则计算开销较大，通信开销较小。
+
+% 本文方案的贡献
+为了能够设计兼具安全与高效的隐私保护k-means聚类方案，我们在秘密共享的基础上，提出了一个基于kd-tree的隐私保护外包k-means聚类方案。方案利用了kd-tree数据结构来减少冗余计算，提升聚类效率，同时保证聚类的正确性。此外，我们基于秘密共享设计了一系列隐私保护的计算协议，这些协议独立于整个方案，可以灵活的用于其他各种基于秘密共享的隐私保护方案中。实验结果证明，我们的方案在保证聚类结果正确的基础上，保护了数据的隐私安全，减少了计算和通信开销，为用户提供了一种实际可行的外包聚类方案。
+
+% 引出下一个点
+然而，聚类通常是对海量数据进行分析挖掘，数据量级可以达到亿万级别。在该场景下，即便是目前最高效的隐私保护聚类方案所需时间也是不可接受的。因此需要探索新的方案设计方向，即近似的隐私保护方案。机器学习对于计算的精度要求通常较宽松，因此我们可以考虑通过设计近似安全计算协议来简化计算过程，提升效率。
