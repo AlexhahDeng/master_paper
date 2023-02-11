@@ -1261,8 +1261,8 @@
       \strng{authorbibnamehash}{1943a219f0b9351f2e27ea8c3f9dab4f}
       \strng{authornamehash}{a049ebf438c0202f111ed4a518904e42}
       \strng{authorfullhash}{d91074b1b30da03c6d9288c000b31793}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{The fifth international conference on the applications of digital information and web technologies (ICADIWT 2014)}
@@ -1312,8 +1312,8 @@
       \strng{authorbibnamehash}{93f88297c66aca5bc89c3c5131ea9566}
       \strng{authornamehash}{9158a41d23cb4e154e78366d59c05728}
       \strng{authorfullhash}{77089c60a08eb43e856376e88849121a}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{kdd}
@@ -1361,8 +1361,8 @@
       \strng{authorbibnamehash}{9c50ee5988fbe6b147aea117c6bb912a}
       \strng{authornamehash}{b481f77dfc035eaf1add490c2c87750c}
       \strng{authorfullhash}{9c50ee5988fbe6b147aea117c6bb912a}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Chemometrics and Intelligent Laboratory Systems}
@@ -1404,8 +1404,8 @@
       \strng{authorbibnamehash}{54db53b3f3886d326ef029a6c29b56b1}
       \strng{authornamehash}{2d2cbdc611257f0f72635c49aad82b44}
       \strng{authorfullhash}{54db53b3f3886d326ef029a6c29b56b1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Data \& Knowledge Engineering}
@@ -1421,6 +1421,154 @@
       \field{pages}{101922}
       \range{pages}{1}
       \keyw{latifi2021dbhc}
+    \endentry
+    \entry{gheid2016efficient}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=26429182d070c4715f85097f1c57b551}{%
+           family={Gheid},
+           familyi={G\bibinitperiod},
+           given={Zakaria},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=aeadfdf95352f518203fb797f3a2d01d}{%
+           family={Challal},
+           familyi={C\bibinitperiod},
+           given={Yacine},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{068e76220ccf61833ed161d2647a7f98}
+      \strng{fullhash}{58b78870b329cf394411da6f1a80867a}
+      \strng{bibnamehash}{58b78870b329cf394411da6f1a80867a}
+      \strng{authorbibnamehash}{58b78870b329cf394411da6f1a80867a}
+      \strng{authornamehash}{068e76220ccf61833ed161d2647a7f98}
+      \strng{authorfullhash}{58b78870b329cf394411da6f1a80867a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 IEEE Trustcom/BigDataSE/ISPA}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Efficient and privacy-preserving k-means clustering for big data mining}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{791\bibrangedash 798}
+      \range{pages}{8}
+      \keyw{gheid2016efficient}
+    \endentry
+    \entry{doganay2008distributed}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=33dc1aa1964293b8605f2b39f7c65c06}{%
+           family={Doganay},
+           familyi={D\bibinitperiod},
+           given={Mahir\bibnamedelima Can},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=b9bbd74360fb662ed57fa49a9a75ce3d}{%
+           family={Pedersen},
+           familyi={P\bibinitperiod},
+           given={Thomas\bibnamedelima B},
+           giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=f17d8d5ea9bd64142994e98fb028dfcc}{%
+           family={Saygin},
+           familyi={S\bibinitperiod},
+           given={Yücel},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=62ef6e524067db775a2f3ed6569c4ddb}{%
+           family={Savaş},
+           familyi={S\bibinitperiod},
+           given={Erkay},
+           giveni={E\bibinitperiod}}}%
+        {{hash=88a2f1720322782da474c273e360f422}{%
+           family={Levi},
+           familyi={L\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7647a8b1fd63f8f125311412c04e44c1}
+      \strng{fullhash}{e101e4513a18bb91f87b3431e255a7a7}
+      \strng{bibnamehash}{7d048bf994a84c4539abac453c639efb}
+      \strng{authorbibnamehash}{7d048bf994a84c4539abac453c639efb}
+      \strng{authornamehash}{7647a8b1fd63f8f125311412c04e44c1}
+      \strng{authorfullhash}{e101e4513a18bb91f87b3431e255a7a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2008 international workshop on Privacy and anonymity in information society}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Distributed privacy preserving k-means clustering with additive secret sharing}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{3\bibrangedash 11}
+      \range{pages}{9}
+      \keyw{doganay2008distributed}
+    \endentry
+    \entry{yu2010multi}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=7c3f3028339d5833bc639ce8c7e39c04}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Teng-Kai},
+           giveni={T\bibinithyphendelim K\bibinitperiod}}}%
+        {{hash=9274505e43cbe7ca8f195e65c3cbed3f}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={DT},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1179d210bf82415c3b7cdeed76dee86e}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Shih-Ming},
+           giveni={S\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=01d64df515f2abcf2b3432292d8ab32e}{%
+           family={Zhan},
+           familyi={Z\bibinitperiod},
+           given={Justin},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{f7bff0a07ac0b80a23bf73e0f2e3f9c5}
+      \strng{fullhash}{2b0503b54e16dba36e5404678272df62}
+      \strng{bibnamehash}{9efcf1fa8d9d49bd76094e193fdf654b}
+      \strng{authorbibnamehash}{9efcf1fa8d9d49bd76094e193fdf654b}
+      \strng{authornamehash}{f7bff0a07ac0b80a23bf73e0f2e3f9c5}
+      \strng{authorfullhash}{2b0503b54e16dba36e5404678272df62}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International symposium on parallel and distributed processing with applications}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Multi-party k-means clustering with privacy consideration}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{pages}{200\bibrangedash 207}
+      \range{pages}{8}
+      \keyw{yu2010multi}
     \endentry
   \enddatalist
 \endrefsection

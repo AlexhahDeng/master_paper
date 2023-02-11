@@ -86,6 +86,8 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 	\item 三个密文方案运行结果与对应明文方案一致，精度无损失。
 	\item 云服务器上所有数据均在密文状态，并且无法被利用来还原初始数据信息。不同用户之间无法知悉彼此的数据和聚类结果。
 \end{compactitem}
+\subsection{系统输入}
+数据持有者首先利用加性秘密共享来将数据划分为两份，分别发送给两个云服务器。采用加性秘密共享分发数据的方式允许系统中加入任意多个数据持有者提供聚类数据。此外，我们的系统能够支持任何数据划分方式，例如水平划分、垂直划分以及混合划分。水平划分方式指的是，不同用户分别持有完整但是互异的数据\cite{gheid2016efficient}，垂直划分方式则是指不同用户持有相同数据记录的不同参数\cite{doganay2008distributed}，混合划分方式则是上述两种方式的结合\cite{yu2010multi}。
 \section{基于秘密共享的隐私保护计算模块}
 \label{s4-subpro}
 在\ref{s3-mokuai}节所述算法的基础上，我们根据隐私保护DBSCAN方案的特点设计了如下计算模块。
@@ -96,7 +98,7 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
 	\renewcommand{\algorithmicensure}{\textbf{输出:}}
-	\caption{安全比较协议}
+	\caption{安全排序协议}
 	\label{alg_sort}
 	\begin{algorithmic}[1]
 		\REQUIRE $ D = \{\langle x\rangle_1, \langle x\rangle_2,...,\langle x\rangle_n\} $
@@ -112,9 +114,28 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 		\ENDFOR
 	\end{algorithmic}
 \end{algorithm}
-\section{隐私保护dbscan}
+\section{隐私保护dbscan方案}
 \label{s4-t1}
+本节提出的隐私保护DBSCAN方案主要分为三个阶段，具体介绍如下：
+\begin{compactitem}
+	\item 初始化：通过获取的密文数据，初始化存储在云服务器上的自定义数据结构体（以下简称元素），然后计算不同元素之间的距离关系，并判断元素是否为核心点。
+	\item 聚类：第一阶段获取的信息，我们提出了一种全新的聚类方法，引入临时簇这一概念，通过记录临时簇是否相连的信息来聚类。
+	\item 还原结果：用户获取聚类记录的临时簇相连信息，通过深度优先遍历算法来还原数据簇划分结果。
+\end{compactitem}
+% 首先介绍input element
+\begin{algorithm}
+	\begin{algorithmic}[1]
+		\STATE \textbf{class}sharedElem(sdata,idx):
+		\STATE \hspace{\algorithmicindent} clusterId = idx
+		\STATE isNoise = 0
+		\STATE isProcessed = 0
+		\STATE data = sdata
+		\STATE isCore = 0
+				
+	\end{algorithmic}
+\end{algorithm}
 
+% 然后写一坨算法，介绍具体细节
 \section{改进的隐私保护dbscan}
 \label{s4-t2}
 \section{基于dbscan的隐私保护层次聚类}
