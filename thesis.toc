@@ -116,6 +116,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.5}隐私保护dbscan方案}{24}{section.4.5}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.1}初始化}{25}{subsection.4.5.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.6}改进的隐私保护dbscan}{25}{section.4.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.7}基于dbscan的隐私保护层次聚类}{25}{section.4.7}%

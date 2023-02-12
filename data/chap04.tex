@@ -42,7 +42,7 @@ DBSCAN围绕每个数据点以$\epsilon$为半径构建圈，并将其划分为�
 	\begin{enumerate}
 		\item 计算距离，找到样本$ x_i $的$ \epsilon- $邻域内所有点集合$ N_{\epsilon}(x_i) $
 		\item 如果集合包含数据点个数满足$ |N_{\epsilon}(x_i)| \geq MinPts $，将$ x_i $加入核心点集合：$ \Omega = \Omega \cup \{x_j\} $
-	\end{enumerate}	
+	\end{enumerate}	      
 	\item 若$ \Omega = \varnothing $，则算法结束，否则转入步骤4
 	\item 在$ \Omega $中，随机选择一核心点$ o $，初始化当前簇包含核心点集合$ \Omega_{c}=\{o\} $，簇序号为$ k=k+1 $，当前簇包含点集合$ C_k=\{o\} $，更新未访问样本集合$ \Gamma = \Gamma - \{o\} $
 	\item 若$ \Omega_{cur} = \varnothing $, 则簇$ C_k $聚类完毕，更新簇集合$ C=\{C_1,C_2,...,C_k\} $，更新核心点集合$ \Omega = \Omega - C_k $
@@ -122,16 +122,19 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 	\item 聚类：第一阶段获取的信息，我们提出了一种全新的聚类方法，引入临时簇这一概念，通过记录临时簇是否相连的信息来聚类。
 	\item 还原结果：用户获取聚类记录的临时簇相连信息，通过深度优先遍历算法来还原数据簇划分结果。
 \end{compactitem}
+
+\subsection{初始化}
 % 首先介绍input element
+对于每个输入，我们构造sharedElem对象。clusterId为初始簇中心，值取该数据在数组中的下标00 
 \begin{algorithm}
+	\lable{}
 	\begin{algorithmic}[1]
 		\STATE \textbf{class}sharedElem(sdata,idx):
 		\STATE \hspace{\algorithmicindent} clusterId = idx
-		\STATE isNoise = 0
-		\STATE isProcessed = 0
-		\STATE data = sdata
-		\STATE isCore = 0
-				
+		\STATE \hspace{\algorithmicindent} isNoise = 0
+		\STATE \hspace{\algorithmicindent} isProcessed = 0
+		\STATE \hspace{\algorithmicindent} data = sdata
+		\STATE \hspace{\algorithmicindent} isCore = 0	
 	\end{algorithmic}
 \end{algorithm}
 
