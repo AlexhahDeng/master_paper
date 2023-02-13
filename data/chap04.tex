@@ -125,19 +125,35 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 
 \subsection{初始化}
 % 首先介绍input element
-对于每个输入，我们构造sharedElem对象。clusterId为初始簇中心，值取该数据在数组中的下标00 
+对于每个秘密共享的数据，我们构造sharedElem对象。$ clusterId, clusterId \in [1, n]$为初始簇中心，值取该数据在数组中的下标，比如第一个数据初始化clusterId为1。$ isProcessed, isProcessed\in [0,1] $表示该数据对象是否已经被划分到簇中。data则存储对应的秘密共享值，为一个向量。最后$ isCore ,isCore\in[0,1]$标识数据对象是否为核心点。
 \begin{algorithm}
-	\lable{}
 	\begin{algorithmic}[1]
 		\STATE \textbf{class}sharedElem(sdata,idx):
 		\STATE \hspace{\algorithmicindent} clusterId = idx
-		\STATE \hspace{\algorithmicindent} isNoise = 0
 		\STATE \hspace{\algorithmicindent} isProcessed = 0
 		\STATE \hspace{\algorithmicindent} data = sdata
 		\STATE \hspace{\algorithmicindent} isCore = 0	
 	\end{algorithmic}
 \end{algorithm}
 
+构造完sharedElem对象后，我们得到了sharedList数组。在初始化阶段，我们计算对象之间的距离，获取相邻关系，同时判断是否为核心点。
+\begin{algorithm}[htbp]
+	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+	\renewcommand{\algorithmicensure}{\textbf{输出:}}
+	\caption{初始化}
+	\label{alg_sort}
+	\begin{algorithmic}[1]
+		\REQUIRE 数组sharedList
+		\ENSURE 相邻关系二维数组$ u $，更新后的sharedList
+		\STATE 
+		\FOR {$ i=1 $ to $ n $}
+		\FOR {$ j=1 $ to $ n $}
+		\STATE $ d_{j} \leftarrow SED(sharedList[i], sharedList[j]) $
+		\ENDFOR
+		$ u_i \leftarrow sc(d, [eps]) $
+		\ENDFOR
+	\end{algorithmic}
+\end{algorithm}
 % 然后写一坨算法，介绍具体细节
 \section{改进的隐私保护dbscan}
 \label{s4-t2}

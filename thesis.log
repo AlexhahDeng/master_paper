@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  12 FEB 2023 16:13
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  13 FEB 2023 11:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1450,7 +1450,11 @@ Package tocbasic Info: babel extension for `nls' omitted
 \@quotelevel=\count560
 \@quotereset=\count561
 
-(./thesis.aux)
+(./thesis.aux
+
+LaTeX Warning: Label `alg_sort' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
@@ -1944,8 +1948,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ] [21]
 File: img/ch4-sysmod.png Graphic file (type bmp)
 <img/ch4-sysmod.png>
- [22] [23] [24]) (./data/ack.tex [25])
-[26
+ [22] [23] [24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25])
+(./data/ack.tex [26]) [27
 
 ]
 
@@ -1982,7 +1989,7 @@ Underfull \hbox (badness 1348) in paragraph at lines 118--118
 rotocols using circuit randomization[C]//
  []
 
-[27
+[28
 
 
 ]
@@ -1997,7 +2004,7 @@ Underfull \hbox (badness 1983) in paragraph at lines 118--118
 ised machine learning on encrypted
  []
 
-[28] (./data/resume.tex [29]
+[29] (./data/resume.tex [30]
 \blx@maxsegment@1=\count564
 \blx@sectionciteorder@1=\count565
 Package biblatex Info: Reference section=1 on input line 14.
@@ -2008,13 +2015,13 @@ Package biblatex Info: Reference section=0 on input line 23.
 Package biblatex Info: Reference section=2 on input line 26.
 Package biblatex Info: Setting label 'refsection:2' on input line 26.
 Package biblatex Info: Reference section=0 on input line 35.
-) [30
+) [31
 
 ] (./data/appendix01.tex)
 \tf@thm=\write9
 \openout9 = `thesis.thm'.
 
- [31
+ [32
 
 
 
@@ -2030,24 +2037,21 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: 09BF06ED188B0164686A5E3D841634BD;6420
-(rerunfilecheck)             After:  84571DC5D2386ED756B4B1D5260868A0;6506.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 84571DC5D2386ED756B4B1D5260868A0;6506.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35586 strings out of 476919
- 668888 string characters out of 5825424
- 1591619 words of memory out of 5000000
- 54950 multiletter control sequences out of 15000+600000
+ 35587 strings out of 476919
+ 668901 string characters out of 5825424
+ 1591658 words of memory out of 5000000
+ 54951 multiletter control sequences out of 15000+600000
  435832 words of font info for 230 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,12n,130p,1151b,4868s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,12n,130p,1151b,4862s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (41 pages).
+Output written on thesis.pdf (42 pages).
