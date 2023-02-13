@@ -125,36 +125,65 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 
 \subsection{初始化}
 % 首先介绍input element
-对于每个秘密共享的数据，我们构造sharedElem对象。$ clusterId, clusterId \in [1, n]$为初始簇中心，值取该数据在数组中的下标，比如第一个数据初始化clusterId为1。$ isProcessed, isProcessed\in [0,1] $表示该数据对象是否已经被划分到簇中。data则存储对应的秘密共享值，为一个向量。最后$ isCore ,isCore\in[0,1]$标识数据对象是否为核心点。
+对于每个秘密共享的数据，我们构造sharedElem对象。$ cluId, cluId \in [1, n]$为初始簇中心，值取该数据在数组中的下标，比如第一个数据初始化clusterId为1。$ isMark, isMark\in [0,1] $表示该数据对象是否已经被划分到簇中。data则存储对应的秘密共享值，为一个向量。最后$ isCore ,isCore\in[0,1]$标识数据对象是否为核心点。
 \begin{algorithm}
 	\begin{algorithmic}[1]
 		\STATE \textbf{class}sharedElem(sdata,idx):
-		\STATE \hspace{\algorithmicindent} clusterId = idx
-		\STATE \hspace{\algorithmicindent} isProcessed = 0
+		\STATE \hspace{\algorithmicindent} cluId = idx
+		\STATE \hspace{\algorithmicindent} isMark = 0
 		\STATE \hspace{\algorithmicindent} data = sdata
 		\STATE \hspace{\algorithmicindent} isCore = 0	
 	\end{algorithmic}
 \end{algorithm}
 
-构造完sharedElem对象后，我们得到了sharedList数组。在初始化阶段，我们计算对象之间的距离，获取相邻关系，同时判断是否为核心点。
+构造完sharedElem对象后，我们得到了sharedList数组。在初始化阶段，我们计算对象之间的距离，获取相邻关系，同时判断是否为核心点。具体过程如算法\ref{alg_ini}所示。1行，我们构造数组$ cnt $存储每个元素邻域范围内包含其他元素的个数。2-7行，我们计算距离信息，将第$ i $个元素与其他所有元素的距离$ d_j,j\in[n] $与$ eps $相比较，判断二者是否相邻,结果存储到二维数组$ u_{ij},i,j\in[n] $中，最后统计元素$ i $邻域范围内包含点的个数。9行，我们并行比较邻域点个数$ cnt $与$ minpts $的大小关系，并更新sharedList的$ isCore $属性。
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
 	\renewcommand{\algorithmicensure}{\textbf{输出:}}
 	\caption{初始化}
-	\label{alg_sort}
+	\label{alg_ini}
 	\begin{algorithmic}[1]
 		\REQUIRE 数组sharedList
 		\ENSURE 相邻关系二维数组$ u $，更新后的sharedList
-		\STATE 
+		\STATE $ cnt \leftarrow [0,...,0]_n $
 		\FOR {$ i=1 $ to $ n $}
 		\FOR {$ j=1 $ to $ n $}
 		\STATE $ d_{j} \leftarrow SED(sharedList[i], sharedList[j]) $
 		\ENDFOR
-		$ u_i \leftarrow sc(d, [eps]) $
+		\STATE $ u_i \leftarrow sc(d, [eps,...,eps]_n) $
+		\STATE $ cnt \leftarrow sum(u_{ij})$ for $j \in [n] $
+		\ENDFOR
+		\STATE $ r \leftarrow sc(cnt, [minpts]_n) $
+		\FOR {$ i=1 $ to $ n $}
+		\STATE sharedList[i].isCore = r[i]
 		\ENDFOR
 	\end{algorithmic}
 \end{algorithm}
-% 然后写一坨算法，介绍具体细节
+
+\subsection{聚类}
+初始化之后，我们获得了元素的$ isCore $信息，以及元素之间的相邻关系$ u_{ij},i,j\in[n] $。接下来，我们将具体介绍一种基于DBSCAN的全新聚类方式。该算法的核心在于构造若干临时簇，通过记录临时簇之间的连接关系，最后由用户来还原最终簇划分结果。
+
+若完全依据明文DBSCAN的方式来设计密文算法，受限于中间结果同样不能泄露的原则，方案的复杂度会非常高。具体流程
+
+\begin{algorithm}[htbp]
+	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+	\renewcommand{\algorithmicensure}{\textbf{输出:}}
+	\caption{初始化}
+	\label{alg_clu1}
+	\begin{algorithmic}[1]
+		\REQUIRE 数组sharedList简写为d，相邻关系$ u_{ij},i,j\in[n] $
+		\ENSURE 簇连接关系$ plist $
+		\FOR{$ i=1 $ to $ n $}
+		\STATE $d_i.isMark  \leftarrow  d_i.isCore+d_i.isMark - mul(d_i.isCore,d_i.isMark)$
+		\ENDFOR
+		\STATE $ s \leftarrow [0,...,0]_n $
+		\FOR {$ j=1 $ to $ n $}
+		\STATE $ m = mul(1-d_j.isMark, d_i.isCore) $
+		\STATE $ m = mul(m, u_{ij}) $
+		\STATE $ d_j.cluId \leftarrow d_j.cluId + mul(m, d_i.cluId - d_j.cluId) $
+		\ENDFOR
+	\end{algorithmic}
+\end{algorithm}
 \section{改进的隐私保护dbscan}
 \label{s4-t2}
 \section{基于dbscan的隐私保护层次聚类}
