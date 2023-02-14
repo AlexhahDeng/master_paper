@@ -39,10 +39,10 @@ DBSCAN围绕每个数据点以$\epsilon$为半径构建圈，并将其划分为�
 \begin{enumerate}
 	\item 初始化核心点集合$ \Omega = \varnothing  $，初始化簇数量$ k=0 $，初始化未访问点集合$ \Gamma = D $，簇划分$ C=\varnothing $
 	\item 遍历所有点$ i=1,2,...,m $，按如下方式找到所有核心点：
-	\begin{enumerate}
-		\item 计算距离，找到样本$ x_i $的$ \epsilon- $邻域内所有点集合$ N_{\epsilon}(x_i) $
-		\item 如果集合包含数据点个数满足$ |N_{\epsilon}(x_i)| \geq MinPts $，将$ x_i $加入核心点集合：$ \Omega = \Omega \cup \{x_j\} $
-	\end{enumerate}	      
+	      \begin{enumerate}
+		      \item 计算距离，找到样本$ x_i $的$ \epsilon- $邻域内所有点集合$ N_{\epsilon}(x_i) $
+		      \item 如果集合包含数据点个数满足$ |N_{\epsilon}(x_i)| \geq MinPts $，将$ x_i $加入核心点集合：$ \Omega = \Omega \cup \{x_j\} $
+	      \end{enumerate}
 	\item 若$ \Omega = \varnothing $，则算法结束，否则转入步骤4
 	\item 在$ \Omega $中，随机选择一核心点$ o $，初始化当前簇包含核心点集合$ \Omega_{c}=\{o\} $，簇序号为$ k=k+1 $，当前簇包含点集合$ C_k=\{o\} $，更新未访问样本集合$ \Gamma = \Gamma - \{o\} $
 	\item 若$ \Omega_{cur} = \varnothing $, 则簇$ C_k $聚类完毕，更新簇集合$ C=\{C_1,C_2,...,C_k\} $，更新核心点集合$ \Omega = \Omega - C_k $
@@ -107,7 +107,7 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 		\STATE $ \{\langle t\rangle_1,...\langle t \rangle_n\} \leftarrow smin(D)$
 		\STATE $ res \leftarrow 0 $
 		\FOR {$ j=1 $ to $ n $}
-		\STATE $ res \leftarrow res + mul(\langle t \rangle_j, D[j]) $ 
+		\STATE $ res \leftarrow res + mul(\langle t \rangle_j, D[j]) $
 		\STATE $ D[j] \leftarrow mul(D[j],1-\langle t \rangle_j) + mul(maxv, \langle t \rangle_j)$
 		\ENDFOR
 		\STATE $ r[i] \leftarrow res $
@@ -132,7 +132,7 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 		\STATE \hspace{\algorithmicindent} cluId = idx
 		\STATE \hspace{\algorithmicindent} isMark = 0
 		\STATE \hspace{\algorithmicindent} data = sdata
-		\STATE \hspace{\algorithmicindent} isCore = 0	
+		\STATE \hspace{\algorithmicindent} isCore = 0
 	\end{algorithmic}
 \end{algorithm}
 
@@ -161,29 +161,34 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 \end{algorithm}
 
 \subsection{聚类}
-初始化之后，我们获得了元素的$ isCore $信息，以及元素之间的相邻关系$ u_{ij},i,j\in[n] $。接下来，我们将具体介绍一种基于DBSCAN的全新聚类方式。该算法的核心在于构造若干临时簇，通过记录临时簇之间的连接关系，最后由用户来还原最终簇划分结果。
+初始化之后，我们获得了元素的$ isCore $信息，以及元素之间的相邻关系$ u_{ij},i,j\in[n],u_{ij}\in\{0,1\} $。接下来，我们将具体介绍一种基于DBSCAN的全新聚类方式。该算法的核心在于构造若干临时簇，通过记录临时簇之间的连接关系，最后由用户来还原最终簇划分结果。
 
-若完全依据明文DBSCAN的方式来设计密文算法，受限于中间结果同样不能泄露的原则，方案的复杂度会非常高。具体流程
+在初始化的过程中，我们默认每个元素的初始$ cluId $为下标，即每个元素都默认为独立的临时簇。在聚类的过程中，对于核心点，我们修改其$ \epsilon $范围内所有未标记点的$ cluId $，并将状态修改为已标记。对于所有非核心点，无法修改其他点的属性，并且被标记后，无法再被其他核心点标记。经过上述过程，数据集已经被划分为若干临时簇。根据DBSCAN的原理可知，单个簇由若干密度可达的核心点展开。通过记录核心点之间的相邻关系，我们在还原结果的阶段，将相连的临时簇合并，即可得到最终的结果。
+
+具体流程如\ref{alg_clu1}所示，为了简化说明，我们将输入数组简写为$ d $，并将结果记录在plist数组中，数组中每个元素的结构依次为，元素$ i $的$ cluId $，元素$ j $的$ cluId $，临时簇1和簇2是否相连。2行，更新元素$i$的isMark标识，若元素$i$是核心点（$isCore=1$）或者已经被划分（$isMark=1$），则令$ d[i].isMark $的值为$ 1 $，这里的计算逻辑体现的是逻辑或关系。3-8行，我们开始对其他所有元素进行处理。4-6行的计算逻辑是，若元素$ i $与元素$ j $相邻（$ u_ij = 1 $），且元素$ j $未被标记过（$ d[j].ismark=0 $），同时元素$ i $为核心点（$ d[i].isCore =1 $），则元素$ j $的簇标识修改为与元素$ i $的簇标识一致，否则不做修改。7行，记录临时簇相连信息，若$ d[i] $和$ d[j] $同为核心点，并且相邻$ u_{ij}=1 $则二者相连。8行，我们更新$ plist $的信息，记录对应值。
 
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
 	\renewcommand{\algorithmicensure}{\textbf{输出:}}
-	\caption{初始化}
+	\caption{聚类}
 	\label{alg_clu1}
 	\begin{algorithmic}[1]
 		\REQUIRE 数组sharedList简写为d，相邻关系$ u_{ij},i,j\in[n] $
 		\ENSURE 簇连接关系$ plist $
 		\FOR{$ i=1 $ to $ n $}
-		\STATE $d_i.isMark  \leftarrow  d_i.isCore+d_i.isMark - mul(d_i.isCore,d_i.isMark)$
-		\ENDFOR
-		\STATE $ s \leftarrow [0,...,0]_n $
+		\STATE $d[i].isMark\leftarrow d[i].isCore+d[i].isMark$\\ $-mul(d[i].isCore,d[i].isMark)$
 		\FOR {$ j=1 $ to $ n $}
-		\STATE $ m = mul(1-d_j.isMark, d_i.isCore) $
-		\STATE $ m = mul(m, u_{ij}) $
-		\STATE $ d_j.cluId \leftarrow d_j.cluId + mul(m, d_i.cluId - d_j.cluId) $
+		\STATE $ m_1 \leftarrow mul(d[i].isCore, u_{ij}) $
+		\STATE $ m_2 \leftarrow mul(1-d[j].isMark, m_1) $
+		\STATE $ d[j].cluId \leftarrow d[j].cluId + mul(m_2, d[i].cluId - d[j].cluId)$
+		\STATE $ d[j].isMark \leftarrow d[j].isMark+m_1 - mul(d[j].isMark, m_1) $
+		\STATE record new element in plist $ (d[i].cluId, d[j].cluId, mul(m_1, d[j].isCore)) $
+		\ENDFOR
 		\ENDFOR
 	\end{algorithmic}
 \end{algorithm}
+
+\subsection{还原聚类结果}
 \section{改进的隐私保护dbscan}
 \label{s4-t2}
 \section{基于dbscan的隐私保护层次聚类}

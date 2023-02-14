@@ -120,9 +120,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.5.2}聚类}{25}{subsection.4.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}改进的隐私保护dbscan}{26}{section.4.6}%
+\contentsline {subsection}{\numberline {4.5.3}还原聚类结果}{27}{subsection.4.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}基于dbscan的隐私保护层次聚类}{26}{section.4.7}%
+\contentsline {section}{\numberline {4.6}改进的隐私保护dbscan}{27}{section.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.7}基于dbscan的隐私保护层次聚类}{27}{section.4.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.8}理论分析}{27}{section.4.8}%
 \defcounter {refsection}{0}\relax 
