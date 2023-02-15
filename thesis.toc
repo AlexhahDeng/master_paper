@@ -132,15 +132,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.10}本章小结}{27}{section.4.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{致谢}{28}{chapter*.21}%
+\contentsline {chapter}{致谢}{29}{chapter*.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{参考文献}{29}{section*.22}%
+\contentsline {chapter}{参考文献}{30}{section*.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{作者在学期间取得的学术成果}{32}{chapter*.24}%
+\contentsline {chapter}{作者在学期间取得的学术成果}{33}{chapter*.24}%
 \defcounter {refsection}{0}\relax 
 \ttl@change@i {\@ne }{chapter}{0pt}{\vspace {0.25\baselineskip } \heiti \xiaosi [1.25]}{附录\,\thecontentslabel \quad }{}{\hspace {.5em}\titlerule *{.}\contentspage }\relax 
 \defcounter {refsection}{0}\relax 
 \ttl@change@v {chapter}{}{}{}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}模板提供的希腊字母命令列表}{33}{appendix.A}%
+\contentsline {chapter}{\numberline {A}模板提供的希腊字母命令列表}{34}{appendix.A}%
 \contentsfinish 

@@ -189,8 +189,74 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 \end{algorithm}
 
 \subsection{还原聚类结果}
+\label{task1-huanyuan}
+聚类后，我们在plist中记录了所有临时簇的相邻关系。云服务器分别将自己持有的份额分别发送给用户还原结果。在\ref{alg_huanyuan1}中，我们详细说明如何还原结果。1-5行，我们构造大小为$ n \times n $的全零二维数组，来存储邻接关系，若相邻，则对应值大于零。6行，我们初始化一个数组来标记每个数据是否已经被划分，若已经被划分，则不再继续处理。7行，我们构建最终结果的簇编号，自1开始累加。8行开始遍历，若元素$ i $未被划分，则更新mark，开始构建新簇，执行深度优先遍历找到所有与$ i $相连的元素纳入到新簇中。dfs的过程如\ref{alg_huanyuan2}所示，边递归边记录映射关系。最后，根据映射关系，我们更新所有元素的最终簇编号。
+
+\begin{algorithm}[htbp]
+	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+	\renewcommand{\algorithmicensure}{\textbf{输出:}}
+	\caption{深度优先遍历(dfs)}
+	\label{alg_huanyuan2}
+	\begin{algorithmic}[1]
+		\REQUIRE 起始位置idx，归属簇标识mark，访问标识数组visited，元素数组plist，二维矩阵matrix，映射关系resmap
+		\ENSURE 修改后的输入值
+		\FOR {$ i=1 $ to $ n $}
+		\IF {visited[i]为真}
+		\STATE 该元素已经被划分好，不再继续
+		\ENDIF
+		\IF{matrix[idx][i] > 0}
+		\STATE resmap[plist[i].cluId] = mark
+		\STATE visited[i]=true
+		\STATE dfs(i, mark, visited, plist,matrix, resmap)
+		\ENDIF
+		\ENDFOR
+	\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[htbp]
+	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+	\renewcommand{\algorithmicensure}{\textbf{输出:}}
+	\caption{还原结果}
+	\label{alg_huanyuan1}
+	\begin{algorithmic}[1]
+		\REQUIRE 明文plist
+		\ENSURE 聚类划分结果映射关系
+		\STATE 构造二维数组matrix，大小为$ n\times n $存储相连关系
+		\STATE 构建resmap存储初始簇id到结果簇id的映射
+		\FOR {each p in plist}
+		\STATE matrix[p.id1][p.id2] += p.isConn
+		\ENDFOR
+		\STATE 构造访问标识数组$ visited=[false]_n $
+		\STATE mark = 1
+		\FOR {$ i=1 $ to $ n $}
+		\IF{visited[i]为真}
+		\STATE 不再继续访问
+		\ENDIF
+		\STATE visited[i] = true
+		\STATE mark += 1
+		\STATE resmap[plist[i].cluId] = mark
+		\STATE 执行dfs(i, mark, visited, plist,matrix, resmap)
+		\ENDFOR
+	\end{algorithmic}
+\end{algorithm}
 \section{改进的隐私保护dbscan}
 \label{s4-t2}
+本节我们将在上一节的基础上详细阐述一种改进的隐私保护DBSCAN方案，该方案能够在数据集被打乱的情况，使满足条件可以被划分到多个簇的数据点稳定分类到最近的簇中。
+
+方案包含三个步骤，初始化、聚类以及还原结果。还原结果的过程与\ref{task1-huanyuan}一致，这里不多做解释。主要区别在于初始化和聚类过程，下面我们将着重介绍。
+
+\subsection{初始化}
+\begin{algorithm}[htbp]
+	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+	\renewcommand{\algorithmicensure}{\textbf{输出:}}
+	\caption{初始化}
+	\label{alg_t2_chushihua}
+	\begin{algorithmic}[1]
+		\REQUIRE 秘密共享的元素数组plist
+		\ENSURE 距离关系$ u $
+		\STATE 
+	\end{algorithmic}
+\end{algorithm}
 \section{基于dbscan的隐私保护层次聚类}
 \label{s4-t3}
 \section{理论分析}

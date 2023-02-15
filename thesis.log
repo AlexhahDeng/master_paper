@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  14 FEB 2023 21:49
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  15 FEB 2023 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1958,7 +1958,11 @@ OML/cmm/m/it/12 :cluId; mul\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 m[]; d\OT1/cmr/m/n
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26])
-(./data/ack.tex [27]) [28
+(./data/ack.tex [27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28])
+[29
 
 ]
 
@@ -1995,7 +1999,7 @@ Underfull \hbox (badness 1348) in paragraph at lines 118--118
 rotocols using circuit randomization[C]//
  []
 
-[29
+[30
 
 
 ]
@@ -2010,7 +2014,7 @@ Underfull \hbox (badness 1983) in paragraph at lines 118--118
 ised machine learning on encrypted
  []
 
-[30] (./data/resume.tex [31]
+[31] (./data/resume.tex [32]
 \blx@maxsegment@1=\count564
 \blx@sectionciteorder@1=\count565
 Package biblatex Info: Reference section=1 on input line 14.
@@ -2021,13 +2025,13 @@ Package biblatex Info: Reference section=0 on input line 23.
 Package biblatex Info: Reference section=2 on input line 26.
 Package biblatex Info: Setting label 'refsection:2' on input line 26.
 Package biblatex Info: Reference section=0 on input line 35.
-) [32
+) [33
 
 ] (./data/appendix01.tex)
 \tf@thm=\write9
 \openout9 = `thesis.thm'.
 
- [33
+ [34
 
 
 
@@ -2049,12 +2053,12 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35589 strings out of 476919
- 668920 string characters out of 5825424
- 1591686 words of memory out of 5000000
- 54953 multiletter control sequences out of 15000+600000
+ 35591 strings out of 476919
+ 668950 string characters out of 5825424
+ 1591763 words of memory out of 5000000
+ 54955 multiletter control sequences out of 15000+600000
  435832 words of font info for 230 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,12n,130p,1151b,4868s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,12n,130p,1151b,4860s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (43 pages).
+Output written on thesis.pdf (44 pages).
