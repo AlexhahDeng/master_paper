@@ -124,23 +124,27 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.6}改进的隐私保护dbscan}{27}{section.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}基于dbscan的隐私保护层次聚类}{27}{section.4.7}%
+\contentsline {subsection}{\numberline {4.6.1}初始化}{27}{subsection.4.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}理论分析}{27}{section.4.8}%
+\contentsline {subsection}{\numberline {4.6.2}聚类}{29}{subsection.4.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}实验评估}{27}{section.4.9}%
+\contentsline {section}{\numberline {4.7}基于dbscan的隐私保护层次聚类}{29}{section.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.10}本章小结}{27}{section.4.10}%
+\contentsline {section}{\numberline {4.8}理论分析}{29}{section.4.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{致谢}{29}{chapter*.21}%
+\contentsline {section}{\numberline {4.9}实验评估}{29}{section.4.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{参考文献}{30}{section*.22}%
+\contentsline {section}{\numberline {4.10}本章小结}{30}{section.4.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{作者在学期间取得的学术成果}{33}{chapter*.24}%
+\contentsline {chapter}{致谢}{31}{chapter*.21}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{参考文献}{32}{section*.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{作者在学期间取得的学术成果}{35}{chapter*.24}%
 \defcounter {refsection}{0}\relax 
 \ttl@change@i {\@ne }{chapter}{0pt}{\vspace {0.25\baselineskip } \heiti \xiaosi [1.25]}{附录\,\thecontentslabel \quad }{}{\hspace {.5em}\titlerule *{.}\contentspage }\relax 
 \defcounter {refsection}{0}\relax 
 \ttl@change@v {chapter}{}{}{}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}模板提供的希腊字母命令列表}{34}{appendix.A}%
+\contentsline {chapter}{\numberline {A}模板提供的希腊字母命令列表}{36}{appendix.A}%
 \contentsfinish 

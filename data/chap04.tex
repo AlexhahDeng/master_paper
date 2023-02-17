@@ -161,6 +161,7 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 \end{algorithm}
 
 \subsection{聚类}
+\label{t1-julei}
 初始化之后，我们获得了元素的$ isCore $信息，以及元素之间的相邻关系$ u_{ij},i,j\in[n],u_{ij}\in\{0,1\} $。接下来，我们将具体介绍一种基于DBSCAN的全新聚类方式。该算法的核心在于构造若干临时簇，通过记录临时簇之间的连接关系，最后由用户来还原最终簇划分结果。
 
 在初始化的过程中，我们默认每个元素的初始$ cluId $为下标，即每个元素都默认为独立的临时簇。在聚类的过程中，对于核心点，我们修改其$ \epsilon $范围内所有未标记点的$ cluId $，并将状态修改为已标记。对于所有非核心点，无法修改其他点的属性，并且被标记后，无法再被其他核心点标记。经过上述过程，数据集已经被划分为若干临时簇。根据DBSCAN的原理可知，单个簇由若干密度可达的核心点展开。通过记录核心点之间的相邻关系，我们在还原结果的阶段，将相连的临时簇合并，即可得到最终的结果。
@@ -243,22 +244,68 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 \label{s4-t2}
 本节我们将在上一节的基础上详细阐述一种改进的隐私保护DBSCAN方案，该方案能够在数据集被打乱的情况，使满足条件可以被划分到多个簇的数据点稳定分类到最近的簇中。
 
-方案包含三个步骤，初始化、聚类以及还原结果。还原结果的过程与\ref{task1-huanyuan}一致，这里不多做解释。主要区别在于初始化和聚类过程，下面我们将着重介绍。
+方案包含三个步骤，初始化、聚类以及还原结果。还原结果的过程与\ref{task1-huanyuan}一致，这里不多做说明。主要区别在于初始化和聚类过程，下面我们将着重介绍。
 
 \subsection{初始化}
+具体流程如\ref{alg_t2_chushihua}所示，1-6行，我们计算每个元素到其他元素的距离，同时获取邻域关系存储在$ u $中，并且记录每个元素邻域范围内包含点的个数$ s[j],j\in[n] $。8-9行，我们并行比较$ s $与minpts的大小关系，并更新每个元素的isCore属性。
+
+10-20行，我们开始算法的核心部分，即更新边界元素的cluId。11行，我们预设标识$ m $来判断是否对元素更新cluId，判断依据是若邻域范围内存在核心点，则可以修改（15行）。13-14行，若$ x[j] $为核心点且与$ x[i] $相邻，则$ t1[j] $为1，否则$ t2[j] $为1。根据该值，我们在17行，计算出$ r1 $，过滤出所有相邻核心点的距离，无关距离设为最大值，避免在18行影响求解最小值。19行，我们通过逐个相乘后累加来求解最近相邻核心点的cluId。在20行，我们根据前述$ m $值来更新cluId。
+
+值得指出的是，对于核心点，$ m = 1 $需要修改cluId，但是最近相邻核心点为自身，因此cluId未改变。对于边界点，依据算法将修改cluId与最近相邻核心点保持一致。对于噪声，$ m=0 $因此cluId不会发生改变。
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
 	\renewcommand{\algorithmicensure}{\textbf{输出:}}
 	\caption{初始化}
 	\label{alg_t2_chushihua}
 	\begin{algorithmic}[1]
-		\REQUIRE 秘密共享的元素数组plist
+		\REQUIRE 秘密共享的元素数组$ \{x_1,...,x_n\} $
 		\ENSURE 距离关系$ u $
-		\STATE 
+		\FOR {$ i=1 $ to $ n $}
+		\FOR {$ j=1 $ to $ n $}
+		\STATE $ d[j] \leftarrow \text{SED}(x[i].data, x[j].data) $
+		\ENDFOR
+		\STATE $ u[i] \leftarrow \text{SC}([eps]_n, d) $
+		\STATE $ s[i] \leftarrow sum(u[j])\ \text{for}\ j\in[n]$
+		\ENDFOR
+		\STATE $ r \leftarrow \text{SC}(u, [minpts]_n) $
+		\STATE $ x[i].isCore \leftarrow r[i]\ \text{for}\ i\in[n] $
+		\FOR {$ i=1 $ to $ n $}
+		\STATE $ m \leftarrow 0 $
+		\FOR{$ j=1 $ to $ n $}
+		\STATE $ t1[j] \leftarrow \text{MUL}(x[j].isCore, u[i][j]) $
+		\STATE $ t2[j] \leftarrow 1-t1[j] $
+		\STATE $ m = t1[j] + m - \text{MUL}(m, t1[j]) $ 
+		\ENDFOR
+		\STATE $ r1 \leftarrow \text{MUL}(d[i], t1) + \text{MUL}([max]_n, t2) $
+		\STATE $ r2 \leftarrow \text{SMin}(r1) $
+		\STATE $ nId \leftarrow \text{sum}(\text{MUL}(r2[j], x[j].cluId))\ \text{for}\ j \in [n] $
+		\STATE $ x[i].CluId \leftarrow \text{MUL}(nId, m) + \text{MUL}(1-m, x[i].cluId)$
+		\ENDFOR
+	\end{algorithmic}
+\end{algorithm}
+
+\subsection{聚类}
+在初始化的过程中，所有边界元素均已被划分到最近相邻核心点所属簇中。因此相较于\ref{t1-julei}，本方案的聚类过程更加简单便捷。只要记录相连的临时簇信息即可。
+\begin{algorithm}[htbp]
+	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+	\renewcommand{\algorithmicensure}{\textbf{输出:}}
+	\caption{初始化}
+	\label{alg_t2_julei}
+	\begin{algorithmic}[1]
+		\REQUIRE 秘密共享的元素数组$ \{x_1,...,x_n\} $，距离关系$ u $
+		\ENSURE 相连关系$ plist $
+		\FOR {$ i=1 $ to $ n $}
+		\FOR {$ j=1 $ to $ n $}
+		\STATE $ r \leftarrow \text{MUL}(x[i].isCore, x[j].isCore) $
+		\STATE $ r \leftarrow \text{MUL}(r, u[i][j]) $
+		\STATE add new item to plist(x[i].cluId, x[j].isCore, r)
+		\ENDFOR
+		\ENDFOR
 	\end{algorithmic}
 \end{algorithm}
 \section{基于dbscan的隐私保护层次聚类}
 \label{s4-t3}
+方案一
 \section{理论分析}
 \label{s4-lilun}
 \section{实验评估}
