@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  16 FEB 2023 16:48
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  20 FEB 2023 19:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1759,11 +1759,11 @@ Package fontspec Info: Font family 'SimSun(1)' created for font 'SimSun' with
 
 
 
-])
+] [2])
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
- [2] (./thesis.lot
+ [3] (./thesis.lot
 LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 7.
 
 
@@ -1800,13 +1800,13 @@ LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <8.43146> not available
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
- [3
+ [4
 
 ] (./thesis.lof)
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
- [4
+ [5
 
 ] (./data/abstract.tex [1
 
@@ -1822,45 +1822,51 @@ LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
 
 ]) [3
 
-] (./data/chap01.tex) (./data/chap02.tex
-[1
+] (./data/chap01.tex [1
 
-
-
-]) (./data/chap03.tex [2
-
-
-] [3
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4]
-[5] [6]
-File: img/fig5.png Graphic file (type bmp)
-<img/fig5.png>
- [7]
+ [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]
+ [3])
+(./data/chap02.tex [4]) (./data/chap03.tex [5
+
+
+] [6
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+[8] [9]
+File: img/fig5.png Graphic file (type bmp)
+<img/fig5.png>
+ [10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 126.
 
-[9]
+[12]
 File: img/fig4.png Graphic file (type bmp)
 <img/fig4.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
+ [13]
 File: img/fig1.png Graphic file (type bmp)
 <img/fig1.png>
 
-[11]
+[14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12]
+ [15]
 
 Package fontspec Info: Could not resolve font "KaiTi/BI" (it probably doesn't
 (fontspec)             exist).
@@ -1888,7 +1894,7 @@ Package fontspec Info: Font family 'KaiTi(0)' created for font 'KaiTi' with
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13]
+ [16]
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
 nput line 257.
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
@@ -1898,20 +1904,20 @@ t line 275.
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
 line 278.
 
-[14]
+[17]
 
 Package caption Warning: \label without proper reference on input line 303.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `s3-table-compucost' on page 15 undefined on input lin
+LaTeX Warning: Reference `s3-table-compucost' on page 18 undefined on input lin
 e 299.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
-[16]
+ [18]
+[19]
 File: img/lsun_ptxt.png Graphic file (type bmp)
 <img/lsun_ptxt.png>
 File: img/lsun_ctxt.png Graphic file (type bmp)
@@ -1919,7 +1925,7 @@ File: img/lsun_ctxt.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17]
+ [20]
 File: img/m.png Graphic file (type bmp)
 <img/m.png>
 File: img/m_comm.png Graphic file (type bmp)
@@ -1937,15 +1943,15 @@ File: img/k_comm.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18])
-(./data/chap04.tex [19] [20
+ [21])
+(./data/chap04.tex [22] [23
 
 
-] [21]
+] [24]
 File: img/ch4-sysmod.png Graphic file (type bmp)
 <img/ch4-sysmod.png>
- [22] [23] [24] [25]
-Overfull \hbox (18.11383pt too wide) in paragraph at lines 185--186
+ [25] [26] [27] [28]
+Overfull \hbox (18.11383pt too wide) in paragraph at lines 186--187
 [] []\TU/TimesNewRomanPSStd(0)/b/n/12.045 record new element in plist $\OT1/cmr
 /m/n/12 (\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 i\OT1/cmr/m/n/12 ]
 \OML/cmm/m/it/12 :cluId; d\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 j\OT1/cmr/m/n/12 ]\
@@ -1957,12 +1963,19 @@ OML/cmm/m/it/12 :cluId; mul\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 m[]; d\OT1/cmr/m/n
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26]
-[27]
+ [29]
+[30]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28])
-(./data/ack.tex [29] [30]) [31
+ [31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+[33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34])
+(./data/ack.tex [35]) [36
 
 ]
 
@@ -1993,28 +2006,28 @@ ng=tex-text;"
 x-text;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
-
-Underfull \hbox (badness 1348) in paragraph at lines 118--118
-[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [12] []Beaver D. Efficient multiparty p
-rotocols using circuit randomization[C]//
- []
-
-[32
+ [37
 
 
 ]
+Underfull \hbox (badness 1348) in paragraph at lines 118--118
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [16] []Beaver D. Efficient multiparty p
+rotocols using circuit randomization[C]//
+ []
+
+
 Underfull \hbox (badness 2050) in paragraph at lines 118--118
-[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [23] []Fränti P, Sieranoja S. K-means p
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [27] []Fränti P, Sieranoja S. K-means p
 roperties on six clustering benchmark
  []
 
 
 Underfull \hbox (badness 1983) in paragraph at lines 118--118
-[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [24] []Jäschke A, Armknecht F. Unsuperv
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [28] []Jäschke A, Armknecht F. Unsuperv
 ised machine learning on encrypted
  []
 
-[33] (./data/resume.tex [34]
+[38] (./data/resume.tex [39]
 \blx@maxsegment@1=\count564
 \blx@sectionciteorder@1=\count565
 Package biblatex Info: Reference section=1 on input line 14.
@@ -2025,13 +2038,13 @@ Package biblatex Info: Reference section=0 on input line 23.
 Package biblatex Info: Reference section=2 on input line 26.
 Package biblatex Info: Setting label 'refsection:2' on input line 26.
 Package biblatex Info: Reference section=0 on input line 35.
-) [35
+) [40
 
 ] (./data/appendix01.tex)
 \tf@thm=\write9
 \openout9 = `thesis.thm'.
 
- [36
+ [41
 
 
 
@@ -2047,18 +2060,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 457F5932E018A77D256ADF488F5293DF;6858.
+(rerunfilecheck)             Checksum: 7A8F0CE27B987F881DAA84808CFB56E8;8152.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35595 strings out of 476919
- 669011 string characters out of 5825424
- 1593872 words of memory out of 5000000
- 54959 multiletter control sequences out of 15000+600000
+ 35622 strings out of 476919
+ 670230 string characters out of 5825424
+ 1597273 words of memory out of 5000000
+ 54986 multiletter control sequences out of 15000+600000
  435832 words of font info for 230 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,12n,130p,1151b,4862s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,12n,130p,1151b,4864s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (46 pages).
+Output written on thesis.pdf (52 pages).

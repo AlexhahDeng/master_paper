@@ -1,33 +1,41 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'thesis.blg'
-[129] biber-MSWIN32:340> INFO - === 
-[171] Biber.pm:415> INFO - Reading 'thesis.bcf'
-[372] Biber.pm:952> INFO - Found 32 citekeys in bib section 0
-[373] Biber.pm:952> INFO - Found 7 citekeys in bib section 1
-[373] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[373] Biber.pm:952> INFO - Found 2 citekeys in bib section 2
-[373] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[412] Biber.pm:4340> INFO - Processing section 0
-[425] Biber.pm:4531> INFO - Looking for bibtex format file 'ref/refs.bib' for section 0
-[480] bibtex.pm:1689> INFO - LaTeX decoding ...
-[526] bibtex.pm:1494> INFO - Found BibTeX data source 'ref/refs.bib'
-[941] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[941] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[941] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[941] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[965] Biber.pm:4340> INFO - Processing section 1
-[966] Biber.pm:4531> INFO - Looking for bibtex format file 'ref/resume.bib' for section 1
-[1014] bibtex.pm:1689> INFO - LaTeX decoding ...
-[1028] bibtex.pm:1494> INFO - Found BibTeX data source 'ref/resume.bib'
-[1110] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1110] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1110] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[1110] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[1117] Biber.pm:4340> INFO - Processing section 2
-[1117] Biber.pm:4531> INFO - Looking for bibtex format file 'ref/resume.bib' for section 2
-[1178] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1178] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1178] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[1178] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[1181] bbl.pm:654> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[1215] bbl.pm:757> INFO - Output to thesis.bbl
+[136] biber-MSWIN32:340> INFO - === 
+[182] Biber.pm:415> INFO - Reading 'thesis.bcf'
+[365] Biber.pm:952> INFO - Found 36 citekeys in bib section 0
+[365] Biber.pm:952> INFO - Found 7 citekeys in bib section 1
+[365] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[366] Biber.pm:952> INFO - Found 2 citekeys in bib section 2
+[366] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[396] Biber.pm:4340> INFO - Processing section 0
+[411] Biber.pm:4531> INFO - Looking for bibtex format file 'ref/refs.bib' for section 0
+[476] bibtex.pm:1689> INFO - LaTeX decoding ...
+[535] bibtex.pm:1494> INFO - Found BibTeX data source 'ref/refs.bib'
+[537] Utils.pm:395> WARN - Duplicate entry key: 'latifi2021dbhc' in file 'ref/refs.bib', skipping ...
+[538] Utils.pm:395> WARN - Duplicate entry key: 'sadiku2014cloud' in file 'ref/refs.bib', skipping ...
+[538] Utils.pm:395> WARN - Duplicate entry key: 'ribeiro2015mlaas' in file 'ref/refs.bib', skipping ...
+[538] Utils.pm:395> WARN - Duplicate entry key: 'hunt2018chiron' in file 'ref/refs.bib', skipping ...
+[538] Utils.pm:395> WARN - Duplicate entry key: 'ahmed2020k' in file 'ref/refs.bib', skipping ...
+[538] Utils.pm:395> WARN - Duplicate entry key: 'cramer2015secure' in file 'ref/refs.bib', skipping ...
+[538] Utils.pm:395> WARN - Duplicate entry key: 'li2018privacy' in file 'ref/refs.bib', skipping ...
+[915] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[915] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[915] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[915] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[942] Biber.pm:4340> INFO - Processing section 1
+[943] Biber.pm:4531> INFO - Looking for bibtex format file 'ref/resume.bib' for section 1
+[1004] bibtex.pm:1689> INFO - LaTeX decoding ...
+[1018] bibtex.pm:1494> INFO - Found BibTeX data source 'ref/resume.bib'
+[1098] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1098] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1098] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1098] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[1104] Biber.pm:4340> INFO - Processing section 2
+[1104] Biber.pm:4531> INFO - Looking for bibtex format file 'ref/resume.bib' for section 2
+[1161] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1161] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1161] Biber.pm:4168> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[1162] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[1163] bbl.pm:654> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[1195] bbl.pm:757> INFO - Output to thesis.bbl
+[1196] Biber.pm:128> INFO - WARNINGS: 7

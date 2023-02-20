@@ -68,6 +68,127 @@
       \range{pages}{3}
       \keyw{sadiku2014cloud}
     \endentry
+    \entry{manvi2014resource}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5f46fa3bf46938fa31bb685e9abef831}{%
+           family={Manvi},
+           familyi={M\bibinitperiod},
+           given={Sunilkumar\bibnamedelima S},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=396e8eb7557f4e5d2149f2df48de13a2}{%
+           family={Shyam},
+           familyi={S\bibinitperiod},
+           given={Gopal\bibnamedelima Krishna},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{e8f05610f70d649f9f908c31cf1502a5}
+      \strng{fullhash}{12ce2fe8259d6d9dc80e9e2af103dd4e}
+      \strng{bibnamehash}{12ce2fe8259d6d9dc80e9e2af103dd4e}
+      \strng{authorbibnamehash}{12ce2fe8259d6d9dc80e9e2af103dd4e}
+      \strng{authornamehash}{e8f05610f70d649f9f908c31cf1502a5}
+      \strng{authorfullhash}{12ce2fe8259d6d9dc80e9e2af103dd4e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of network and computer applications}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Resource management for Infrastructure as a Service (IaaS) in cloud computing: A survey}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{41}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{424\bibrangedash 440}
+      \range{pages}{17}
+      \keyw{manvi2014resource}
+    \endentry
+    \entry{rani2014comparative}{article}{}
+      \name{author}{2}{}{%
+        {{hash=77f771ac6be1c6da631986106fdeae2b}{%
+           family={Rani},
+           familyi={R\bibinitperiod},
+           given={Dimpi},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e305ba41e1c5474d0200b05aec723b2f}{%
+           family={Ranjan},
+           familyi={R\bibinitperiod},
+           given={Rajiv\bibnamedelima Kumar},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{e46ebdcb2c697eabdf014d96ad233b87}
+      \strng{fullhash}{a8165fea44bdaa013522161de35e7e1c}
+      \strng{bibnamehash}{a8165fea44bdaa013522161de35e7e1c}
+      \strng{authorbibnamehash}{a8165fea44bdaa013522161de35e7e1c}
+      \strng{authornamehash}{e46ebdcb2c697eabdf014d96ad233b87}
+      \strng{authorfullhash}{a8165fea44bdaa013522161de35e7e1c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Advanced Research in Computer Science and Software Engineering}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{6}
+      \field{title}{A comparative study of SaaS, PaaS and IaaS in cloud computing}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{4}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \keyw{rani2014comparative}
+    \endentry
+    \entry{antonopoulos2010cloud}{book}{}
+      \name{author}{2}{}{%
+        {{hash=e899d266ac7286fe5888bccdf6cec601}{%
+           family={Antonopoulos},
+           familyi={A\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+        {{hash=3e16b4b40d3a9e9375f1c548d891b61f}{%
+           family={Gillam},
+           familyi={G\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{53f9bf555cba0ca647ff39a011a27ec5}
+      \strng{fullhash}{e338da432c8c66b949b550d1ea5a9481}
+      \strng{bibnamehash}{e338da432c8c66b949b550d1ea5a9481}
+      \strng{authorbibnamehash}{e338da432c8c66b949b550d1ea5a9481}
+      \strng{authornamehash}{53f9bf555cba0ca647ff39a011a27ec5}
+      \strng{authorfullhash}{e338da432c8c66b949b550d1ea5a9481}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Cloud computing}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \keyw{antonopoulos2010cloud}
+    \endentry
     \entry{ribeiro2015mlaas}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=ead95c1403279a3d42cb677148284961}{%
@@ -98,8 +219,8 @@
       \strng{authorbibnamehash}{974230ca8cf6b871c2109c0b04e4d310}
       \strng{authornamehash}{50c49fff0f8450f3cb5c5804b189e995}
       \strng{authorfullhash}{974230ca8cf6b871c2109c0b04e4d310}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2015 IEEE 14th international conference on machine learning and applications (ICMLA)}
@@ -152,8 +273,8 @@
       \strng{authorbibnamehash}{0731e57809a7a7c823ff9533e846f3be}
       \strng{authornamehash}{a35b2911111ec30f0073a95ec0e08acd}
       \strng{authorfullhash}{9d778b56131af12d683bee90fcc7f049}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1803.05961}
@@ -197,8 +318,8 @@
       \strng{authorbibnamehash}{acb47d59a7a3c6337fe7fab2af63c704}
       \strng{authornamehash}{318df2b2189293585fdf4f1830173eca}
       \strng{authorfullhash}{acb47d59a7a3c6337fe7fab2af63c704}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Electronics}
@@ -243,8 +364,8 @@
       \strng{authorbibnamehash}{e98f46d4ea8d1cb3d9f9e83d35263fdb}
       \strng{authornamehash}{b43797e83d2277b0c07e1e8b5a209cf3}
       \strng{authorfullhash}{e98f46d4ea8d1cb3d9f9e83d35263fdb}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -302,8 +423,8 @@
       \strng{authorbibnamehash}{62cadfa8c2d94244537d7c8e17b95f69}
       \strng{authornamehash}{7f0221976d31be92bbcb6eec826d5209}
       \strng{authorfullhash}{c6dc33600fd6c9ee3ba7372ec814efb7}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Cluster Computing}
@@ -319,6 +440,55 @@
       \field{pages}{277\bibrangedash 286}
       \range{pages}{10}
       \keyw{li2018privacy}
+    \endentry
+    \entry{montazerolghaem2020green}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d8a722a5d9116817a0ff6f26942039c8}{%
+           family={Montazerolghaem},
+           familyi={M\bibinitperiod},
+           given={Ahmadreza},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fb64734fb5f24b00b15cf70718e92f2b}{%
+           family={Yaghmaee},
+           familyi={Y\bibinitperiod},
+           given={Mohammad\bibnamedelima Hossein},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=e8ae8d9fdf6679ee41364bed85175c64}{%
+           family={Leon-Garcia},
+           familyi={L\bibinithyphendelim G\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{44499f61de49fccf632540e2daa1b936}
+      \strng{fullhash}{5f71bdfeec0ccd146bd13edf72174a32}
+      \strng{bibnamehash}{5f71bdfeec0ccd146bd13edf72174a32}
+      \strng{authorbibnamehash}{5f71bdfeec0ccd146bd13edf72174a32}
+      \strng{authornamehash}{44499f61de49fccf632540e2daa1b936}
+      \strng{authorfullhash}{5f71bdfeec0ccd146bd13edf72174a32}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Green Communications and Networking}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{3}
+      \field{title}{Green cloud multimedia networking: NFV/SDN based energy-efficient resource allocation}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{4}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{873\bibrangedash 889}
+      \range{pages}{17}
+      \keyw{montazerolghaem2020green}
     \endentry
     \entry{kanungo2002efficient}{article}{}
       \name{author}{6}{}{%
@@ -365,8 +535,8 @@
       \strng{authorbibnamehash}{586de81b1db67d80f9ec8f75776a4b9c}
       \strng{authornamehash}{2031ec6cd75aa881391c32ad36d3f59a}
       \strng{authorfullhash}{6a782ddcd6599cad0360bb19693bee96}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE transactions on pattern analysis and machine intelligence}
@@ -414,8 +584,8 @@
       \strng{authorbibnamehash}{93394e8fa73313f23b7cd0c070d18429}
       \strng{authornamehash}{f2058525d1423b070ddc2fa71711aa66}
       \strng{authorfullhash}{93394e8fa73313f23b7cd0c070d18429}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{22nd International Workshop On Design, Optimization, Languages and Analytical Processing of Big Data-DOLAP 2020-}
@@ -450,8 +620,8 @@
       \strng{authorbibnamehash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
       \strng{authornamehash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
       \strng{authorfullhash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{27th annual symposium on foundations of computer science (Sfcs 1986)}
@@ -497,8 +667,8 @@
       \strng{authorbibnamehash}{429f82e866d85dda3102f0a30deaa506}
       \strng{authornamehash}{40bc8b4fa99fd3229ead4b931058d71d}
       \strng{authorfullhash}{429f82e866d85dda3102f0a30deaa506}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in Cryptology—ASIACRYPT 2001: 7th International Conference on the Theory and Application of Cryptology and Information Security Gold Coast, Australia, December 9--13, 2001 Proceedings 7}
@@ -534,8 +704,8 @@
       \strng{authorbibnamehash}{6b0254448181499ed022c4bdfc5d6813}
       \strng{authornamehash}{6b0254448181499ed022c4bdfc5d6813}
       \strng{authorfullhash}{6b0254448181499ed022c4bdfc5d6813}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Managing Requirements Knowledge, International Workshop on}
@@ -571,8 +741,8 @@
       \strng{authorbibnamehash}{8293acfe90aa8eaf9b54bb2d780b215f}
       \strng{authornamehash}{8293acfe90aa8eaf9b54bb2d780b215f}
       \strng{authorfullhash}{8293acfe90aa8eaf9b54bb2d780b215f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in Cryptology—CRYPTO’91: Proceedings 11}
@@ -613,8 +783,8 @@
       \strng{authorbibnamehash}{785d8c81b13ac7db10566bad391632ea}
       \strng{authornamehash}{226b5ac9f15f6cc898a817b281ed1e3f}
       \strng{authorfullhash}{785d8c81b13ac7db10566bad391632ea}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Financial Cryptography and Data Security: 17th International Conference, FC 2013, Okinawa, Japan, April 1-5, 2013, Revised Selected Papers 17}
@@ -672,8 +842,8 @@
       \strng{authorbibnamehash}{fa6af8bbcbb2d57f8af7e6941ec9f1bf}
       \strng{authornamehash}{70d18fce84b19b58ece4fee10b4305b5}
       \strng{authorfullhash}{b9b8c3c618162af7cd89be2e131f35f8}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 2018 on Asia conference on computer and communications security}
@@ -729,8 +899,8 @@
       \strng{authorbibnamehash}{31185cbd96d7e7d59c7788b6e1fe747a}
       \strng{authornamehash}{95a5b9d20e620247996b4690be15bbe3}
       \strng{authorfullhash}{59092763d077ace42677051136382e7f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Knowledge and Data Engineering}
@@ -770,8 +940,8 @@
       \strng{authorbibnamehash}{cd13082afa7020f23354a2b82a3b35f3}
       \strng{authornamehash}{18b04314293f95b540a4da41447b41de}
       \strng{authorfullhash}{cd13082afa7020f23354a2b82a3b35f3}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 14th ACM conference on Computer and communications security}
@@ -837,8 +1007,8 @@
       \strng{authorbibnamehash}{127efd240588608e04083f4124108442}
       \strng{authornamehash}{14dd7bb4c792c725baea1a65a36925e0}
       \strng{authorfullhash}{724a2b23483e3e77f1b266541e8cd23d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Internet of Things Journal}
@@ -876,8 +1046,8 @@
       \strng{authorbibnamehash}{b853abc93e016bf8e812e1ae477e4c6a}
       \strng{authornamehash}{b853abc93e016bf8e812e1ae477e4c6a}
       \strng{authorfullhash}{b853abc93e016bf8e812e1ae477e4c6a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -920,8 +1090,8 @@
       \strng{authorbibnamehash}{7d91546d580262606d2bfc79e55c877e}
       \strng{authornamehash}{aa2b21384c45ddd71eef97ad183268da}
       \strng{authorfullhash}{7d91546d580262606d2bfc79e55c877e}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Computer Security-ESORICS 2008: 13th European Symposium on Research in Computer Security, Málaga, Spain, October 6-8, 2008. Proceedings 13}
@@ -984,8 +1154,8 @@
       \strng{authorbibnamehash}{297b611028d7f373409f0adac0f18ad9}
       \strng{authornamehash}{d99840620f2d2ee41b6883d1909a7c45}
       \strng{authorfullhash}{7e62807d9bb9d1c161634d4841a4c51a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 2020 ACM SIGSAC Conference on Computer and Communications Security}
@@ -1028,8 +1198,8 @@
       \strng{authorbibnamehash}{84faecaed1352d3f541c5ea45597a212}
       \strng{authornamehash}{053693a1b8a255028a080bcc55eae36e}
       \strng{authorfullhash}{84faecaed1352d3f541c5ea45597a212}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Cryptology ePrint Archive}
@@ -1065,8 +1235,8 @@
       \strng{authorbibnamehash}{1b294b7fa59174585ff0a27c7c8d874e}
       \strng{authornamehash}{2ab1a7677a93a59d44db399748b066b3}
       \strng{authorfullhash}{1b294b7fa59174585ff0a27c7c8d874e}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The UCI KDD Archive}
@@ -1105,8 +1275,8 @@
       \strng{authorbibnamehash}{694f036921665929fa9b173f218de1a4}
       \strng{authornamehash}{b1f6782c5c4a486984187896d3fab4bd}
       \strng{authorfullhash}{694f036921665929fa9b173f218de1a4}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Applied intelligence}
@@ -1148,8 +1318,8 @@
       \strng{authorbibnamehash}{08623a55bb73c5674e1428a3877472be}
       \strng{authornamehash}{131f25579fa70e691e0f94647ee76529}
       \strng{authorfullhash}{08623a55bb73c5674e1428a3877472be}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Selected Areas in Cryptography--SAC 2018: 25th International Conference, Calgary, AB, Canada, August 15--17, 2018, Revised Selected Papers}
@@ -1205,8 +1375,8 @@
       \strng{authorbibnamehash}{62461e8f2239f4e82496b6402ccf97ca}
       \strng{authornamehash}{2d675addc0e23dd8096e2787bfc0949f}
       \strng{authorfullhash}{e02a2d2e912e55dd10a09098e439d80f}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Security and Communication Networks}
@@ -1261,8 +1431,8 @@
       \strng{authorbibnamehash}{1943a219f0b9351f2e27ea8c3f9dab4f}
       \strng{authornamehash}{a049ebf438c0202f111ed4a518904e42}
       \strng{authorfullhash}{d91074b1b30da03c6d9288c000b31793}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{The fifth international conference on the applications of digital information and web technologies (ICADIWT 2014)}
@@ -1312,8 +1482,8 @@
       \strng{authorbibnamehash}{93f88297c66aca5bc89c3c5131ea9566}
       \strng{authornamehash}{9158a41d23cb4e154e78366d59c05728}
       \strng{authorfullhash}{77089c60a08eb43e856376e88849121a}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{kdd}
@@ -1361,8 +1531,8 @@
       \strng{authorbibnamehash}{9c50ee5988fbe6b147aea117c6bb912a}
       \strng{authornamehash}{b481f77dfc035eaf1add490c2c87750c}
       \strng{authorfullhash}{9c50ee5988fbe6b147aea117c6bb912a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Chemometrics and Intelligent Laboratory Systems}
@@ -1404,8 +1574,8 @@
       \strng{authorbibnamehash}{54db53b3f3886d326ef029a6c29b56b1}
       \strng{authornamehash}{2d2cbdc611257f0f72635c49aad82b44}
       \strng{authorfullhash}{54db53b3f3886d326ef029a6c29b56b1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Data \& Knowledge Engineering}
@@ -1447,8 +1617,8 @@
       \strng{authorbibnamehash}{58b78870b329cf394411da6f1a80867a}
       \strng{authornamehash}{068e76220ccf61833ed161d2647a7f98}
       \strng{authorfullhash}{58b78870b329cf394411da6f1a80867a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2016 IEEE Trustcom/BigDataSE/ISPA}
@@ -1501,8 +1671,8 @@
       \strng{authorbibnamehash}{7d048bf994a84c4539abac453c639efb}
       \strng{authornamehash}{7647a8b1fd63f8f125311412c04e44c1}
       \strng{authorfullhash}{e101e4513a18bb91f87b3431e255a7a7}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 2008 international workshop on Privacy and anonymity in information society}
@@ -1553,8 +1723,8 @@
       \strng{authorbibnamehash}{9efcf1fa8d9d49bd76094e193fdf654b}
       \strng{authornamehash}{f7bff0a07ac0b80a23bf73e0f2e3f9c5}
       \strng{authorfullhash}{2b0503b54e16dba36e5404678272df62}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{International symposium on parallel and distributed processing with applications}

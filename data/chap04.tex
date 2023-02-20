@@ -305,7 +305,66 @@ DBSCAN能够应用于任意维度的数据集。铭文上最坏情况下的复�
 \end{algorithm}
 \section{基于dbscan的隐私保护层次聚类}
 \label{s4-t3}
-方案一
+方案一\ref{s4-t1}和方案二\ref{s4-t2}均是在用户给出eps和minpts值的基础上，实现隐私保护DBSCAN。但是现实情况中，多个独立用户在不知道彼此拥有的数据时，难以根据数据分布特点给出适合的参数，从而导致聚类效果较差。
+
+为了解决上述问题，尽可能减少用户对聚类的影响，我们根据\cite{latifi2021dbhc}中的思想设计了一种基于DBSCAN的隐私保护层次聚类方案。前述方案的eps均为固定值，没有考虑到数据集中的数据密度可能不同这一情况，导致在个别数据集上划分效果不佳的问题。本方案考虑数据集密度不同的特点，设置不同的eps值进行聚类以提升聚类效果。
+
+整个方案主要可以分为三个阶段：
+\begin{compactitem}
+	\item \textbf{获取eps值}：通过计算点之间的距离，绘制$ k- $线图来计算系列eps值。
+	\item \textbf{计算初始簇}：根据过去的eps值，反复执行DBSCAN过程，已被划分的点不再参与后续过程。
+	\item \textbf{合并初始簇}：不断将相距最近的初始簇进行合并，直到簇个数满足要求。
+\end{compactitem}
+
+\subsection{获取eps值}
+本小节我们将详细阐述如何通过$ k $线图来获取所有聚类所需的eps值，$ k $线图的绘制方式为，首先计算每个点到其最近的第$ k $个点的距离，然后按照升序方式排列，最后根据这些排序值绘图。由于现实数据集的复杂性，目前没有办法准确找到每个数据集具体包含多少种不同的密度，DBHC\cite{latifi2021dbhc}经过分析，选择在$ k $线图中固定间隔来选取eps的值，数据集的大小为$ n $，则间隔为$ \sqrt{n} $。因此DBSCAN的执行次数也为$ \sqrt{n} $次。
+
+\ref{alg_t3-1}中，我们将详细说明算法流程。1-6行，计算元素与元素之间的距离，由于距离是相对的，因此我们缩减了一半的计算量。7-13行，我们取$ k=2 $，计算每个点第二近的距离来绘制$ k $线图。$ d $为二维矩阵，$ d[i] $存储元素$ i $所有距离值。8行，我们首先求距离最小值，然后9-10行通过乘法和加法使得$ d[i] $中的最小值化为最大值，在11行，再求解一次最小值，即可获得第二小的值。12行，我们结合乘法和累加获取次小值存储到$ d2[i] $中。
+
+14行，我们借助安全排序算法\ref{alg_sort}来对$ d2 $数组进行升序排列，结果存放到$ sdist $中。值得一提的是，15行，对于固定间隙我们在明文上进行计算，因为数据集的大小是已知的。16-19行，我们从$ sdist $中取eps的值存储到$ elist $中。
+\begin{algorithm}[htbp]
+	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+	\renewcommand{\algorithmicensure}{\textbf{输出:}}
+	\caption{获取eps值}
+	\label{alg_t3-1}
+	\begin{algorithmic}[1]
+		\REQUIRE 秘密共享的元素数组$ \{x_1,...,x_n\} $
+		\ENSURE 秘密共享的eps值$ elist $
+		\FOR {$ i=1 $ to $ n $}
+		\FOR {$ j=i+1 $ to $ n $}
+		\STATE $ d[i][j] \leftarrow \text{SED}(x[i].data, x[j].data) $
+		\STATE $ d[j][i] \leftarrow d[i][j] $
+		\ENDFOR
+		\ENDFOR
+		\FOR{$ i=1 $ to $ n $}
+		\STATE $ r \leftarrow \text{SMin}(d[i]) $ % 求解最近距离
+		\STATE $ t[j] \leftarrow 1-r[j] $ for $ j\in[n] $
+		\STATE $ d[i] \leftarrow \text{MUL}(d[i], t) + \text{MUL}([max]_n, r) $
+		\STATE $ r \leftarrow \text{SMin}(d[i]) $
+		\STATE $ d2[i] \leftarrow \text{sum}(\text{MUL}(d[i], r)) $ % 获取第二近的距离
+		\ENDFOR
+		\STATE $ sdist \leftarrow sort(d2) $
+		\STATE $ j \leftarrow sqrt(n) $
+		\FOR {$ i=j $ to $ n $}
+		\STATE add $ sdist[i] $ to elist
+		\STATE $ i \leftarrow i + j $
+		\ENDFOR
+	\end{algorithmic}
+\end{algorithm}
+
+\subsection{计算初始簇}
+\begin{algorithm}[htbp]
+	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+	\renewcommand{\algorithmicensure}{\textbf{输出:}}
+	\caption{计算初始簇}
+	\label{alg_t3-2}
+	\begin{algorithmic}[1]
+		\REQUIRE 秘密共享的元素数组$ \{x_1,...,x_n\} $
+		\ENSURE 秘密共享的eps值$ elist $
+		\STATE 
+	\end{algorithmic}
+\end{algorithm}
+\subsection{合并初始簇}
 \section{理论分析}
 \label{s4-lilun}
 \section{实验评估}
