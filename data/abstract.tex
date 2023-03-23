@@ -1,21 +1,39 @@
 \begin{cabstract}
-国防科学技术大学是一所直属中央军委的综合性大学。1984年,学校经国务院、中央军委和教育部批准首批成立研究生院，%
-肩负着为全军培养高级科学和工程技术人才与指挥人才，培训高级领导干部，从事先进武器装备和国防关键技术研究的重要任务。%
-国防科技大学是全国重点大学，也是全国首批进入国家“211工程” 建设并获中央专项经费支持的全国重点院校之一。%
-学校前身是1953年创建于哈尔滨的中国人民解放军军事工程学院，简称“哈军工”。
+% 简述背景
+随着云计算环境下各种技术的快速发展和应用，给人类生活带来巨大便利的同时也引发了人们对于数据隐私安全的关注。聚类算法以其易用性和可扩展性广泛用于各种数据挖掘研究和应用中。
+%指出隐私安全问题
+云计算在赋能海量数据上聚类应用的同时，也带来了数据泄漏的风险。目前聚类方面的隐私保护相关研究大力发展，但是仍存在一些问题。
+%具体问题描述
+%方案难以兼顾效率与安全
+一方面，目前关于隐私保护聚类的相关研究难以兼顾效率与安全，完全安全的方案通常效率较低耗时较长，无法在实际环境中应用。运行开销较小，耗时较短的方案则通常存在数据安全问题，例如泄漏中间结果，或者是数据分布信息。
+%对于聚类其他算法的研究较少
+另一方面，当前隐私保护聚类相关研究主要基于K-means，该算法包含的复杂计算较少，流程简单，但应用场景与效果都有局限性。聚类包含许多不同类型的实现，例如谱聚类、密度聚类、核聚类等，分别有其适用的场景和优点，在隐私计算的场景下相关研究相对较少。
+
+% 因此提出了我们的方案
+本文深入分析了当前云环境下隐私保护聚类方案中存在的问题，以兼顾安全与高效为目标，设计了能够实现隐私保护的k-means聚类、密度聚类等方案。本文的主要工作与贡献如下：
+\begin{compactenum}
+%兼顾效率与安全的隐私保护k-means聚类
+\item 针对外包计算中隐私保护k-means聚类方案存在的数据安全与效率问题，本文在双云模型下，提出了基于kd-tree的隐私保护外包k-means聚类方案，该方案在保证安全的同时，耗时较少，能够应用于大型数据集。在训练过程中，资源受限的用户基于原始数据构造kd-tree并秘密共享给云平台后即无需参与后续计算。与现有工作相比，本方案通信和计算开销均较小。此外，本文设计的系列安全计算协议均可用于任意基于秘密共享的隐私保护场景，具有良好的扩展性。理论分析与实验验证表明，方案在提供完备的数据安全保护的同时，实现了高效准确的K-means聚类。
+
+%隐私保护DBSCAN聚类相关研究
+\item 针对密度聚类（Density-Based Spatial Clustering Application with Noise，DBSCAN）设计了三种隐私保护方案。首先，基于传统的DBSCAN设计了全新的隐私保护计算协议，引入临时簇的概念，通过记录相连信息来还原聚类结果，在提升安全性的前提下，实现了耗时与开销远远低于前沿研究的方案。其次，为解决DBSCAN聚类结果不稳定的问题，设计了一个能够获取稳定划分结果的改进隐私保护协议，在牺牲一定性能的情况下，显著提升了聚类结果的质量。最后，针对重要参数依赖数据分布与人工设定的问题，给出了一种基于DBSCAN的层次聚类方法，借助$ k $线图和knn算法，获取关键参数，能够在包含不同密度数据的数据集上较好的进行聚类。经过全面的实验与理论分析，证明方案能够在保护原始数据、中间结果以及聚类结果安全的同时，高效的完成聚类。   
+\end{compactenum}                                               
 \end{cabstract}
-\ckeywords{国防科学技术大学; 211; 哈军工}
+\ckeywords{云计算; 聚类; 隐私保护}
 
 \begin{eabstract}
-National University of Defense Technology is a comprehensive national key university based in Changsha, %
-Hunan Province, China. It is under the dual supervision of the Ministry of National Defense %
-and the Ministry of Education, designated for Project 211 and Project 985, %
-the two national plans for facilitating the development of Chinese higher education. %
+With the rapid development and application of various technologies in the cloud computing environment, it brings great convenience to human life and also raises concerns about data privacy and security. Clustering algorithms are widely used in various data mining researches and applications for their ease of use and scalability. While cloud computing empowers clustering applications on massive amounts of data, it also brings the risk of data leakage. 
+On the one hand, current research on privacy-preserving clustering has difficulty in balancing efficiency and security, and fully secure schemes are usually inefficient and time-consuming and cannot be applied in practical settings. However, less expensive and less time-consuming schemes usually have data security issues, such as leakage of intermediate results, or data distribution information. 
+On the other hand, the current research related to clustering is mainly based on K-means, which contains a simpler calculation, but has limitations in application scenarios and effect results. Clustering contains many different types of implementations, such as spectral clustering, density clustering, kernel clustering, etc., which have their applicable scenarios and advantages respectively, but relatively little research has been done in the scenario of privacy computing.
 
-NUDT was originally founded in 1953 as the Military Academy of Engineering in Harbin of Heilongjiang Province. %
-In 1970 the Academy of Engineering moved southwards to Changsha and was renamed Changsha Institute of Technology.%
- The Institute changed its name to National University of Defense Technology in 1978.
+In this paper, we deeply analyze the problems in current privacy-preserving clustering schemes in the cloud environment, and design privacy-preserving k-means clustering and density clustering with the goal of balancing security and efficiency. The main work and contributions of this paper are as follows:
+\begin{compactenum}
+%兼顾效率与安全的隐私保护k-means聚类
+\item To address the data security and efficiency problems of privacy-preserving k-means clustering schemes in outsourcing computing, this paper proposes a privacy-preserving outsourced k-means clustering scheme based on kd-tree under a dual-cloud model, which is less time-consuming and can be applied to large datasets while ensuring security. During the training process, resource-constrained users do not need to participate in the subsequent computation after constructing the kd-tree and sharing it secretly to the cloud platform. Compared with existing work, the communication and computation overheads of this scheme are smaller. In addition, the series of secure computation protocols designed in this paper can be used in any privacy-preserving scenario based on secret sharing, which is scalable. Theoretical analysis and experimental validation show that the scheme achieves efficient and accurate K-means clustering while providing data security protection.
 
+%隐私保护DBSCAN聚类相关研究
+\item A series of privacy-preserving schemes are designed for Density-Based Spatial Clustering Application with Noise (DBSCAN). First, a new privacy-preserving computational protocol is designed based on the traditional DBSCAN, which achieves a solution with much lower time and overhead than the cutting-edge research. Secondly, to solve the problem of unstable DBSCAN clustering results, an improved privacy-preserving protocol that can obtain stable clustering results is designed. Finally, a DBSCAN-based hierarchical clustering method is given to address the problem that important parameters depend on data distribution and manual setting. After a comprehensive experimental and theoretical analysis, it is demonstrated that the scheme can complete clustering efficiently while protecting the security of the original data, intermediate results and clustering results. 
+\end{compactenum}          
 \end{eabstract}
-\ekeywords{NUDT; MND; ME}
+\ekeywords{Cloud Computing; Clustering; Privacy-Preserving}
 

@@ -1,4 +1,4 @@
-\chapter{隐私保护k-means聚类方法研究}
+\chapter{隐私保护外包K-means聚类方法研究}
 
 \section{引言}
 %搬运开题报告
@@ -12,35 +12,73 @@
 
 外包计算和多方计算都各有其优势，但是对于资源受限的用户来说，外包计算则更加具有实际意义，基于外包计算的安全计算方法已有诸多研究，但是完全安全的聚类方案通常效率较低，即便是在性能较好的服务器上也需要花费难以接受的时间才能获得最终结果，效率较高的方案通常会牺牲一定的安全性，泄漏中间计算结果，例如簇大小，簇中心，这些都会导致一些隐私安全问题。因此如何设计出安全又高效的外包聚类方案值得深入研究和探索。
 
-针对上述研究现状，我们研究在外包计算场景下，如何在保护用户隐私数据和聚类中间结果以及保证效率可接受的同时，精确的完成聚类计算。首先，我们选择应用最为广泛的k-means聚类方案。k-means聚类是最简单和流行的无监督学习算法之一，能够应用于大型数据集，并且具有良好的收敛性。其次，我们引入kd-tree来加速聚类过程，kd-tree是一种空间划分数据结构，将空间上靠近的数据放在同一个节点中，广泛用于空间相关应用来加速计算。基于此，我们提出了一种基于kd-tree的隐私保护k-means聚类方法。方案由客户端和双云服务器参与，用户在本地明文基础上构造kd-tree，然后秘密共享所有数据分别发送给双云，云服务器在密文基础上运行系列安全协议来获取聚类结果后，将密文结果发送给用户，用户进行还原。理论分析与实验验证表明，方案在为用户提供外包聚类计算的同时，保证了数据的安全性，计算的高效性以及聚类结果的精确性。
+针对上述研究现状，我们研究在外包计算场景下，如何在保护用户隐私数据和聚类中间结果以及保证效率可接受的同时，精确的完成聚类计算。首先，我们选择应用最为广泛的K-means聚类方案。K-means聚类是最简单和流行的无监督学习算法之一，能够应用于大型数据集，并且具有良好的收敛性。其次，我们引入Kd-tree来加速聚类过程，Kd-tree是一种空间划分数据结构，将空间上靠近的数据放在同一个节点中，广泛用于空间相关应用来加速计算。基于此，我们提出了一种基于Kd-tree的隐私保护K-means聚类方法。方案由客户端和双云服务器参与，用户在本地明文基础上构造Kd-tree，然后秘密共享所有数据分别发送给双云，云服务器在密文基础上运行系列安全协议来获取聚类结果后，将密文结果发送给用户，用户进行还原。理论分析与实验验证表明，方案在为用户提供外包聚类计算的同时，保证了数据的安全性，计算的高效性以及聚类结果的精确性。
 
-本章的组织结构如下：第\ref{s3-yubei}节介绍了安全性定义、基于kd-tree的k-means聚类以及基于秘密共享的安全多方计算。第\ref{s3-wenti}节中描述了系统模型、安全模型以及设计目标。第\ref{s3-mokuai}节中提出了一系列基于秘密共享的隐私保护计算模块。第\ref{s3-ppokc}节中提出了基于kd-tree的隐私保护k-means聚类方案。第\ref{s3-lilun}从理论上分析了方案的正确性和安全性。第\ref{s3-shiyan}节中对方案进行了全面的实验评估。最后，在\ref{s3-xiaojie}节中对本章进行了总结。
+本章的组织结构如下：第\ref{s3-yubei}节介绍了安全性定义、基于Kd-tree的K-means聚类以及基于秘密共享的安全多方计算。第\ref{s3-wenti}节中描述了系统模型、安全模型以及设计目标。第\ref{s3-mokuai}节中提出了一系列基于秘密共享的隐私保护计算模块。第\ref{s3-ppokc}节中提出了基于Kd-tree的隐私保护K-means聚类方案。第\ref{s3-lilun}从理论上分析了方案的正确性和安全性。第\ref{s3-shiyan}节中对方案进行了全面的实验评估。最后，在\ref{s3-xiaojie}节中对本章进行了总结。
 
 \section{预备知识}
 \label{s3-yubei}
 \subsection{安全性定义}
 \subsubsection{半诚实模型}
-半诚实模型（Semi-honest Model），也称为诚实且好奇的模型（Honest-but-curious Model),指的是参与方会诚实的执行所有协议，但会竭尽所能利用已有的信息获取尽可能多的内容。半诚实的参与方通常是被动的，因为他们除了通过观察执行协议的过程无法采取其他任何行动来获取隐私数据。这样的模型广泛应用于诸多研究来支持密文数据上交互协议的研究。
+半诚实模型（Semi-honest Model），也称为诚实且好奇的模型（Honest-but-curious Model),指的是参与方会诚实的执行所有协议，但会竭尽所能利用已有的信息获取尽可能多的内容。半诚实的参与方通常是被动的，因为他们除了通过观察执行协议的过程无法采取其他任何行动来获取隐私数据。这样的模型广泛应用于诸多研究来支持密文数据上交互协议的研究。具体定义\cite{oded2009foundations}如下\ref{defi-semihonest}所示：
 
-\subsection{基于kd-tree的k-means聚类方法}
-k-means聚类是最常用的聚类算法之一，给定簇个数$ k $，它能够将大小为$ n $的数据集划分成$ k $个内容不相交的子集。每个簇都有一个中心点，对单个数据而言，该数据点到最终所属簇中心的距离相较于其他簇更短。k-means聚类算法有多种不同的实现方式，以使聚类更加高效便捷。\cite{kanungo2002efficient}论文的核心思想是以kd-tree为主要数据结构，设计了一种高效的过滤算法来聚类数据。
+\begin{definition}
+	\label{defi-semihonest}
+	假设参与方$ C_i $的输入为$ x_i $，对于任意协议$ \pi $，$ C_i $的执行镜像为$\Pi_{\mathrm{i}}(\pi)$，并且$ C_i $根据协议$ \pi $的计算输出为$ y_i$。若可以根据$ x_i $和$ y_i $模拟$\Pi_{\mathrm{i}}(\pi)$，且它的模拟镜像分布与实际执行镜像分布计算不可区分（Computationally Indistinguishable），则可以认为$ \pi $是安全的。
+\end{definition}
 
-\subsubsection{kd-tree数据结构}
-kd-tree是一种空间划分数据结构，将空间上靠近的点划分到树的同一个节点中\cite{el2020kd}，通常应用于加速与点空间相关的计算，例如k近邻算法和创建点云。
+\subsection{基于Kd-tree的K-means聚类方法}
+K-means聚类是最常用的聚类算法之一，给定簇个数$ k $，它能够将大小为$ n $的数据集划分成$ k $个内容不相交的子集。每个簇都有一个中心点，对单个数据而言，该数据点到最终所属簇中心的距离相较于其他簇更短。K-means聚类算法有多种不同的实现方式，以使聚类更加高效便捷。论文\cite{kanungo2002efficient}的核心思想是以Kd-tree为主要数据结构，设计了一种高效的过滤算法来聚类数据。
 
-这里，我们遵循如下规则来创建kd-tree：
+\subsubsection{Kd-tree数据结构}
+Kd-tree是一种空间划分数据结构，将空间上靠近的点划分到树的同一个节点中\cite{el2020kd}，通常应用于加速与点空间相关的计算，例如k近邻算法和创建点云。
+
+这里，我们遵循如下规则来创建Kd-tree：
 \begin{compactitem}
-	\item 在$ k- $维数据集中，我们计算数据每个维度的方差，选择方差最大的维度$ d_{max} $来划分数据
+	\item 在$ k$维数据集中，我们计算数据每个维度的方差，选择方差最大的维度$ d_{max} $来划分数据
 	\item 找到$ d_{max} $维度数据的中位数$ m $作为基准来划分数据集，得到两个子集合
-	\item 对划分出的子集重复上述过程直到kd-tree构造完成
+	\item 对划分出的子集重复上述过程直到Kd-tree构造完成
 \end{compactitem}
 
-kd-tree数据结构有两个主要的优势，一方面，它能够将可能属于同一个数据集的点划分到同一个树节点中。另一方面，它采取一种高效的方式来将初始空间划分为两个子空间以加速后续数据处理。
+Kd-tree数据结构有两个主要的优势，一方面，它能够将可能属于同一个数据集的点划分到同一个树节点中。另一方面，它采取一种高效的方式来将初始空间划分为两个子空间以加速后续数据处理。
 
 \subsubsection{过滤算法}
-本小节我们详细介绍\cite{kanungo2002efficient}的核心，过滤算法。给定$ n $个点，构造的kd-tree包含$ O(n) $个节点，长度为$ O(\log n) $。对于kd-tree中每个节点$ u $，计算包含的数据个数$ u.count $以及加权质心$ u.wgtCent $，即包含点数据之和。中心的计算方式为$ u.wgtCent/u.count $，在构造kd-tree的过程中可以连带计算上述内容。初始簇中心采取随机从数据集中选择的方式。
+本小节我们详细介绍\cite{kanungo2002efficient}的核心，过滤算法。给定$ n $个点，构造的Kd-tree包含$ O(n) $个节点，长度为$ O(\log n) $。对于Kd-tree中每个节点$ u $，计算包含的数据个数$ u.count $以及加权质心$ u.wgtCent $，即包含点数据之和。中心的计算方式为$ u.wgtCent/u.count $，在构造Kd-tree的过程中可以连带计算上述内容。初始簇中心采取从数据集中随机选择的方式。
 
-对于kd-tree中每个节点，我们维护一个候选簇集合，该集合中的簇均有可能为节点中数据的最终所属簇。对于根节点，候选簇为随机选择的$ k $个簇。我们按照如下方式来选择每个点的候选簇集合：对于每个节点$ u $，令$ C $为包含数据集合，$ Z $为候选簇集合。首先计算$ C $的中心点，然后找到候选簇中距离中心最近的簇$ z^*\in Z $。对比剩余的候选簇$ z\in Z\backslash\{z^*\} $，若$ C $中所有数据均距离$ z^* $更近，则我们认为$ z $不是节点$ u $中任何一个数据的最近所属簇，因此我们进行剪枝，即从候选簇中删除$ z $。若$ u $仅剩一个候选簇，即$ z^* $，则我们认为$ z^* $就是$ u $中所有数据的所属簇。我们可以将这些数据划分进$ z^* $，并且将相关的$ u.wgtCent $和$ u.count $添加到$ z^* $中。否则，若$ u $为非叶节点，我们对其子节点重复上述过程。若$ u $为叶节点，我们计算它到所有候选簇的距离，并分配到最近簇中。
+对于Kd-tree中每个节点$ u $，我们维护一个候选簇集合$ Z $，该集合中的簇均有可能为节点中所有数据的最终所属簇。对于根节点，候选簇为随机选择的$ k $个簇。我们按照如下方式\ref{alg_filter}来处理每个点的候选簇集合：对于每个节点$ u $，令$ C $为包含数据集合，$ Z $为候选簇集合。
+2-6行，$ u $为叶子节点，则直接找到$ Z $中最近的候选簇$ z^* $，然后将该叶子节点内包含的数据划分到$ z^* $中。
+7-19行处理Kd-tree中的非叶子节点。首先计算$ C $的中心点，然后找到候选簇中距离中心最近的簇$ z^*\in Z $。8-12行，对比剩余的候选簇$ z\in Z\backslash\{z^*\} $，若$ C $中所有数据均距离$ z^* $更近，则我们认为$ z $不可能为节点$ u $中任何一个数据的最近所属簇，因此进行剪枝，即从候选簇中删除$ z $。13-16行，若$ u $仅剩一个候选簇（$ |Z|=1 $），即$ z^* $，则我们认为$ z^* $就是$ u $中所有数据的所属簇。我们可以将这些数据划分进$ z^* $中，并且将相关的$ u.wgtCent $和$ u.count $添加到$ z^* $中。否则，我们对其子节点重复上述过程（17-19行）。
+
+\begin{algorithm}[htbp]
+	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+	\renewcommand{\algorithmicensure}{\textbf{输出:}}
+	\caption{过滤算法}
+	\label{alg_filter}
+	\begin{algorithmic}[1]
+		\REQUIRE Kd-tree节点$u$，候选集合$Z$
+		\ENSURE 聚类后的簇
+		\STATE $C \leftarrow u.cell$
+		\IF{$u$为叶子节点}
+			\STATE $z^{*}$为Z中距离点u最近的簇
+			\STATE $z^{*}.wgtCent \leftarrow z^{*}.wgtCent + u.point$
+			\STATE $ z^{*}.count \leftarrow z^{*}.count + 1 $
+		\ELSE 
+			\STATE $ z^* $为Z中距离u的中心点最近的簇
+			\FOR{each $ z $ in $Z \backslash \{z^*\}$}
+				\IF{$ z.isFarther(z^*, C) $}
+					\STATE $ Z \leftarrow Z \backslash \{z\} $
+				\ENDIF
+			\ENDFOR
+			\IF{$ |Z| = 1 $}
+				\STATE $ z^*.wgtCent\leftarrow z^*.wgtCent+u.wgtCent$
+				\STATE $z^*.count\leftarrow z^*.count+u.count$
+			\ELSE
+				\STATE Filter(u.left, Z)
+				\STATE Filter(u.right, Z)
+			\ENDIF
+		\ENDIF
+	\end{algorithmic}
+\end{algorithm}
 \subsection{基于秘密共享的安全多方计算}
 安全多方计算（SMC）首先由\cite{yao1986generate}提出，它能够使多个参与方在不泄露自身输入数据的前提下协同进行计算获取结果，广泛用于各种隐私保护方案中。秘密共享是安全多方计算中一个常用工具，最早由Shamir\cite{rivest2001leak}和Blakley\cite{blakley1979safeguarding}于1979年分别提出。秘密共享的基本思路是：将秘密$ s $划分为$ n $份，分发给$ n $个不同的参与方，至少需要$ t $个不同的参与者才能够重构秘密，否则失败。接下来，我们以两个参与方$ A $与$ B $为例，详细介绍秘密共享相关计算。
 
@@ -57,22 +95,22 @@ kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
 \subsection{系统模型}
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=3in]{img/fig5.png}%width=\linewidth
-	\caption{System Model}
+	\includegraphics[width=0.6\linewidth]{img/fig5.png}%width=\linewidth
+	\caption{系统模型}
 	\label{sys model}
 \end{figure}
 如图\ref{sys model}所示，我们的系统由两个部分组成：用户和云服务器。这样的系统模型广泛用于隐私保护研究中\cite{wu2020secure}\cite{bunn2007secure}。这里的客户指的是，持有隐私数据需要聚类来进行数据分析和挖掘的独立用户，他们通常没有足够的计算资源来聚类海量数据，因此需要将计算任务外包以获取结果。常见的实际用户有医疗机构、金融机构等。服务器端通常指的是拥有大量计算资源，提供付费计算服务的云服务器运营厂商例如阿里云、腾讯云等，他们提供机器学习即服务（MLaaS）这一付费模式，用户上传数据后即可离线等待机器学习计算结果。下面我们详细介绍方案中的每一部分：
 
 \begin{compactitem}
-	\item \textbf{双云服务器}：我们在系统中有两个不共谋的云服务器，标识为$ C_0 $和$ C_1 $，而且均持有用户秘密共享后的数据。他们会在此基础上执行一系列安全协议来实现隐私保护k-means聚类，最后将秘密共享的结果发送给用户。
-	\item \textbf{用户}：用户首先在原始数据上构造kd-tree，然后选择随机数来将数据划分为两份秘密共享值，分别发送给双云服务器。在k-means聚类结束后，获取服务器返回的秘密共享结果，运行$ Rec(\cdot,\cdot) $来还原最终结果。
+	\item \textbf{双云服务器}：我们在系统中有两个不共谋的云服务器，标识为$ C_0 $和$ C_1 $，而且均持有用户秘密共享后的数据。他们会在此基础上执行一系列安全协议来实现隐私保护K-means聚类，最后将秘密共享的结果发送给用户。
+	\item \textbf{用户}：用户首先在原始数据上构造Kd-tree，然后选择随机数来将数据划分为两份秘密共享值，分别发送给双云服务器。在K-means聚类结束后，获取服务器返回的秘密共享结果，运行$ Rec(\cdot,\cdot) $来还原最终结果。
 \end{compactitem}
 
 \subsection{安全模型}
 \label{s3-anquanmoxing}
 服务器端与客户端均为半诚实的实体，即二者均会遵循协议内容，不会蓄意停止执行安全协议或是篡改中间计算结果，但会好奇彼此的隐私数据，并尝试从获取的信息中推断其他参与方的信息。虽然云服务器无法还原原始数据，但是可能会企图从计算中间结果中推测数据的分布信息，具体的应对策略为设计安全全面的计算协议，以防止服务器推断原始信息。
 \subsection{设计目标}
-本节所述隐私保护外包k-means聚类方案设计目标如下：
+本节所述隐私保护外包K-means聚类方案设计目标如下：
 \begin{compactitem}
 	\item \textbf{隐私和安全性}：所有外包数据和中间计算结果都不应泄露给双云服务器。同时，服务器无法从秘密共享值推断出原始数据内容以及相关数据特征，例如数据分布。在我们的方案中，上述内容均处于加密状态。
 	\item \textbf{高效性}：方案应具备高效性，整个聚类过程主要由双云服务器进行，二者具有丰富的计算和通信资源，能够对海量数据进行处理，极大降低用户计算开销。
@@ -96,7 +134,7 @@ kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
     z_{i}^{\prime}[j]=\frac{x_{1}[j]+\cdots+x_{\left|z_{i}^{\prime}\right|}[j]}{\left|z_{i}^{\prime}\right|}=\frac{s_{i}^{\prime}[j]}{\left|z_{i}^{\prime}\right|}, 1 \leq j \leq m
 \end{equation}
 
-其中$s'_i[j]$表示簇$z'$中所有点第$j$个维度数据之和。在秘密共享值上进行除法比较困难，因此我们采用文献ref-wu中提到的放缩方法来将距离计算中的除法转变为乘法。首先，我们计算全局缩放因子$\alpha$以及簇$z_i$对应的$\alpha_i$，计算方式为：
+其中$s'_i[j]$表示簇$z'$中所有点第$j$个维度数据之和。在秘密共享值上进行除法比较困难，因此我们采用文献\cite{wu2020secure}中提到的放缩方法来将距离计算中的除法转变为乘法。首先，我们计算全局缩放因子$\alpha$以及簇$z_i$对应的$\alpha_i$，计算方式为：
 \begin{equation}
     \label{cal_scale}
     \alpha=\prod_{j=1}^{k}\left|z_{j}\right|, \alpha_{i}=\prod_{j=1 \wedge i \neq j}^{k}\left|z_{j}\right|
@@ -111,12 +149,13 @@ kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
 根据秘密共享方案的性质，我们可以针对公式\ref{final_dist_eq}做出改进，简化计算。在一轮迭代中，无论计算什么距离，缩放因子$\alpha$和$\alpha_i$的值以及相关的计算结果都是不变的，因此我们可以在每轮迭代开始计算这些固定值，减少后续冗余计算。同时，参数不相关的计算可以并行进行，减少云服务器交互的次数。
 
 \subsection{安全比较协议}
+\label{s3-securecomparison}
 安全比较场景如下，参与方$p_i$拥有加性秘密共享值$\langle x_i \rangle$和$\langle y_i \rangle$，其中$i \in \{0, 1\}$，我们希望能够在不泄露$x$和$y$明文值的前提下，获取二者的大小关系$\delta = LT(x, y), \delta = \langle \delta \rangle_0 + \langle \delta \rangle_1$，其中$\delta = LT(x, y)$的具体含义如下：
 \begin{equation}
     \operatorname{LT}(x, y)= \begin{cases}1, & \text { if } x<y \\ 0, & \text { if } x \geq y\end{cases}
 \end{equation}
 
-在文献ref-crypt中，作者提出了一个高效安全的比较协议来解决百万富翁问题，该方案能够同时比较多对数据，通信开销较小，计算复杂度低。经过多轮不经意传输（oblivious transfer）后，参与方$p_0$和$p_1$分别获得布尔秘密共享结果$\delta = LT(x, y) ,\delta = \langle \delta \rangle^B_0 \bigoplus \langle \delta \rangle^B_1$。
+在文献\cite{rathee2020cryptflow2}中，作者提出了一个高效安全的比较协议来解决百万富翁问题，该方案能够同时比较多对数据，通信开销较小，计算复杂度低。经过多轮不经意传输（Oblivious Transfer）后，参与方$p_0$和$p_1$分别获得布尔秘密共享结果$\delta = LT(x, y) ,\delta = \langle \delta \rangle^B_0 \bigoplus \langle \delta \rangle^B_1$。
 
 由于本研究中安全比较的输入与输出均为加性秘密共享值，我们在上述百万富翁协议的基础上添加一些改进以构造安全比较协议。具体算法如下：
 
@@ -131,19 +170,22 @@ kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
         \STATE $C_0$ 生成随机数$a, a\in \mathbb{Z}_N$, $\langle r \rangle_0=\langle x \rangle_0-\langle y\rangle_0+a$，将$\langle r \rangle_0$发送给$C_1$
         \STATE $C_1$计算$\langle r \rangle_1 = \langle x \rangle_1-\langle y\rangle_1$，还原$r$值$r=\langle r \rangle_0 + \langle r \rangle_1 = x-y+a$
         \STATE $C_0$和$C_1$使用百万富翁协议来比较$a$和$r$，获得结果$\langle v \rangle_i^B, i\in[0,1]$，$\langle v \rangle_i^B$代表$\langle LT(a,r)\rangle_i^B$
-        \STATE $C_i$选择随机数$t_i \in \{0,1\}$，计算$\langle v^{'}\rangle_{1-i}^B=\langle v \rangle_i^B \otimes  t_i$，$C_i$将$\langle v^{'}\rangle_{1-i}^B$发送给$C_{1-i}$，因此$C_0$和$C_1$获取$\langle v \rangle_i^B$的秘密共享值
+        \STATE $C_i$选择随机数$t_i \in \{0,1\}$，计算$\langle v^{'}\rangle_{1-i}^B=\langle v \rangle_i^B \bigoplus  t_i$，$C_i$将$\langle v^{'}\rangle_{1-i}^B$发送给$C_{1-i}$，因此$C_0$和$C_1$获取$\langle v \rangle_i^B$的秘密共享值
         \STATE $C_0$和$C_1$计算$\langle\mu \rangle_i^b \leftarrow$ MUL$(\langle v\rangle_1^B,\langle v\rangle_0^B)$
         \STATE 两方计算$ \langle \delta \rangle_i= \langle v \rangle_i^B -  2\langle\mu \rangle_i^B,i\in\{0, 1\}$
 
     \end{algorithmic}
 \end{algorithm}
 
-百万富翁协议无法直接比较秘密共享值，因此我们令云服务器$C_0$产生随机数$a$，将秘密共享值$\langle x \rangle$与$\langle y\rangle$之间的比较转换为明文$a$与$x-y+a$之间的比较。上述转换只需要一轮交互，即可完成。
+百万富翁协议解决的是双方各自持有明文在不泄露自身数据的情况进行比较的问题，无法直接比较秘密共享值，因此我们这里进行如下改造。
+1-3行，令云服务器$C_0$产生随机数$a$，将秘密共享值$\langle x \rangle$与$\langle y\rangle$之间的比较转换为明文$a$与$x-y+a$之间的比较。上述转换只需要一轮交互即可完成，通信和计算开销均较小。
 
-针对协议的输出，我们需要将布尔秘密共享值（$v=\langle v\rangle^B_0 \bigoplus \langle v\rangle^B_1$）转变为加性秘密共享值（$v=\langle v\rangle^A_0+\langle v \rangle^A_1$）。根据如下观察，$v^A=\langle v\rangle^B_0+\langle v\rangle^B_1 - 2\langle v\rangle^B_0 \langle v\rangle^B_1$ 即可将布尔共享值转变为加性共享值。为计算$\langle v\rangle^B_0 \langle v\rangle^B_1$，我们令云服务器$C_i$与$C_{1-i}$秘密共享$\langle v \rangle_i^B$，然后进行乘法操作。
+针对协议的输出，我们需要将布尔秘密共享值（$v=\langle v\rangle^B_0 \bigoplus \langle v\rangle^B_1$）转变为加性秘密共享值（$v=\langle v\rangle^A_0+\langle v \rangle^A_1$）。根据如下观察，$v^A=\langle v\rangle^B_0+\langle v\rangle^B_1 - 2\langle v\rangle^B_0 \langle v\rangle^B_1$ 即可将布尔共享值转变为加性共享值。
+4行，为计算$\langle v\rangle^B_0 \langle v\rangle^B_1$，我们令云服务器$C_i$与$C_{1-i}$秘密共享$\langle v \rangle_i^B$，5-6行，进行乘法操作和计算使得参与方各自获取最终密文比较结果。
 
 
 \subsection{安全最值计算协议}
+\label{s3-secureminimum}
 %todo 得讲下多个相同最小值怎么处理
 安全最值计算协议可以找到一组加性秘密共享值中最值的位置，给定$ n $个秘密共享的数据，经过计算后，输出仅包含0，1秘密共享值的数组，其中最值位置存放1，其他均为0。若需要获得最值的具体数值，将结果数组与原始数组进行乘法运算后累加即可。
 
@@ -155,8 +197,8 @@ kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=3in]{img/fig4.png}%width=\linewidth
-    \caption{Secure minimal on small dataset (SMin(S))}
+    \includegraphics[scale=0.7]{img/fig4.png}%width=\linewidth
+    \caption{小数据集上的安全最值协议}
     \label{smins}
 \end{figure}
 
@@ -168,59 +210,59 @@ kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=3in]{img/fig1.png}%width=\linewidth
+    \includegraphics[scale=0.09]{img/fig1.png}%width=\linewidth
     \caption{Secure minimal on large dataset (SMin(L))}
     \label{sminl}
 \end{figure}
 
 \subsection{安全过滤协议}
-本节我们将介绍如何在kd-tree数据结构上进行聚类，该方案的正确性验证由ref-kd-tree给出。
+本节我们将介绍如何在Kd-tree数据结构上进行聚类，该方案的正确性验证由\cite{kanungo2002efficient}给出。
 自根节点开始，我们依次遍历所有节点来判断当前节点中包含的所有数据点是否可以被划分到某一个簇中。针对每个节点，我们维护一个候选簇集合，该集合中所有簇都可能是节点最终所属簇。在迭代中，我们不断删除不符合条件的候选簇知道仅剩一个候选簇，即节点所属簇。
 
-算法如\ref{alg_sf}所示。2-4行，我们计算kd-tree每个节点到每个候选簇中心的距离，然后借助安全最值协议找到距离最近的候选簇标记为$z^*$。7-12行，我们执行一系列子协议来排除不符合候选条件的簇，即与候选簇$z_j,z_j\neq z^*$相比，节点中包含所有数据点在空间上都离$z^*$更近，则我们认为$z_j$非候选簇。更加详细的规则解释在ref-kd-tree中给出。13-16行，我们执行安全比较协议来判断候选簇集合是否仅剩一个簇。如果是，则将节点中所有数据划分到该候选簇中，并停止向下迭代，否则继续对子节点进行上述操作（17-18行）。若聚类过程即将收敛，那么子节点可以不用进行冗余的距离计算和比较，节省大量计算资源。然而上述方案泄露了一比特数据来判断是否终止子节点迭代，这样少量的数据仅仅轻微泄露了迭代过程的信息，但是带来了效率的巨大提升。ref-p1-35-36中采取了类似的方法作为一个交换来获取性能提升。
+算法如\ref{alg_sf}所示。2-4行，我们计算Kd-tree每个节点到每个候选簇中心的距离，然后借助安全最值协议找到距离最近的候选簇标记为$z^*$。7-12行，我们执行一系列子协议来排除不符合候选条件的簇，即与候选簇$z_j,z_j\neq z^*$相比，节点中包含所有数据点在空间上都离$z^*$更近，则我们认为$z_j$非候选簇。更加详细的规则解释在\cite{kanungo2002efficient}中给出。13-16行，我们执行安全比较协议来判断候选簇集合是否仅剩一个簇。如果是，则将节点中所有数据划分到该候选簇中，并停止向下迭代，否则继续对子节点进行上述操作（17-18行）。若聚类过程即将收敛，那么子节点可以不用进行冗余的距离计算和比较，节省大量计算资源。然而上述方案泄露了一比特数据来判断是否终止子节点迭代，这样少量的数据仅仅轻微泄露了迭代过程的信息，但是带来了效率的巨大提升。论文\cite{bozdemir2021privacy,boldyreva2021privacy}中采取了类似的方法作为一个交换来获取性能提升。
 
 \begin{algorithm}[htbp]
-    \renewcommand{\algorithmicrequire}{\textbf{输入:}}
-    \renewcommand{\algorithmicensure}{\textbf{输出:}}
-    \caption{SC $\rightarrow (\langle \delta \rangle_0, \langle \delta \rangle_1)$}
-    \label{alg_sf}
-    \begin{algorithmic}[1]
-        \REQUIRE kd-tree $\langle tr \rangle$以及簇$\langle z \rangle_j, j\in[k]$
-        \ENSURE 新的簇中心$\langle z'\rangle_j,j\in[k]$
-        \FOR {$i=1$ to $n$}
-        \FOR {$j=1$ to $k$}
-        \STATE $\langle d \rangle_j \leftarrow$ SED$(\langle z \rangle_j, \langle c \rangle_i)$ %首先计算到每个簇的距离
-        \ENDFOR
-        \STATE $\{\langle r\rangle_1,...,\langle r\rangle_k\} \leftarrow$ SMin$(\langle d \rangle_1,...,\langle d \rangle_k)$
-        \STATE 计算最近候选簇$\langle z^* \rangle \leftarrow \sum_{p=1}^k$MUL$(\langle r \rangle,\langle z\rangle_p)$ %找到最近簇
-        \FOR {$j=1$ to $k$} %遍历每个簇
-        \STATE $\langle r \rangle \leftarrow$ SC$(\langle u \rangle, 0)$, $\langle \mu \rangle \leftarrow \langle z^{*} \rangle - \langle z\rangle_j$%比较u每个维度和0的大小
-        \STATE $\langle v \rangle \leftarrow$ MUL$(\langle r\rangle, \langle c \rangle_{min})+ $MUL$(1-\langle r\rangle,\langle c\rangle_{max})$
-        \STATE $\langle d^{*}\rangle \leftarrow$ SED$(\langle z^{*}, \langle v \rangle)$, $\langle d_j \rangle \leftarrow$ SED$(\langle z\rangle_j,\langle v\rangle)$ %如果prune,z_j就是0
-        \STATE $\langle r\rangle_j \leftarrow$ SC$(\langle d^{*}\rangle, \langle d\rangle_j)$
-        \ENDFOR
-        \STATE $\langle f \rangle \leftarrow$ SC$(\sum_{j=1}^{k}\langle r\rangle_j, 1)$
-        \IF{$\langle f \rangle_0 + \langle f \rangle_1 == 1$}
-        \STATE $\langle \mu \rangle_j \leftarrow \langle \mu \rangle_j +$ MUL$(\langle r\rangle_j, \langle c \rangle),j\in[k]$ %累加
-        \ELSE
-        \STATE $\langle z \rangle_j \leftarrow$ MUL$(\langle z \rangle_j, \langle r\rangle_j), j\in[k]$
-        \STATE pass candidate cluster set $\{\langle z \rangle_1,...,\langle z\rangle_k\}$ to child notes and repeat above process
-        \ENDIF
-        \ENDFOR
-
-    \end{algorithmic}
+	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+	\renewcommand{\algorithmicensure}{\textbf{输出:}}
+	\caption{SC $\rightarrow (\langle \delta \rangle_0, \langle \delta \rangle_1)$}
+	\label{alg_sf}
+	\begin{algorithmic}[1]
+		\REQUIRE Kd-tree $\langle tr \rangle$以及簇$\langle z \rangle_j, j\in[k]$
+		\ENSURE 新的簇中心$\langle z'\rangle_j,j\in[k]$
+		\FOR {$i=1$ to $n$}
+		\FOR {$j=1$ to $k$}
+		\STATE $\langle d \rangle_j \leftarrow$ SED$(\langle z \rangle_j, \langle c \rangle_i)$ %首先计算到每个簇的距离
+		\ENDFOR
+		\STATE $\{\langle r\rangle_1,...,\langle r\rangle_k\} \leftarrow$ SMin$(\langle d \rangle_1,...,\langle d \rangle_k)$
+		\STATE 计算最近候选簇$\langle z^* \rangle \leftarrow \sum_{p=1}^k$MUL$(\langle r \rangle,\langle z\rangle_p)$ %找到最近簇
+		\FOR {$j=1$ to $k$} %遍历每个簇
+		\STATE $\langle r \rangle \leftarrow$ SC$(\langle u \rangle, 0)$, $\langle \mu \rangle \leftarrow \langle z^{*} \rangle - \langle z\rangle_j$%比较u每个维度和0的大小
+		\STATE $\langle v \rangle \leftarrow$ MUL$(\langle r\rangle, \langle c \rangle_{min})+ $MUL$(1-\langle r\rangle,\langle c\rangle_{max})$
+		\STATE $\langle d^{*}\rangle \leftarrow$ SED$(\langle z^{*}, \langle v \rangle)$, $\langle d_j \rangle \leftarrow$ SED$(\langle z\rangle_j,\langle v\rangle)$ %如果prune,z_j就是0
+		\STATE $\langle r\rangle_j \leftarrow$ SC$(\langle d^{*}\rangle, \langle d\rangle_j)$
+		\ENDFOR
+		\STATE $\langle f \rangle \leftarrow$ SC$(\sum_{j=1}^{k}\langle r\rangle_j, 1)$
+		\IF{$\langle f \rangle_0 + \langle f \rangle_1 == 1$}
+		\STATE $\langle \mu \rangle_j \leftarrow \langle \mu \rangle_j +$ MUL$(\langle r\rangle_j, \langle c \rangle),j\in[k]$ %累加
+		\ELSE
+		\STATE $\langle z \rangle_j \leftarrow$ MUL$(\langle z \rangle_j, \langle r\rangle_j), j\in[k]$
+		\STATE 将候选集$\{\langle z \rangle_1,...,\langle z\rangle_k\}$传递给子节点，并重复上述过程
+		\ENDIF
+		\ENDFOR
+		
+	\end{algorithmic}
 \end{algorithm}
 
-\section{基于kd-tree的隐私保护k-means方案}
+\section{基于Kd-tree的隐私保护K-means方案}
 \label{s3-ppokc}
-本节主要介绍基于kd-tree的隐私保护k-means方案（PPOKC）的具体细节。我们假设数据在双云服务器$C_0$和$C_1$上加性秘密共享，并且二者不可以合谋。云服务器在密文基础上进行系列安全协议获取聚类结果，整个过程可以被划分为两个阶段：
+本节主要介绍基于Kd-tree的隐私保护K-means方案（PPOKC）的具体细节。我们假设数据在双云服务器$C_0$和$C_1$上加性秘密共享，并且二者不可以合谋。云服务器在密文基础上进行系列安全协议获取聚类结果，整个过程可以被划分为两个阶段：
 \begin{compactitem}
-    \item \textbf{初始化}:首先，用户基于拥有的明文数据构建kd-tree。然后将数据秘密共享为两份，并分别发送给云服务器$C_0$和$C_1$。此外，原始数据也会在被划分后发送给云服务器以支持其他计算。此后用户不再参与聚类过程。
-    \item \textbf{聚类}:对kd-tree中节点执行过滤操作，根节点的候选簇集合包含所有初始簇。针对树中的节点，我们执行过滤操作，直到所有数据都被划分到对应的簇。在每轮迭代结束，我们更新簇中心并且将新簇与旧簇相比较来判断是否满足聚类收敛条件。
+    \item \textbf{初始化}:首先，用户基于拥有的明文数据构建Kd-tree。然后将数据秘密共享为两份，并分别发送给云服务器$C_0$和$C_1$。此外，原始数据也会在被划分后发送给云服务器以支持其他计算。此后用户不再参与聚类过程。
+    \item \textbf{聚类}:对Kd-tree中节点执行过滤操作，根节点的候选簇集合包含所有初始簇。针对树中的节点，我们执行过滤操作，直到所有数据都被划分到对应的簇。在每轮迭代结束，我们更新簇中心并且将新簇与旧簇相比较来判断是否满足聚类收敛条件。
 \end{compactitem}
 
 \subsection{算法详述}
-PPOKC算法的细节在\ref{alg_ppokc}中给出，虽然我们这里提供了一种判断是否停止迭代的方法，在稍后的实验中我们会采取固定迭代次数的方式来测试性能。不同的数据集迭代收敛所需的轮次通常不同，目前大量相关隐私保护聚类研究采取的迭代终止策略通常存在安全问题，即泄露数据集迭代收敛所需轮次。同时，k-means聚类算法在迭代足够多轮次后一定会收敛ref-p1-4。
+PPOKC算法的细节在\ref{alg_ppokc}中给出，虽然我们这里提供了一种判断是否停止迭代的方法，在稍后的实验中我们会采取固定迭代次数的方式来测试性能。不同的数据集迭代收敛所需的轮次通常不同，目前大量相关隐私保护聚类研究采取的迭代终止策略通常存在安全问题，即泄露数据集迭代收敛所需轮次。同时，K-means聚类算法在迭代足够多轮次后一定会收敛\cite{mohassel2019practical}。
 \begin{algorithm}[htbp]
     \renewcommand{\algorithmicrequire}{\textbf{输入:}}
     \renewcommand{\algorithmicensure}{\textbf{输出:}}
@@ -230,8 +272,8 @@ PPOKC算法的细节在\ref{alg_ppokc}中给出，虽然我们这里提供了一
         \REQUIRE 明文数据$x_{ij},i\in[n],j\in[m]$
         \ENSURE 秘密共享的簇中心$\langle z'_j \rangle,j\in[k]$
         \STATE \textbf{初始化（用户）}
-        \STATE 在明文基础上构造kd-tree
-        \STATE 加性秘密共享数据$x_{ij}$以及kd-tree，随机选择初始簇中心$z_j,j\in[k]$，上述内容分别发送给$C_0$和$C_1$
+        \STATE 在明文基础上构造Kd-tree
+        \STATE 加性秘密共享数据$x_{ij}$以及Kd-tree，随机选择初始簇中心$z_j,j\in[k]$，上述内容分别发送给$C_0$和$C_1$
         \STATE \textbf{聚类（$C_0,C_1$）}
         \STATE $\{\langle z^{\prime}_1 \rangle,...,\langle z^{\prime}_k\} \leftarrow$ SF$(\langle z_1\rangle,...,\langle z_k\rangle)$
         \STATE $\langle r \rangle \leftarrow \sum_{i=1}^{n}\sum_{j=1}^{m}$SC$(\langle z_{ij}\rangle-\langle z_{ij}^{\prime}\rangle, 1)$
@@ -246,7 +288,7 @@ PPOKC算法的细节在\ref{alg_ppokc}中给出，虽然我们这里提供了一
 
 \subsection{讨论}
 \label{taolun}
-最近，\cite{wu2020secure}提出了一种双云环境下基于密文打包技术的高效隐私保护k-means聚类方案。然而，我们发现虽然方案非常高效，但是存在一些安全性问题。在论文\cite{wu2020secure}的S3ED算法中11行，我们可以看到$D s t_{a j} \leftarrow D s t_{a j} * r_1^a+r_1^a$, for $j \in[k]$，意味着距离矩阵中行$ a $中所有值均被添加相同的噪声。根据\cite{liu2019toward}章节7.3的分析，我们发现上述方式无法保护数据的分布信息。在本方案中，不同的距离均为秘密共享值，在进行安全比较时，添加了互异的随机噪声，因此不会泄露原始数据任何相关信息。
+最近，论文\cite{wu2020secure}提出了一种双云环境下基于密文打包技术的高效隐私保护K-means聚类方案。然而，我们发现虽然方案非常高效，但是存在一些安全性问题。在论文\cite{wu2020secure}的S3ED算法中11行，我们可以看到$D s t_{a j} \leftarrow D s t_{a j} * r_1^a+r_1^a$, for $j \in[k]$，意味着距离矩阵中行$ a $中所有值均被添加相同的噪声。根据\cite{liu2019toward}章节7.3的分析，我们发现上述方式无法保护数据的分布信息。在本方案中，不同的距离均为秘密共享值，在进行安全比较时，添加了互异的随机噪声，因此不会泄露原始数据任何相关信息。
 
 
 \section{安全性分析}
@@ -288,11 +330,17 @@ PPOKC算法的细节在\ref{alg_ppokc}中给出，虽然我们这里提供了一
 	安全最值协议在半诚实模型下是安全的。
 \end{theorem}
 \begin{proof}
-	小数据集上的安全最值协议是安全比较协议的变形，
+	小数据集上的安全最值协议是安全比较协议的变形，唯一的区别是在协议最后添加了一些乘法操作，因此安全性可以由安全比较协议推导出。对于大数据集上的安全最值协议，我们令云服务器$ C_1 $的执行镜像为$\Pi_A(S C)=\left\{x_i^A, r_i^A, \alpha_i^A\right\}$，其中$ x_i^A $为输入值，$ r_i^A $为中间值以及$ \alpha_i^A $为比较结果，其中$ i,j\in[n] $。上述所有值均为秘密共享值。我们假设$ C_1 $的模拟镜像表示为$\Pi_A^S(S C)=\left\{x_i^{\prime}, r_i^{\prime}, \alpha_i^{\prime}\right\}$，模拟镜像中所有值都是$ \mathbb{Z}_N $上的随机值。由于秘密共享均为$ \mathbb{Z} $上的随机值，因此$ \left\{x_i^A, r_i^A, \alpha_i^A\right\} $与$ \left\{x_i^{\prime}, r_i^{\prime}, \alpha_i^{\prime}\right\} $计算上不可区分。根据上述分析，我们可以认为$ \Pi_A(SC) $与$ \Pi_A^S(SC) $计算上不可区分。$ C_1 $和$ C_0 $执行的相同的工作，所以我们在这里省略重复分析。
+\end{proof}
+\begin{theorem}
+	本文所述的隐私保护外包K-means聚类方案在半诚实模型下是安全的。
+\end{theorem}
+\begin{proof}
+	从\ref{alg_ppokc}中可以看出，所述PPOKC方案是由上述安全协议组成的。我们在前面已经给出了基础安全协议的安全性证明，根据组合原理\cite{goldreich2004encryption}，我们可以认为PPOKC方案在半诚实模型下是安全的。此外，由于云平台$ C_0 $和$ C_1 $是不能合谋的，因此它们也无法获知每个数据具体划分到哪个簇中，所以数据的访问模式也得到了保护。由于Kd-tree的数据结构特点，决定了每个节点中包含数据的个数已知，但是具体包含哪些数据是未知的，因此云平台无法跟踪数据与树节点的关系。
 \end{proof}
 \section{系统评估与性能分析}
 \label{s3-shiyan}
-我们前述协议和方案的基础上实现了高效的隐私保护k-means系统，并在本节总结分析该系统理论与实验性能。我们在多个人工合成的数据集上进行实验以观察系统的实用性和可扩展性。同时，我们也在现实数据集进行了充分的实验，以和目前最先进的隐私保护k-means聚类方案\cite{wu2020secure}\cite{mohassel2019practical}进行实验对比。
+我们前述协议和方案的基础上实现了高效的隐私保护K-means系统，并在本节总结分析该系统理论与实验性能。我们在多个人工合成的数据集上进行实验以观察系统的实用性和可扩展性。同时，我们也在现实数据集进行了充分的实验，以和目前最先进的隐私保护K-means聚类方案\cite{wu2020secure}\cite{mohassel2019practical}进行实验对比。
 \subsection{理论分析}
 本节中，我们主要从理论层面分析方案的计算和通信开销。安全欧式距离仅包含简单的秘密共享加法和乘法运算，因此不纳入分析。安全比较算法主要基于\cite{rathee2020cryptflow2}中的百万富翁协议，详细的效率分析已经在论文中给出，这里不再赘述。因此我们主要分析安全最值协议以及安全过滤协议。值得注意的是，乘法所需三元组的计算是离线进行的。
 \subsubsection{计算开销}
@@ -300,8 +348,8 @@ PPOKC算法的细节在\ref{alg_ppokc}中给出，虽然我们这里提供了一
 \begin{table}[htbp]
 	\centering	
 	\renewcommand{\arraystretch}{1.3}
+	\caption{通信开销}
 	\label{s3-table-compucost}
-	\caption{Computation Overhead}
 	\scalebox{1.0}{
 		\begin{tabular}{|c|c|c|c|}% 通过添加 | 来表示是否需要绘制竖线c|
 			\hline  % 在表格最上方绘制横线
@@ -323,7 +371,7 @@ PPOKC算法的细节在\ref{alg_ppokc}中给出，虽然我们这里提供了一
 
 为了直观的与\cite{wu2020secure}的实验数据进行比较，我们找到论文中所提到的机器进行对比实验。该机器的配置为Inter Core i7-7700HQ 2.80 GHz CPU and 16 GB RAM。
 \subsubsection{数据集}
-为了能够进行全面的对比，我们使用了表格\ref{s3-dataset}所示数据集，其中每一个都在之前的研究工作中出现过：
+为了能够进行全面的对比，我们使 用了表格\ref{s3-dataset}所示数据集，其中每一个都在之前的研究工作中出现过：
 \begin{compactitem}
 	\item KEGG是一个集成的数据库，主要包含15个不同的数据库资源，包含的内容主要是分子系统的计算机表示，从基因信息到化学信息等。本方案选择的KEGG Metabolic Reaction Network（Undirected），是收录于UCI KDD条目的现实世界数据集\cite{naeem2011kegg}。我们从中提取8192条数据，5个维度（$ n=8192,m=5 $），令簇个数$ k=3 $进行实验，以和论文\cite{wu2020secure}保持一致。
 	\item Lsun数据集是来自论文\cite{franti2018k}的一个人造二维数据集，该数据集常用于聚类研究以进行对比分析和展示。其中包含400个数据，3个簇。我们将用于与论文\cite{jaschke2019unsupervised}的比较。
@@ -354,7 +402,7 @@ PPOKC算法的细节在\ref{alg_ppokc}中给出，虽然我们这里提供了一
 \begin{table}[htbp]
 	\centering
 	\renewcommand{\arraystretch}{1.3} % 调整行高度
-	\caption{scheme comparison ($n=8192,m=5,k=3$)}
+	\caption{通信与计算开销对比($n=8192,m=5,k=3$)}
 	\label{s3-ta-duibi}
 	\scalebox{1.0}{ % 缩放表格
 		\begin{tabular}{|c|c|c|c|}% 通过添加 | 来表示是否需要绘制竖线
@@ -374,21 +422,21 @@ PPOKC算法的细节在\ref{alg_ppokc}中给出，虽然我们这里提供了一
 
 \textbf{与论文\cite{jaschke2019unsupervised}的比较}：为了进行公平的比较，我们在Lsun数据集上进行实验。对比论文的机器为Inter i7-3770 3.4GHz 20GB RAM，我们的前述实验机器要慢1.3倍。
 
-论文\cite{jaschke2019unsupervised}提供了3种不同的隐私保护k-means聚类方案，分别是精确的、稳定的以及近似的方案。上述方案进行15轮迭代分别用时为545.91天、48.9小时、15.47小时。在我们的系统中，完成相同的迭代轮次总共需要20.94秒，用时远远少于前述三种方案。
+论文\cite{jaschke2019unsupervised}提供了3种不同的隐私保护K-means聚类方案，分别是精确的、稳定的以及近似的方案。上述方案进行15轮迭代分别用时为545.91天、48.9小时、15.47小时。在我们的系统中，完成相同的迭代轮次总共需要20.94秒，用时远远少于前述三种方案。
 
-此外，我们设置相同的初始簇中心初始化，在Lsun数据集上分别运行明文k-means方案以及本文提出的PPOKC方案，分类结果如图\ref{f4}和\ref{f5}所示。本方案所有安全协议的正确性均以论文\cite{kanungo2002efficient}中提出的基于kd-tree的改进k-means方案为支撑。因此，最终聚类结果和明文方案完全一致。
+此外，我们设置相同的初始簇中心初始化，在Lsun数据集上分别运行明文K-means方案以及本文提出的PPOKC方案，分类结果如图\ref{f4}和\ref{f5}所示。本方案所有安全协议的正确性均以论文\cite{kanungo2002efficient}中提出的基于Kd-tree的改进K-means方案为支撑。因此，最终聚类结果和明文方案完全一致。
 %todo 这里图得换一下
 \begin{figure}[htbp] %[htbp]
-	\captionsetup{font=scriptsize}
-	\begin{minipage}[t]{0.45\linewidth}
+%	\captionsetup{font=scriptsize}
+	\begin{minipage}[t]{0.5\linewidth}
 		\includegraphics[width=\linewidth]{img/lsun_ptxt.png}
-		\caption{Plaintext K-means model}
+		\caption{明文K-means聚类结果}
 		\label{f4}
 	\end{minipage}%
 	\hfill%
-	\begin{minipage}[t]{0.45\linewidth}
+	\begin{minipage}[t]{0.5\linewidth}
 		\includegraphics[width=\linewidth]{img/lsun_ctxt.png}
-		\caption{Privacy Preserving model}
+		\caption{隐私保护K-means聚类结果}
 		\label{f5}
 	\end{minipage} 
 \end{figure}
@@ -398,34 +446,30 @@ PPOKC算法的细节在\ref{alg_ppokc}中给出，虽然我们这里提供了一
 我们考虑三个影响聚类的参数，分别是数据集大小$ n $、数据的维度$ m $以及簇的个数$ k $。为了准确的分析参数对于方案的性能影响，我们的策略是固定一个参数，然后变化另外两个参数的值来运行系统。实验运行的计算和通信开销如图\ref{f6}和\ref{f7}所示。
 %todo 合并一下这两个图
 \begin{figure}[htbp] %[htbp]
-	\captionsetup{font=scriptsize}
-	\begin{minipage}[t]{0.45\linewidth}
+%	\captionsetup{font=scriptsize}
+	\begin{minipage}[t]{0.5\linewidth}
 		\includegraphics[width=\linewidth]{img/m.png}
-		% \caption{}
-		% \label{f6}
+
 	\end{minipage}%
 	\hfill%
-	\begin{minipage}[t]{0.45\linewidth}
+	\begin{minipage}[t]{0.5\linewidth}
 		\includegraphics[width=\linewidth]{img/m_comm.png}
-		%\caption{Privacy Preserving model}
-		% \label{f2}
+ 
 	\end{minipage} 
 	\caption{$k=3, T=20$}
 	\label{f6}
 \end{figure} 
 
 \begin{figure}[htbp]
-	\captionsetup{font=scriptsize}
-	\begin{minipage}[t]{0.45\linewidth}
+%	\captionsetup{font=scriptsize}
+	\begin{minipage}[t]{0.5\linewidth}
 		\includegraphics[width=\linewidth]{img/k.png}
-		% \caption{}
-		% \label{f7}
+
 	\end{minipage}%
 	\hfill%
-	\begin{minipage}[t]{0.45\linewidth}
+	\begin{minipage}[t]{0.5\linewidth}
 		\includegraphics[width=\linewidth]{img/k_comm.png}
-		%\caption{Privacy Preserving model}
-		% \label{f2}
+
 	\end{minipage} 
 	\caption{$m=5, T=20$}
 	\label{f7}
@@ -435,14 +479,14 @@ PPOKC算法的细节在\ref{alg_ppokc}中给出，虽然我们这里提供了一
 
 对于图\ref{f7}，计算开销随着$ k $的变化呈线性变化，而$ k $对通信开销的影响则较小。值得一提的是，给定相同的$ k $值，不同的数据量对于计算开销的影响较小。
 
-通过分析实验结果，我们发现本文提出的方案兼具高效与安全性，并且能够适应大型数据集。与研究\cite{wu2020secure}\cite{rong2017privacy}相比，我们的方案在$ k $较大时，实验表现更好。基于kd-tree的改进k-means算法允许我们减少大量冗余计算，进一步加速聚类过程，此外，SIMD操作可以很轻松被引入方案来提升效率。
+通过分析实验结果，我们发现本文提出的方案兼具高效与安全性，并且能够适应大型数据集。与研究\cite{wu2020secure}\cite{rong2017privacy}相比，我们的方案在$ k $较大时，实验表现更好。基于Kd-tree的改进K-means算法允许我们减少大量冗余计算，进一步加速聚类过程，此外，SIMD操作可以很轻松被引入方案来提升效率。
 \section{本章小结}
 \label{s3-xiaojie}
 % 简述存在的问题
-隐私保护k-means聚类方案的研究通常难以兼具效率与安全性，实现完全隐私保护的方案耗时通常难以接受\cite{jaschke2019unsupervised}，高效的方案则可能存在泄露隐私的风险\cite{wu2020secure}。过去研究常用到的密码学工具为秘密共享\cite{mohassel2019practical}和同态加密\cite{jaschke2019unsupervised}\cite{wu2020secure}，二者各有优缺点。秘密共享技术进行加法和乘法运算较快，但是通信开销巨大，而同态加密则计算开销较大，通信开销较小。
+隐私保护K-means聚类方案的研究通常难以兼具效率与安全性，实现完全隐私保护的方案耗时通常难以接受\cite{jaschke2019unsupervised}，高效的方案则可能存在泄露隐私的风险\cite{wu2020secure}。过去研究常用到的密码学工具为秘密共享\cite{mohassel2019practical}和同态加密\cite{jaschke2019unsupervised}\cite{wu2020secure}，二者各有优缺点。秘密共享技术进行加法和乘法运算较快，但是通信开销巨大，而同态加密则计算开销较大，通信开销较小。
 
 % 本文方案的贡献
-为了能够设计兼具安全与高效的隐私保护k-means聚类方案，我们在秘密共享的基础上，提出了一个基于kd-tree的隐私保护外包k-means聚类方案。方案利用了kd-tree数据结构来减少冗余计算，提升聚类效率，同时保证聚类的正确性。此外，我们基于秘密共享设计了一系列隐私保护的计算协议，这些协议独立于整个方案，可以灵活的用于其他各种基于秘密共享的隐私保护方案中。实验结果证明，我们的方案在保证聚类结果正确的基础上，保护了数据的隐私安全，减少了计算和通信开销，为用户提供了一种实际可行的外包聚类方案。
+为了能够设计兼具安全与高效的隐私保护K-means聚类方案，我们在秘密共享的基础上，提出了一个基于Kd-tree的隐私保护外包K-means聚类方案。方案利用了Kd-tree数据结构来减少冗余计算，提升聚类效率，同时保证聚类的正确性。此外，我们基于秘密共享设计了一系列隐私保护的计算协议，这些协议独立于整个方案，可以灵活的用于其他各种基于秘密共享的隐私保护方案中。实验结果证明，我们的方案在保证聚类结果正确的基础上，保护了数据的隐私安全，减少了计算和通信开销，为用户提供了一种实际可行的外包聚类方案。
 
 % 引出下一个点
 然而，聚类通常是对海量数据进行分析挖掘，数据量级可以达到亿万级别。在该场景下，即便是目前最高效的隐私保护聚类方案所需时间也是不可接受的。因此需要探索新的方案设计方向，即近似的隐私保护方案。机器学习对于计算的精度要求通常较宽松，因此我们可以考虑通过设计近似安全计算协议来简化计算过程，提升效率。

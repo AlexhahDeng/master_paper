@@ -2,175 +2,201 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{摘\hspace {1em}要}{i}{section*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\textsf {Abstract}}{ii}{section*.5}%
+\contentsline {chapter}{\textsf {Abstract}}{iii}{section*.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}绪论}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}研究背景与意义}{1}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}聚类中隐私保护问题综述}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.2}聚类中隐私保护问题综述}{5}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.1}云环境下聚类综述}{3}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.1}云环境下聚类研究综述}{5}{subsection.1.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.2.1.1}云计算概述}{4}{subsubsection.1.2.1.1}%
+\contentsline {subsubsection}{\numberline {1.2.1.1}云计算概述}{5}{subsubsection.1.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}云环境下聚类中的隐私问题}{4}{subsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.1.2}聚类算法概述}{5}{subsubsection.1.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.3}聚类隐私保护技术手段}{4}{subsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.1.3}云环境下的聚类应用}{7}{subsubsection.1.2.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.4}隐私保护聚类方案设计目标}{4}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.2}云环境下聚类中的隐私问题}{8}{subsection.1.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}研究内容和创新点}{4}{section.1.3}%
+\contentsline {subsection}{\numberline {1.2.3}隐私保护聚类技术手段}{8}{subsection.1.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}隐私保护外包k-means聚类方法研究}{4}{subsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.2.3.1}数据扰动}{8}{subsubsection.1.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}隐私保护DBSCAN系列研究}{4}{subsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.2.3.2}差分隐私}{9}{subsubsection.1.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.3.2.1}隐私保护DBSCAN方案}{4}{subsubsection.1.3.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.3.3}同态加密}{10}{subsubsection.1.2.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.3.2.2}改进的隐私保护DBSCAN方案}{4}{subsubsection.1.3.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3.4}安全多方计算}{11}{subsubsection.1.2.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.3.2.3}基于DBSCAN的隐私保护层次聚类}{4}{subsubsection.1.3.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}隐私保护聚类方案设计目标}{12}{subsection.1.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}论文的组织结构}{4}{section.1.4}%
+\contentsline {section}{\numberline {1.3}研究内容和创新点}{13}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}相关研究综述}{5}{chapter.2}%
+\contentsline {subsection}{\numberline {1.3.1}隐私保护外包k-means聚类方法研究}{13}{subsection.1.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}相关理论综述}{5}{section.2.1}%
+\contentsline {subsection}{\numberline {1.3.2}隐私保护DBSCAN系列方案研究}{13}{subsection.1.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}国内外研究现状}{5}{section.2.2}%
+\contentsline {subsubsection}{\numberline {1.3.2.1}隐私保护DBSCAN方案}{14}{subsubsection.1.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}隐私保护k-means聚类方法研究}{6}{chapter.3}%
+\contentsline {subsubsection}{\numberline {1.3.2.2}改进的隐私保护DBSCAN方案}{14}{subsubsection.1.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}引言}{6}{section.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2.3}基于DBSCAN的隐私保护层次聚类}{14}{subsubsection.1.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}预备知识}{7}{section.3.2}%
+\contentsline {section}{\numberline {1.4}论文的组织结构}{15}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}安全性定义}{8}{subsection.3.2.1}%
+\contentsline {chapter}{\numberline {2}相关研究综述}{17}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.1.1}半诚实模型}{8}{subsubsection.3.2.1.1}%
+\contentsline {section}{\numberline {2.1}隐私保护K-means聚类方案}{17}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}基于kd-tree的k-means聚类方法}{8}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {2.1.1}基于同态加密的K-means聚类}{17}{subsection.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2.1}kd-tree数据结构}{8}{subsubsection.3.2.2.1}%
+\contentsline {subsection}{\numberline {2.1.2}基于多方计算的K-means聚类}{18}{subsection.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2.2}过滤算法}{8}{subsubsection.3.2.2.2}%
+\contentsline {section}{\numberline {2.2}隐私保护DBSCAN聚类方案}{19}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}基于秘密共享的安全多方计算}{9}{subsection.3.2.3}%
+\contentsline {section}{\numberline {2.3}本章小节}{20}{section.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.3.1}加性秘密共享加法}{9}{subsubsection.3.2.3.1}%
+\contentsline {chapter}{\numberline {3}隐私保护外包K-means聚类方法研究}{21}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}秘密共享乘法}{9}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.1}引言}{21}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}问题描述}{10}{section.3.3}%
+\contentsline {section}{\numberline {3.2}预备知识}{22}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}系统模型}{10}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.2.1}安全性定义}{23}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}安全模型}{10}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1.1}半诚实模型}{23}{subsubsection.3.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}设计目标}{11}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.2.2}基于Kd-tree的K-means聚类方法}{23}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}基于秘密共享的隐私保护计算模块}{11}{section.3.4}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}Kd-tree数据结构}{23}{subsubsection.3.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}安全欧式距离计算协议}{11}{subsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}过滤算法}{23}{subsubsection.3.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}安全比较协议}{12}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.2.3}基于秘密共享的安全多方计算}{24}{subsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}安全最值计算协议}{13}{subsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}加性秘密共享加法}{24}{subsubsection.3.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.4}安全过滤协议}{14}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.2.4}秘密共享乘法}{25}{subsection.3.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}基于kd-tree的隐私保护k-means方案}{15}{section.3.5}%
+\contentsline {section}{\numberline {3.3}问题描述}{25}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}算法详述}{16}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.3.1}系统模型}{26}{subsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.2}讨论}{16}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.3.2}安全模型}{26}{subsection.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}安全性分析}{17}{section.3.6}%
+\contentsline {subsection}{\numberline {3.3.3}设计目标}{27}{subsection.3.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6.1}安全计算模块安全性分析}{17}{subsection.3.6.1}%
+\contentsline {section}{\numberline {3.4}基于秘密共享的隐私保护计算模块}{27}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}系统评估与性能分析}{18}{section.3.7}%
+\contentsline {subsection}{\numberline {3.4.1}安全欧式距离计算协议}{27}{subsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.7.1}理论分析}{18}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.4.2}安全比较协议}{28}{subsection.3.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.7.1.1}计算开销}{18}{subsubsection.3.7.1.1}%
+\contentsline {subsection}{\numberline {3.4.3}安全最值计算协议}{29}{subsection.3.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.7.1.2}通信开销}{18}{subsubsection.3.7.1.2}%
+\contentsline {subsection}{\numberline {3.4.4}安全过滤协议}{30}{subsection.3.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.7.2}实验分析}{19}{subsection.3.7.2}%
+\contentsline {section}{\numberline {3.5}基于Kd-tree的隐私保护K-means方案}{31}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.7.2.1}数据集}{19}{subsubsection.3.7.2.1}%
+\contentsline {subsection}{\numberline {3.5.1}算法详述}{32}{subsection.3.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.7.2.2}现实数据集上的实验}{19}{subsubsection.3.7.2.2}%
+\contentsline {subsection}{\numberline {3.5.2}讨论}{32}{subsection.3.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.7.2.3}人造数据集上的实验}{20}{subsubsection.3.7.2.3}%
+\contentsline {section}{\numberline {3.6}安全性分析}{33}{section.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.8}本章小结}{22}{section.3.8}%
+\contentsline {subsection}{\numberline {3.6.1}安全计算模块安全性分析}{33}{subsection.3.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}隐私保护密度聚类方法研究}{23}{chapter.4}%
+\contentsline {section}{\numberline {3.7}系统评估与性能分析}{34}{section.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}引言}{23}{section.4.1}%
+\contentsline {subsection}{\numberline {3.7.1}理论分析}{34}{subsection.3.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}预备知识}{24}{section.4.2}%
+\contentsline {subsubsection}{\numberline {3.7.1.1}计算开销}{35}{subsubsection.3.7.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}DBSCAN}{24}{subsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {3.7.1.2}通信开销}{35}{subsubsection.3.7.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}改进的DBSCAN}{25}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {3.7.2}实验分析}{35}{subsection.3.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}基于DBSCAN的层次聚类}{25}{subsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {3.7.2.1}数据集}{35}{subsubsection.3.7.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}问题描述}{26}{section.4.3}%
+\contentsline {subsubsection}{\numberline {3.7.2.2}现实数据集上的实验}{36}{subsubsection.3.7.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}系统模型}{26}{subsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {3.7.2.3}人造数据集上的实验}{37}{subsubsection.3.7.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}安全模型}{26}{subsection.4.3.2}%
+\contentsline {section}{\numberline {3.8}本章小结}{38}{section.3.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}设计目标}{26}{subsection.4.3.3}%
+\contentsline {chapter}{\numberline {4}隐私保护密度聚类方法研究}{40}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}系统输入}{27}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.1}引言}{40}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}基于秘密共享的隐私保护计算模块}{27}{section.4.4}%
+\contentsline {section}{\numberline {4.2}预备知识}{41}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}安全排序协议}{27}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.2.1}调整兰德系数}{41}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}隐私保护dbscan方案}{27}{section.4.5}%
+\contentsline {subsection}{\numberline {4.2.2}DBSCAN}{42}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}初始化}{28}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.2.3}改进的DBSCAN}{44}{subsection.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}聚类}{28}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.2.4}基于DBSCAN的层次聚类}{45}{subsection.4.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.3}还原聚类结果}{30}{subsection.4.5.3}%
+\contentsline {section}{\numberline {4.3}问题描述}{46}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}改进的隐私保护dbscan}{30}{section.4.6}%
+\contentsline {subsection}{\numberline {4.3.1}系统模型}{46}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.1}初始化}{30}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.3.2}安全模型}{47}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.2}聚类}{32}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.3.3}设计目标}{47}{subsection.4.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}基于dbscan的隐私保护层次聚类}{33}{section.4.7}%
+\contentsline {subsection}{\numberline {4.3.4}系统输入}{48}{subsection.4.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.1}获取eps值}{33}{subsection.4.7.1}%
+\contentsline {section}{\numberline {4.4}基于秘密共享的隐私保护计算模块}{48}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.2}计算初始簇}{34}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.4.1}安全排序协议}{48}{subsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.3}合并初始簇}{35}{subsection.4.7.3}%
+\contentsline {section}{\numberline {4.5}隐私保护DBSCAN方案}{48}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}理论分析}{35}{section.4.8}%
+\contentsline {subsection}{\numberline {4.5.1}初始化}{49}{subsection.4.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}实验评估}{35}{section.4.9}%
+\contentsline {subsection}{\numberline {4.5.2}聚类}{50}{subsection.4.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.10}本章小结}{35}{section.4.10}%
+\contentsline {subsection}{\numberline {4.5.3}还原聚类结果}{52}{subsection.4.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{致谢}{36}{chapter*.21}%
+\contentsline {section}{\numberline {4.6}改进的隐私保护DBSCAN}{52}{section.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{参考文献}{37}{section*.22}%
+\contentsline {subsection}{\numberline {4.6.1}初始化}{54}{subsection.4.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{作者在学期间取得的学术成果}{40}{chapter*.24}%
+\contentsline {subsection}{\numberline {4.6.2}聚类}{55}{subsection.4.6.2}%
 \defcounter {refsection}{0}\relax 
-\ttl@change@i {\@ne }{chapter}{0pt}{\vspace {0.25\baselineskip } \heiti \xiaosi [1.25]}{附录\,\thecontentslabel \quad }{}{\hspace {.5em}\titlerule *{.}\contentspage }\relax 
+\contentsline {section}{\numberline {4.7}基于DBSCAN的隐私保护层次聚类}{55}{section.4.7}%
 \defcounter {refsection}{0}\relax 
-\ttl@change@v {chapter}{}{}{}\relax 
+\contentsline {subsection}{\numberline {4.7.1}获取eps值}{56}{subsection.4.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}模板提供的希腊字母命令列表}{41}{appendix.A}%
+\contentsline {subsection}{\numberline {4.7.2}计算初始簇}{57}{subsection.4.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.7.3}合并初始簇}{58}{subsection.4.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.8}实验分析}{59}{section.4.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.8.1}理论分析}{59}{subsection.4.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.8.2}实验设置}{60}{subsection.4.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.8.3}聚类质量}{61}{subsection.4.8.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.8.4}运行开销与分析}{63}{subsection.4.8.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.9}本章小结}{65}{section.4.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}总结与展望}{67}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}工作总结}{67}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}研究展望}{67}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{致谢}{69}{chapter*.45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{参考文献}{70}{section*.46}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{作者在学期间取得的学术成果}{77}{chapter*.48}%
 \contentsfinish 

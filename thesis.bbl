@@ -288,6 +288,61 @@
       \field{dateera}{ce}
       \keyw{hunt2018chiron}
     \endentry
+    \entry{liu2021when}{article}{}
+      \name{author}{4}{}{%
+        {{hash=28bbf03a0afe2fb1d3a77975de0b7668}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yuxiang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=30041258d75f8640918662960b71fc65}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xingliang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=2210437906fbdcba37aca38d935468b0}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Man\bibnamedelimb Ho\bibnamedelima Allen},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=03ebb954658194d4f7fe4cd6f9a1c295}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Cong},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{7248ca45f79a7d0c6df338ea75465df8}
+      \strng{fullhash}{af25c67f0d6a6a8fad41aae7071ff00d}
+      \strng{bibnamehash}{1979d40ffaf547e01fd8dcdac174f38a}
+      \strng{authorbibnamehash}{1979d40ffaf547e01fd8dcdac174f38a}
+      \strng{authornamehash}{7248ca45f79a7d0c6df338ea75465df8}
+      \strng{authorfullhash}{af25c67f0d6a6a8fad41aae7071ff00d}
+      \field{extraname}{1}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Computing Surveys (CSUR)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{When Machine Learning Meets Privacy: A Survey and Outlook}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{54}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 38}
+      \range{pages}{38}
+      \keyw{liu2021when}
+    \endentry
     \entry{ahmed2020k}{article}{}
       \name{author}{3}{}{%
         {{hash=7fb2375082bc9ad06db36522c8341d67}{%
@@ -318,8 +373,8 @@
       \strng{authorbibnamehash}{acb47d59a7a3c6337fe7fab2af63c704}
       \strng{authornamehash}{318df2b2189293585fdf4f1830173eca}
       \strng{authorfullhash}{acb47d59a7a3c6337fe7fab2af63c704}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Electronics}
@@ -364,8 +419,8 @@
       \strng{authorbibnamehash}{e98f46d4ea8d1cb3d9f9e83d35263fdb}
       \strng{authornamehash}{b43797e83d2277b0c07e1e8b5a209cf3}
       \strng{authorfullhash}{e98f46d4ea8d1cb3d9f9e83d35263fdb}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{english}
@@ -423,8 +478,8 @@
       \strng{authorbibnamehash}{62cadfa8c2d94244537d7c8e17b95f69}
       \strng{authornamehash}{7f0221976d31be92bbcb6eec826d5209}
       \strng{authorfullhash}{c6dc33600fd6c9ee3ba7372ec814efb7}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Cluster Computing}
@@ -490,374 +545,865 @@
       \range{pages}{17}
       \keyw{montazerolghaem2020green}
     \endentry
-    \entry{kanungo2002efficient}{article}{}
-      \name{author}{6}{}{%
-        {{hash=e25d52378b577de37f722cdd0a99647a}{%
-           family={Kanungo},
-           familyi={K\bibinitperiod},
-           given={Tapas},
-           giveni={T\bibinitperiod}}}%
-        {{hash=827b83f56eb6ef772078b4c0c8d497aa}{%
-           family={Mount},
-           familyi={M\bibinitperiod},
-           given={David\bibnamedelima M},
-           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=ad1aab57432f622d5ec53161cfe9b366}{%
-           family={Netanyahu},
-           familyi={N\bibinitperiod},
-           given={Nathan\bibnamedelima S},
-           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=418ad13796514073604f60b744f17cd2}{%
-           family={Piatko},
+    \entry{dwork2006differential}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=c6d8866083f4c03af5e37e032df87089}{%
+           family={Dwork},
+           familyi={D\bibinitperiod},
+           given={Cynthia},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{fullhash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{bibnamehash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{authorbibnamehash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{authornamehash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{authorfullhash}{c6d8866083f4c03af5e37e032df87089}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Automata, Languages and Programming: 33rd International Colloquium, ICALP 2006, Venice, Italy, July 10-14, 2006, Proceedings, Part II 33}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Differential privacy}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \keyw{dwork2006differential}
+    \endentry
+    \entry{dwork2008differential}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=c6d8866083f4c03af5e37e032df87089}{%
+           family={Dwork},
+           familyi={D\bibinitperiod},
+           given={Cynthia},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{fullhash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{bibnamehash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{authorbibnamehash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{authornamehash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{authorfullhash}{c6d8866083f4c03af5e37e032df87089}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Theory and Applications of Models of Computation: 5th International Conference, TAMC 2008, Xi’an, China, April 25-29, 2008. Proceedings 5}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Differential privacy: A survey of results}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 19}
+      \range{pages}{19}
+      \keyw{dwork2008differential}
+    \endentry
+    \entry{team2017learning}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=fe0704d536d860e7510610923192b770}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={ADP},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{9dbc5419dd1bd78ef1bf72e172279bee}
+      \strng{fullhash}{9dbc5419dd1bd78ef1bf72e172279bee}
+      \strng{bibnamehash}{9dbc5419dd1bd78ef1bf72e172279bee}
+      \strng{authorbibnamehash}{9dbc5419dd1bd78ef1bf72e172279bee}
+      \strng{authornamehash}{9dbc5419dd1bd78ef1bf72e172279bee}
+      \strng{authorfullhash}{9dbc5419dd1bd78ef1bf72e172279bee}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Apple Mach. Learn. J}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{8}
+      \field{title}{Learning with privacy at scale}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{1}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 25}
+      \range{pages}{25}
+      \keyw{team2017learning}
+    \endentry
+    \entry{erlingsson2014rappor}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=36009ff19905955cdcf3b38361a28a94}{%
+           family={Erlingsson},
+           familyi={E\bibinitperiod},
+           given={Úlfar},
+           giveni={Ú\bibinitperiod}}}%
+        {{hash=581c510c142c97af26db0a7db4e4da5a}{%
+           family={Pihur},
            familyi={P\bibinitperiod},
-           given={Christine\bibnamedelima D},
-           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=63937971a65222d15155d3b83cbb477c}{%
-           family={Silverman},
-           familyi={S\bibinitperiod},
-           given={Ruth},
-           giveni={R\bibinitperiod}}}%
-        {{hash=9ac5ae372527081632cbd23275ac73df}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Angela\bibnamedelima Y},
-           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+           given={Vasyl},
+           giveni={V\bibinitperiod}}}%
+        {{hash=150ac9098929f4897a6de92617cd0344}{%
+           family={Korolova},
+           familyi={K\bibinitperiod},
+           given={Aleksandra},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{0a3bc4404c0178bc2a3a290c1271d5da}
+      \strng{fullhash}{3c66450d2a127e109433017e72251488}
+      \strng{bibnamehash}{3c66450d2a127e109433017e72251488}
+      \strng{authorbibnamehash}{3c66450d2a127e109433017e72251488}
+      \strng{authornamehash}{0a3bc4404c0178bc2a3a290c1271d5da}
+      \strng{authorfullhash}{3c66450d2a127e109433017e72251488}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2014 ACM SIGSAC conference on computer and communications security}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Rappor: Randomized aggregatable privacy-preserving ordinal response}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{1054\bibrangedash 1067}
+      \range{pages}{14}
+      \keyw{erlingsson2014rappor}
+    \endentry
+    \entry{ding2017collecting}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a4189394f9ccf96207d091dd64e3fd2d}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Bolin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1d2d6cbff9ca0477ee058d93afaff0e4}{%
+           family={Kulkarni},
+           familyi={K\bibinitperiod},
+           given={Janardhan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a29ecf02e92952d35a0a1320a70bc6c2}{%
+           family={Yekhanin},
+           familyi={Y\bibinitperiod},
+           given={Sergey},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{3fca251ad6d91ed132071fcda0a6418b}
+      \strng{fullhash}{47dc2e786e95e717e62bfbd7631bc97d}
+      \strng{bibnamehash}{47dc2e786e95e717e62bfbd7631bc97d}
+      \strng{authorbibnamehash}{47dc2e786e95e717e62bfbd7631bc97d}
+      \strng{authornamehash}{3fca251ad6d91ed132071fcda0a6418b}
+      \strng{authorfullhash}{47dc2e786e95e717e62bfbd7631bc97d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in Neural Information Processing Systems}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Collecting telemetry data privately}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{30}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \keyw{ding2017collecting}
+    \endentry
+    \entry{dwork2011firm}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c6d8866083f4c03af5e37e032df87089}{%
+           family={Dwork},
+           familyi={D\bibinitperiod},
+           given={Cynthia},
+           giveni={C\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
       \list{publisher}{1}{%
-        {IEEE}%
+        {ACM New York, NY, USA}%
       }
-      \strng{namehash}{2031ec6cd75aa881391c32ad36d3f59a}
-      \strng{fullhash}{6a782ddcd6599cad0360bb19693bee96}
-      \strng{bibnamehash}{586de81b1db67d80f9ec8f75776a4b9c}
-      \strng{authorbibnamehash}{586de81b1db67d80f9ec8f75776a4b9c}
-      \strng{authornamehash}{2031ec6cd75aa881391c32ad36d3f59a}
-      \strng{authorfullhash}{6a782ddcd6599cad0360bb19693bee96}
+      \strng{namehash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{fullhash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{bibnamehash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{authorbibnamehash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{authornamehash}{c6d8866083f4c03af5e37e032df87089}
+      \strng{authorfullhash}{c6d8866083f4c03af5e37e032df87089}
+      \field{extraname}{3}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE transactions on pattern analysis and machine intelligence}
+      \field{journaltitle}{Communications of the ACM}
       \field{langid}{english}
       \field{lansortorder}{4}
-      \field{number}{7}
-      \field{title}{An efficient k-means clustering algorithm: Analysis and implementation}
+      \field{number}{1}
+      \field{title}{A firm foundation for private data analysis}
       \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
-      \field{volume}{24}
-      \field{year}{2002}
+      \field{volume}{54}
+      \field{year}{2011}
       \field{dateera}{ce}
-      \field{pages}{881\bibrangedash 892}
-      \range{pages}{12}
-      \keyw{kanungo2002efficient}
+      \field{pages}{86\bibrangedash 95}
+      \range{pages}{10}
+      \keyw{dwork2011firm}
     \endentry
-    \entry{el2020kd}{inproceedings}{}
-      \name{author}{3}{}{%
-        {{hash=d3d960744d4ba08eec3f835256aee2f2}{%
-           family={El\bibnamedelima Malki},
-           familyi={E\bibinitperiod\bibinitdelim M\bibinitperiod},
-           given={Nabil},
-           giveni={N\bibinitperiod}}}%
-        {{hash=cfea07d97bfe6c92933bb1c48faced94}{%
-           family={Ravat},
-           familyi={R\bibinitperiod},
-           given={Franck},
-           giveni={F\bibinitperiod}}}%
-        {{hash=5336189ba3376758072f71d1f1d421bb}{%
-           family={Teste},
-           familyi={T\bibinitperiod},
-           given={Olivier},
-           giveni={O\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{organization}{1}{%
-        {CEUR-WS}%
-      }
-      \strng{namehash}{f2058525d1423b070ddc2fa71711aa66}
-      \strng{fullhash}{93394e8fa73313f23b7cd0c070d18429}
-      \strng{bibnamehash}{93394e8fa73313f23b7cd0c070d18429}
-      \strng{authorbibnamehash}{93394e8fa73313f23b7cd0c070d18429}
-      \strng{authornamehash}{f2058525d1423b070ddc2fa71711aa66}
-      \strng{authorfullhash}{93394e8fa73313f23b7cd0c070d18429}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{22nd International Workshop On Design, Optimization, Languages and Analytical Processing of Big Data-DOLAP 2020-}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{title}{KD-means: clustering method for massive data based on kd-tree}
-      \field{usera}{C}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{2572}
-      \field{year}{2020}
-      \field{dateera}{ce}
-      \keyw{el2020kd}
-    \endentry
-    \entry{yao1986generate}{inproceedings}{}
-      \name{author}{1}{}{%
-        {{hash=bdf7dbd523c5db366c4ffbc0ea3dc192}{%
-           family={Yao},
-           familyi={Y\bibinitperiod},
-           given={Andrew\bibnamedelima Chi-Chih},
-           giveni={A\bibinitperiod\bibinitdelim C\bibinithyphendelim C\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{organization}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
-      \strng{fullhash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
-      \strng{bibnamehash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
-      \strng{authorbibnamehash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
-      \strng{authornamehash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
-      \strng{authorfullhash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{27th annual symposium on foundations of computer science (Sfcs 1986)}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{title}{How to generate and exchange secrets}
-      \field{usera}{C}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{year}{1986}
-      \field{dateera}{ce}
-      \field{pages}{162\bibrangedash 167}
-      \range{pages}{6}
-      \keyw{yao1986generate}
-    \endentry
-    \entry{rivest2001leak}{inproceedings}{}
+    \entry{rivest1978data}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
       \name{author}{3}{}{%
         {{hash=3a964821f97ee17f8bb285bc61c52899}{%
            family={Rivest},
            familyi={R\bibinitperiod},
            given={Ronald\bibnamedelima L},
            giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=71b77dd8ab33fe646ef25cded49e9881}{%
-           family={Shamir},
-           familyi={S\bibinitperiod},
-           given={Adi},
+        {{hash=43eedbc02af68f774a14b680ae253c96}{%
+           family={Adleman},
+           familyi={A\bibinitperiod},
+           given={Len},
+           giveni={L\bibinitperiod}}}%
+        {{hash=36d7a95d5e6a5b3f49ef4de4ed77db34}{%
+           family={Dertouzos},
+           familyi={D\bibinitperiod},
+           given={Michael\bibnamedelima L},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Citeseer}%
+      }
+      \strng{namehash}{40bc8b4fa99fd3229ead4b931058d71d}
+      \strng{fullhash}{2c864714fc859f6e2a7f02fe94573ad2}
+      \strng{bibnamehash}{2c864714fc859f6e2a7f02fe94573ad2}
+      \strng{authorbibnamehash}{2c864714fc859f6e2a7f02fe94573ad2}
+      \strng{authornamehash}{40bc8b4fa99fd3229ead4b931058d71d}
+      \strng{authorfullhash}{2c864714fc859f6e2a7f02fe94573ad2}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Foundations of secure computation}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{11}
+      \field{title}{On data banks and privacy homomorphisms}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{4}
+      \field{year}{1978}
+      \field{dateera}{ce}
+      \field{pages}{169\bibrangedash 180}
+      \range{pages}{12}
+      \keyw{rivest1978data}
+    \endentry
+    \entry{gentry2009fully}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=bd007b2a3d698c39bd758b253f7c2ebf}{%
+           family={Gentry},
+           familyi={G\bibinitperiod},
+           given={Craig},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{bd007b2a3d698c39bd758b253f7c2ebf}
+      \strng{fullhash}{bd007b2a3d698c39bd758b253f7c2ebf}
+      \strng{bibnamehash}{bd007b2a3d698c39bd758b253f7c2ebf}
+      \strng{authorbibnamehash}{bd007b2a3d698c39bd758b253f7c2ebf}
+      \strng{authornamehash}{bd007b2a3d698c39bd758b253f7c2ebf}
+      \strng{authorfullhash}{bd007b2a3d698c39bd758b253f7c2ebf}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the forty-first annual ACM symposium on Theory of computing}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Fully homomorphic encryption using ideal lattices}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{169\bibrangedash 178}
+      \range{pages}{10}
+      \keyw{gentry2009fully}
+    \endentry
+    \entry{acar2018survey}{article}{}
+      \name{author}{4}{}{%
+        {{hash=18f689e13e4f26ff421990f6e128ca4e}{%
+           family={Acar},
+           familyi={A\bibinitperiod},
+           given={Abbas},
            giveni={A\bibinitperiod}}}%
-        {{hash=cab670977e5430bd6de9a9948b5f3e88}{%
-           family={Tauman},
-           familyi={T\bibinitperiod},
-           given={Yael},
+        {{hash=cf23886dc84a512e971c6943d9ddba60}{%
+           family={Aksu},
+           familyi={A\bibinitperiod},
+           given={Hidayet},
+           giveni={H\bibinitperiod}}}%
+        {{hash=df5c295afc4eeaee19d99884d7e2ba59}{%
+           family={Uluagac},
+           familyi={U\bibinitperiod},
+           given={A\bibnamedelima Selcuk},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=c1c6cc37d38b38f6ff327e1eabebda0c}{%
+           family={Conti},
+           familyi={C\bibinitperiod},
+           given={Mauro},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{4cb618e9442996bcac962b2a8e03c393}
+      \strng{fullhash}{c50b56f51bc7b98c9394011a4a804617}
+      \strng{bibnamehash}{faf4f3cdfc75d2bb6d51e67f4a9a61b6}
+      \strng{authorbibnamehash}{faf4f3cdfc75d2bb6d51e67f4a9a61b6}
+      \strng{authornamehash}{4cb618e9442996bcac962b2a8e03c393}
+      \strng{authorfullhash}{c50b56f51bc7b98c9394011a4a804617}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Computing Surveys (Csur)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{title}{A survey on homomorphic encryption schemes: Theory and implementation}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{51}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 35}
+      \range{pages}{35}
+      \keyw{acar2018survey}
+    \endentry
+    \entry{2018A}{article}{}
+      \name{author}{3}{}{%
+        {{hash=35c80f2b95a5a13d19a047b92ade8b5e}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=20f33ef640ed8f789e3790f3e933d8e8}{%
+           family={Kolesnikov},
+           familyi={K\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=b636dad1fb8264c4391badaa93b090f8}{%
+           family={Rosulek},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{3acd02c91ac4bdc04cf9213ce7c9c9d2}
+      \strng{fullhash}{acb6c1c76f86289c3adfb1e82db274b8}
+      \strng{bibnamehash}{acb6c1c76f86289c3adfb1e82db274b8}
+      \strng{authorbibnamehash}{acb6c1c76f86289c3adfb1e82db274b8}
+      \strng{authornamehash}{3acd02c91ac4bdc04cf9213ce7c9c9d2}
+      \strng{authorfullhash}{acb6c1c76f86289c3adfb1e82db274b8}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Foundations \& Trends® in Privacy \& Security}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2-3}
+      \field{title}{A Pragmatic Introduction to Secure Multi-Party Computation}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{2}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{70\bibrangedash 246}
+      \range{pages}{177}
+      \keyw{2018A}
+    \endentry
+    \entry{1982Protocols}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=816c536cf3ddeb26baa16e81dd5805a1}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={A.\bibnamedelimi C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{816c536cf3ddeb26baa16e81dd5805a1}
+      \strng{fullhash}{816c536cf3ddeb26baa16e81dd5805a1}
+      \strng{bibnamehash}{816c536cf3ddeb26baa16e81dd5805a1}
+      \strng{authorbibnamehash}{816c536cf3ddeb26baa16e81dd5805a1}
+      \strng{authornamehash}{816c536cf3ddeb26baa16e81dd5805a1}
+      \strng{authorfullhash}{816c536cf3ddeb26baa16e81dd5805a1}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. of the 23rd Annual IEEE Symposium on Foundations of Computer Science, 1982}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Protocols for secure computations}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1982}
+      \field{dateera}{ce}
+      \keyw{1982Protocols}
+    \endentry
+    \entry{2017Oblivious}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=67eac5daee257d715fb2029948fc17b2}{%
+           family={Jian},
+           familyi={J\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a300cd9c3c2e0c3bc63b6752f32c5aaf}{%
+           family={Juuti},
+           familyi={J\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=02f71913ccb0d9f1e99d70ec64b68c46}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=92d559b15918dee67f108af178a6de3d}{%
+           family={Asokan},
+           familyi={A\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{a27be756e3f1f3448221b5f1a651cf29}
+      \strng{fullhash}{175661a137e420d9c62d979969e85657}
+      \strng{bibnamehash}{c7ea0d37595ad554072cdb5f4e9f37dd}
+      \strng{authorbibnamehash}{c7ea0d37595ad554072cdb5f4e9f37dd}
+      \strng{authornamehash}{a27be756e3f1f3448221b5f1a651cf29}
+      \strng{authorfullhash}{175661a137e420d9c62d979969e85657}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{the 2017 ACM SIGSAC Conference}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Oblivious Neural Network Predictions via MiniONN Transformations}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \keyw{2017Oblivious}
+    \endentry
+    \entry{goyal2008efficient}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=87cfcd76350c886eb9e239d09c017f11}{%
+           family={Goyal},
+           familyi={G\bibinitperiod},
+           given={Vipul},
+           giveni={V\bibinitperiod}}}%
+        {{hash=02526e0d710820082af3a656c511e34b}{%
+           family={Mohassel},
+           familyi={M\bibinitperiod},
+           given={Payman},
+           giveni={P\bibinitperiod}}}%
+        {{hash=5ccecf114bbd51a1a2979a23dd69c78c}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{480e74b6faf7c6c949922caf2697905d}
+      \strng{fullhash}{5de5dbf039c97d0ea82f85cedb861582}
+      \strng{bibnamehash}{5de5dbf039c97d0ea82f85cedb861582}
+      \strng{authorbibnamehash}{5de5dbf039c97d0ea82f85cedb861582}
+      \strng{authornamehash}{480e74b6faf7c6c949922caf2697905d}
+      \strng{authorfullhash}{5de5dbf039c97d0ea82f85cedb861582}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Cryptology--EUROCRYPT 2008: 27th Annual International Conference on the Theory and Applications of Cryptographic Techniques, Istanbul, Turkey, April 13-17, 2008. Proceedings 27}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Efficient two party and multi party computation against covert adversaries}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{289\bibrangedash 306}
+      \range{pages}{18}
+      \keyw{goyal2008efficient}
+    \endentry
+    \entry{malkhi2004fairplay}{inproceedings}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{4}{}{%
+        {{hash=adef420ee25e4cdaac9d926cbe70b98d}{%
+           family={Malkhi},
+           familyi={M\bibinitperiod},
+           given={Dahlia},
+           giveni={D\bibinitperiod}}}%
+        {{hash=dd03ed102537d5040adaf7ede9bad0ec}{%
+           family={Nisan},
+           familyi={N\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod}}}%
+        {{hash=17a7ab804e95aee768da68b3797214a5}{%
+           family={Pinkas},
+           familyi={P\bibinitperiod},
+           given={Benny},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b867b5d3d3a40682ff736d46207f0882}{%
+           family={Sella},
+           familyi={S\bibinitperiod},
+           given={Yaron},
            giveni={Y\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
       \list{organization}{1}{%
-        {Springer}%
+        {San Diego, CA, USA}%
       }
-      \strng{namehash}{40bc8b4fa99fd3229ead4b931058d71d}
-      \strng{fullhash}{429f82e866d85dda3102f0a30deaa506}
-      \strng{bibnamehash}{429f82e866d85dda3102f0a30deaa506}
-      \strng{authorbibnamehash}{429f82e866d85dda3102f0a30deaa506}
-      \strng{authornamehash}{40bc8b4fa99fd3229ead4b931058d71d}
-      \strng{authorfullhash}{429f82e866d85dda3102f0a30deaa506}
+      \strng{namehash}{0ffb62034ce250d039720b27d18e579d}
+      \strng{fullhash}{4ea0c2d107a5327d0266a01f93c2491b}
+      \strng{bibnamehash}{df533c5df4cf1f78dd75acfab76cade4}
+      \strng{authorbibnamehash}{df533c5df4cf1f78dd75acfab76cade4}
+      \strng{authornamehash}{0ffb62034ce250d039720b27d18e579d}
+      \strng{authorfullhash}{4ea0c2d107a5327d0266a01f93c2491b}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Advances in Cryptology—ASIACRYPT 2001: 7th International Conference on the Theory and Application of Cryptology and Information Security Gold Coast, Australia, December 9--13, 2001 Proceedings 7}
+      \field{booktitle}{USENIX security symposium}
       \field{langid}{english}
       \field{lansortorder}{4}
-      \field{title}{How to leak a secret}
+      \field{title}{Fairplay-Secure Two-Party Computation System.}
       \field{usera}{C}
       \field{userd}{english}
       \field{userf}{english}
-      \field{year}{2001}
+      \field{volume}{4}
+      \field{year}{2004}
       \field{dateera}{ce}
-      \field{pages}{552\bibrangedash 565}
-      \range{pages}{14}
-      \keyw{rivest2001leak}
-    \endentry
-    \entry{blakley1979safeguarding}{inproceedings}{}
-      \name{author}{1}{}{%
-        {{hash=6b0254448181499ed022c4bdfc5d6813}{%
-           family={Blakley},
-           familyi={B\bibinitperiod},
-           given={George\bibnamedelima Robert},
-           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{organization}{1}{%
-        {IEEE Computer Society}%
-      }
-      \strng{namehash}{6b0254448181499ed022c4bdfc5d6813}
-      \strng{fullhash}{6b0254448181499ed022c4bdfc5d6813}
-      \strng{bibnamehash}{6b0254448181499ed022c4bdfc5d6813}
-      \strng{authorbibnamehash}{6b0254448181499ed022c4bdfc5d6813}
-      \strng{authornamehash}{6b0254448181499ed022c4bdfc5d6813}
-      \strng{authorfullhash}{6b0254448181499ed022c4bdfc5d6813}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Managing Requirements Knowledge, International Workshop on}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{title}{Safeguarding cryptographic keys}
-      \field{usera}{C}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{year}{1979}
-      \field{dateera}{ce}
-      \field{pages}{313\bibrangedash 313}
+      \field{pages}{9}
       \range{pages}{1}
-      \keyw{blakley1979safeguarding}
+      \keyw{malkhi2004fairplay}
     \endentry
-    \entry{beaver1992efficient}{inproceedings}{}
-      \name{author}{1}{}{%
-        {{hash=8293acfe90aa8eaf9b54bb2d780b215f}{%
-           family={Beaver},
-           familyi={B\bibinitperiod},
-           given={Donald},
-           giveni={D\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{organization}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{8293acfe90aa8eaf9b54bb2d780b215f}
-      \strng{fullhash}{8293acfe90aa8eaf9b54bb2d780b215f}
-      \strng{bibnamehash}{8293acfe90aa8eaf9b54bb2d780b215f}
-      \strng{authorbibnamehash}{8293acfe90aa8eaf9b54bb2d780b215f}
-      \strng{authornamehash}{8293acfe90aa8eaf9b54bb2d780b215f}
-      \strng{authorfullhash}{8293acfe90aa8eaf9b54bb2d780b215f}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Advances in Cryptology—CRYPTO’91: Proceedings 11}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{title}{Efficient multiparty protocols using circuit randomization}
-      \field{usera}{C}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{year}{1992}
-      \field{dateera}{ce}
-      \field{pages}{420\bibrangedash 432}
-      \range{pages}{13}
-      \keyw{beaver1992efficient}
-    \endentry
-    \entry{schneider2013gmw}{inproceedings}{}
-      \name{author}{2}{}{%
+    \entry{pinkas2009secure}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=17a7ab804e95aee768da68b3797214a5}{%
+           family={Pinkas},
+           familyi={P\bibinitperiod},
+           given={Benny},
+           giveni={B\bibinitperiod}}}%
         {{hash=5d62da517b335078f08436fbab3a5f69}{%
            family={Schneider},
            familyi={S\bibinitperiod},
            given={Thomas},
            giveni={T\bibinitperiod}}}%
-        {{hash=4ef91305cf3e296815bbb67ee9321367}{%
+        {{hash=a9c0bec8435186506abedeec8739d0d5}{%
+           family={Smart},
+           familyi={S\bibinitperiod},
+           given={Nigel\bibnamedelima P},
+           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=e3857f39c97f4c8a45d9cdacd119695d}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Stephen\bibnamedelima C},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f8d00d7adfe41e73566d58e8635cc1b4}
+      \strng{fullhash}{71ce7a3f5e3e9cf1f5beb3302a9cf832}
+      \strng{bibnamehash}{8c546f5ad2cd3e1f67f0ea634b198c61}
+      \strng{authorbibnamehash}{8c546f5ad2cd3e1f67f0ea634b198c61}
+      \strng{authornamehash}{f8d00d7adfe41e73566d58e8635cc1b4}
+      \strng{authorfullhash}{71ce7a3f5e3e9cf1f5beb3302a9cf832}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Cryptology--ASIACRYPT 2009: 15th International Conference on the Theory and Application of Cryptology and Information Security, Tokyo, Japan, December 6-10, 2009. Proceedings 15}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Secure two-party computation is practical}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{250\bibrangedash 267}
+      \range{pages}{18}
+      \keyw{pinkas2009secure}
+    \endentry
+    \entry{2015ABY}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=0152c1e245bd6a2cef48b769202cd877}{%
+           family={Demmler},
+           familyi={D\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=01b495b14bccd0bd55d60645140ddb87}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d8fafb08f85b9c27d66713ab35b653fe}{%
            family={Zohner},
            familyi={Z\bibinitperiod},
-           given={Michael},
+           given={M.},
            giveni={M\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
-      \list{organization}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{226b5ac9f15f6cc898a817b281ed1e3f}
-      \strng{fullhash}{785d8c81b13ac7db10566bad391632ea}
-      \strng{bibnamehash}{785d8c81b13ac7db10566bad391632ea}
-      \strng{authorbibnamehash}{785d8c81b13ac7db10566bad391632ea}
-      \strng{authornamehash}{226b5ac9f15f6cc898a817b281ed1e3f}
-      \strng{authorfullhash}{785d8c81b13ac7db10566bad391632ea}
+      \strng{namehash}{e1127e27633fd8ad1b33f01c3af3a66e}
+      \strng{fullhash}{d58824b7c3fc6fd8c22f77f1b8791dec}
+      \strng{bibnamehash}{d58824b7c3fc6fd8c22f77f1b8791dec}
+      \strng{authorbibnamehash}{d58824b7c3fc6fd8c22f77f1b8791dec}
+      \strng{authornamehash}{e1127e27633fd8ad1b33f01c3af3a66e}
+      \strng{authorfullhash}{d58824b7c3fc6fd8c22f77f1b8791dec}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Financial Cryptography and Data Security: 17th International Conference, FC 2013, Okinawa, Japan, April 1-5, 2013, Revised Selected Papers 17}
+      \field{booktitle}{Network \& Distributed System Security Symposium}
       \field{langid}{english}
       \field{lansortorder}{4}
-      \field{title}{GMW vs. Yao? Efficient secure two-party computation with low depth circuits}
+      \field{title}{ABY - A Framework for Efficient Mixed-Protocol Secure Two-Party Computation}
       \field{usera}{C}
       \field{userd}{english}
       \field{userf}{english}
-      \field{year}{2013}
+      \field{year}{2015}
       \field{dateera}{ce}
-      \field{pages}{275\bibrangedash 292}
-      \range{pages}{18}
-      \keyw{schneider2013gmw}
+      \keyw{2015ABY}
     \endentry
-    \entry{riazi2018chameleon}{inproceedings}{}
-      \name{author}{6}{}{%
-        {{hash=47afa55ac4aa3cb95f7113dc42bb25ea}{%
-           family={Riazi},
-           familyi={R\bibinitperiod},
-           given={M\bibnamedelima Sadegh},
-           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=007aa09887a19dbd2180cc89d1e0f287}{%
-           family={Weinert},
+    \entry{jagannathan2005privacy}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=1267dec542aeb5c3e80b84354995333f}{%
+           family={Jagannathan},
+           familyi={J\bibinitperiod},
+           given={Geetha},
+           giveni={G\bibinitperiod}}}%
+        {{hash=6b760c3bc1c334fa05291958e62ca503}{%
+           family={Wright},
            familyi={W\bibinitperiod},
-           given={Christian},
-           giveni={C\bibinitperiod}}}%
-        {{hash=e8e24783371187687a39bcede4a4482f}{%
-           family={Tkachenko},
-           familyi={T\bibinitperiod},
-           given={Oleksandr},
-           giveni={O\bibinitperiod}}}%
-        {{hash=a7fe70032d603b93b8ae4dbb88799927}{%
-           family={Songhori},
+           given={Rebecca\bibnamedelima N},
+           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{06926f7917fb7a165098c861d865d0e3}
+      \strng{fullhash}{06acecbcd1af7db07c23f934a0dad17a}
+      \strng{bibnamehash}{06acecbcd1af7db07c23f934a0dad17a}
+      \strng{authorbibnamehash}{06acecbcd1af7db07c23f934a0dad17a}
+      \strng{authornamehash}{06926f7917fb7a165098c861d865d0e3}
+      \strng{authorfullhash}{06acecbcd1af7db07c23f934a0dad17a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the eleventh ACM SIGKDD international conference on Knowledge discovery in data mining}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Privacy-preserving distributed k-means clustering over arbitrarily partitioned data}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{pages}{593\bibrangedash 599}
+      \range{pages}{7}
+      \keyw{jagannathan2005privacy}
+    \endentry
+    \entry{su2007privacy}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=0c9c584fa76f397b780750f0deefdadb}{%
+           family={Su},
            familyi={S\bibinitperiod},
-           given={Ebrahim\bibnamedelima M},
-           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           given={Chunhua},
+           giveni={C\bibinitperiod}}}%
+        {{hash=049fcc87e8df9eb50c116989478ae123}{%
+           family={Bao},
+           familyi={B\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod}}}%
+        {{hash=269ca2371293161be4bc944482b509d7}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Jianying},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8cf4d550b9608037617456afc72747a2}{%
+           family={Takagi},
+           familyi={T\bibinitperiod},
+           given={Tsuyoshi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f2f941d0a953878e96cdad9d901e6d84}{%
+           family={Sakurai},
+           familyi={S\bibinitperiod},
+           given={Kouichi},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{ce6a3a6be876da90109db255b78fb30c}
+      \strng{fullhash}{74368ce1f1c54678539b9ad1f53364c0}
+      \strng{bibnamehash}{e1c8f16fc3644448572889393cbbfc08}
+      \strng{authorbibnamehash}{e1c8f16fc3644448572889393cbbfc08}
+      \strng{authornamehash}{ce6a3a6be876da90109db255b78fb30c}
+      \strng{authorfullhash}{74368ce1f1c54678539b9ad1f53364c0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{21st International Conference on Advanced Information Networking and Applications Workshops (AINAW'07)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Privacy-preserving two-party k-means clustering via secure approximation}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{1}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{385\bibrangedash 391}
+      \range{pages}{7}
+      \keyw{su2007privacy}
+    \endentry
+    \entry{bozdemir2021privacy}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=c999a9a316c803ea59a237ae954e11c5}{%
+           family={Bozdemir},
+           familyi={B\bibinitperiod},
+           given={Beyza},
+           giveni={B\bibinitperiod}}}%
+        {{hash=74a8c8469423b7ff13b8ef6d40da13e5}{%
+           family={Canard},
+           familyi={C\bibinitperiod},
+           given={Sébastien},
+           giveni={S\bibinitperiod}}}%
+        {{hash=213d09c0d239a3750cbcc027dbe4f79a}{%
+           family={Ermis},
+           familyi={E\bibinitperiod},
+           given={Orhan},
+           giveni={O\bibinitperiod}}}%
+        {{hash=b8c62c00fb0db05cd62b15c4698906cc}{%
+           family={Möllering},
+           familyi={M\bibinitperiod},
+           given={Helen},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b1b56a907557b2e5e41eb8550c3846ca}{%
+           family={Önen},
+           familyi={Ö\bibinitperiod},
+           given={Melek},
+           giveni={M\bibinitperiod}}}%
         {{hash=5d62da517b335078f08436fbab3a5f69}{%
            family={Schneider},
            familyi={S\bibinitperiod},
            given={Thomas},
            giveni={T\bibinitperiod}}}%
-        {{hash=d1642679ae78814302ce585a8ca745a8}{%
-           family={Koushanfar},
-           familyi={K\bibinitperiod},
-           given={Farinaz},
-           giveni={F\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
-      \strng{namehash}{70d18fce84b19b58ece4fee10b4305b5}
-      \strng{fullhash}{b9b8c3c618162af7cd89be2e131f35f8}
-      \strng{bibnamehash}{fa6af8bbcbb2d57f8af7e6941ec9f1bf}
-      \strng{authorbibnamehash}{fa6af8bbcbb2d57f8af7e6941ec9f1bf}
-      \strng{authornamehash}{70d18fce84b19b58ece4fee10b4305b5}
-      \strng{authorfullhash}{b9b8c3c618162af7cd89be2e131f35f8}
+      \strng{namehash}{e343467910243a7e80b5d85e30244984}
+      \strng{fullhash}{bc7f5ed96644f99a19c1f8de7b153e6f}
+      \strng{bibnamehash}{bc196456ae9e2a967960a593cc926ab2}
+      \strng{authorbibnamehash}{bc196456ae9e2a967960a593cc926ab2}
+      \strng{authornamehash}{e343467910243a7e80b5d85e30244984}
+      \strng{authorfullhash}{bc7f5ed96644f99a19c1f8de7b153e6f}
+      \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 2018 on Asia conference on computer and communications security}
+      \field{booktitle}{Proceedings of the 2021 ACM Asia Conference on Computer and Communications Security}
       \field{langid}{english}
       \field{lansortorder}{4}
-      \field{title}{Chameleon: A hybrid secure computation framework for machine learning applications}
+      \field{title}{Privacy-preserving density-based clustering}
       \field{usera}{C}
       \field{userd}{english}
       \field{userf}{english}
-      \field{year}{2018}
+      \field{year}{2021}
       \field{dateera}{ce}
-      \field{pages}{707\bibrangedash 721}
-      \range{pages}{15}
-      \keyw{riazi2018chameleon}
+      \field{pages}{658\bibrangedash 671}
+      \range{pages}{14}
+      \keyw{bozdemir2021privacy}
     \endentry
     \entry{wu2020secure}{article}{}
       \name{author}{5}{}{%
@@ -918,165 +1464,18 @@
       \range{pages}{14}
       \keyw{wu2020secure}
     \endentry
-    \entry{bunn2007secure}{inproceedings}{}
+    \entry{jaschke2019unsupervised}{inproceedings}{}
       \name{author}{2}{}{%
-        {{hash=cedfe091dee6ee5e46bbfc7ea4877e92}{%
-           family={Bunn},
-           familyi={B\bibinitperiod},
-           given={Paul},
-           giveni={P\bibinitperiod}}}%
-        {{hash=a9721cf40a3150cd65a1b3d65d86fe94}{%
-           family={Ostrovsky},
-           familyi={O\bibinitperiod},
-           given={Rafail},
-           giveni={R\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{18b04314293f95b540a4da41447b41de}
-      \strng{fullhash}{cd13082afa7020f23354a2b82a3b35f3}
-      \strng{bibnamehash}{cd13082afa7020f23354a2b82a3b35f3}
-      \strng{authorbibnamehash}{cd13082afa7020f23354a2b82a3b35f3}
-      \strng{authornamehash}{18b04314293f95b540a4da41447b41de}
-      \strng{authorfullhash}{cd13082afa7020f23354a2b82a3b35f3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 14th ACM conference on Computer and communications security}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{title}{Secure two-party k-means clustering}
-      \field{usera}{C}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{year}{2007}
-      \field{dateera}{ce}
-      \field{pages}{486\bibrangedash 497}
-      \range{pages}{12}
-      \keyw{bunn2007secure}
-    \endentry
-    \entry{liu2019toward}{article}{}
-      \name{author}{7}{}{%
-        {{hash=5d07f51a51d9c2c1363bab089c022727}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Lin},
-           giveni={L\bibinitperiod}}}%
-        {{hash=8ca90fb3f7ad0b73b26adc48cad770cc}{%
-           family={Su},
-           familyi={S\bibinitperiod},
-           given={Jinshu},
-           giveni={J\bibinitperiod}}}%
-        {{hash=45b6bd2304cb9b1f85f702e136dc3670}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Ximeng},
-           giveni={X\bibinitperiod}}}%
-        {{hash=ed914bb04dabf90b2e6a1c05ef06f7eb}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Rongmao},
-           giveni={R\bibinitperiod}}}%
-        {{hash=ade0b4c1c5cedeaecd33cd784e361ece}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Kai},
-           giveni={K\bibinitperiod}}}%
-        {{hash=595a2b96180f7d37ee0b3ddbccafcfdd}{%
-           family={Deng},
-           familyi={D\bibinitperiod},
-           given={Robert\bibnamedelima H},
-           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=93a575777f636107b8f65a815802b18f}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Xiaofeng},
-           giveni={X\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{14dd7bb4c792c725baea1a65a36925e0}
-      \strng{fullhash}{724a2b23483e3e77f1b266541e8cd23d}
-      \strng{bibnamehash}{127efd240588608e04083f4124108442}
-      \strng{authorbibnamehash}{127efd240588608e04083f4124108442}
-      \strng{authornamehash}{14dd7bb4c792c725baea1a65a36925e0}
-      \strng{authorfullhash}{724a2b23483e3e77f1b266541e8cd23d}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Internet of Things Journal}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{number}{6}
-      \field{title}{Toward highly secure yet efficient KNN classification scheme on outsourced cloud data}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{6}
-      \field{year}{2019}
-      \field{dateera}{ce}
-      \field{pages}{9841\bibrangedash 9852}
-      \range{pages}{12}
-      \keyw{liu2019toward}
-    \endentry
-    \entry{goldreich2004encryption}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=b853abc93e016bf8e812e1ae477e4c6a}{%
-           family={Goldreich},
-           familyi={G\bibinitperiod},
-           given={O},
-           giveni={O\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{b853abc93e016bf8e812e1ae477e4c6a}
-      \strng{fullhash}{b853abc93e016bf8e812e1ae477e4c6a}
-      \strng{bibnamehash}{b853abc93e016bf8e812e1ae477e4c6a}
-      \strng{authorbibnamehash}{b853abc93e016bf8e812e1ae477e4c6a}
-      \strng{authornamehash}{b853abc93e016bf8e812e1ae477e4c6a}
-      \strng{authorfullhash}{b853abc93e016bf8e812e1ae477e4c6a}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{title}{Encryption Schemes. The Foundations of Cryptography, vol. 2}
-      \field{usera}{Z}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{year}{2004}
-      \field{dateera}{ce}
-      \keyw{goldreich2004encryption}
-    \endentry
-    \entry{bogdanov2008sharemind}{inproceedings}{}
-      \name{author}{3}{}{%
-        {{hash=8c11b0342d93fa9d604c23a58a719a81}{%
-           family={Bogdanov},
-           familyi={B\bibinitperiod},
-           given={Dan},
-           giveni={D\bibinitperiod}}}%
-        {{hash=a5cc0ccb6002017fea607fa13e9f3533}{%
-           family={Laur},
-           familyi={L\bibinitperiod},
-           given={Sven},
-           giveni={S\bibinitperiod}}}%
-        {{hash=84c0ea6e2426a80d6f8ab982315010ff}{%
-           family={Willemson},
-           familyi={W\bibinitperiod},
-           given={Jan},
-           giveni={J\bibinitperiod}}}%
+        {{hash=69059e6162073052dc1a21994a35538f}{%
+           family={Jäschke},
+           familyi={J\bibinitperiod},
+           given={Angela},
+           giveni={A\bibinitperiod}}}%
+        {{hash=aeb9fb2da57c46da7c6358337be2c805}{%
+           family={Armknecht},
+           familyi={A\bibinitperiod},
+           given={Frederik},
+           giveni={F\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
@@ -1084,28 +1483,92 @@
       \list{organization}{1}{%
         {Springer}%
       }
-      \strng{namehash}{aa2b21384c45ddd71eef97ad183268da}
-      \strng{fullhash}{7d91546d580262606d2bfc79e55c877e}
-      \strng{bibnamehash}{7d91546d580262606d2bfc79e55c877e}
-      \strng{authorbibnamehash}{7d91546d580262606d2bfc79e55c877e}
-      \strng{authornamehash}{aa2b21384c45ddd71eef97ad183268da}
-      \strng{authorfullhash}{7d91546d580262606d2bfc79e55c877e}
+      \strng{namehash}{131f25579fa70e691e0f94647ee76529}
+      \strng{fullhash}{08623a55bb73c5674e1428a3877472be}
+      \strng{bibnamehash}{08623a55bb73c5674e1428a3877472be}
+      \strng{authorbibnamehash}{08623a55bb73c5674e1428a3877472be}
+      \strng{authornamehash}{131f25579fa70e691e0f94647ee76529}
+      \strng{authorfullhash}{08623a55bb73c5674e1428a3877472be}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Selected Areas in Cryptography--SAC 2018: 25th International Conference, Calgary, AB, Canada, August 15--17, 2018, Revised Selected Papers}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Unsupervised machine learning on encrypted data}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{453\bibrangedash 478}
+      \range{pages}{26}
+      \keyw{jaschke2019unsupervised}
+    \endentry
+    \entry{kanungo2002efficient}{article}{}
+      \name{author}{6}{}{%
+        {{hash=e25d52378b577de37f722cdd0a99647a}{%
+           family={Kanungo},
+           familyi={K\bibinitperiod},
+           given={Tapas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=827b83f56eb6ef772078b4c0c8d497aa}{%
+           family={Mount},
+           familyi={M\bibinitperiod},
+           given={David\bibnamedelima M},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ad1aab57432f622d5ec53161cfe9b366}{%
+           family={Netanyahu},
+           familyi={N\bibinitperiod},
+           given={Nathan\bibnamedelima S},
+           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=418ad13796514073604f60b744f17cd2}{%
+           family={Piatko},
+           familyi={P\bibinitperiod},
+           given={Christine\bibnamedelima D},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=63937971a65222d15155d3b83cbb477c}{%
+           family={Silverman},
+           familyi={S\bibinitperiod},
+           given={Ruth},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9ac5ae372527081632cbd23275ac73df}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Angela\bibnamedelima Y},
+           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{2031ec6cd75aa881391c32ad36d3f59a}
+      \strng{fullhash}{6a782ddcd6599cad0360bb19693bee96}
+      \strng{bibnamehash}{586de81b1db67d80f9ec8f75776a4b9c}
+      \strng{authorbibnamehash}{586de81b1db67d80f9ec8f75776a4b9c}
+      \strng{authornamehash}{2031ec6cd75aa881391c32ad36d3f59a}
+      \strng{authorfullhash}{6a782ddcd6599cad0360bb19693bee96}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Computer Security-ESORICS 2008: 13th European Symposium on Research in Computer Security, Málaga, Spain, October 6-8, 2008. Proceedings 13}
+      \field{journaltitle}{IEEE transactions on pattern analysis and machine intelligence}
       \field{langid}{english}
       \field{lansortorder}{4}
-      \field{title}{Sharemind: A framework for fast privacy-preserving computations}
-      \field{usera}{C}
+      \field{number}{7}
+      \field{title}{An efficient k-means clustering algorithm: Analysis and implementation}
+      \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
-      \field{year}{2008}
+      \field{volume}{24}
+      \field{year}{2002}
       \field{dateera}{ce}
-      \field{pages}{192\bibrangedash 206}
-      \range{pages}{15}
-      \keyw{bogdanov2008sharemind}
+      \field{pages}{881\bibrangedash 892}
+      \range{pages}{12}
+      \keyw{kanungo2002efficient}
     \endentry
     \entry{rathee2020cryptflow2}{inproceedings}{}
       \name{author}{7}{}{%
@@ -1171,335 +1634,127 @@
       \range{pages}{18}
       \keyw{rathee2020cryptflow2}
     \endentry
-    \entry{mohassel2019practical}{article}{}
-      \name{author}{3}{}{%
-        {{hash=02526e0d710820082af3a656c511e34b}{%
-           family={Mohassel},
-           familyi={M\bibinitperiod},
-           given={Payman},
-           giveni={P\bibinitperiod}}}%
-        {{hash=98419613b7fd8103780e4fc807177469}{%
-           family={Rosulek},
-           familyi={R\bibinitperiod},
-           given={Mike},
+    \entry{1996A}{article}{}
+      \name{author}{1}{}{%
+        {{hash=13f9e0185bd6f9498266a9e5786eeeda}{%
+           family={Ester},
+           familyi={E\bibinitperiod},
+           given={M.},
            giveni={M\bibinitperiod}}}%
-        {{hash=6e9b07f3abc76d401f6e5f7f7de4dd64}{%
-           family={Trieu},
-           familyi={T\bibinitperiod},
-           given={Ni},
-           giveni={N\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
       }
-      \strng{namehash}{053693a1b8a255028a080bcc55eae36e}
-      \strng{fullhash}{84faecaed1352d3f541c5ea45597a212}
-      \strng{bibnamehash}{84faecaed1352d3f541c5ea45597a212}
-      \strng{authorbibnamehash}{84faecaed1352d3f541c5ea45597a212}
-      \strng{authornamehash}{053693a1b8a255028a080bcc55eae36e}
-      \strng{authorfullhash}{84faecaed1352d3f541c5ea45597a212}
+      \strng{namehash}{13f9e0185bd6f9498266a9e5786eeeda}
+      \strng{fullhash}{13f9e0185bd6f9498266a9e5786eeeda}
+      \strng{bibnamehash}{13f9e0185bd6f9498266a9e5786eeeda}
+      \strng{authorbibnamehash}{13f9e0185bd6f9498266a9e5786eeeda}
+      \strng{authornamehash}{13f9e0185bd6f9498266a9e5786eeeda}
+      \strng{authorfullhash}{13f9e0185bd6f9498266a9e5786eeeda}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Cryptology ePrint Archive}
+      \field{journaltitle}{Proc.int.conf.knowledg Discovery \& Data Mining}
       \field{langid}{english}
       \field{lansortorder}{4}
-      \field{title}{Practical privacy-preserving k-means clustering}
+      \field{title}{A Density-Based Algorithm for Discovering Clusters in Large Spatial Databases with Noise}
       \field{usera}{J}
       \field{userd}{english}
       \field{userf}{english}
-      \field{year}{2019}
-      \field{dateera}{ce}
-      \keyw{mohassel2019practical}
-    \endentry
-    \entry{naeem2011kegg}{article}{}
-      \name{author}{2}{}{%
-        {{hash=f395b2d7f71a1d6320c5c41f11ff9e2d}{%
-           family={Naeem},
-           familyi={N\bibinitperiod},
-           given={Muhammad},
-           giveni={M\bibinitperiod}}}%
-        {{hash=5001548066958c97af2118a7f3bdfa08}{%
-           family={Asghar},
-           familyi={A\bibinitperiod},
-           given={Sohail},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{2ab1a7677a93a59d44db399748b066b3}
-      \strng{fullhash}{1b294b7fa59174585ff0a27c7c8d874e}
-      \strng{bibnamehash}{1b294b7fa59174585ff0a27c7c8d874e}
-      \strng{authorbibnamehash}{1b294b7fa59174585ff0a27c7c8d874e}
-      \strng{authornamehash}{2ab1a7677a93a59d44db399748b066b3}
-      \strng{authorfullhash}{1b294b7fa59174585ff0a27c7c8d874e}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{The UCI KDD Archive}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{title}{Kegg metabolic reaction network data set}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{year}{2011}
-      \field{dateera}{ce}
-      \keyw{naeem2011kegg}
-    \endentry
-    \entry{franti2018k}{article}{}
-      \name{author}{2}{}{%
-        {{hash=614bb1650747649217741abb174af339}{%
-           family={Fränti},
-           familyi={F\bibinitperiod},
-           given={Pasi},
-           giveni={P\bibinitperiod}}}%
-        {{hash=16b0cf062c8a06a97412358b3c66d408}{%
-           family={Sieranoja},
-           familyi={S\bibinitperiod},
-           given={Sami},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{b1f6782c5c4a486984187896d3fab4bd}
-      \strng{fullhash}{694f036921665929fa9b173f218de1a4}
-      \strng{bibnamehash}{694f036921665929fa9b173f218de1a4}
-      \strng{authorbibnamehash}{694f036921665929fa9b173f218de1a4}
-      \strng{authornamehash}{b1f6782c5c4a486984187896d3fab4bd}
-      \strng{authorfullhash}{694f036921665929fa9b173f218de1a4}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Applied intelligence}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{title}{K-means properties on six clustering benchmark datasets}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{48}
-      \field{year}{2018}
-      \field{dateera}{ce}
-      \field{pages}{4743\bibrangedash 4759}
-      \range{pages}{17}
-      \keyw{franti2018k}
-    \endentry
-    \entry{jaschke2019unsupervised}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{hash=69059e6162073052dc1a21994a35538f}{%
-           family={Jäschke},
-           familyi={J\bibinitperiod},
-           given={Angela},
-           giveni={A\bibinitperiod}}}%
-        {{hash=aeb9fb2da57c46da7c6358337be2c805}{%
-           family={Armknecht},
-           familyi={A\bibinitperiod},
-           given={Frederik},
-           giveni={F\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{organization}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{131f25579fa70e691e0f94647ee76529}
-      \strng{fullhash}{08623a55bb73c5674e1428a3877472be}
-      \strng{bibnamehash}{08623a55bb73c5674e1428a3877472be}
-      \strng{authorbibnamehash}{08623a55bb73c5674e1428a3877472be}
-      \strng{authornamehash}{131f25579fa70e691e0f94647ee76529}
-      \strng{authorfullhash}{08623a55bb73c5674e1428a3877472be}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Selected Areas in Cryptography--SAC 2018: 25th International Conference, Calgary, AB, Canada, August 15--17, 2018, Revised Selected Papers}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{title}{Unsupervised machine learning on encrypted data}
-      \field{usera}{C}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{year}{2019}
-      \field{dateera}{ce}
-      \field{pages}{453\bibrangedash 478}
-      \range{pages}{26}
-      \keyw{jaschke2019unsupervised}
-    \endentry
-    \entry{rong2017privacy}{article}{}
-      \name{author}{5}{}{%
-        {{hash=a83de0d2f69c57f8d25b394de27891b3}{%
-           family={Rong},
-           familyi={R\bibinitperiod},
-           given={Hong},
-           giveni={H\bibinitperiod}}}%
-        {{hash=cd570b41a3ff94c93d1d92e0ad1d83db}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Huimei},
-           giveni={H\bibinitperiod}}}%
-        {{hash=fd903bc507de58459375d974764ab4ea}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Jian},
-           giveni={J\bibinitperiod}}}%
-        {{hash=a0ce66c0251714375d3c99a363557f88}{%
-           family={Hao},
-           familyi={H\bibinitperiod},
-           given={Jialu},
-           giveni={J\bibinitperiod}}}%
-        {{hash=9ad5edbaf65c5c46ad1ce93d343e3adc}{%
-           family={Xian},
-           familyi={X\bibinitperiod},
-           given={Ming},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{publisher}{1}{%
-        {Hindawi}%
-      }
-      \strng{namehash}{2d675addc0e23dd8096e2787bfc0949f}
-      \strng{fullhash}{e02a2d2e912e55dd10a09098e439d80f}
-      \strng{bibnamehash}{62461e8f2239f4e82496b6402ccf97ca}
-      \strng{authorbibnamehash}{62461e8f2239f4e82496b6402ccf97ca}
-      \strng{authornamehash}{2d675addc0e23dd8096e2787bfc0949f}
-      \strng{authorfullhash}{e02a2d2e912e55dd10a09098e439d80f}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Security and Communication Networks}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{title}{Privacy-Preserving-Means Clustering under Multiowner Setting in Distributed Cloud Environments}
-      \field{usera}{J}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{2017}
-      \field{year}{2017}
-      \field{dateera}{ce}
-      \keyw{rong2017privacy}
-    \endentry
-    \entry{khan2014dbscan}{inproceedings}{}
-      \name{author}{5}{}{%
-        {{hash=e0a37f519a4df5612cfbc152e4f9a948}{%
-           family={Khan},
-           familyi={K\bibinitperiod},
-           given={Kamran},
-           giveni={K\bibinitperiod}}}%
-        {{hash=5662a8195a419ff2b24293d5a754344a}{%
-           family={Rehman},
-           familyi={R\bibinitperiod},
-           given={Saif\bibnamedelima Ur},
-           giveni={S\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
-        {{hash=19ca01d532f4ca19f45360c3b58795c0}{%
-           family={Aziz},
-           familyi={A\bibinitperiod},
-           given={Kamran},
-           giveni={K\bibinitperiod}}}%
-        {{hash=75b85ef51cae301e0b2cdcdbebdeba5d}{%
-           family={Fong},
-           familyi={F\bibinitperiod},
-           given={Simon},
-           giveni={S\bibinitperiod}}}%
-        {{hash=83254ad8ec69753b5552446a366655fb}{%
-           family={Sarasvady},
-           familyi={S\bibinitperiod},
-           given={Sababady},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \list{organization}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{a049ebf438c0202f111ed4a518904e42}
-      \strng{fullhash}{d91074b1b30da03c6d9288c000b31793}
-      \strng{bibnamehash}{1943a219f0b9351f2e27ea8c3f9dab4f}
-      \strng{authorbibnamehash}{1943a219f0b9351f2e27ea8c3f9dab4f}
-      \strng{authornamehash}{a049ebf438c0202f111ed4a518904e42}
-      \strng{authorfullhash}{d91074b1b30da03c6d9288c000b31793}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{The fifth international conference on the applications of digital information and web technologies (ICADIWT 2014)}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{title}{DBSCAN: Past, present and future}
-      \field{usera}{C}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{year}{2014}
-      \field{dateera}{ce}
-      \field{pages}{232\bibrangedash 238}
-      \range{pages}{7}
-      \keyw{khan2014dbscan}
-    \endentry
-    \entry{ester1996density}{inproceedings}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{4}{}{%
-        {{hash=2c062e64ed26aacc08a62155e7944f04}{%
-           family={Ester},
-           familyi={E\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod}}}%
-        {{hash=9559fe65ed2c0877cf14a66fe1f8e9b3}{%
-           family={Kriegel},
-           familyi={K\bibinitperiod},
-           given={Hans-Peter},
-           giveni={H\bibinithyphendelim P\bibinitperiod}}}%
-        {{hash=802157026f850823b2027c2100cb359a}{%
-           family={Sander},
-           familyi={S\bibinitperiod},
-           given={Jörg},
-           giveni={J\bibinitperiod}}}%
-        {{hash=2dda16c0a5d50fc830d0d4a3787937fa}{%
-           family={Xu},
-           familyi={X\bibinitperiod},
-           given={Xiaowei},
-           giveni={X\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{9158a41d23cb4e154e78366d59c05728}
-      \strng{fullhash}{77089c60a08eb43e856376e88849121a}
-      \strng{bibnamehash}{93f88297c66aca5bc89c3c5131ea9566}
-      \strng{authorbibnamehash}{93f88297c66aca5bc89c3c5131ea9566}
-      \strng{authornamehash}{9158a41d23cb4e154e78366d59c05728}
-      \strng{authorfullhash}{77089c60a08eb43e856376e88849121a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{kdd}
-      \field{langid}{english}
-      \field{lansortorder}{4}
-      \field{number}{34}
-      \field{title}{A density-based algorithm for discovering clusters in large spatial databases with noise.}
-      \field{usera}{C}
-      \field{userd}{english}
-      \field{userf}{english}
-      \field{volume}{96}
       \field{year}{1996}
       \field{dateera}{ce}
-      \field{pages}{226\bibrangedash 231}
-      \range{pages}{6}
-      \keyw{ester1996density}
+      \keyw{1996A}
+    \endentry
+    \entry{2006Privacy}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=0d730c9254b9c0fbdd8a6f24ea115727}{%
+           family={Amirbekyan},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=28794289d0e2007dbe2608dcadfbbe54}{%
+           family={Estivill-Castro},
+           familyi={E\bibinithyphendelim C\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{f6ebf5c867c308c839a789d2f25503d2}
+      \strng{fullhash}{4b297d0195a8c0aa50603c965196a6d2}
+      \strng{bibnamehash}{4b297d0195a8c0aa50603c965196a6d2}
+      \strng{authorbibnamehash}{4b297d0195a8c0aa50603c965196a6d2}
+      \strng{authornamehash}{f6ebf5c867c308c839a789d2f25503d2}
+      \strng{authorfullhash}{4b297d0195a8c0aa50603c965196a6d2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 4th IEEE international conference on Intelligence and Security Informatics}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Privacy Preserving DBSCAN for Vertically Partitioned Data}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \keyw{2006Privacy}
+    \endentry
+    \entry{2021Privacy}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=d56e6d6bc41640f656a1e8c3963c24a9}{%
+           family={Bozdemir},
+           familyi={B\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=37749d251930071c43c031bf6c61501f}{%
+           family={Canard},
+           familyi={C\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=348eff4016a7a1985a65d063c2de7aca}{%
+           family={Ermis},
+           familyi={E\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=6fc19343d0e90b75cd5e366fbcee8807}{%
+           family={Mllering},
+           familyi={M\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=01b495b14bccd0bd55d60645140ddb87}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7dc0890366af506e765113a42840d1c3}
+      \strng{fullhash}{72782de15a57b1ed6c64bcb6b324e80e}
+      \strng{bibnamehash}{6b5304d4992bf7c36023a773a789ede4}
+      \strng{authorbibnamehash}{6b5304d4992bf7c36023a773a789ede4}
+      \strng{authornamehash}{7dc0890366af506e765113a42840d1c3}
+      \strng{authorfullhash}{72782de15a57b1ed6c64bcb6b324e80e}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ASIA CCS '21: ACM Asia Conference on Computer and Communications Security}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Privacy-preserving Density-based Clustering}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \keyw{2021Privacy}
     \endentry
     \entry{tran2013revised}{article}{}
       \name{author}{3}{}{%
@@ -1531,8 +1786,8 @@
       \strng{authorbibnamehash}{9c50ee5988fbe6b147aea117c6bb912a}
       \strng{authornamehash}{b481f77dfc035eaf1add490c2c87750c}
       \strng{authorfullhash}{9c50ee5988fbe6b147aea117c6bb912a}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Chemometrics and Intelligent Laboratory Systems}
@@ -1574,8 +1829,8 @@
       \strng{authorbibnamehash}{54db53b3f3886d326ef029a6c29b56b1}
       \strng{authornamehash}{2d2cbdc611257f0f72635c49aad82b44}
       \strng{authorfullhash}{54db53b3f3886d326ef029a6c29b56b1}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Data \& Knowledge Engineering}
@@ -1592,18 +1847,158 @@
       \range{pages}{1}
       \keyw{latifi2021dbhc}
     \endentry
-    \entry{gheid2016efficient}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{hash=26429182d070c4715f85097f1c57b551}{%
-           family={Gheid},
-           familyi={G\bibinitperiod},
-           given={Zakaria},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=aeadfdf95352f518203fb797f3a2d01d}{%
-           family={Challal},
+    \entry{liu2014privacy}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=39e5b36894a28be4a0e75b3ea4148676}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Dongxi},
+           giveni={D\bibinitperiod}}}%
+        {{hash=37b226e9d651bb9194fd7bb1cf3813cc}{%
+           family={Bertino},
+           familyi={B\bibinitperiod},
+           given={Elisa},
+           giveni={E\bibinitperiod}}}%
+        {{hash=6c28d3560f7b6fba45052dd1164800e7}{%
+           family={Yi},
+           familyi={Y\bibinitperiod},
+           given={Xun},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{9ea7cf180c6f475b1e858ea2b5ef21d9}
+      \strng{fullhash}{4c85b46684574fe763b21f09a47ec9a5}
+      \strng{bibnamehash}{4c85b46684574fe763b21f09a47ec9a5}
+      \strng{authorbibnamehash}{4c85b46684574fe763b21f09a47ec9a5}
+      \strng{authornamehash}{9ea7cf180c6f475b1e858ea2b5ef21d9}
+      \strng{authorfullhash}{4c85b46684574fe763b21f09a47ec9a5}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 9th ACM symposium on Information, computer and communications security}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Privacy of outsourced k-means clustering}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{123\bibrangedash 134}
+      \range{pages}{12}
+      \keyw{liu2014privacy}
+    \endentry
+    \entry{almutairi2017k}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=0ac59eca166ac17208344b754193fa5f}{%
+           family={Almutairi},
+           familyi={A\bibinitperiod},
+           given={Nawal},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1ae60227008ca25c93f265bee1720c4c}{%
+           family={Coenen},
            familyi={C\bibinitperiod},
-           given={Yacine},
+           given={Frans},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8ea04f315a51d09af39a1d8525f98887}{%
+           family={Dures},
+           familyi={D\bibinitperiod},
+           given={Keith},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{a015d293ee0db1f413f14abb3963b088}
+      \strng{fullhash}{9728c427d2336b756428db5fcb2edb9d}
+      \strng{bibnamehash}{9728c427d2336b756428db5fcb2edb9d}
+      \strng{authorbibnamehash}{9728c427d2336b756428db5fcb2edb9d}
+      \strng{authornamehash}{a015d293ee0db1f413f14abb3963b088}
+      \strng{authorfullhash}{9728c427d2336b756428db5fcb2edb9d}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Big Data Analytics and Knowledge Discovery: 19th International Conference, DaWaK 2017, Lyon, France, August 28--31, 2017, Proceedings 19}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{K-means clustering using homomorphic encryption and an updatable distance matrix: secure third party data clustering with limited data owner interaction}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{274\bibrangedash 285}
+      \range{pages}{12}
+      \keyw{almutairi2017k}
+    \endentry
+    \entry{wang2015notes}{article}{}
+      \name{author}{1}{}{%
+        {{hash=206c53369d3742d670b56c2811c867aa}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yongge},
            giveni={Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{206c53369d3742d670b56c2811c867aa}
+      \strng{fullhash}{206c53369d3742d670b56c2811c867aa}
+      \strng{bibnamehash}{206c53369d3742d670b56c2811c867aa}
+      \strng{authorbibnamehash}{206c53369d3742d670b56c2811c867aa}
+      \strng{authornamehash}{206c53369d3742d670b56c2811c867aa}
+      \strng{authorfullhash}{206c53369d3742d670b56c2811c867aa}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cryptology ePrint Archive}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Notes on two fully homomorphic encryption schemes without bootstrapping}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \keyw{wang2015notes}
+    \endentry
+    \entry{rao2015privacy}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=9a7f7b0c4a2343efca17af06dba6189c}{%
+           family={Rao},
+           familyi={R\bibinitperiod},
+           given={Fang-Yu},
+           giveni={F\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=a8de9caebb5df73e71d6aeb047e85859}{%
+           family={Samanthula},
+           familyi={S\bibinitperiod},
+           given={Bharath\bibnamedelima K},
+           giveni={B\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=37b226e9d651bb9194fd7bb1cf3813cc}{%
+           family={Bertino},
+           familyi={B\bibinitperiod},
+           given={Elisa},
+           giveni={E\bibinitperiod}}}%
+        {{hash=6c28d3560f7b6fba45052dd1164800e7}{%
+           family={Yi},
+           familyi={Y\bibinitperiod},
+           given={Xun},
+           giveni={X\bibinitperiod}}}%
+        {{hash=39e5b36894a28be4a0e75b3ea4148676}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Dongxi},
+           giveni={D\bibinitperiod}}}%
       }
       \list{language}{1}{%
         {english}%
@@ -1611,28 +2006,70 @@
       \list{organization}{1}{%
         {IEEE}%
       }
-      \strng{namehash}{068e76220ccf61833ed161d2647a7f98}
-      \strng{fullhash}{58b78870b329cf394411da6f1a80867a}
-      \strng{bibnamehash}{58b78870b329cf394411da6f1a80867a}
-      \strng{authorbibnamehash}{58b78870b329cf394411da6f1a80867a}
-      \strng{authornamehash}{068e76220ccf61833ed161d2647a7f98}
-      \strng{authorfullhash}{58b78870b329cf394411da6f1a80867a}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \strng{namehash}{f6837b9225f8fcaaaf3b112061e84168}
+      \strng{fullhash}{302a16d8ed91fab0a6969278164e25b3}
+      \strng{bibnamehash}{075f70652d3f7b50774213df490b3f8f}
+      \strng{authorbibnamehash}{075f70652d3f7b50774213df490b3f8f}
+      \strng{authornamehash}{f6837b9225f8fcaaaf3b112061e84168}
+      \strng{authorfullhash}{302a16d8ed91fab0a6969278164e25b3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2016 IEEE Trustcom/BigDataSE/ISPA}
+      \field{booktitle}{2015 IEEE conference on collaboration and internet computing (CIC)}
       \field{langid}{english}
       \field{lansortorder}{4}
-      \field{title}{Efficient and privacy-preserving k-means clustering for big data mining}
+      \field{title}{Privacy-preserving and outsourced multi-user k-means clustering}
       \field{usera}{C}
       \field{userd}{english}
       \field{userf}{english}
-      \field{year}{2016}
+      \field{year}{2015}
       \field{dateera}{ce}
-      \field{pages}{791\bibrangedash 798}
-      \range{pages}{8}
-      \keyw{gheid2016efficient}
+      \field{pages}{80\bibrangedash 89}
+      \range{pages}{10}
+      \keyw{rao2015privacy}
+    \endentry
+    \entry{kim2018privacy}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=5a06689f9e40e19a785914b5d70d6864}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hyeong-Jin},
+           giveni={H\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=a3e557f9c75e5a2dc6cc5d6a391a65fa}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Jae-Woo},
+           giveni={J\bibinithyphendelim W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{bd175493274583652fc17425fec7fcdf}
+      \strng{fullhash}{624a5033ce016c3332f04d3d0962ca9b}
+      \strng{bibnamehash}{624a5033ce016c3332f04d3d0962ca9b}
+      \strng{authorbibnamehash}{624a5033ce016c3332f04d3d0962ca9b}
+      \strng{authornamehash}{bd175493274583652fc17425fec7fcdf}
+      \strng{authorfullhash}{624a5033ce016c3332f04d3d0962ca9b}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 IEEE 11th International Conference on Cloud Computing (CLOUD)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{A privacy-preserving k-means clustering algorithm using secure comparison protocol and density-based center point selection}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{928\bibrangedash 931}
+      \range{pages}{4}
+      \keyw{kim2018privacy}
     \endentry
     \entry{doganay2008distributed}{inproceedings}{}
       \name{author}{5}{}{%
@@ -1671,8 +2108,8 @@
       \strng{authorbibnamehash}{7d048bf994a84c4539abac453c639efb}
       \strng{authornamehash}{7647a8b1fd63f8f125311412c04e44c1}
       \strng{authorfullhash}{e101e4513a18bb91f87b3431e255a7a7}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 2008 international workshop on Privacy and anonymity in information society}
@@ -1687,6 +2124,1975 @@
       \field{pages}{3\bibrangedash 11}
       \range{pages}{9}
       \keyw{doganay2008distributed}
+    \endentry
+    \entry{patel2012efficient}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=c77e752036b46268888e37d53019832b}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={Sankita},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f25db882efa9fd316e3ad5a8ed99ccc9}{%
+           family={Garasia},
+           familyi={G\bibinitperiod},
+           given={Sweta},
+           giveni={S\bibinitperiod}}}%
+        {{hash=22b97a11985fdf7af3361155d348a0ac}{%
+           family={Jinwala},
+           familyi={J\bibinitperiod},
+           given={Devesh},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{6583b4af59b857539159d28ca64e95de}
+      \strng{fullhash}{26d12b5617ca0487999a307990e9e63b}
+      \strng{bibnamehash}{26d12b5617ca0487999a307990e9e63b}
+      \strng{authorbibnamehash}{26d12b5617ca0487999a307990e9e63b}
+      \strng{authornamehash}{6583b4af59b857539159d28ca64e95de}
+      \strng{authorfullhash}{26d12b5617ca0487999a307990e9e63b}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Trust Management VI: 6th IFIP WG 11.11 International Conference, IFIPTM 2012, Surat, India, May 21-25, 2012. Proceedings 6}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{An efficient approach for privacy preserving distributed k-means clustering based on shamir’s secret sharing scheme}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{129\bibrangedash 141}
+      \range{pages}{13}
+      \keyw{patel2012efficient}
+    \endentry
+    \entry{patel2013privacy}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=c77e752036b46268888e37d53019832b}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={Sankita},
+           giveni={S\bibinitperiod}}}%
+        {{hash=53dd242b341f5e9a2d29bdbd4ac79e2e}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={Viren},
+           giveni={V\bibinitperiod}}}%
+        {{hash=22b97a11985fdf7af3361155d348a0ac}{%
+           family={Jinwala},
+           familyi={J\bibinitperiod},
+           given={Devesh},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{6583b4af59b857539159d28ca64e95de}
+      \strng{fullhash}{c074a454bfc3b49c184c1d2da988fb87}
+      \strng{bibnamehash}{c074a454bfc3b49c184c1d2da988fb87}
+      \strng{authorbibnamehash}{c074a454bfc3b49c184c1d2da988fb87}
+      \strng{authornamehash}{6583b4af59b857539159d28ca64e95de}
+      \strng{authorfullhash}{c074a454bfc3b49c184c1d2da988fb87}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Distributed Computing and Internet Technology: 9th International Conference, ICDCIT 2013, Bhubaneswar, India, February 5-8, 2013. Proceedings 9}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Privacy preserving distributed k-means clustering in malicious model using zero knowledge proof}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{420\bibrangedash 431}
+      \range{pages}{12}
+      \keyw{patel2013privacy}
+    \endentry
+    \entry{upmanyu2010efficient}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=3b8bb7e6b259ea5468f153f70b9825fd}{%
+           family={Upmanyu},
+           familyi={U\bibinitperiod},
+           given={Maneesh},
+           giveni={M\bibinitperiod}}}%
+        {{hash=49056c9b8542e0fae6ba7a9539d154ff}{%
+           family={Namboodiri},
+           familyi={N\bibinitperiod},
+           given={Anoop\bibnamedelima M},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c64ef0bc857c5cf1430732ffcb7a3335}{%
+           family={Srinathan},
+           familyi={S\bibinitperiod},
+           given={Kannan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c28cbc2901395b4ae713740941e45d6f}{%
+           family={Jawahar},
+           familyi={J\bibinitperiod},
+           given={CV},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{199a1c65ec91ca8829905a37b78a80a6}
+      \strng{fullhash}{83380c6787e80fb9144706cf9ba35ec6}
+      \strng{bibnamehash}{f812a5ad789ca399dfd9587eec9e60fb}
+      \strng{authorbibnamehash}{f812a5ad789ca399dfd9587eec9e60fb}
+      \strng{authornamehash}{199a1c65ec91ca8829905a37b78a80a6}
+      \strng{authorfullhash}{83380c6787e80fb9144706cf9ba35ec6}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Intelligence and Security Informatics: Pacific Asia Workshop, PAISI 2010, Hyderabad, India, June 21, 2010. Proceedings}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Efficient privacy preserving k-means clustering}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{pages}{154\bibrangedash 166}
+      \range{pages}{13}
+      \keyw{upmanyu2010efficient}
+    \endentry
+    \entry{baby2016distributed}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=7dc7088a61095fcef1891be6884a3009}{%
+           family={Baby},
+           familyi={B\bibinitperiod},
+           given={Vadlana},
+           giveni={V\bibinitperiod}}}%
+        {{hash=680dd0c61aab0a2f2848a792efffcccb}{%
+           family={Chandra},
+           familyi={C\bibinitperiod},
+           given={N\bibnamedelima Subhash},
+           giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{1c3f05a854a1ed235820cfbcd6f42e17}
+      \strng{fullhash}{103bbbf02cece79e78f71612cb2d7abf}
+      \strng{bibnamehash}{103bbbf02cece79e78f71612cb2d7abf}
+      \strng{authorbibnamehash}{103bbbf02cece79e78f71612cb2d7abf}
+      \strng{authornamehash}{1c3f05a854a1ed235820cfbcd6f42e17}
+      \strng{authorfullhash}{103bbbf02cece79e78f71612cb2d7abf}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 International Conference on Advances in Computing, Communications and Informatics (ICACCI)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Distributed threshold k-means clustering for privacy preserving data mining}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{2286\bibrangedash 2289}
+      \range{pages}{4}
+      \keyw{baby2016distributed}
+    \endentry
+    \entry{hegde2021sok}{article}{}
+      \name{author}{4}{}{%
+        {{hash=ddd114ef45e9ecc278f4f932ff37bed5}{%
+           family={Hegde},
+           familyi={H\bibinitperiod},
+           given={Aditya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b8c62c00fb0db05cd62b15c4698906cc}{%
+           family={Möllering},
+           familyi={M\bibinitperiod},
+           given={Helen},
+           giveni={H\bibinitperiod}}}%
+        {{hash=5d62da517b335078f08436fbab3a5f69}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4ed48b73b44d73d7f23c93985ad8fc3e}{%
+           family={Yalame},
+           familyi={Y\bibinitperiod},
+           given={Hossein},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{3cd87e6ba0d439d6289e52082be36dc6}
+      \strng{fullhash}{e9c08166614ed3176a57af0ee5536468}
+      \strng{bibnamehash}{a6d8dd9ecd53893683f2c829e5d15a5b}
+      \strng{authorbibnamehash}{a6d8dd9ecd53893683f2c829e5d15a5b}
+      \strng{authornamehash}{3cd87e6ba0d439d6289e52082be36dc6}
+      \strng{authorfullhash}{e9c08166614ed3176a57af0ee5536468}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cryptology ePrint Archive}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Sok: Efficient privacy-preserving clustering}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \keyw{hegde2021sok}
+    \endentry
+    \entry{mohassel2019practical}{article}{}
+      \name{author}{3}{}{%
+        {{hash=02526e0d710820082af3a656c511e34b}{%
+           family={Mohassel},
+           familyi={M\bibinitperiod},
+           given={Payman},
+           giveni={P\bibinitperiod}}}%
+        {{hash=98419613b7fd8103780e4fc807177469}{%
+           family={Rosulek},
+           familyi={R\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6e9b07f3abc76d401f6e5f7f7de4dd64}{%
+           family={Trieu},
+           familyi={T\bibinitperiod},
+           given={Ni},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{053693a1b8a255028a080bcc55eae36e}
+      \strng{fullhash}{84faecaed1352d3f541c5ea45597a212}
+      \strng{bibnamehash}{84faecaed1352d3f541c5ea45597a212}
+      \strng{authorbibnamehash}{84faecaed1352d3f541c5ea45597a212}
+      \strng{authornamehash}{053693a1b8a255028a080bcc55eae36e}
+      \strng{authorfullhash}{84faecaed1352d3f541c5ea45597a212}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cryptology ePrint Archive}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Practical privacy-preserving k-means clustering}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \keyw{mohassel2019practical}
+    \endentry
+    \entry{vaidya2003privacy}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=de662f2772215553fddc5e97a97f8130}{%
+           family={Vaidya},
+           familyi={V\bibinitperiod},
+           given={Jaideep},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6c364d3ef3451e996d2b301024fa8ee5}{%
+           family={Clifton},
+           familyi={C\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{ea02e5f365e29a3a957ca7d432b60815}
+      \strng{fullhash}{69d5637179f121adc7762c08681a7dc7}
+      \strng{bibnamehash}{69d5637179f121adc7762c08681a7dc7}
+      \strng{authorbibnamehash}{69d5637179f121adc7762c08681a7dc7}
+      \strng{authornamehash}{ea02e5f365e29a3a957ca7d432b60815}
+      \strng{authorfullhash}{69d5637179f121adc7762c08681a7dc7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the ninth ACM SIGKDD international conference on Knowledge discovery and data mining}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Privacy-preserving k-means clustering over vertically partitioned data}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{pages}{206\bibrangedash 215}
+      \range{pages}{10}
+      \keyw{vaidya2003privacy}
+    \endentry
+    \entry{meskine2012privacy}{article}{}
+      \name{author}{2}{}{%
+        {{hash=176dc7d55a17ea25b3849e10887043bf}{%
+           family={Meskine},
+           familyi={M\bibinitperiod},
+           given={Fatima},
+           giveni={F\bibinitperiod}}}%
+        {{hash=ea6f7d8a67ee5ca916288d807d437410}{%
+           family={Bahloul},
+           familyi={B\bibinitperiod},
+           given={Safia\bibnamedelima Nait},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{74093dfc999bc802b35d35228a762f2e}
+      \strng{fullhash}{5d57b6fed8e8672761719b77884cccab}
+      \strng{bibnamehash}{5d57b6fed8e8672761719b77884cccab}
+      \strng{authorbibnamehash}{5d57b6fed8e8672761719b77884cccab}
+      \strng{authornamehash}{74093dfc999bc802b35d35228a762f2e}
+      \strng{authorfullhash}{5d57b6fed8e8672761719b77884cccab}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Int. Arab J. Inf. Technol.}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{2}
+      \field{title}{Privacy preserving k-means clustering: a survey research.}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{9}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{194\bibrangedash 200}
+      \range{pages}{7}
+      \keyw{meskine2012privacy}
+    \endentry
+    \entry{du2001privacy}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=1216cef170859869ff8077cf81a5b1e5}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Wenliang},
+           giveni={W\bibinitperiod}}}%
+        {{hash=3a79bdccfbdd63b908692a9ab887a75c}{%
+           family={Atallah},
+           familyi={A\bibinitperiod},
+           given={Mikhail\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{be0ed6308530fef7e9ed1139db31f844}
+      \strng{fullhash}{d07a9c7073e70d3bb9e2b1d18096ebbd}
+      \strng{bibnamehash}{d07a9c7073e70d3bb9e2b1d18096ebbd}
+      \strng{authorbibnamehash}{d07a9c7073e70d3bb9e2b1d18096ebbd}
+      \strng{authornamehash}{be0ed6308530fef7e9ed1139db31f844}
+      \strng{authorfullhash}{d07a9c7073e70d3bb9e2b1d18096ebbd}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Seventeenth Annual Computer Security Applications Conference}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Privacy-preserving cooperative statistical analysis}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{pages}{102\bibrangedash 110}
+      \range{pages}{9}
+      \keyw{du2001privacy}
+    \endentry
+    \entry{bunn2007secure}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=cedfe091dee6ee5e46bbfc7ea4877e92}{%
+           family={Bunn},
+           familyi={B\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a9721cf40a3150cd65a1b3d65d86fe94}{%
+           family={Ostrovsky},
+           familyi={O\bibinitperiod},
+           given={Rafail},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{18b04314293f95b540a4da41447b41de}
+      \strng{fullhash}{cd13082afa7020f23354a2b82a3b35f3}
+      \strng{bibnamehash}{cd13082afa7020f23354a2b82a3b35f3}
+      \strng{authorbibnamehash}{cd13082afa7020f23354a2b82a3b35f3}
+      \strng{authornamehash}{18b04314293f95b540a4da41447b41de}
+      \strng{authorfullhash}{cd13082afa7020f23354a2b82a3b35f3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 14th ACM conference on Computer and communications security}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Secure two-party k-means clustering}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{486\bibrangedash 497}
+      \range{pages}{12}
+      \keyw{bunn2007secure}
+    \endentry
+    \entry{sakuma2010large}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e50997be633aa84a225f937f2e76437e}{%
+           family={Sakuma},
+           familyi={S\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9368d5f4e667228be155fc6dfe95855e}{%
+           family={Kobayashi},
+           familyi={K\bibinitperiod},
+           given={Shigenobu},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1de476808b35ed8add88ee9d5d7210f7}
+      \strng{fullhash}{b3ee3e0eb20e50d034ffe28d2a9a4a8c}
+      \strng{bibnamehash}{b3ee3e0eb20e50d034ffe28d2a9a4a8c}
+      \strng{authorbibnamehash}{b3ee3e0eb20e50d034ffe28d2a9a4a8c}
+      \strng{authornamehash}{1de476808b35ed8add88ee9d5d7210f7}
+      \strng{authorfullhash}{b3ee3e0eb20e50d034ffe28d2a9a4a8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Knowledge and Information Systems}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Large-scale k-means clustering with user-centric privacy-preservation}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{25}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{pages}{253\bibrangedash 279}
+      \range{pages}{27}
+      \keyw{sakuma2010large}
+    \endentry
+    \entry{jiang2020efficient}{article}{}
+      \name{author}{9}{}{%
+        {{hash=aa21ccea68aaa6db63cfc6bda858d149}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Zoe\bibnamedelima L},
+           giveni={Z\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=c746b48b7fd8b7b9878ed6bb35a371f3}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Ning},
+           giveni={N\bibinitperiod}}}%
+        {{hash=877d441383d20443b7659f8f501ad043}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Yabin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8447acb10dce98baab1fa7984b8968a8}{%
+           family={Lv},
+           familyi={L\bibinitperiod},
+           given={Jiazhuo},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bfab97489a84274629cef61f1fd23af7}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Yulin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=fb0cb014e55f7131ee023d8f14463aa6}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zechao},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=d87b1dcd6428b0726f4bf94cd34f38f8}{%
+           family={Fang},
+           familyi={F\bibinitperiod},
+           given={Junbin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0228c7e7b69957db0462b5f1c31cd5ca}{%
+           family={Yiu},
+           familyi={Y\bibinitperiod},
+           given={Siu-Ming},
+           giveni={S\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=dc340e90e108aefd6b9b7f9e468716a1}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xuan},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{7e15640ac63d99c33e7a7e0cc761fcfe}
+      \strng{fullhash}{95f8fe5ce4198990416bde6fb5405eb7}
+      \strng{bibnamehash}{a15494e681ce45babbb1d953fe1cdbba}
+      \strng{authorbibnamehash}{a15494e681ce45babbb1d953fe1cdbba}
+      \strng{authornamehash}{7e15640ac63d99c33e7a7e0cc761fcfe}
+      \strng{authorfullhash}{95f8fe5ce4198990416bde6fb5405eb7}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Information Sciences}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Efficient two-party privacy-preserving collaborative k-means clustering protocol supporting both storage and computation outsourcing}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{518}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{168\bibrangedash 180}
+      \range{pages}{13}
+      \keyw{jiang2020efficient}
+    \endentry
+    \entry{anikin2017privacy}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=413b4e6344980f465fe1862f0f01a239}{%
+           family={Anikin},
+           familyi={A\bibinitperiod},
+           given={Igor\bibnamedelima V},
+           giveni={I\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=1f83f2034791c10d9da87a7bbe38926f}{%
+           family={Gazimov},
+           familyi={G\bibinitperiod},
+           given={Rinat\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{a6ec484d2a9b88d7c966f1afd4cf942b}
+      \strng{fullhash}{5d8117e4f221c1bcadb896a2159c7809}
+      \strng{bibnamehash}{5d8117e4f221c1bcadb896a2159c7809}
+      \strng{authorbibnamehash}{5d8117e4f221c1bcadb896a2159c7809}
+      \strng{authornamehash}{a6ec484d2a9b88d7c966f1afd4cf942b}
+      \strng{authorfullhash}{5d8117e4f221c1bcadb896a2159c7809}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 International Siberian Conference on Control and Communications (SIBCON)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Privacy preserving DBSCAN clustering algorithm for vertically partitioned data in distributed systems}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+      \keyw{anikin2017privacy}
+    \endentry
+    \entry{jiang2008privacy}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=9a17811660d456ccd42a40bec3a42693}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Dongjie},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0184ac1bd4a9c78d7e9320ca47282699}{%
+           family={Xue},
+           familyi={X\bibinitperiod},
+           given={Anrong},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6fe1b541e1f0bf724572c743f8fabfed}{%
+           family={Ju},
+           familyi={J\bibinitperiod},
+           given={Shiguang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=08bba866e196d6bbb94dd5008af3ccf6}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Weihe},
+           giveni={W\bibinitperiod}}}%
+        {{hash=bc30c2cb31dfc85651143ca3a9e0004a}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Handa},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{b8689993893f59b2501b69a9c800f320}
+      \strng{fullhash}{c822f79c5519a8b806679af6ec3c43d6}
+      \strng{bibnamehash}{ce6506ff7762d348447817d190fbebb0}
+      \strng{authorbibnamehash}{ce6506ff7762d348447817d190fbebb0}
+      \strng{authornamehash}{b8689993893f59b2501b69a9c800f320}
+      \strng{authorfullhash}{c822f79c5519a8b806679af6ec3c43d6}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2008 IEEE International Symposium on IT in Medicine and Education}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Privacy-preserving DBSCAN on horizontally partitioned data}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{1067\bibrangedash 1072}
+      \range{pages}{6}
+      \keyw{jiang2008privacy}
+    \endentry
+    \entry{kumar2007privacy}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=257e513a924df44b6e38662ee241d27c}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={K\bibnamedelima Anil},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6757e238261c6bcfc9622b95581a06f7}{%
+           family={Rangan},
+           familyi={R\bibinitperiod},
+           given={C\bibnamedelima Pandu},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2904e078e6146961db74b5c5286d755b}
+      \strng{fullhash}{51887a65113b0b14ef036229312cd1be}
+      \strng{bibnamehash}{51887a65113b0b14ef036229312cd1be}
+      \strng{authorbibnamehash}{51887a65113b0b14ef036229312cd1be}
+      \strng{authornamehash}{2904e078e6146961db74b5c5286d755b}
+      \strng{authorfullhash}{51887a65113b0b14ef036229312cd1be}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advanced Data Mining and Applications: Third International Conference, ADMA 2007 Harbin, China, August 6-8, 2007. Proceedings 3}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Privacy preserving DBSCAN algorithm for clustering}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{57\bibrangedash 68}
+      \range{pages}{12}
+      \keyw{kumar2007privacy}
+    \endentry
+    \entry{liu2012privacy}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=7f44ab95868d7748e833a6d9cf9f7f03}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jinfei},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f7056507989d6c76fd2aee4f24177f86}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Joshua\bibnamedelima Zhexue},
+           giveni={J\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=41a3c786850595ef9d8d5dd300b467cc}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1ef3bb212d96afbd467bc2fefbb7b377}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{da89c6c83e659740df666cab27b02822}
+      \strng{fullhash}{3b11cf819b80b9c74b659a5e063418f2}
+      \strng{bibnamehash}{f1665dab7dd83276059e1ee318b84fb7}
+      \strng{authorbibnamehash}{f1665dab7dd83276059e1ee318b84fb7}
+      \strng{authornamehash}{da89c6c83e659740df666cab27b02822}
+      \strng{authorfullhash}{3b11cf819b80b9c74b659a5e063418f2}
+      \field{extraname}{3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2012 Joint EDBT/ICDT Workshops}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Privacy preserving distributed DBSCAN clustering}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{177\bibrangedash 185}
+      \range{pages}{9}
+      \keyw{liu2012privacy}
+    \endentry
+    \entry{xu2007protocols}{article}{}
+      \name{author}{5}{}{%
+        {{hash=1a4a585ad581b421bb53db9714c18b68}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Wei-jiang},
+           giveni={W\bibinithyphendelim j\bibinitperiod}}}%
+        {{hash=86371ce58814e0e75ba765524721db96}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Liu-sheng},
+           giveni={L\bibinithyphendelim s\bibinitperiod}}}%
+        {{hash=47c8146d9b8cd0ce30ed01c1d352f34c}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Yong-long},
+           giveni={Y\bibinithyphendelim l\bibinitperiod}}}%
+        {{hash=a9531e5de5dbf445151234513a348b3d}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Yi-fei},
+           giveni={Y\bibinithyphendelim f\bibinitperiod}}}%
+        {{hash=6ce740a595000efe6a6c0218e8bf60fb}{%
+           family={Jing},
+           familyi={J\bibinitperiod},
+           given={Wei-wei},
+           giveni={W\bibinithyphendelim w\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Citeseer}%
+      }
+      \strng{namehash}{1f6ef175cc39daad1efca2d3d8e114a4}
+      \strng{fullhash}{c126ec94a6ef1d54680d30a74f50e342}
+      \strng{bibnamehash}{c5db6cf5ebe2ee21c620584e0aeadde9}
+      \strng{authorbibnamehash}{c5db6cf5ebe2ee21c620584e0aeadde9}
+      \strng{authornamehash}{1f6ef175cc39daad1efca2d3d8e114a4}
+      \strng{authorfullhash}{c126ec94a6ef1d54680d30a74f50e342}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Security and Its Applications}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Protocols for privacy-preserving dbscan clustering}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{1}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \keyw{xu2007protocols}
+    \endentry
+    \entry{almutairi2018secure}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=0ac59eca166ac17208344b754193fa5f}{%
+           family={Almutairi},
+           familyi={A\bibinitperiod},
+           given={Nawal},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1ae60227008ca25c93f265bee1720c4c}{%
+           family={Coenen},
+           familyi={C\bibinitperiod},
+           given={Frans},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8ea04f315a51d09af39a1d8525f98887}{%
+           family={Dures},
+           familyi={D\bibinitperiod},
+           given={Keith},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{a015d293ee0db1f413f14abb3963b088}
+      \strng{fullhash}{9728c427d2336b756428db5fcb2edb9d}
+      \strng{bibnamehash}{9728c427d2336b756428db5fcb2edb9d}
+      \strng{authorbibnamehash}{9728c427d2336b756428db5fcb2edb9d}
+      \strng{authornamehash}{a015d293ee0db1f413f14abb3963b088}
+      \strng{authorfullhash}{9728c427d2336b756428db5fcb2edb9d}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Artificial Intelligence XXXV: 38th SGAI International Conference on Artificial Intelligence, AI 2018, Cambridge, UK, December 11--13, 2018, Proceedings}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Secure Third Party Data Clustering Using Data: Multi-User Order Preserving Encryption and Super Secure Chain Distance Matrices (Best Technical Paper)}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{3\bibrangedash 17}
+      \range{pages}{15}
+      \keyw{almutairi2018secure}
+    \endentry
+    \entry{rahman2017towards}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=e21f45b8207db3044bf0f165e1a65410}{%
+           family={Rahman},
+           familyi={R\bibinitperiod},
+           given={Mohammad\bibnamedelima Shahriar},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=ba50da94dc2d591b97edee4287bead19}{%
+           family={Basu},
+           familyi={B\bibinitperiod},
+           given={Anirban},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1202f593ec7a20ccc0525dbe3e26d659}{%
+           family={Kiyomoto},
+           familyi={K\bibinitperiod},
+           given={Shinsaku},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{fa49194ceaf45b368995266db057ceb0}
+      \strng{fullhash}{0a9bb1ca74de96775ad4aa535bdacf9b}
+      \strng{bibnamehash}{0a9bb1ca74de96775ad4aa535bdacf9b}
+      \strng{authorbibnamehash}{0a9bb1ca74de96775ad4aa535bdacf9b}
+      \strng{authornamehash}{fa49194ceaf45b368995266db057ceb0}
+      \strng{authorfullhash}{0a9bb1ca74de96775ad4aa535bdacf9b}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 IEEE 22nd Pacific Rim International Symposium on Dependable Computing (PRDC)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Towards outsourced privacy-preserving multiparty DBSCAN}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{225\bibrangedash 226}
+      \range{pages}{2}
+      \keyw{rahman2017towards}
+    \endentry
+    \entry{wang2022homomorphic}{article}{}
+      \name{author}{5}{}{%
+        {{hash=f6cf6d0f92ef39ff98c5c2cb5c9bcdd9}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Mingyang},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e08afbe67ee34948149c8a691192f94c}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Wenbin},
+           giveni={W\bibinitperiod}}}%
+        {{hash=54a3e1a370205478b2c6544bd9fd668d}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Kangda},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3189d4f8e5d6c48246cfb65c66205fb5}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Zhilu},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=c82ded0bd6e6bcee634b8c81b727a62d}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jinlong},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{c4253842c55de61589439a3146c28613}
+      \strng{fullhash}{36177b4fcdc32f059136ecb3eba295a6}
+      \strng{bibnamehash}{c98799d203ad6e37d1f58e14a771f39a}
+      \strng{authorbibnamehash}{c98799d203ad6e37d1f58e14a771f39a}
+      \strng{authornamehash}{c4253842c55de61589439a3146c28613}
+      \strng{authorfullhash}{36177b4fcdc32f059136ecb3eba295a6}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Electronics}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{7}
+      \field{title}{Homomorphic Encryption Based Privacy Preservation Scheme for DBSCAN Clustering}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{11}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{1046}
+      \range{pages}{1}
+      \keyw{wang2022homomorphic}
+    \endentry
+    \entry{2018DP}{article}{}
+      \name{author}{5}{}{%
+        {{hash=57abc1eda4dab93ad3671d172bb5dba2}{%
+           family={Ni},
+           familyi={N\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c8db27b7626af02e8f601d250f55fe2c}{%
+           family={Chao},
+           familyi={C\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=dc77ae7b24ecef32fe840c0614908a31}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=199bb51203651a61c1509f581bb23169}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=89b432fa4bb24ef9e7312fd806fb771b}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{1399f71fdb33ab8c290dffc1309239ce}
+      \strng{fullhash}{1289197c8b21fc34d2188cb55037ceef}
+      \strng{bibnamehash}{dd8e3f138f7b4ac6b34e8e530c108fb3}
+      \strng{authorbibnamehash}{dd8e3f138f7b4ac6b34e8e530c108fb3}
+      \strng{authornamehash}{1399f71fdb33ab8c290dffc1309239ce}
+      \strng{authorfullhash}{1289197c8b21fc34d2188cb55037ceef}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{99}
+      \field{title}{DP-MCDBSCAN: Differential Privacy Preserving Multi-Core DBSCAN Clustering for Network User Data}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{PP}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 1}
+      \range{pages}{1}
+      \keyw{2018DP}
+    \endentry
+    \entry{2015A}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f4b4d994566c306550e8f7fb578e9935}{%
+           family={Wei-Min},
+           familyi={W\bibinithyphendelim M\bibinitperiod},
+           given={W.\bibnamedelimi U.},
+           giveni={W\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=48c41b06173e020dc780809fa3ae10a8}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={H.\bibnamedelimi K.},
+           giveni={H\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=b2c4f3642e0c861f18692f941c6d2cdd}{%
+           family={Computer},
+           familyi={C\bibinitperiod},
+           given={S.\bibnamedelimi O.},
+           giveni={S\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{d0dfcca96275e659d0b6b6611b2b743f}
+      \strng{fullhash}{a21adacade92aca579e85f4ae97b0a02}
+      \strng{bibnamehash}{a21adacade92aca579e85f4ae97b0a02}
+      \strng{authorbibnamehash}{a21adacade92aca579e85f4ae97b0a02}
+      \strng{authornamehash}{d0dfcca96275e659d0b6b6611b2b743f}
+      \strng{authorfullhash}{a21adacade92aca579e85f4ae97b0a02}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer Engineering \& Science}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{A DP-DBScan clustering algorithm based on differential privacy preserving}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \keyw{2015A}
+    \endentry
+    \entry{zahur2013circuit}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=6e8a906a7fed49b7c05def835469f91a}{%
+           family={Zahur},
+           familyi={Z\bibinitperiod},
+           given={Samee},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fdf60d29316eacfbd0fdc22e786afd78}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{995a86dbee27347ee7df7385bac9f547}
+      \strng{fullhash}{9f661d73c5c1a4cc4e4ae532e70879b3}
+      \strng{bibnamehash}{9f661d73c5c1a4cc4e4ae532e70879b3}
+      \strng{authorbibnamehash}{9f661d73c5c1a4cc4e4ae532e70879b3}
+      \strng{authornamehash}{995a86dbee27347ee7df7385bac9f547}
+      \strng{authorfullhash}{9f661d73c5c1a4cc4e4ae532e70879b3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2013 IEEE Symposium on Security and Privacy}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Circuit structures for improving efficiency of security and privacy tools}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{493\bibrangedash 507}
+      \range{pages}{15}
+      \keyw{zahur2013circuit}
+    \endentry
+    \entry{oded2009foundations}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f9a6b9ddc46b5403c08b1f4e74966c53}{%
+           family={Oded},
+           familyi={O\bibinitperiod},
+           given={Goldreich},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge university press}%
+      }
+      \strng{namehash}{f9a6b9ddc46b5403c08b1f4e74966c53}
+      \strng{fullhash}{f9a6b9ddc46b5403c08b1f4e74966c53}
+      \strng{bibnamehash}{f9a6b9ddc46b5403c08b1f4e74966c53}
+      \strng{authorbibnamehash}{f9a6b9ddc46b5403c08b1f4e74966c53}
+      \strng{authornamehash}{f9a6b9ddc46b5403c08b1f4e74966c53}
+      \strng{authorfullhash}{f9a6b9ddc46b5403c08b1f4e74966c53}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Foundations of cryptography: volume 2, basic applications}
+      \field{usera}{Z}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \keyw{oded2009foundations}
+    \endentry
+    \entry{el2020kd}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=d3d960744d4ba08eec3f835256aee2f2}{%
+           family={El\bibnamedelima Malki},
+           familyi={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Nabil},
+           giveni={N\bibinitperiod}}}%
+        {{hash=cfea07d97bfe6c92933bb1c48faced94}{%
+           family={Ravat},
+           familyi={R\bibinitperiod},
+           given={Franck},
+           giveni={F\bibinitperiod}}}%
+        {{hash=5336189ba3376758072f71d1f1d421bb}{%
+           family={Teste},
+           familyi={T\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {CEUR-WS}%
+      }
+      \strng{namehash}{f2058525d1423b070ddc2fa71711aa66}
+      \strng{fullhash}{93394e8fa73313f23b7cd0c070d18429}
+      \strng{bibnamehash}{93394e8fa73313f23b7cd0c070d18429}
+      \strng{authorbibnamehash}{93394e8fa73313f23b7cd0c070d18429}
+      \strng{authornamehash}{f2058525d1423b070ddc2fa71711aa66}
+      \strng{authorfullhash}{93394e8fa73313f23b7cd0c070d18429}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{22nd International Workshop On Design, Optimization, Languages and Analytical Processing of Big Data-DOLAP 2020-}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{KD-means: clustering method for massive data based on kd-tree}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{2572}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \keyw{el2020kd}
+    \endentry
+    \entry{yao1986generate}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=bdf7dbd523c5db366c4ffbc0ea3dc192}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Andrew\bibnamedelima Chi-Chih},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinithyphendelim C\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
+      \strng{fullhash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
+      \strng{bibnamehash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
+      \strng{authorbibnamehash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
+      \strng{authornamehash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
+      \strng{authorfullhash}{bdf7dbd523c5db366c4ffbc0ea3dc192}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{27th annual symposium on foundations of computer science (Sfcs 1986)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{How to generate and exchange secrets}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1986}
+      \field{dateera}{ce}
+      \field{pages}{162\bibrangedash 167}
+      \range{pages}{6}
+      \keyw{yao1986generate}
+    \endentry
+    \entry{rivest2001leak}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=3a964821f97ee17f8bb285bc61c52899}{%
+           family={Rivest},
+           familyi={R\bibinitperiod},
+           given={Ronald\bibnamedelima L},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=71b77dd8ab33fe646ef25cded49e9881}{%
+           family={Shamir},
+           familyi={S\bibinitperiod},
+           given={Adi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cab670977e5430bd6de9a9948b5f3e88}{%
+           family={Tauman},
+           familyi={T\bibinitperiod},
+           given={Yael},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{40bc8b4fa99fd3229ead4b931058d71d}
+      \strng{fullhash}{429f82e866d85dda3102f0a30deaa506}
+      \strng{bibnamehash}{429f82e866d85dda3102f0a30deaa506}
+      \strng{authorbibnamehash}{429f82e866d85dda3102f0a30deaa506}
+      \strng{authornamehash}{40bc8b4fa99fd3229ead4b931058d71d}
+      \strng{authorfullhash}{429f82e866d85dda3102f0a30deaa506}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Cryptology—ASIACRYPT 2001: 7th International Conference on the Theory and Application of Cryptology and Information Security Gold Coast, Australia, December 9--13, 2001 Proceedings 7}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{How to leak a secret}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{pages}{552\bibrangedash 565}
+      \range{pages}{14}
+      \keyw{rivest2001leak}
+    \endentry
+    \entry{blakley1979safeguarding}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=6b0254448181499ed022c4bdfc5d6813}{%
+           family={Blakley},
+           familyi={B\bibinitperiod},
+           given={George\bibnamedelima Robert},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{6b0254448181499ed022c4bdfc5d6813}
+      \strng{fullhash}{6b0254448181499ed022c4bdfc5d6813}
+      \strng{bibnamehash}{6b0254448181499ed022c4bdfc5d6813}
+      \strng{authorbibnamehash}{6b0254448181499ed022c4bdfc5d6813}
+      \strng{authornamehash}{6b0254448181499ed022c4bdfc5d6813}
+      \strng{authorfullhash}{6b0254448181499ed022c4bdfc5d6813}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Managing Requirements Knowledge, International Workshop on}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Safeguarding cryptographic keys}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1979}
+      \field{dateera}{ce}
+      \field{pages}{313\bibrangedash 313}
+      \range{pages}{1}
+      \keyw{blakley1979safeguarding}
+    \endentry
+    \entry{beaver1992efficient}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=8293acfe90aa8eaf9b54bb2d780b215f}{%
+           family={Beaver},
+           familyi={B\bibinitperiod},
+           given={Donald},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{8293acfe90aa8eaf9b54bb2d780b215f}
+      \strng{fullhash}{8293acfe90aa8eaf9b54bb2d780b215f}
+      \strng{bibnamehash}{8293acfe90aa8eaf9b54bb2d780b215f}
+      \strng{authorbibnamehash}{8293acfe90aa8eaf9b54bb2d780b215f}
+      \strng{authornamehash}{8293acfe90aa8eaf9b54bb2d780b215f}
+      \strng{authorfullhash}{8293acfe90aa8eaf9b54bb2d780b215f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Cryptology—CRYPTO’91: Proceedings 11}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Efficient multiparty protocols using circuit randomization}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{1992}
+      \field{dateera}{ce}
+      \field{pages}{420\bibrangedash 432}
+      \range{pages}{13}
+      \keyw{beaver1992efficient}
+    \endentry
+    \entry{schneider2013gmw}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=5d62da517b335078f08436fbab3a5f69}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4ef91305cf3e296815bbb67ee9321367}{%
+           family={Zohner},
+           familyi={Z\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{226b5ac9f15f6cc898a817b281ed1e3f}
+      \strng{fullhash}{785d8c81b13ac7db10566bad391632ea}
+      \strng{bibnamehash}{785d8c81b13ac7db10566bad391632ea}
+      \strng{authorbibnamehash}{785d8c81b13ac7db10566bad391632ea}
+      \strng{authornamehash}{226b5ac9f15f6cc898a817b281ed1e3f}
+      \strng{authorfullhash}{785d8c81b13ac7db10566bad391632ea}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Financial Cryptography and Data Security: 17th International Conference, FC 2013, Okinawa, Japan, April 1-5, 2013, Revised Selected Papers 17}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{GMW vs. Yao? Efficient secure two-party computation with low depth circuits}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{275\bibrangedash 292}
+      \range{pages}{18}
+      \keyw{schneider2013gmw}
+    \endentry
+    \entry{riazi2018chameleon}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=47afa55ac4aa3cb95f7113dc42bb25ea}{%
+           family={Riazi},
+           familyi={R\bibinitperiod},
+           given={M\bibnamedelima Sadegh},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=007aa09887a19dbd2180cc89d1e0f287}{%
+           family={Weinert},
+           familyi={W\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e8e24783371187687a39bcede4a4482f}{%
+           family={Tkachenko},
+           familyi={T\bibinitperiod},
+           given={Oleksandr},
+           giveni={O\bibinitperiod}}}%
+        {{hash=a7fe70032d603b93b8ae4dbb88799927}{%
+           family={Songhori},
+           familyi={S\bibinitperiod},
+           given={Ebrahim\bibnamedelima M},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=5d62da517b335078f08436fbab3a5f69}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d1642679ae78814302ce585a8ca745a8}{%
+           family={Koushanfar},
+           familyi={K\bibinitperiod},
+           given={Farinaz},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{70d18fce84b19b58ece4fee10b4305b5}
+      \strng{fullhash}{b9b8c3c618162af7cd89be2e131f35f8}
+      \strng{bibnamehash}{fa6af8bbcbb2d57f8af7e6941ec9f1bf}
+      \strng{authorbibnamehash}{fa6af8bbcbb2d57f8af7e6941ec9f1bf}
+      \strng{authornamehash}{70d18fce84b19b58ece4fee10b4305b5}
+      \strng{authorfullhash}{b9b8c3c618162af7cd89be2e131f35f8}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2018 on Asia conference on computer and communications security}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Chameleon: A hybrid secure computation framework for machine learning applications}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{707\bibrangedash 721}
+      \range{pages}{15}
+      \keyw{riazi2018chameleon}
+    \endentry
+    \entry{boldyreva2021privacy}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4203a914c6d4972afacbd9d4f9352db1}{%
+           family={Boldyreva},
+           familyi={B\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ad744133ebc38265e0ed17f4dccee113}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Tianxin},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{2943e345d8987be62c83197cd244bdcf}
+      \strng{fullhash}{14a27bb63df44ede6a5f98f9b03cfd42}
+      \strng{bibnamehash}{14a27bb63df44ede6a5f98f9b03cfd42}
+      \strng{authorbibnamehash}{14a27bb63df44ede6a5f98f9b03cfd42}
+      \strng{authornamehash}{2943e345d8987be62c83197cd244bdcf}
+      \strng{authorfullhash}{14a27bb63df44ede6a5f98f9b03cfd42}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings on Privacy Enhancing Technologies}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{title}{Privacy-Preserving Approximate-Nearest-Neighbors Search that Hides Access, Query and Volume Patterns}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{2021}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{549\bibrangedash 574}
+      \range{pages}{26}
+      \keyw{boldyreva2021privacy}
+    \endentry
+    \entry{liu2019toward}{article}{}
+      \name{author}{7}{}{%
+        {{hash=5d07f51a51d9c2c1363bab089c022727}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Lin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=8ca90fb3f7ad0b73b26adc48cad770cc}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Jinshu},
+           giveni={J\bibinitperiod}}}%
+        {{hash=45b6bd2304cb9b1f85f702e136dc3670}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Ximeng},
+           giveni={X\bibinitperiod}}}%
+        {{hash=ed914bb04dabf90b2e6a1c05ef06f7eb}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Rongmao},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ade0b4c1c5cedeaecd33cd784e361ece}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+        {{hash=595a2b96180f7d37ee0b3ddbccafcfdd}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Robert\bibnamedelima H},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=93a575777f636107b8f65a815802b18f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiaofeng},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{14dd7bb4c792c725baea1a65a36925e0}
+      \strng{fullhash}{724a2b23483e3e77f1b266541e8cd23d}
+      \strng{bibnamehash}{127efd240588608e04083f4124108442}
+      \strng{authorbibnamehash}{127efd240588608e04083f4124108442}
+      \strng{authornamehash}{14dd7bb4c792c725baea1a65a36925e0}
+      \strng{authorfullhash}{724a2b23483e3e77f1b266541e8cd23d}
+      \field{extraname}{4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Internet of Things Journal}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{6}
+      \field{title}{Toward highly secure yet efficient KNN classification scheme on outsourced cloud data}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{6}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{9841\bibrangedash 9852}
+      \range{pages}{12}
+      \keyw{liu2019toward}
+    \endentry
+    \entry{goldreich2004encryption}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b853abc93e016bf8e812e1ae477e4c6a}{%
+           family={Goldreich},
+           familyi={G\bibinitperiod},
+           given={O},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{b853abc93e016bf8e812e1ae477e4c6a}
+      \strng{fullhash}{b853abc93e016bf8e812e1ae477e4c6a}
+      \strng{bibnamehash}{b853abc93e016bf8e812e1ae477e4c6a}
+      \strng{authorbibnamehash}{b853abc93e016bf8e812e1ae477e4c6a}
+      \strng{authornamehash}{b853abc93e016bf8e812e1ae477e4c6a}
+      \strng{authorfullhash}{b853abc93e016bf8e812e1ae477e4c6a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Encryption Schemes. The Foundations of Cryptography, vol. 2}
+      \field{usera}{Z}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \keyw{goldreich2004encryption}
+    \endentry
+    \entry{bogdanov2008sharemind}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=8c11b0342d93fa9d604c23a58a719a81}{%
+           family={Bogdanov},
+           familyi={B\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a5cc0ccb6002017fea607fa13e9f3533}{%
+           family={Laur},
+           familyi={L\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=84c0ea6e2426a80d6f8ab982315010ff}{%
+           family={Willemson},
+           familyi={W\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{aa2b21384c45ddd71eef97ad183268da}
+      \strng{fullhash}{7d91546d580262606d2bfc79e55c877e}
+      \strng{bibnamehash}{7d91546d580262606d2bfc79e55c877e}
+      \strng{authorbibnamehash}{7d91546d580262606d2bfc79e55c877e}
+      \strng{authornamehash}{aa2b21384c45ddd71eef97ad183268da}
+      \strng{authorfullhash}{7d91546d580262606d2bfc79e55c877e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Computer Security-ESORICS 2008: 13th European Symposium on Research in Computer Security, Málaga, Spain, October 6-8, 2008. Proceedings 13}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Sharemind: A framework for fast privacy-preserving computations}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{192\bibrangedash 206}
+      \range{pages}{15}
+      \keyw{bogdanov2008sharemind}
+    \endentry
+    \entry{naeem2011kegg}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f395b2d7f71a1d6320c5c41f11ff9e2d}{%
+           family={Naeem},
+           familyi={N\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5001548066958c97af2118a7f3bdfa08}{%
+           family={Asghar},
+           familyi={A\bibinitperiod},
+           given={Sohail},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{2ab1a7677a93a59d44db399748b066b3}
+      \strng{fullhash}{1b294b7fa59174585ff0a27c7c8d874e}
+      \strng{bibnamehash}{1b294b7fa59174585ff0a27c7c8d874e}
+      \strng{authorbibnamehash}{1b294b7fa59174585ff0a27c7c8d874e}
+      \strng{authornamehash}{2ab1a7677a93a59d44db399748b066b3}
+      \strng{authorfullhash}{1b294b7fa59174585ff0a27c7c8d874e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The UCI KDD Archive}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Kegg metabolic reaction network data set}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \keyw{naeem2011kegg}
+    \endentry
+    \entry{franti2018k}{article}{}
+      \name{author}{2}{}{%
+        {{hash=614bb1650747649217741abb174af339}{%
+           family={Fränti},
+           familyi={F\bibinitperiod},
+           given={Pasi},
+           giveni={P\bibinitperiod}}}%
+        {{hash=16b0cf062c8a06a97412358b3c66d408}{%
+           family={Sieranoja},
+           familyi={S\bibinitperiod},
+           given={Sami},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{b1f6782c5c4a486984187896d3fab4bd}
+      \strng{fullhash}{694f036921665929fa9b173f218de1a4}
+      \strng{bibnamehash}{694f036921665929fa9b173f218de1a4}
+      \strng{authorbibnamehash}{694f036921665929fa9b173f218de1a4}
+      \strng{authornamehash}{b1f6782c5c4a486984187896d3fab4bd}
+      \strng{authorfullhash}{694f036921665929fa9b173f218de1a4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Applied intelligence}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{K-means properties on six clustering benchmark datasets}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{48}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{4743\bibrangedash 4759}
+      \range{pages}{17}
+      \keyw{franti2018k}
+    \endentry
+    \entry{rong2017privacy}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a83de0d2f69c57f8d25b394de27891b3}{%
+           family={Rong},
+           familyi={R\bibinitperiod},
+           given={Hong},
+           giveni={H\bibinitperiod}}}%
+        {{hash=cd570b41a3ff94c93d1d92e0ad1d83db}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Huimei},
+           giveni={H\bibinitperiod}}}%
+        {{hash=fd903bc507de58459375d974764ab4ea}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a0ce66c0251714375d3c99a363557f88}{%
+           family={Hao},
+           familyi={H\bibinitperiod},
+           given={Jialu},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9ad5edbaf65c5c46ad1ce93d343e3adc}{%
+           family={Xian},
+           familyi={X\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Hindawi}%
+      }
+      \strng{namehash}{2d675addc0e23dd8096e2787bfc0949f}
+      \strng{fullhash}{e02a2d2e912e55dd10a09098e439d80f}
+      \strng{bibnamehash}{62461e8f2239f4e82496b6402ccf97ca}
+      \strng{authorbibnamehash}{62461e8f2239f4e82496b6402ccf97ca}
+      \strng{authornamehash}{2d675addc0e23dd8096e2787bfc0949f}
+      \strng{authorfullhash}{e02a2d2e912e55dd10a09098e439d80f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Security and Communication Networks}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Privacy-Preserving-Means Clustering under Multiowner Setting in Distributed Cloud Environments}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{2017}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \keyw{rong2017privacy}
+    \endentry
+    \entry{ester1996density}{inproceedings}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{4}{}{%
+        {{hash=2c062e64ed26aacc08a62155e7944f04}{%
+           family={Ester},
+           familyi={E\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9559fe65ed2c0877cf14a66fe1f8e9b3}{%
+           family={Kriegel},
+           familyi={K\bibinitperiod},
+           given={Hans-Peter},
+           giveni={H\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=802157026f850823b2027c2100cb359a}{%
+           family={Sander},
+           familyi={S\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2dda16c0a5d50fc830d0d4a3787937fa}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaowei},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{9158a41d23cb4e154e78366d59c05728}
+      \strng{fullhash}{77089c60a08eb43e856376e88849121a}
+      \strng{bibnamehash}{93f88297c66aca5bc89c3c5131ea9566}
+      \strng{authorbibnamehash}{93f88297c66aca5bc89c3c5131ea9566}
+      \strng{authornamehash}{9158a41d23cb4e154e78366d59c05728}
+      \strng{authorfullhash}{77089c60a08eb43e856376e88849121a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{kdd}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{34}
+      \field{title}{A density-based algorithm for discovering clusters in large spatial databases with noise.}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{96}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \field{pages}{226\bibrangedash 231}
+      \range{pages}{6}
+      \keyw{ester1996density}
+    \endentry
+    \entry{hubert1985comparing}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d5d1d02dd8d174f83c61ea441c89cba6}{%
+           family={Hubert},
+           familyi={H\bibinitperiod},
+           given={Lawrence},
+           giveni={L\bibinitperiod}}}%
+        {{hash=baebbb2356b9e79fc400b332e197f628}{%
+           family={Arabie},
+           familyi={A\bibinitperiod},
+           given={Phipps},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1a461ef2384cc24c4c3c96c1848c032c}
+      \strng{fullhash}{fa62d725515e6d56c25bb670992fc030}
+      \strng{bibnamehash}{fa62d725515e6d56c25bb670992fc030}
+      \strng{authorbibnamehash}{fa62d725515e6d56c25bb670992fc030}
+      \strng{authornamehash}{1a461ef2384cc24c4c3c96c1848c032c}
+      \strng{authorfullhash}{fa62d725515e6d56c25bb670992fc030}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of classification}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Comparing partitions}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{2}
+      \field{year}{1985}
+      \field{dateera}{ce}
+      \field{pages}{193\bibrangedash 218}
+      \range{pages}{26}
+      \keyw{hubert1985comparing}
+    \endentry
+    \entry{khan2014dbscan}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=e0a37f519a4df5612cfbc152e4f9a948}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Kamran},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5662a8195a419ff2b24293d5a754344a}{%
+           family={Rehman},
+           familyi={R\bibinitperiod},
+           given={Saif\bibnamedelima Ur},
+           giveni={S\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=19ca01d532f4ca19f45360c3b58795c0}{%
+           family={Aziz},
+           familyi={A\bibinitperiod},
+           given={Kamran},
+           giveni={K\bibinitperiod}}}%
+        {{hash=75b85ef51cae301e0b2cdcdbebdeba5d}{%
+           family={Fong},
+           familyi={F\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=83254ad8ec69753b5552446a366655fb}{%
+           family={Sarasvady},
+           familyi={S\bibinitperiod},
+           given={Sababady},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{a049ebf438c0202f111ed4a518904e42}
+      \strng{fullhash}{d91074b1b30da03c6d9288c000b31793}
+      \strng{bibnamehash}{1943a219f0b9351f2e27ea8c3f9dab4f}
+      \strng{authorbibnamehash}{1943a219f0b9351f2e27ea8c3f9dab4f}
+      \strng{authornamehash}{a049ebf438c0202f111ed4a518904e42}
+      \strng{authorfullhash}{d91074b1b30da03c6d9288c000b31793}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The fifth international conference on the applications of digital information and web technologies (ICADIWT 2014)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{DBSCAN: Past, present and future}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{232\bibrangedash 238}
+      \range{pages}{7}
+      \keyw{khan2014dbscan}
+    \endentry
+    \entry{gheid2016efficient}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=26429182d070c4715f85097f1c57b551}{%
+           family={Gheid},
+           familyi={G\bibinitperiod},
+           given={Zakaria},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=aeadfdf95352f518203fb797f3a2d01d}{%
+           family={Challal},
+           familyi={C\bibinitperiod},
+           given={Yacine},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{068e76220ccf61833ed161d2647a7f98}
+      \strng{fullhash}{58b78870b329cf394411da6f1a80867a}
+      \strng{bibnamehash}{58b78870b329cf394411da6f1a80867a}
+      \strng{authorbibnamehash}{58b78870b329cf394411da6f1a80867a}
+      \strng{authornamehash}{068e76220ccf61833ed161d2647a7f98}
+      \strng{authorfullhash}{58b78870b329cf394411da6f1a80867a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 IEEE Trustcom/BigDataSE/ISPA}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Efficient and privacy-preserving k-means clustering for big data mining}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{791\bibrangedash 798}
+      \range{pages}{8}
+      \keyw{gheid2016efficient}
     \endentry
     \entry{yu2010multi}{inproceedings}{}
       \name{author}{4}{}{%
@@ -1723,8 +4129,8 @@
       \strng{authorbibnamehash}{9efcf1fa8d9d49bd76094e193fdf654b}
       \strng{authornamehash}{f7bff0a07ac0b80a23bf73e0f2e3f9c5}
       \strng{authorfullhash}{2b0503b54e16dba36e5404678272df62}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{International symposium on parallel and distributed processing with applications}
@@ -1740,7 +4146,271 @@
       \range{pages}{8}
       \keyw{yu2010multi}
     \endentry
+    \entry{ultsch2005clustering}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=e5bb50d61f3599f7363f6bead75e617d}{%
+           family={Ultsch},
+           familyi={U\bibinitperiod},
+           given={Alfred},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{e5bb50d61f3599f7363f6bead75e617d}
+      \strng{fullhash}{e5bb50d61f3599f7363f6bead75e617d}
+      \strng{bibnamehash}{e5bb50d61f3599f7363f6bead75e617d}
+      \strng{authorbibnamehash}{e5bb50d61f3599f7363f6bead75e617d}
+      \strng{authornamehash}{e5bb50d61f3599f7363f6bead75e617d}
+      \strng{authorfullhash}{e5bb50d61f3599f7363f6bead75e617d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proc. Workshop on Self-Organizing Maps (Jan. 2005)(zitiert auf S. 53)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Clustering wih som: U* c}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \keyw{ultsch2005clustering}
+    \endentry
+    \entry{gionis2007clustering}{article}{}
+      \name{author}{3}{}{%
+        {{hash=03024c0e33231524e0a2e9df2662a76c}{%
+           family={Gionis},
+           familyi={G\bibinitperiod},
+           given={Aristides},
+           giveni={A\bibinitperiod}}}%
+        {{hash=197ad495b7480642c417d5d4694c0618}{%
+           family={Mannila},
+           familyi={M\bibinitperiod},
+           given={Heikki},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8233da68d99ce274651a128905d292f7}{%
+           family={Tsaparas},
+           familyi={T\bibinitperiod},
+           given={Panayiotis},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{9564d53b4fb8704374cb7d9e95f9c437}
+      \strng{fullhash}{f9d6e1b2a205def472779ee5c74e1025}
+      \strng{bibnamehash}{f9d6e1b2a205def472779ee5c74e1025}
+      \strng{authorbibnamehash}{f9d6e1b2a205def472779ee5c74e1025}
+      \strng{authornamehash}{9564d53b4fb8704374cb7d9e95f9c437}
+      \strng{authorfullhash}{f9d6e1b2a205def472779ee5c74e1025}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acm transactions on knowledge discovery from data (tkdd)}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{Clustering aggregation}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{1}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{4\bibrangedash es}
+      \range{pages}{-1}
+      \keyw{gionis2007clustering}
+    \endentry
+    \entry{vinh2009information}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=a947ef400ca8a46d36939a20ffef34cd}{%
+           family={Vinh},
+           familyi={V\bibinitperiod},
+           given={Nguyen\bibnamedelima Xuan},
+           giveni={N\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
+        {{hash=fbf8abc7f5ef411557e812a20c9f197d}{%
+           family={Epps},
+           familyi={E\bibinitperiod},
+           given={Julien},
+           giveni={J\bibinitperiod}}}%
+        {{hash=07733491238ab07018926cab410282cb}{%
+           family={Bailey},
+           familyi={B\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{08fdf6fd2e6abca116bd828a0077ef71}
+      \strng{fullhash}{e2bf53081bad360287506238847e843c}
+      \strng{bibnamehash}{e2bf53081bad360287506238847e843c}
+      \strng{authorbibnamehash}{e2bf53081bad360287506238847e843c}
+      \strng{authornamehash}{08fdf6fd2e6abca116bd828a0077ef71}
+      \strng{authorfullhash}{e2bf53081bad360287506238847e843c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 26th annual international conference on machine learning}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Information theoretic measures for clusterings comparison: is a correction for chance necessary?}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{1073\bibrangedash 1080}
+      \range{pages}{8}
+      \keyw{vinh2009information}
+    \endentry
+    \entry{arbelaitz2013extensive}{article}{}
+      \name{author}{5}{}{%
+        {{hash=816dfcd8f7f5d03b0ac3e175b0dcab13}{%
+           family={Arbelaitz},
+           familyi={A\bibinitperiod},
+           given={Olatz},
+           giveni={O\bibinitperiod}}}%
+        {{hash=79eca7cb26216ee0a58a785dfa7be0f2}{%
+           family={Gurrutxaga},
+           familyi={G\bibinitperiod},
+           given={Ibai},
+           giveni={I\bibinitperiod}}}%
+        {{hash=42448fa18710679bfed26913fa9667a0}{%
+           family={Muguerza},
+           familyi={M\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9fa02491b4607d69ac8a15363c4318e6}{%
+           family={Pérez},
+           familyi={P\bibinitperiod},
+           given={Jesús\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=7c8aeb7d8caa3e703fa5b0c6919130ed}{%
+           family={Perona},
+           familyi={P\bibinitperiod},
+           given={Iñigo},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{c9106f6114c3e74d1db59dbea2e592a0}
+      \strng{fullhash}{ea7863cd153eabb3f9cc0da3d5aec654}
+      \strng{bibnamehash}{402a18d61f29ab911fc6af416098f67d}
+      \strng{authorbibnamehash}{402a18d61f29ab911fc6af416098f67d}
+      \strng{authornamehash}{c9106f6114c3e74d1db59dbea2e592a0}
+      \strng{authorfullhash}{ea7863cd153eabb3f9cc0da3d5aec654}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Pattern recognition}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{An extensive comparative study of cluster validity indices}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{46}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{243\bibrangedash 256}
+      \range{pages}{14}
+      \keyw{arbelaitz2013extensive}
+    \endentry
+    \entry{buitinck2013api}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=5325438f4daa7970e2720791d9ac690f}{%
+           family={Buitinck},
+           familyi={B\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod}}}%
+        {{hash=832b9967410c05c324eec6e9b19da71e}{%
+           family={Louppe},
+           familyi={L\bibinitperiod},
+           given={Gilles},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d3b6c8582cea4e8b6576137b6a72cadc}{%
+           family={Blondel},
+           familyi={B\bibinitperiod},
+           given={Mathieu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bab4e5caee2d67831e464ce575022b37}{%
+           family={Pedregosa},
+           familyi={P\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8a6c9c0890b96766b8cc7c152d7b86a8}{%
+           family={Mueller},
+           familyi={M\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=721be0317527f44db425f7a97dcab15e}{%
+           family={Grisel},
+           familyi={G\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+        {{hash=7fb1184b4b06404ea26547130860771e}{%
+           family={Niculae},
+           familyi={N\bibinitperiod},
+           given={Vlad},
+           giveni={V\bibinitperiod}}}%
+        {{hash=86e647e5c801f3ce733927f75f029463}{%
+           family={Prettenhofer},
+           familyi={P\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=12ebe424e1c87de156c57e8fa7683f46}{%
+           family={Gramfort},
+           familyi={G\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dd23caf60ef6fe47d09bad8ff0dc8695}{%
+           family={Grobler},
+           familyi={G\bibinitperiod},
+           given={Jaques},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{8013e59991ab833d42c86ac9daf5e6ba}
+      \strng{fullhash}{3875499e490c1fda907bbaf7048b0084}
+      \strng{bibnamehash}{0559c32e4e19b12f1835d4bee2a9d82a}
+      \strng{authorbibnamehash}{0559c32e4e19b12f1835d4bee2a9d82a}
+      \strng{authornamehash}{8013e59991ab833d42c86ac9daf5e6ba}
+      \strng{authorfullhash}{3875499e490c1fda907bbaf7048b0084}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1309.0238}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{API design for machine learning software: experiences from the scikit-learn project}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \keyw{buitinck2013api}
+    \endentry
   \enddatalist
+  \missing{boz}
 \endrefsection
 
 \refsection{1}

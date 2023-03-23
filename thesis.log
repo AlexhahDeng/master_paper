@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  20 FEB 2023 19:15
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  23 MAR 2023 15:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1450,42 +1450,46 @@ Package tocbasic Info: babel extension for `nls' omitted
 \@quotelevel=\count560
 \@quotereset=\count561
 
-(./thesis.aux)
+(./thesis.aux
+
+LaTeX Warning: Label `s4-table-dataset' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 8
-2.
+0.
  (c:/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 82.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 82
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 80.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 80
 .
 
 (c:/texlive/2021/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1555,10 +1559,18 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
 
-(./thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 82.
-Package biblatex Info: Reference segment=0 on input line 82.
-Package hyperref Info: Link coloring ON on input line 82.
+(./thesis.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                boz
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
+Package biblatex Info: Reference section=0 on input line 80.
+Package biblatex Info: Reference segment=0 on input line 80.
+Package hyperref Info: Link coloring ON on input line 80.
  (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1570,9 +1582,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count562
 )
-LaTeX Info: Redefining \ref on input line 82.
-LaTeX Info: Redefining \pageref on input line 82.
-LaTeX Info: Redefining \nameref on input line 82.
+LaTeX Info: Redefining \ref on input line 80.
+LaTeX Info: Redefining \pageref on input line 80.
+LaTeX Info: Redefining \nameref on input line 80.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write5
@@ -1609,50 +1621,50 @@ Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
 xt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-LaTeX Font Info:    Calculating math sizes for size <10.53937> on input line 89
+LaTeX Font Info:    Calculating math sizes for size <10.53937> on input line 87
 .
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 89.
+(Font)              size <10.95> substituted on input line 87.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 89.
+(Font)              size <10.95> substituted on input line 87.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 89.
+(Font)              size <10.95> substituted on input line 87.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 89.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 87.
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 89.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 87.
 
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 9.48535pt on input line 89.
+(Font)              scaled to size 9.48535pt on input line 87.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 6.63971pt on input line 89.
+(Font)              scaled to size 6.63971pt on input line 87.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 4.74268pt on input line 89.
+(Font)              scaled to size 4.74268pt on input line 87.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 89.
+(Font)              size <10.95> substituted on input line 87.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 89.
+(Font)              size <10.95> substituted on input line 87.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 89.
+(Font)              size <10.95> substituted on input line 87.
 
 
 Package fontspec Info: Could not resolve font "SimHei/BI" (it probably doesn't
@@ -1681,50 +1693,50 @@ Package fontspec Info: Font family 'SimHei(0)' created for font 'SimHei' with
 
 LaTeX Font Warning: Font shape `TU/TimesNewRomanPSStd(0)/b/n' undefined
 (Font)              using `TU/TimesNewRomanPSStd(0)/m/n' instead on input line 
-89.
+87.
 
-LaTeX Font Info:    Calculating math sizes for size <14.05249> on input line 89
+LaTeX Font Info:    Calculating math sizes for size <14.05249> on input line 87
 .
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 12.64714pt on input line 89.
+(Font)              scaled to size 12.64714pt on input line 87.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 8.85295pt on input line 89.
+(Font)              scaled to size 8.85295pt on input line 87.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 6.32356pt on input line 89.
+(Font)              scaled to size 6.32356pt on input line 87.
 [1
 
 ]
-LaTeX Font Info:    Calculating math sizes for size <16.06> on input line 89.
+LaTeX Font Info:    Calculating math sizes for size <16.06> on input line 87.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16.06> not available
-(Font)              size <17.28> substituted on input line 89.
+(Font)              size <17.28> substituted on input line 87.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <16.06> not available
-(Font)              size <17.28> substituted on input line 89.
+(Font)              size <17.28> substituted on input line 87.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <16.06> not available
-(Font)              size <17.28> substituted on input line 89.
+(Font)              size <17.28> substituted on input line 87.
 
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 14.45389pt on input line 89.
+(Font)              scaled to size 14.45389pt on input line 87.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 10.11768pt on input line 89.
+(Font)              scaled to size 10.11768pt on input line 87.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 7.22694pt on input line 89.
+(Font)              scaled to size 7.22694pt on input line 87.
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <16.06> not available
-(Font)              size <17.28> substituted on input line 89.
+(Font)              size <17.28> substituted on input line 87.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <16.06> not available
-(Font)              size <17.28> substituted on input line 89.
+(Font)              size <17.28> substituted on input line 87.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <16.06> not available
-(Font)              size <17.28> substituted on input line 89.
+(Font)              size <17.28> substituted on input line 87.
 
 [2
 
@@ -1764,37 +1776,37 @@ Package fontspec Info: Font family 'SimSun(1)' created for font 'SimSun' with
 \openout6 = `thesis.toc'.
 
  [3] (./thesis.lot
-LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 7.
+LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 15.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 7.
+(Font)              size <8> substituted on input line 15.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <8.43146> not available
-(Font)              size <8> substituted on input line 7.
+(Font)              size <8> substituted on input line 15.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 7.
+(Font)              size <8> substituted on input line 15.
 
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 10.84042pt on input line 7.
+(Font)              scaled to size 10.84042pt on input line 15.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 7.58826pt on input line 7.
+(Font)              scaled to size 7.58826pt on input line 15.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 5.4202pt on input line 7.
+(Font)              scaled to size 5.4202pt on input line 15.
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 7.
+(Font)              size <8> substituted on input line 15.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <8.43146> not available
-(Font)              size <8> substituted on input line 7.
+(Font)              size <8> substituted on input line 15.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 7.
+(Font)              size <8> substituted on input line 15.
 
 )
 \tf@lot=\write7
@@ -1808,65 +1820,74 @@ LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <8.43146> not available
 
  [5
 
-] (./data/abstract.tex [1
+] (./data/abstract.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 
 
 
 ]
+[2]
+Overfull \hbox (13.3367pt too wide) in paragraph at lines 32--33
+\TU/TimesNewRomanPSStd(0)/b/n/12.045 clustering schemes in outsourcing computin
+g, this paper proposes a privacy-preserving
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3
+
+
+]
+Overfull \hbox (3.11069pt too wide) in paragraph at lines 35--36
+\TU/TimesNewRomanPSStd(0)/b/n/12.045 Clustering Application with Noise (DBSCAN)
+. First, a new privacy-preserving com-
+ []
+
 
 LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
-(Font)              using `TU/SimHei(0)/m/n' instead on input line 20.
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 38.
 
-) (./data/denotation.tex [2
+) (./data/denotation.tex [4]) [5
 
-
-]) [3
-
-] (./data/chap01.tex [1
+] (./data/chap01.tex
+File: img/cloud.png Graphic file (type bmp)
+<img/cloud.png>
+ [1
 
 
 
 ]
+File: img/paas-iaas-saas.jpg Graphic file (type bmp)
+<img/paas-iaas-saas.jpg>
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3])
-(./data/chap02.tex [4]) (./data/chap03.tex [5
-
-
-] [6
-
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-[8] [9]
-File: img/fig5.png Graphic file (type bmp)
-<img/fig5.png>
- [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 126.
-
-[12]
-File: img/fig4.png Graphic file (type bmp)
-<img/fig4.png>
+ [3]
+File: img/outsource.png Graphic file (type bmp)
+<img/outsource.png>
+File: img/mpc.png Graphic file (type bmp)
+<img/mpc.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13]
-File: img/fig1.png Graphic file (type bmp)
-<img/fig1.png>
+ [4]
+[5]
+File: img/difference.png Graphic file (type bmp)
+<img/difference.png>
 
-[14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
+ [6]
+[7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
 
 Package fontspec Info: Could not resolve font "KaiTi/BI" (it probably doesn't
 (fontspec)             exist).
@@ -1891,93 +1912,18 @@ Package fontspec Info: Font family 'KaiTi(0)' created for font 'KaiTi' with
 "
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16]
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 257.
-Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 269.
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 275.
-Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
-line 278.
+nput line 163.
 
-[17]
+[9]
+File: img/timeline.png Graphic file (type bmp)
+<img/timeline.png>
 
-Package caption Warning: \label without proper reference on input line 303.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `s3-table-compucost' on page 18 undefined on input lin
-e 299.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18]
-[19]
-File: img/lsun_ptxt.png Graphic file (type bmp)
-<img/lsun_ptxt.png>
-File: img/lsun_ctxt.png Graphic file (type bmp)
-<img/lsun_ctxt.png>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20]
-File: img/m.png Graphic file (type bmp)
-<img/m.png>
-File: img/m_comm.png Graphic file (type bmp)
-<img/m_comm.png>
-LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 413.
-LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 5.39996pt on input line 413.
-LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 4.49997pt on input line 413.
-File: img/k.png Graphic file (type bmp)
-<img/k.png>
-File: img/k_comm.png Graphic file (type bmp)
-<img/k_comm.png>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21])
-(./data/chap04.tex [22] [23
-
-
-] [24]
-File: img/ch4-sysmod.png Graphic file (type bmp)
-<img/ch4-sysmod.png>
- [25] [26] [27] [28]
-Overfull \hbox (18.11383pt too wide) in paragraph at lines 186--187
-[] []\TU/TimesNewRomanPSStd(0)/b/n/12.045 record new element in plist $\OT1/cmr
-/m/n/12 (\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 i\OT1/cmr/m/n/12 ]
-\OML/cmm/m/it/12 :cluId; d\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 j\OT1/cmr/m/n/12 ]\
-OML/cmm/m/it/12 :cluId; mul\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 m[]; d\OT1/cmr/m/n
-/12 [\OML/cmm/m/it/12 j\OT1/cmr/m/n/12 ]\OML/cmm/m/it/12 :isCore\OT1/cmr/m/n/12
- ))$ 
+Overfull \hbox (0.8774pt too wide) in paragraph at lines 207--218
+[][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29]
-[30]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32]
-[33]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [34])
-(./data/ack.tex [35]) [36
-
-]
+[10] [11]
 
 Package fontspec Info: Font family 'FreeSerif(0)' created for font 'FreeSerif'
 (fontspec)             with options [Mapping=tex-text].
@@ -2006,28 +1952,267 @@ ng=tex-text;"
 x-text;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
- [37
+
+Overfull \hbox (6.02249pt too wide) in paragraph at lines 269--270
+ [][] 
+ []
+
+[12] [13]
+File: img/lunwenzuzhijiegou.png Graphic file (type bmp)
+<img/lunwenzuzhijiegou.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15])
+(./data/chap02.tex [16] [17
 
 
 ]
-Underfull \hbox (badness 1348) in paragraph at lines 118--118
-[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [16] []Beaver D. Efficient multiparty p
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19])
+(./data/chap03.tex [20] [21
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+[23]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 55.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+File: img/fig5.png Graphic file (type bmp)
+<img/fig5.png>
+
+[25]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]
+[28]
+File: img/fig4.png Graphic file (type bmp)
+<img/fig4.png>
+ [29]
+File: img/fig1.png Graphic file (type bmp)
+<img/fig1.png>
+ [30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+[32]
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
+line 311.
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
+t line 317.
+Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
+line 320.
+ [33] [34] [35] [36]
+File: img/lsun_ptxt.png Graphic file (type bmp)
+<img/lsun_ptxt.png>
+File: img/lsun_ctxt.png Graphic file (type bmp)
+<img/lsun_ctxt.png>
+File: img/m.png Graphic file (type bmp)
+<img/m.png>
+File: img/m_comm.png Graphic file (type bmp)
+<img/m_comm.png>
+File: img/k.png Graphic file (type bmp)
+<img/k.png>
+File: img/k_comm.png Graphic file (type bmp)
+<img/k_comm.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38])
+(./data/chap04.tex [39] [40
+
+
+] [41]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+File: img/dbscan-pre.png Graphic file (type bmp)
+<img/dbscan-pre.png>
+
+Overfull \hbox (27.6986pt too wide) in paragraph at lines 147--148
+ [][] 
+ []
+
+[43]
+File: img/expr.png Graphic file (type bmp)
+<img/expr.png>
+File: img/expr2.png Graphic file (type bmp)
+<img/expr2.png>
+File: img/expr3.png Graphic file (type bmp)
+<img/expr3.png>
+File: img/expres.png Graphic file (type bmp)
+<img/expres.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
+File: img/ch4-sysmod.png Graphic file (type bmp)
+<img/ch4-sysmod.png>
+
+[46] [47] [48] [49] [50]
+Overfull \hbox (16.12689pt too wide) in paragraph at lines 444--445
+[] []\TU/TimesNewRomanPSStd(0)/b/n/12.045 record new element in plist $\OT1/cmr
+/m/n/12 (\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 i\OT1/cmr/m/n/12 ]
+\OML/cmm/m/it/12 :cluId; d\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 j\OT1/cmr/m/n/12 ]\
+OML/cmm/m/it/12 :cluId; []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 m[]; d\OT1/cmr/m/n/
+12 [\OML/cmm/m/it/12 j\OT1/cmr/m/n/12 ]\OML/cmm/m/it/12 :isCore\OT1/cmr/m/n/12 
+))$ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51]
+[52]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [58]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59]
+File: img/lsun_gt.png Graphic file (type bmp)
+<img/lsun_gt.png>
+File: img/s1_gt.png Graphic file (type bmp)
+<img/s1_gt.png>
+File: img/aggre_gt.png Graphic file (type bmp)
+<img/aggre_gt.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [60]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61]
+File: img/t1-lsun.png Graphic file (type bmp)
+<img/t1-lsun.png>
+File: img/t2-lsun.png Graphic file (type bmp)
+<img/t2-lsun.png>
+File: img/t3-lsun.png Graphic file (type bmp)
+<img/t3-lsun.png>
+File: img/km-lsun.png Graphic file (type bmp)
+<img/km-lsun.png>
+File: img/t1-s1.png Graphic file (type bmp)
+<img/t1-s1.png>
+File: img/t2-s1.png Graphic file (type bmp)
+<img/t2-s1.png>
+File: img/t3-s1.jpg Graphic file (type bmp)
+<img/t3-s1.jpg>
+File: img/km-s1.png Graphic file (type bmp)
+<img/km-s1.png>
+File: img/t1-aggre.png Graphic file (type bmp)
+<img/t1-aggre.png>
+File: img/t2-aggre.png Graphic file (type bmp)
+<img/t2-aggre.png>
+File: img/t3-aggre.jpg Graphic file (type bmp)
+<img/t3-aggre.jpg>
+File: img/km-aggre.png Graphic file (type bmp)
+<img/km-aggre.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [62]
+Overfull \hbox (4.85828pt too wide) in paragraph at lines 882--895
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [63]
+File: img/timecompare.png Graphic file (type bmp)
+<img/timecompare.png>
+File: img/commcompare.png Graphic file (type bmp)
+<img/commcompare.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [64]
+File: img/testrc.png Graphic file (type bmp)
+<img/testrc.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [65])
+(./data/chap05.tex [66] [67
+
+
+]) (./data/ack.tex [68])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [69
+
+]
+[70
+
+
+]
+Underfull \hbox (badness 1831) in paragraph at lines 117--117
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [16] []Ding B, Kulkarni J, Yekhanin S. 
+Collecting telemetry data privately[J].
+ []
+
+[71]
+Underfull \hbox (badness 1983) in paragraph at lines 117--117
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [32] []Jäschke A, Armknecht F. Unsuperv
+ised machine learning on encrypted
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 117--117
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [40] []Liu D, Bertino E, Yi X. Privacy 
+of outsourced k-means clustering[C]//
+ []
+
+[72] [73] [74]
+Underfull \hbox (badness 1348) in paragraph at lines 117--117
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [74] []Beaver D. Efficient multiparty p
 rotocols using circuit randomization[C]//
  []
 
 
-Underfull \hbox (badness 2050) in paragraph at lines 118--118
-[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [27] []Fränti P, Sieranoja S. K-means p
+Underfull \hbox (badness 2050) in paragraph at lines 117--117
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [82] []Fränti P, Sieranoja S. K-means p
 roperties on six clustering benchmark
  []
 
-
-Underfull \hbox (badness 1983) in paragraph at lines 118--118
-[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [28] []Jäschke A, Armknecht F. Unsuperv
-ised machine learning on encrypted
- []
-
-[38] (./data/resume.tex [39]
+[75] (./data/resume.tex [76]
 \blx@maxsegment@1=\count564
 \blx@sectionciteorder@1=\count565
 Package biblatex Info: Reference section=1 on input line 14.
@@ -2038,17 +2223,13 @@ Package biblatex Info: Reference section=0 on input line 23.
 Package biblatex Info: Reference section=2 on input line 26.
 Package biblatex Info: Setting label 'refsection:2' on input line 26.
 Package biblatex Info: Reference section=0 on input line 35.
-) [40
+) [77
 
-] (./data/appendix01.tex)
+]
 \tf@thm=\write9
 \openout9 = `thesis.thm'.
 
- [41
-
-
-
-] (./thesis.aux)
+ (./thesis.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.22pt have occurred.
@@ -2059,19 +2240,27 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7A8F0CE27B987F881DAA84808CFB56E8;8152.
+(rerunfilecheck)             Checksum: 666DF11709A721CEFAD5632B5673EAD4;9245.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                thesis
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35622 strings out of 476919
- 670230 string characters out of 5825424
- 1597273 words of memory out of 5000000
- 54986 multiletter control sequences out of 15000+600000
- 435832 words of font info for 230 fonts, out of 8000000 for 9000
+ 36115 strings out of 476919
+ 687485 string characters out of 5825424
+ 1609730 words of memory out of 5000000
+ 55451 multiletter control sequences out of 15000+600000
+ 432904 words of font info for 216 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,12n,130p,1151b,4864s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,13n,130p,1151b,4856s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (52 pages).
+Output written on thesis.pdf (90 pages).
