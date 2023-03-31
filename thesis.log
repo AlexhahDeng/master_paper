@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  25 MAR 2023 13:11
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  31 MAR 2023 09:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1829,7 +1829,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 [2]
-Overfull \hbox (13.3367pt too wide) in paragraph at lines 32--33
+Overfull \hbox (13.3367pt too wide) in paragraph at lines 46--47
 \TU/TimesNewRomanPSStd(0)/b/n/12.045 clustering schemes in outsourcing computin
 g, this paper proposes a privacy-preserving
  []
@@ -1841,34 +1841,34 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (3.11069pt too wide) in paragraph at lines 35--36
+Overfull \hbox (3.11069pt too wide) in paragraph at lines 49--50
 \TU/TimesNewRomanPSStd(0)/b/n/12.045 Clustering Application with Noise (DBSCAN)
 . First, a new privacy-preserving com-
  []
 
 
 LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
-(Font)              using `TU/SimHei(0)/m/n' instead on input line 38.
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 52.
 
 ) (./data/denotation.tex [4]) [5
 
 ] (./data/chap01.tex
-File: img/cloud.png Graphic file (type bmp)
-<img/cloud.png>
+File: img/cloudarchi.png Graphic file (type bmp)
+<img/cloudarchi.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [1
 
 
 
 ]
-File: img/paas-iaas-saas.jpg Graphic file (type bmp)
-<img/paas-iaas-saas.jpg>
+File: img/cloudservice.png Graphic file (type bmp)
+<img/cloudservice.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
 File: img/outsource.png Graphic file (type bmp)
 <img/outsource.png>
 File: img/mpc.png Graphic file (type bmp)
@@ -1876,18 +1876,14 @@ File: img/mpc.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [4]
 [5]
 File: img/difference.png Graphic file (type bmp)
 <img/difference.png>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
-[7]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8]
+ [6] [7]
 
 Package fontspec Info: Could not resolve font "KaiTi/BI" (it probably doesn't
 (fontspec)             exist).
@@ -1913,17 +1909,19 @@ Package fontspec Info: Font family 'KaiTi(0)' created for font 'KaiTi' with
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 163.
-
-[9]
+nput line 178.
+ [8]
 File: img/timeline.png Graphic file (type bmp)
 <img/timeline.png>
 
-Overfull \hbox (0.8774pt too wide) in paragraph at lines 207--218
+Underfull \vbox (badness 2384) has occurred while \output is active []
+
+ [9]
+Overfull \hbox (34.25557pt too wide) in paragraph at lines 223--234
 [][] 
  []
 
-[10] [11]
+[10]
 
 Package fontspec Info: Font family 'FreeSerif(0)' created for font 'FreeSerif'
 (fontspec)             with options [Mapping=tex-text].
@@ -1953,72 +1951,69 @@ x-text;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 
-Overfull \hbox (6.02249pt too wide) in paragraph at lines 269--270
- [][] 
- []
-
-[12] [13]
-File: img/lunwenzuzhijiegou.png Graphic file (type bmp)
-<img/lunwenzuzhijiegou.png>
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14]
+ [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15])
-(./data/chap02.tex [16] [17
+ [12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+File: img/dd.png Graphic file (type bmp)
+<img/dd.png>
+
+[14]) (./data/chap02.tex [15] [16
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18]
+ [17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19])
-(./data/chap03.tex [20] [21
+ [18])
+(./data/chap03.tex [19] [20
 
 
 ]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 58.
+ [21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22]
-[23]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 55.
+File: img/sysmodel1.png Graphic file (type bmp)
+<img/sysmodel1.png>
 
+[23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24]
-File: img/fig5.png Graphic file (type bmp)
-<img/fig5.png>
-
-[25]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26]
+ [25]
+[26]
+File: img/fig4.png Graphic file (type bmp)
+<img/fig4.png>
+File: img/fig1.png Graphic file (type bmp)
+<img/fig1.png>
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
 [28]
-File: img/fig4.png Graphic file (type bmp)
-<img/fig4.png>
- [29]
-File: img/fig1.png Graphic file (type bmp)
-<img/fig1.png>
- [30]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31]
-[32]
+ [29]
+[30]
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 311.
+line 319.
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 317.
+t line 326.
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
-line 320.
- [33] [34] [35] [36]
+line 329.
+ [31] [32] [33] [34]
 File: img/lsun_ptxt.png Graphic file (type bmp)
 <img/lsun_ptxt.png>
 File: img/lsun_ctxt.png Graphic file (type bmp)
@@ -2034,25 +2029,29 @@ File: img/k_comm.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]
+ [35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38])
-(./data/chap04.tex [39] [40
+ [36])
+(./data/chap04.tex [37] [38
 
 
-] [41]
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42]
+ [39]
 File: img/dbscan-pre.png Graphic file (type bmp)
 <img/dbscan-pre.png>
 
-Overfull \hbox (27.6986pt too wide) in paragraph at lines 147--148
+Overfull \hbox (27.6986pt too wide) in paragraph at lines 160--161
  [][] 
  []
 
-[43]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]
+[41]
 File: img/expr.png Graphic file (type bmp)
 <img/expr.png>
 File: img/expr2.png Graphic file (type bmp)
@@ -2064,15 +2063,20 @@ File: img/expres.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44]
+ [42]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45]
-File: img/ch4-sysmod.png Graphic file (type bmp)
-<img/ch4-sysmod.png>
+ [43]
+File: img/sysmodel2.png Graphic file (type bmp)
+<img/sysmodel2.png>
 
-[46] [47] [48] [49] [50]
-Overfull \hbox (16.12689pt too wide) in paragraph at lines 444--445
+[44]
+
+LaTeX Warning: Reference `s3-anquanmoxing' on page 45 undefined on input line 3
+14.
+
+[45] [46] [47] [48]
+Overfull \hbox (16.12689pt too wide) in paragraph at lines 458--459
 [] []\TU/TimesNewRomanPSStd(0)/b/n/12.045 record new element in plist $\OT1/cmr
 /m/n/12 (\OML/cmm/m/it/12 d\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 i\OT1/cmr/m/n/12 ]
 \OML/cmm/m/it/12 :cluId; d\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 j\OT1/cmr/m/n/12 ]\
@@ -2084,8 +2088,14 @@ OML/cmm/m/it/12 :cluId; []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 m[]; d\OT1/cmr/m/n/
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51]
-[52]
+ [49]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50]
+[51]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [53]
@@ -2101,12 +2111,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [57]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [58]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [59]
 File: img/lsun_gt.png Graphic file (type bmp)
 <img/lsun_gt.png>
 File: img/s1_gt.png Graphic file (type bmp)
@@ -2116,10 +2120,10 @@ File: img/aggre_gt.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60]
+ [58]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61]
+ [59]
 File: img/t1-lsun.png Graphic file (type bmp)
 <img/t1-lsun.png>
 File: img/t2-lsun.png Graphic file (type bmp)
@@ -2147,15 +2151,15 @@ File: img/km-aggre.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62]
-Overfull \hbox (4.85828pt too wide) in paragraph at lines 882--895
+ [60]
+Overfull \hbox (4.85828pt too wide) in paragraph at lines 896--909
  [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
+ [61]
 File: img/timecompare.png Graphic file (type bmp)
 <img/timecompare.png>
 File: img/commcompare.png Graphic file (type bmp)
@@ -2163,44 +2167,43 @@ File: img/commcompare.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64]
+ [62]
 File: img/testrc.png Graphic file (type bmp)
 <img/testrc.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [65])
-(./data/chap05.tex [66] [67
+ [63])
+(./data/chap05.tex [64] [65
 
 
-]) (./data/ack.tex [68])
+]) (./data/ack.tex [66])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69
-
-]
-[70
-
+ [67
 
 ]
 Underfull \hbox (badness 1831) in paragraph at lines 117--117
-[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [16] []Ding B, Kulkarni J, Yekhanin S. 
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [15] []Ding B, Kulkarni J, Yekhanin S. 
 Collecting telemetry data privately[J].
  []
 
-[71]
+[68
+
+
+] [69]
 Underfull \hbox (badness 1983) in paragraph at lines 117--117
-[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [32] []Jäschke A, Armknecht F. Unsuperv
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [31] []Jäschke A, Armknecht F. Unsuperv
 ised machine learning on encrypted
  []
 
 
 Underfull \hbox (badness 1622) in paragraph at lines 117--117
-[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [40] []Liu D, Bertino E, Yi X. Privacy 
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [39] []Liu D, Bertino E, Yi X. Privacy 
 of outsourced k-means clustering[C]//
  []
 
-[72] [73] [74]
+[70] [71] [72]
 Underfull \hbox (badness 1348) in paragraph at lines 117--117
 [] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [74] []Beaver D. Efficient multiparty p
 rotocols using circuit randomization[C]//
@@ -2212,7 +2215,7 @@ Underfull \hbox (badness 2050) in paragraph at lines 117--117
 roperties on six clustering benchmark
  []
 
-[75] (./data/resume.tex [76]
+[73] (./data/resume.tex [74]
 \blx@maxsegment@1=\count564
 \blx@sectionciteorder@1=\count565
 Package biblatex Info: Reference section=1 on input line 14.
@@ -2223,7 +2226,7 @@ Package biblatex Info: Reference section=0 on input line 23.
 Package biblatex Info: Reference section=2 on input line 26.
 Package biblatex Info: Setting label 'refsection:2' on input line 26.
 Package biblatex Info: Reference section=0 on input line 35.
-) [77
+) [75
 
 ]
 \tf@thm=\write9
@@ -2243,24 +2246,25 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 666DF11709A721CEFAD5632B5673EAD4;9245.
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                thesis
-(biblatex)                and rerun LaTeX afterwards.
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: 81483F293560521D8C6E44D97A640117;8963
+(rerunfilecheck)             After:  872484D0F9302679D15E4BFC00302AC7;9059.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36115 strings out of 476919
- 687485 string characters out of 5825424
- 1609730 words of memory out of 5000000
- 55451 multiletter control sequences out of 15000+600000
+ 36081 strings out of 476919
+ 685384 string characters out of 5825424
+ 1599598 words of memory out of 5000000
+ 55418 multiletter control sequences out of 15000+600000
  432904 words of font info for 216 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,13n,130p,1151b,4856s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,13n,130p,1151b,4868s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (90 pages).
+Output written on thesis.pdf (88 pages).

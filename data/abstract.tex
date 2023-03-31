@@ -1,25 +1,39 @@
 \begin{cabstract}
-% 简述背景
-随着云计算环境下各种技术的快速发展和应用，给人类生活带来巨大便利的同时也引发了人们对于数据隐私安全的关注。聚类算法以其易用性和可扩展性广泛用于各种数据挖掘研究和应用中。
-%指出隐私安全问题
-云计算在赋能海量数据上聚类应用的同时，也带来了数据泄漏的风险。目前聚类方面的隐私保护相关研究大力发展，但是仍存在一些问题。
-%具体问题描述
-%方案难以兼顾效率与安全
-一方面，目前关于隐私保护聚类的相关研究难以兼顾效率与安全，完全安全的方案通常效率较低耗时较长，无法在实际环境中应用。运行开销较小，耗时较短的方案则通常存在数据安全问题，例如泄漏中间结果，或者是数据分布信息。
-%对于聚类其他算法的研究较少
-另一方面，当前隐私保护聚类相关研究主要基于K-means，该算法包含的复杂计算较少，流程简单，但应用场景与效果都有局限性。聚类包含许多不同类型的实现，例如谱聚类、密度聚类、核聚类等，分别有其适用的场景和优点，在隐私计算的场景下相关研究相对较少。
+%% 简述背景
+%随着云计算环境下各种技术的快速发展和应用，给人类生活带来巨大便利的同时也引发了人们对于数据隐私安全的关注。聚类算法以其易用性和可扩展性广泛用于各种数据挖掘研究和应用中。
+%%指出隐私安全问题
+%云计算在赋能海量数据上聚类应用的同时，也带来了数据泄漏的风险。目前聚类方面的隐私保护相关研究大力发展，但是仍存在一些问题。
+%%具体问题描述
+%%方案难以兼顾效率与安全
+%一方面，目前关于隐私保护聚类的相关研究难以兼顾效率与安全，完全安全的方案通常效率较低耗时较长，无法在实际环境中应用。运行开销较小，耗时较短的方案则通常存在数据安全问题，例如泄漏中间结果，或者是数据分布信息。
+%%对于聚类其他算法的研究较少
+%另一方面，当前隐私保护聚类相关研究主要基于K-means，该算法包含的复杂计算较少，流程简单，但应用场景与效果都有局限性。聚类包含许多不同类型的实现，例如谱聚类、密度聚类、核聚类等，分别有其适用的场景和优点，在隐私计算的场景下相关研究相对较少。
+%
+%% 因此提出了我们的方案
+%本文深入分析了当前云环境下隐私保护聚类方案中存在的问题，以兼顾安全与高效为目标，设计了能够实现隐私保护的k-means聚类、密度聚类等方案。本文的主要工作与贡献如下：
 
-% 因此提出了我们的方案
-本文深入分析了当前云环境下隐私保护聚类方案中存在的问题，以兼顾安全与高效为目标，设计了能够实现隐私保护的k-means聚类、密度聚类等方案。本文的主要工作与贡献如下：
+%聚类的应用以及存在的问题
+聚类作为一种无监督机器学习算法，广泛用于数据挖掘与特征提取等研究领域，影响着人们生活的方方面面。随着数据量的迅速增加，面向大数据的聚类算法对金融行业中的股票投资分析，商业环境中的市场营销分析以及医疗领域的影像分析都具有重要应用价值。然而，一方面，随着移动手机，穿戴设备以及各种智能设施的广泛使用，用于聚类分析的数据量呈现爆炸性增长的趋势；另一方面，当下许多应用场景要求联合多方数据进行聚类以提升数据分析的质量，传统聚类形式难以满足新场景的需求。
+
+%云计算的应用，存在的问题
+云计算以开放的标准和服务为基础，以互联网为中心，提供安全、快捷、便利的数据存储和网络计算服务，具有成本低、效率高、灵活和可扩展等优点。越来越多公司、机构和独立用户选择将数据存储到云平台上，运行聚类算法获取数据分析的结果。
+在数据挖掘分析技术的发展过程中，基于海量丰富的数据样本和可靠多样的聚类算法，云计算以其强大的计算和存储资源，灵活的服务方式，为大数据上的聚类应用发展提供了坚实的基础。然而，数据安全问题始终是阻碍云计算进一步推广和应用的主要因素之一，将未经处理的数据上传到云平台，即失去了对数据的有效控制，数据可能在存储和处理的过程中被拦截、篡改或传播，带来巨大的数据泄露风险。为了解决上述问题，通常采取数据加密后上传的方式来保护数据的安全性，但是加密后的数据在聚类过程中的可用性大大降低。因此，如何在云计算环境下大数据上进行安全高效的聚类，成为我们面临的重大挑战，也受到学术界以及工业界的广泛关注和研究。
+
+本文深入分析云计算中聚类应用所面临的安全问题，基于数据挖掘中广泛应用的K-means聚类和密度聚类算法开展隐私保护问题的关键技术研究。
+
+本文的主要研究内容和贡献包含如下几个方面：
 \begin{compactenum}
 %兼顾效率与安全的隐私保护k-means聚类
-\item 针对外包计算中隐私保护k-means聚类方案存在的数据安全与效率问题，本文在双云模型下，提出了基于kd-tree的隐私保护外包k-means聚类方案，该方案在保证安全的同时，耗时较少，能够应用于大型数据集。在训练过程中，资源受限的用户基于原始数据构造kd-tree并秘密共享给云平台后即无需参与后续计算。与现有工作相比，本方案通信和计算开销均较小。此外，本文设计的系列安全计算协议均可用于任意基于秘密共享的隐私保护场景，具有良好的扩展性。理论分析与实验验证表明，方案在提供完备的数据安全保护的同时，实现了高效准确的K-means聚类。
+\item 针对外包计算中隐私保护K-means聚类方案中存在的数据安全和效率问题，本文提出了一种基于Kd-tree的隐私保护外包K-means聚类方案。
+首先，用户在本地数据的基础上构造Kd-tree，然后通过秘密共享的方式上传至云平台，两个云服务器通过执行系列高效的安全计算协议获取最终结果。
+一方面，方案借助Kd-tree数据结构加速聚类划分的过程，减少冗余计算，提升了算法运行效率；另一方面，基础安全计算协议可以迁移到基于秘密共享的隐私计算场景中，具备良好的扩展性。
+理论分析以及实验验证均表明，本方案不仅提供了完备的数据安全保障，同时也实现了高效精准的外包K-means聚类。
 
 %隐私保护DBSCAN聚类相关研究
-\item 针对密度聚类（Density-Based Spatial Clustering Application with Noise，DBSCAN）设计了三种隐私保护方案。首先，基于传统的DBSCAN设计了全新的隐私保护计算协议，引入临时簇的概念，通过记录相连信息来还原聚类结果，在提升安全性的前提下，实现了耗时与开销远远低于前沿研究的方案。其次，为解决DBSCAN聚类结果不稳定的问题，设计了一个能够获取稳定划分结果的改进隐私保护协议，在牺牲一定性能的情况下，显著提升了聚类结果的质量。最后，针对重要参数依赖数据分布与人工设定的问题，给出了一种基于DBSCAN的层次聚类方法，借助$ k $线图和knn算法，获取关键参数，能够在包含不同密度数据的数据集上较好的进行聚类。经过全面的实验与理论分析，证明方案能够在保护原始数据、中间结果以及聚类结果安全的同时，高效的完成聚类。   
+\item 针对密度聚类（Density-Based Spatial Clustering Application with Noise，DBSCAN）设计了三种隐私保护方案。首先，基于DBSCAN设计了全新的隐私保护计算协议，引入临时簇的概念，通过记录相连信息来还原聚类结果，在提升安全性的前提下，运行效率相较于前沿方案提升近100倍。其次，为解决DBSCAN聚类结果不稳定的问题，设计了一个能够获取稳定划分结果的改进隐私保护协议，在牺牲一定性能的情况下，显著提升了聚类结果的质量。最后，针对重要参数依赖数据分布与人工设定的问题，给出了一种基于DBSCAN的层次聚类方法，借助$ k $线图和knn算法，获取关键参数，能够在包含不同密度数据的数据集上较好的进行聚类。经过全面的实验与理论分析，证明方案能够在保护原始数据、中间结果以及聚类结果安全的同时，高效的完成聚类。   
 \end{compactenum}                                               
 \end{cabstract}
-\ckeywords{云计算; 聚类; 隐私保护}
+\ckeywords{云计算；隐私保护聚类；秘密共享；安全多方计算}
 
 \begin{eabstract}
 With the rapid development and application of various technologies in the cloud computing environment, it brings great convenience to human life and also raises concerns about data privacy and security. Clustering algorithms are widely used in various data mining researches and applications for their ease of use and scalability. While cloud computing empowers clustering applications on massive amounts of data, it also brings the risk of data leakage. 
@@ -35,5 +49,5 @@ In this paper, we deeply analyze the problems in current privacy-preserving clus
 \item A series of privacy-preserving schemes are designed for Density-Based Spatial Clustering Application with Noise (DBSCAN). First, a new privacy-preserving computational protocol is designed based on the traditional DBSCAN, which achieves a solution with much lower time and overhead than the cutting-edge research. Secondly, to solve the problem of unstable DBSCAN clustering results, an improved privacy-preserving protocol that can obtain stable clustering results is designed. Finally, a DBSCAN-based hierarchical clustering method is given to address the problem that important parameters depend on data distribution and manual setting. After a comprehensive experimental and theoretical analysis, it is demonstrated that the scheme can complete clustering efficiently while protecting the security of the original data, intermediate results and clustering results. 
 \end{compactenum}          
 \end{eabstract}
-\ekeywords{Cloud Computing; Clustering; Privacy-Preserving}
+\ekeywords{Cloud Computing; Privacy-Preserving Clustering; Secret Sharing; Secure Multiparty Computation}
 
