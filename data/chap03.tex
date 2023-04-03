@@ -51,6 +51,7 @@ Kd-tree是一种空间划分数据结构，将空间上靠近的点划分到树�
 Kd-tree数据结构有两个主要的优势，一方面，它能够将可能属于同一个数据集的点划分到同一个树节点中。另一方面，它采取一种高效的方式来将初始空间划分为两个子空间以加速后续数据处理。
 
 \subsubsection{过滤算法}
+\label{s3-guolvsuanfa}
 本小节详细介绍\cite{kanungo2002efficient}的核心，过滤算法。给定$ n $个点，构造的Kd-tree包含$ O(n) $个节点，长度为$ O(\log n) $。对于Kd-tree中每个节点$ u $，计算包含的数据个数$ u.count $以及加权质心$ u.wgtCent $，即包含点数据之和。中心的计算方式为$ u.wgtCent/u.count $，在构造Kd-tree的过程中可以连带计算上述内容。初始簇中心采取从数据集中随机选择的方式。
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
@@ -84,8 +85,10 @@ Kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
 \end{algorithm}
 
 对于Kd-tree中每个节点$ u $维护一个候选簇集合$ Z $，该集合中的簇均有可能为节点中所有数据的最终所属簇。对于根节点，候选簇为随机选择的$ k $个簇。按照算法\ref{alg_filter}中的方式来处理每个点的候选簇集合：对于每个节点$ u $，令$ C $为包含数据集合，$ Z $为候选簇集合。
-2-6行，$ u $为叶子节点，则直接找到$ Z $中最近的候选簇$ z^* $，然后将该叶子节点内包含的数据划分到$ z^* $中。
-7-19行处理Kd-tree中的非叶子节点。首先计算$ C $的中心点，然后找到候选簇中距离中心最近的簇$ z^*\in Z $。8-12行，对比剩余的候选簇$ z\in Z\backslash\{z^*\} $，若$ C $中所有数据均距离$ z^* $更近，则认为$ z $不可能为节点$ u $中任何一个数据的最近所属簇，因此进行剪枝，即从候选簇中删除$ z $。13-16行，若$ u $仅剩一个候选簇（$ |Z|=1 $），即$ z^* $，则认为$ z^* $就是$ u $中所有数据的所属簇，可以将这些数据划分进$ z^* $中，并且将相关的$ u.wgtCent $和$ u.count $添加到$ z^* $中。否则，对其子节点重复上述过程（17-19行）。
+若$ u $为叶子节点，则直接找到$ Z $中最近的候选簇$ z^* $，然后将该叶子节点内包含的数据划分到$ z^* $中。
+若为Kd-tree中的非叶子节点，则需要进行更复杂的处理。首先计算$ C $的中心点，然后找到候选簇中距离中心最近的簇$ z^*\in Z $。
+接下来，对比剩余的候选簇$ z\in Z\backslash\{z^*\} $，若$ C $中所有数据均距离$ z^* $更近，则认为$ z $不可能为节点$ u $中任何一个数据的最近所属簇，因此进行剪枝，即从候选簇中删除$ z $。
+若经过上述处理，$ u $仅剩一个候选簇（$ |Z|=1 $），即$ z^* $，则认为$ z^* $就是$ u $中所有数据的所属簇，可以将这些数据划分进$ z^* $中，并且将相关的$ u.wgtCent $和$ u.count $添加到$ z^* $中。否则，对其子节点重复上述过程。
 
 \subsection{基于秘密共享的安全多方计算}
 安全多方计算（SMPC）首先由\cite{yao1986generate}提出，它能够使多个参与方在不泄露自身输入数据的前提下协同进行计算获取结果，广泛用于各种隐私保护方案中。秘密共享是安全多方计算中一个常用工具，最早由Shamir\cite{rivest2001leak}和Blakley\cite{blakley1979safeguarding}于1979年分别提出。秘密共享的基本思路是：将秘密$ s $划分为$ n $份，分发给$ n $个不同的参与方，至少需要$ t $个不同的参与者才能够重构秘密，否则失败。接下来，本节以两个参与方$ A $与$ B $为例，详细介绍秘密共享相关计算。
@@ -95,7 +98,7 @@ Kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
 \subsubsection{加性秘密共享加法}
 为计算两个秘密共享值$ \langle x \rangle $（$ \langle x \rangle^A,\langle x \rangle^B $）和$ \langle y \rangle $（$ \langle y\rangle^A,\langle y\rangle^B $）之和，参与方$ A $与$ B $分别计算$\langle z\rangle^A=\langle x\rangle^A+\langle y\rangle^A$和$\langle z\rangle^B=\langle x\rangle^B+\langle y\rangle^B$。对于秘密共享值$ \langle x \rangle $与常量$ c $的加法，参与方$ A $在本地计算$\langle z\rangle^A=\langle x\rangle+c$，参与方$ B $计算$\langle z\rangle^B=\langle x\rangle^B$。
 \subsubsection{秘密共享乘法}
-秘密共享的安全乘法协议首先由Beaver\cite{beaver1992efficient}提出，为计算乘积$\langle z\rangle=\langle x\rangle \cdot\langle y\rangle$，需要一个预计算的乘法三元组$\langle c\rangle=\langle a\rangle \cdot\langle b\rangle$。其中参与方$ i $计算$ \langle e \rangle^i = \langle x \rangle^i - \langle a \rangle^i $和$\langle f\rangle^i=\langle y\rangle^i-\langle b\rangle^i$,其中$ i \in \{A, B\}$。参与方均运行$ Rec(\cdot, \cdot) $来恢复$ e $和$ f $。最后，参与方$ A $令$\langle z\rangle^A=f \cdot\langle a\rangle^A+e \cdot\langle b\rangle^A+\langle c\rangle^A$，参与方$ B $令$\langle z\rangle^B=e \cdot f+f \cdot\langle a\rangle^B+e \cdot\langle b\rangle^B+\langle c\rangle^B$，即计算完成。
+秘密共享的安全乘法协议首先由Beaver\cite{beaver1992efficient}提出，为计算乘积$\langle z\rangle=\langle x\rangle \cdot\langle y\rangle$，需要一个预计算的乘法三元组$\langle c\rangle=\langle a\rangle \cdot\langle b\rangle$。其中参与方$ i $计算$ \langle e \rangle^i = \langle x \rangle^i - \langle a \rangle^i $和$\langle f\rangle^i=\langle y\rangle^i-\langle b\rangle^i$,其中$ i \in \{A, B\}$。参与方均运行$ Rec(\cdot, \cdot) $来恢复$ e $和$ f $。最后，参与方$ A $令$\langle z\rangle^A=f \cdot\langle a\rangle^A+e \cdot\langle b\rangle^A+\langle c\rangle^A$，参与方$ B $令$\langle z\rangle^B=e \cdot f+f \cdot\langle a\rangle^B+e \cdot\langle b\rangle^B+\langle c\rangle^B$，即计算完成。本文用MUL来表示乘法操作，若为两个秘密共享值相乘，则输出对应乘法结果；若为两个秘密共享数组相乘，则输出数组对应元素相乘的秘密共享结果数组。
 
 值得注意的是，乘法主要分为两个阶段。离线阶段中，预计算的乘法三元组每次进行乘法时都要更新，但是三元组生成的过程是离线的，可以由两方通过不经意传输（Oblivious Transfer）生成\cite{schneider2013gmw}，也可以由可信第三方提供\cite{riazi2018chameleon}。更多关于预计算乘法三元组的细节可以参考\cite{beaver1992efficient}。在线阶段中，两个参与方相互通信以获得最终的计算结果。
 \section{问题描述}
@@ -185,54 +188,73 @@ Kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
 	\end{algorithmic}
 \end{algorithm}
 
-百万富翁协议解决的是双方各自持有明文在不泄露自身数据的情况进行比较的问题，无法直接比较秘密共享值，因此这里进行如下改造。
-1-3行，令云服务器$C_0$产生随机数$a$，将秘密共享值$\langle x \rangle$与$\langle y\rangle$之间的比较转换为明文$a$与$x-y+a$之间的比较。上述转换只需要一轮交互即可完成，通信和计算开销均较小。
+百万富翁协议解决的是双方各自持有明文在不泄露自身数据的情况进行比较的问题，无法直接比较秘密共享值，因此这里进行如下改造，将秘密共享值之间的比较转换为明文上的比较。
+首先，令云服务器$C_0$产生随机数$a,a\in\mathbb{Z}_n$，将秘密共享值$\langle x \rangle$与$\langle y\rangle$之间的比较转换为明文$a$与$x-y+a$之间的比较，若$x>y$，则$x-y+a>a$。上述转换只需要一轮交互即可完成，通信和计算开销均较小。
 
 针对协议的输出，需要将布尔秘密共享值（$v=\langle v\rangle^B_0 \bigoplus \langle v\rangle^B_1$）转变为加性秘密共享值（$v=\langle v\rangle^A_0+\langle v \rangle^A_1$）。根据如下观察，$v^A=\langle v\rangle^B_0+\langle v\rangle^B_1 - 2\langle v\rangle^B_0 \langle v\rangle^B_1$ 即可将布尔共享值转变为加性共享值。
-4行，为计算$\langle v\rangle^B_0 \langle v\rangle^B_1$，令云服务器$C_i$与$C_{1-i}$秘密共享$\langle v \rangle_i^B$，5-6行，进行乘法操作和计算使得参与方各自获取最终密文比较结果。
+为了计算$\langle v\rangle^B_0 \langle v\rangle^B_1$，首先令云服务器$C_i$与$C_{1-i}$秘密共享$\langle v \rangle_i^B$，然后，进行计算乘法。
+最后，云服务器在本地计算最终密文比较结果。
 
 
 \subsection{安全极值计算协议}
 \label{s3-secureminimum}
 %todo 得讲下多个相同极小值怎么处理
-安全极值计算协议可以找到一组加性秘密共享值中极值的位置，给定$ n $个秘密共享的数据，经过计算后，输出仅包含0，1秘密共享值的数组，其中极值位置存放1，其他均为0。若需要获得极值的具体数值，将结果数组与原始数组进行乘法运算后累加即可。
+安全极值计算协议可以找到一组加性秘密共享值中极值的位置，给定$ n $个秘密共享的数据，经过计算后，输出仅包含0、1秘密共享值的$n$维数组，其中极值位置存放1，其他位置均为0。若需要计算极值的具体数值，将结果数组与原始数组逐个进行乘法运算后累加结果即可。安全极值比较可以分为求解极大值和极小值，方法类似，这里以安全求解极小值为例进行阐述，求解极大值只需将协议中求解$LT(x,y)$改为$LT(y,x)$即可。
 
 在$n$个数据中找到极值的传统方式为通过冒泡排序逐个比较大小，从而获得结果。上述方法需要进行$n-1$次比较，并且不能并行计算，效率较低。本文提出的安全比较协议能够并行比较多对数据，基于此，针对数据集大小的场景分别设计了两种极值计算协议。
 
-安全极值比较可以分为求解极大值和极小值，方法类似，这里以安全求解极小值为例进行阐述，求解极大值只需将协议中求解$LT(x,y)$改为$LT(y,x)$即可。
-
-在处理小数据集时，可以通过增加并行比较的数据对，来减少比较的次数。以一个包含三个整数的数据集为例$x_i \in \mathbb{Z}_N, i\in[1,3]$，令每个$x_i$与其他两个不同的数据比较。现在有6个比较数据对$(x_i, x_{j\neq i}), i,j \in [1,3] $进行一轮数据比较。具体构造流程如下图所示：
+针对小数据集时，可以通过增加并行比较的数据对，来减少比较的次数。以一个包含三个整数的数据集为例$x_i \in \mathbb{Z}_N, i\in[1,3]$，令每个$x_i$与其他两个不同的数据比较。现在有6个比较数据对$(x_i, x_{j\neq i}), i,j \in [1,3] $进行一轮数据比较。具体构造流程如下图\ref{smins}所示：
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[scale=0.7]{img/fig4.png}%width=\linewidth
-	\caption{小数据集上的安全极值协议}
+	\includegraphics[scale=0.6]{img/fig4.png}%width=\linewidth
+	\caption{小数据集上的安全极值协议（SMin（S））}
 	\label{smins}
 \end{figure}
 
-结果标识为$\{\langle\delta_1\rangle,...,\langle\delta_6\rangle\}$，由云服务器$C_0$和$C_1$秘密共享。然后利用MUL来累乘与$x_i$相关的比较结果，获得$\{\langle m_1 \rangle,\langle m_2 \rangle,\langle m_3\rangle\}$。假设$x_1<x_2<x_3$，与$x_1$相关的比较结果全部为$1$，同时与$x_2$，$x_3$相关的比较结果至少包含一个$0$。因此，对应的累乘结果为$m_1=1, m_2=0, m_3=0$。
-
-针对大型数据集，上述方法增加的比较数据对以平方级剧增，带来大量冗余的通信和计算开销。因此，放弃增加比较数据对的思路，采取树型结构来减少比较轮次，在冒泡排序需要$n-1$轮比较的基础上，减少为$\log n$轮比较。
-
-假设数据集包含$n$个数据，首先比较$n/2$对数据，然后用比较结果与原始数据相乘获取较小值。以$x$，$y$为例，比较结果为$\delta = LT(x,y) $，较小值的计算方式为$r=MUL(\delta, y) + MUL(1-\delta, x)$ 。经过上述操作数据集的大小由$n$变为$n/2$，反复进行上述操作，直到集合仅包含一个数据，即极小值。比较过程如图\ref{sminl}所示。
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[scale=0.09]{img/fig1.png}%width=\linewidth
-	\caption{大数据集上的安全极值协议 (SMin(L))}
-	\label{sminl}
-\end{figure}
-
-\subsection{安全过滤协议}
-本节将介绍如何在Kd-tree数据结构上进行聚类，该方案的正确性验证由\cite{kanungo2002efficient}给出。
-自根节点开始，依次遍历所有节点来判断当前节点中包含的所有数据点是否可以被划分到某一个簇中。针对每个节点，维护一个候选簇集合，该集合中所有簇都可能是节点最终所属簇。在迭代中，不断删除不符合条件的候选簇知道仅剩一个候选簇，即节点所属簇。
-
-算法如\ref{alg_sf}所示。2-4行，计算Kd-tree每个节点到每个候选簇中心的距离，然后借助安全极值协议找到距离最近的候选簇标记为$z^*$。7-12行，执行一系列子协议来排除不符合候选条件的簇，即与候选簇$z_j,z_j\neq z^*$相比，节点中包含所有数据点在空间上都离$z^*$更近，则认为$z_j$非候选簇。更加详细的规则解释在\cite{kanungo2002efficient}中给出。13-16行，执行安全比较协议来判断候选簇集合是否仅剩一个簇。如果是，则将节点中所有数据划分到该候选簇中，并停止向下迭代，否则继续对子节点进行上述操作（17-18行）。若聚类过程即将收敛，那么子节点可以不用进行冗余的距离计算和比较，节省大量计算资源。然而上述方案泄露了一比特数据来判断是否终止子节点迭代，这样少量的数据仅仅轻微泄露了迭代过程的信息，但是带来了效率的巨大提升。论文\cite{bozdemir2021privacy,boldyreva2021privacy}中采取了类似的方法作为一个交换来获取性能提升。
+结果标识为$\{\langle\delta_1\rangle,...,\langle\delta_6\rangle\}$，由云服务器$C_0$和$C_1$秘密共享。然后利用MUL来累乘与$x_i$相关的比较结果，获得$\{\langle m_1 \rangle,\langle m_2 \rangle,\langle m_3\rangle\}$。假设$x_1<x_2<x_3$，与$x_1$相关的比较结果全部为$1$，同时与$x_2$，$x_3$相关的比较结果至少包含一个$0$。因此，对应的累乘结果为$m_1=1, m_2=0, m_3=0$。详细描述如算法\ref{alg_smins}所示，首先用两个数组分别存储待比较的内容，长度为$ n(n-1) $，然后运行安全比较算法获取结果$ \langle t_i \rangle, i \in [1,n(n-1)] $，最后将每一个元素$ x_i $相关的$ n-1 $个比较结果相乘得到最终极值结果$ \langle r_i \rangle, i\in[1,n]$。
 
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
 	\renewcommand{\algorithmicensure}{\textbf{输出:}}
-	\caption{SC $\rightarrow (\langle \delta \rangle_0, \langle \delta \rangle_1)$}
+	\caption{SMin(S) $\rightarrow \{\langle r_1 \rangle,...,\langle r_n\rangle\}$}
+	\label{alg_smins}
+	\begin{algorithmic}[1]
+		\REQUIRE $C_0,C_1$输入$ \{\langle x_1 \rangle,...,\rangle x_n\rangle\} $
+		\ENSURE $C_0,C_1$获得$\{\langle r_1 \rangle,...,\langle r_n\rangle\}$
+		\STATE 构造$ n(n-1) $对比较数据，分别存储在$ l_1 $和$ l_2 $中
+		\FOR{$i=1$ to $n$}
+		\FOR{$j=1$ to $ n $, $j\neq i$}
+		\STATE $ l_1[i*(n-1)+j] \leftarrow \langle x_i \rangle $
+		\STATE $ l_2[i*(n-1)+j] \leftarrow \langle x+j \rangle $
+		\ENDFOR
+		\ENDFOR
+		\STATE 比较大小获取结果$ \langle t \rangle \leftarrow \text{SC}(l_1, l_2) $
+		\FOR{$ i=1 $ to $n$}
+		\STATE 将$ \langle x_i\rangle $相关比较结果相乘$ \langle r_i \rangle \leftarrow \text{MUL}(\langle t_{i*(n-1)+1}\rangle,...,\langle t_{i*n} \rangle)$
+		\ENDFOR
+	\end{algorithmic}
+\end{algorithm}
+
+针对大型数据集，上述方法增加的比较数据对以平方级剧增，带来大量冗余的通信和计算开销。
+因此，这里放弃增加比较数据对的思路，采取树型结构来减少比较轮次，在冒泡排序需要$n-1$轮比较的基础上，将迭代轮次减少为$\log n$。
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[scale=0.08]{img/fig1.png}%width=\linewidth
+	\caption{大数据集上的安全极值协议 (SMin(L))}
+	\label{sminl}
+\end{figure}
+
+假设数据集包含$n$个数据，首先比较$n/2$对数据，然后用比较结果与原始数据相乘后相加，以获取一对比较数据中的较小值。以$x$，$y$为例，比较结果为$\delta = LT(x,y) $，较小值的计算方式为$r=\text{MUL}(\delta, y) + \text{MUL}(1-\delta, x)$ 。
+经过上述操作数据集的大小由$n$变为$n/2$，保留了所有比较数据对中的较小值。反复进行上述操作，直到集合仅包含一个数据，即极小值，比较过程如图\ref{sminl}所示。
+
+\subsection{安全过滤协议}
+本节将介绍如何在秘密共享的Kd-tree数据结构上进行聚类，该方案的正确性验证由论文\cite{kanungo2002efficient}给出，明文算法的详细过程在章节\ref{s3-guolvsuanfa}给出。
+\begin{algorithm}[htbp]
+	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+	\renewcommand{\algorithmicensure}{\textbf{输出:}}
+	\caption{SF}
 	\label{alg_sf}
 	\begin{algorithmic}[1]
 		\REQUIRE Kd-tree $\langle tr \rangle$以及簇$\langle z \rangle_j, j\in[k]$
@@ -257,9 +279,21 @@ Kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
 		\STATE 将候选集$\{\langle z \rangle_1,...,\langle z\rangle_k\}$传递给子节点，并重复上述过程
 		\ENDIF
 		\ENDFOR
-
 	\end{algorithmic}
 \end{algorithm}
+
+自根节点开始，依次遍历所有节点来判断当前节点中包含的所有数据点是否可以被划分到某一个簇中。
+针对每个节点，维护一个候选簇集合，该集合中所有簇都可能是节点内所有数据的最终所属簇。
+在迭代中，不断删除不符合条件的候选簇直到仅剩一个候选簇，即节点所属簇。
+
+具体过程如算法\ref{alg_sf}所示。首先，计算Kd-tree中当前节点到每个候选簇中心的距离，然后借助安全极值协议找到距离最近的候选簇并标记为$z^*$。
+然后，执行一系列子协议来排除不符合候选条件的簇，排除依据为，与候选簇$z_j,z_j\neq z^*$相比，节点中包含所有数据点在空间上都离$z^*$更近，则认为$z_j$非候选簇，更加详细的规则解释在论文\cite{kanungo2002efficient}中给出。
+
+在此之后，通过乘法将被排除的候选簇标记为0，累加结果并执行安全比较协议来判断候选簇集合是否仅剩一个簇。
+如果是，则将节点中所有数据划分到该候选簇中，并停止向下迭代，否则继续对子节点重复上述操作。若聚类过程即将收敛，那么能够快速排除其他簇进行划分，子节点可以不用进行冗余的距离计算和比较，节省大量计算资源。
+然而上述方案泄露了一比特数据来判断是否终止子节点迭代，这样少量的数据仅仅轻微泄露了迭代过程的信息，但是带来了效率的巨大提升。论文\cite{bozdemir2021privacy,boldyreva2021privacy}中采取了类似的方法作为一个交换来获取性能提升。
+
+值得一提的是，不同节点之间包含的数据不相交，并且划分的过程和结果不会相互影响，因此可以引入并行处理来加速不同节点之间处理和计算，进一步提升安全过滤算法的效率。
 
 \section{基于Kd-tree的隐私保护K-means方案}
 \label{s3-ppokc}
@@ -270,7 +304,10 @@ Kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
 \end{compactitem}
 
 \subsection{算法详述}
-PPOKC算法的细节在\ref{alg_ppokc}中给出，虽然这里提供了一种判断是否停止迭代的方法，在稍后的实验中会采取固定迭代次数的方式来测试性能。不同的数据集迭代收敛所需的轮次通常不同，目前大量相关隐私保护聚类研究采取的迭代终止策略通常存在安全问题，即泄露数据集迭代收敛所需轮次。同时，K-means聚类算法在迭代足够多轮次后一定会收敛\cite{mohassel2019practical}。
+PPOKC方案的细节在算法\ref{alg_ppokc}中给出，虽然这里提供了一种判断是否停止迭代的方法，在稍后的实验中会采取固定迭代次数的方式来测试性能。
+不同的数据集迭代收敛所需的轮次通常不同，目前许多相关隐私保护聚类研究采取的迭代终止策略通常存在安全问题，即泄露数据集迭代收敛所需轮次或者泄露了一定的数据。同时，K-means聚类算法在迭代足够多轮次后一定会收敛\cite{mohassel2019practical}。
+
+
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
 	\renewcommand{\algorithmicensure}{\textbf{输出:}}
