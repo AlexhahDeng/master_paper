@@ -8,21 +8,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {2.1}{\ignorespaces 完全安全的隐私保护K-means和DBSCAN方案\relax }}{19}{table.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.1}{\ignorespaces 通信开销\relax }}{33}{table.caption.23}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces 计算开销\relax }}{33}{table.caption.23}%
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {3.2}{\ignorespaces 数据集详细信息\relax }}{34}{table.caption.24}%
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {3.3}{\ignorespaces 通信与计算开销对比($n=8192,m=5,k=3$)\relax }}{35}{table.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.1}{\ignorespaces 数据集具体信息\relax }}{39}{table.caption.30}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces 数据集具体信息\relax }}{40}{table.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.2}{\ignorespaces ARI指标计算中间值\relax }}{40}{table.caption.31}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces ARI指标计算中间值\relax }}{41}{table.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.3}{\ignorespaces 方案复杂度理论分析\relax }}{60}{table.caption.41}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces 方案复杂度理论分析\relax }}{61}{table.caption.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.4}{\ignorespaces 数据集具体信息\relax }}{62}{table.caption.43}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces 数据集具体信息\relax }}{63}{table.caption.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.5}{\ignorespaces 聚类质量评估\relax }}{63}{table.caption.44}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces 聚类质量评估\relax }}{64}{table.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4.6}{\ignorespaces 耗时对比\relax }}{64}{table.caption.46}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces 耗时对比\relax }}{65}{table.caption.46}%
 \contentsfinish 

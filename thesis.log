@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  3 APR 2023 14:45
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.21)  4 APR 2023 19:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1898,12 +1898,12 @@ Package fontspec Info: Font family 'KaiTi(0)' created for font 'KaiTi' with
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 178.
+nput line 177.
  [8]
 File: img/timeline.png Graphic file (type bmp)
 <img/timeline.png>
 
-Underfull \vbox (badness 2384) has occurred while \output is active []
+Underfull \vbox (badness 2443) has occurred while \output is active []
 
  [9]
 [10]
@@ -1945,10 +1945,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
+[14]
 File: img/dd.png Graphic file (type bmp)
 <img/dd.png>
-
-[14]) (./data/chap02.tex [15] [16
+) (./data/chap02.tex [15] [16
 
 
 ]
@@ -1971,11 +1971,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [23]
 File: img/sysmodel1.png Graphic file (type bmp)
 <img/sysmodel1.png>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24]
-[25] [26]
+ [24] [25] [26]
 File: img/fig4.png Graphic file (type bmp)
 <img/fig4.png>
 
@@ -1991,27 +1987,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
-[30] [31]
-Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 356.
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 363.
-Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
-line 366.
- [32]
+[30]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33]
-[34]
+ [31]
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
+line 354.
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
+t line 361.
+Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
+line 364.
+
+[32] [33] [34]
 File: img/lsun_ptxt.png Graphic file (type bmp)
 <img/lsun_ptxt.png>
 File: img/lsun_ctxt.png Graphic file (type bmp)
 <img/lsun_ctxt.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
 File: img/m.png Graphic file (type bmp)
 <img/m.png>
 File: img/m_comm.png Graphic file (type bmp)
 <img/m_comm.png>
- [35]
 File: img/k.png Graphic file (type bmp)
 <img/k.png>
 File: img/k_comm.png Graphic file (type bmp)
@@ -2020,13 +2019,17 @@ File: img/k_comm.png Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36])
-(./data/chap04.tex [37] [38
+(./data/chap04.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+[38] [39
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
+ [40]
 File: img/dbscan-pre.png Graphic file (type bmp)
 <img/dbscan-pre.png>
 
@@ -2037,8 +2040,8 @@ Overfull \hbox (27.6986pt too wide) in paragraph at lines 160--161
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40]
-[41]
+ [41]
+[42]
 File: img/expr.png Graphic file (type bmp)
 <img/expr.png>
 File: img/expr2.png Graphic file (type bmp)
@@ -2050,19 +2053,19 @@ File: img/expres.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42]
+ [43]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43]
+ [44]
 File: img/sysmodel2.png Graphic file (type bmp)
 <img/sysmodel2.png>
 
-[44]
+[45]
 
-LaTeX Warning: Reference `s3-anquanmoxing' on page 45 undefined on input line 3
+LaTeX Warning: Reference `s3-anquanmoxing' on page 46 undefined on input line 3
 14.
 
-[45] [46]
+[46] [47]
 File: img/dbraw.png Graphic file (type bmp)
 <img/dbraw.png>
 File: img/db1.png Graphic file (type bmp)
@@ -2078,7 +2081,7 @@ File: img/db5.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47]
+ [48]
 File: img/db_matrix.png Graphic file (type bmp)
 <img/db_matrix.png>
 File: img/dbres.png Graphic file (type bmp)
@@ -2086,33 +2089,30 @@ File: img/dbres.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [49]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [50]
-[51]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [52]
+ [51]
+[52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [53]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54]
 File: img/db1.png Graphic file (type bmp)
 <img/db1.png>
 File: img/redbscan.png Graphic file (type bmp)
 <img/redbscan.png>
 
-[54]
+[55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55]
-[56]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [57]
+ [56]
+[57]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [58]
@@ -2122,6 +2122,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [60]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61]
 File: img/lsun_gt.png Graphic file (type bmp)
 <img/lsun_gt.png>
 File: img/s1_gt.png Graphic file (type bmp)
@@ -2131,10 +2134,10 @@ File: img/aggre_gt.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61]
+ [62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62]
+ [63]
 File: img/t1-lsun.png Graphic file (type bmp)
 <img/t1-lsun.png>
 File: img/t2-lsun.png Graphic file (type bmp)
@@ -2160,7 +2163,7 @@ File: img/t3-aggre.jpg Graphic file (type bmp)
 File: img/km-aggre.png Graphic file (type bmp)
 <img/km-aggre.png>
 
-[63]
+[64]
 Overfull \hbox (4.85828pt too wide) in paragraph at lines 975--988
  [][] 
  []
@@ -2168,7 +2171,7 @@ Overfull \hbox (4.85828pt too wide) in paragraph at lines 975--988
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64]
+ [65]
 File: img/timecompare.png Graphic file (type bmp)
 <img/timecompare.png>
 File: img/commcompare.png Graphic file (type bmp)
@@ -2176,13 +2179,13 @@ File: img/commcompare.png Graphic file (type bmp)
 File: img/testrc.png Graphic file (type bmp)
 <img/testrc.png>
 
-[65]) (./data/chap05.tex [66] [67
+[66]) (./data/chap05.tex [67] [68
 
 
-]) (./data/ack.tex [68])
+]) (./data/ack.tex [69])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69
+ [70
 
 ]
 Underfull \hbox (badness 1831) in paragraph at lines 117--117
@@ -2190,10 +2193,10 @@ Underfull \hbox (badness 1831) in paragraph at lines 117--117
 Collecting telemetry data privately[J].
  []
 
-[70
+[71
 
 
-] [71]
+] [72]
 Underfull \hbox (badness 1983) in paragraph at lines 117--117
 [] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [31] []Jäschke A, Armknecht F. Unsuperv
 ised machine learning on encrypted
@@ -2205,7 +2208,7 @@ Underfull \hbox (badness 1622) in paragraph at lines 117--117
 of outsourced k-means clustering[C]//
  []
 
-[72] [73] [74]
+[73] [74] [75]
 Underfull \hbox (badness 1348) in paragraph at lines 117--117
 [] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [74] []Beaver D. Efficient multiparty p
 rotocols using circuit randomization[C]//
@@ -2217,7 +2220,7 @@ Underfull \hbox (badness 2050) in paragraph at lines 117--117
 roperties on six clustering benchmark
  []
 
-[75] (./data/resume.tex [76]
+[76] (./data/resume.tex [77]
 \blx@maxsegment@1=\count564
 \blx@sectionciteorder@1=\count565
 Package biblatex Info: Reference section=1 on input line 14.
@@ -2228,7 +2231,7 @@ Package biblatex Info: Reference section=0 on input line 23.
 Package biblatex Info: Reference section=2 on input line 26.
 Package biblatex Info: Setting label 'refsection:2' on input line 26.
 Package biblatex Info: Reference section=0 on input line 35.
-) [77
+) [78
 
 ]
 \tf@thm=\write9
@@ -2256,11 +2259,11 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  36215 strings out of 476919
- 690928 string characters out of 5825424
- 1602008 words of memory out of 5000000
+ 690928 string characters out of 5825423
+ 1601008 words of memory out of 5000000
  55543 multiletter control sequences out of 15000+600000
  432904 words of font info for 216 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,13n,130p,1353b,4868s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,13n,130p,1353b,4874s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (90 pages).
+Output written on thesis.pdf (91 pages).

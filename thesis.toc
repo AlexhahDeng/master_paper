@@ -96,7 +96,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.5}基于Kd-tree的隐私保护K-means方案}{30}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}算法详述}{30}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.1}算法详述}{31}{subsection.3.5.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.5.2}讨论}{31}{subsection.3.5.2}%
 \defcounter {refsection}{0}\relax 
@@ -108,89 +108,89 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.7.1.1}计算开销}{33}{subsubsection.3.7.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.7.1.2}通信开销}{33}{subsubsection.3.7.1.2}%
+\contentsline {subsubsection}{\numberline {3.7.1.2}通信开销}{34}{subsubsection.3.7.1.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.7.2}实验分析}{34}{subsection.3.7.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.7.2.1}数据集}{34}{subsubsection.3.7.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.7.2.2}现实数据集上的实验}{34}{subsubsection.3.7.2.2}%
+\contentsline {subsubsection}{\numberline {3.7.2.2}现实数据集上的实验}{35}{subsubsection.3.7.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.7.2.3}人造数据集上的实验}{35}{subsubsection.3.7.2.3}%
+\contentsline {subsubsection}{\numberline {3.7.2.3}人造数据集上的实验}{36}{subsubsection.3.7.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.8}本章小结}{37}{section.3.8}%
+\contentsline {section}{\numberline {3.8}本章小结}{36}{section.3.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}隐私保护密度聚类方法研究}{38}{chapter.4}%
+\contentsline {chapter}{\numberline {4}隐私保护密度聚类方法研究}{39}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}引言}{38}{section.4.1}%
+\contentsline {section}{\numberline {4.1}引言}{39}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}预备知识}{39}{section.4.2}%
+\contentsline {section}{\numberline {4.2}预备知识}{40}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}调整兰德系数}{39}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.1}调整兰德系数}{40}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}DBSCAN}{40}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}DBSCAN}{41}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}改进的DBSCAN}{42}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.3}改进的DBSCAN}{43}{subsection.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.4}基于DBSCAN的层次聚类}{43}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.4}基于DBSCAN的层次聚类}{44}{subsection.4.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}问题描述}{44}{section.4.3}%
+\contentsline {section}{\numberline {4.3}问题描述}{45}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}系统模型}{44}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.1}系统模型}{45}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}安全模型}{45}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.2}安全模型}{46}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}设计目标}{45}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.3}设计目标}{46}{subsection.4.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.4}系统输入}{46}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.4}系统输入}{47}{subsection.4.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}基于秘密共享的隐私保护计算模块}{46}{section.4.4}%
+\contentsline {section}{\numberline {4.4}基于秘密共享的隐私保护计算模块}{47}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}安全排序协议}{46}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.1}安全排序协议}{47}{subsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}隐私保护DBSCAN方案}{47}{section.4.5}%
+\contentsline {section}{\numberline {4.5}隐私保护DBSCAN方案}{48}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}预处理元素}{49}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.1}预处理元素}{50}{subsection.4.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}密度聚类}{51}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.2}密度聚类}{52}{subsection.4.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.3}还原聚类结果}{52}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.3}还原聚类结果}{53}{subsection.4.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}改进的隐私保护DBSCAN}{54}{section.4.6}%
+\contentsline {section}{\numberline {4.6}改进的隐私保护DBSCAN}{55}{section.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.1}初始化}{54}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.1}初始化}{55}{subsection.4.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.2}核心对象聚类}{55}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.2}核心对象聚类}{56}{subsection.4.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}基于DBSCAN的隐私保护层次聚类}{56}{section.4.7}%
+\contentsline {section}{\numberline {4.7}基于DBSCAN的隐私保护层次聚类}{57}{section.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.1}获取eps值}{56}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.1}获取eps值}{57}{subsection.4.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.2}计算初始簇}{57}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.2}计算初始簇}{58}{subsection.4.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.3}合并初始簇}{59}{subsection.4.7.3}%
+\contentsline {subsection}{\numberline {4.7.3}合并初始簇}{60}{subsection.4.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.8}实验分析}{60}{section.4.8}%
+\contentsline {section}{\numberline {4.8}实验分析}{61}{section.4.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.8.1}理论分析}{60}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.1}理论分析}{61}{subsection.4.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.8.2}实验设置}{61}{subsection.4.8.2}%
+\contentsline {subsection}{\numberline {4.8.2}实验设置}{62}{subsection.4.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.8.3}聚类质量}{62}{subsection.4.8.3}%
+\contentsline {subsection}{\numberline {4.8.3}聚类质量}{63}{subsection.4.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.8.4}运行开销与分析}{63}{subsection.4.8.4}%
+\contentsline {subsection}{\numberline {4.8.4}运行开销与分析}{64}{subsection.4.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}本章小结}{66}{section.4.9}%
+\contentsline {section}{\numberline {4.9}本章小结}{67}{section.4.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}总结与展望}{67}{chapter.5}%
+\contentsline {chapter}{\numberline {5}总结与展望}{68}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}工作总结}{67}{section.5.1}%
+\contentsline {section}{\numberline {5.1}工作总结}{68}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}研究展望}{67}{section.5.2}%
+\contentsline {section}{\numberline {5.2}研究展望}{68}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{致谢}{69}{chapter*.50}%
+\contentsline {chapter}{致谢}{70}{chapter*.50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{参考文献}{70}{section*.51}%
+\contentsline {chapter}{参考文献}{71}{section*.51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{作者在学期间取得的学术成果}{77}{chapter*.53}%
+\contentsline {chapter}{作者在学期间取得的学术成果}{78}{chapter*.53}%
 \contentsfinish 
