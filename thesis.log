@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.21)  4 APR 2023 19:03
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.21)  5 APR 2023 10:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1771,44 +1771,45 @@ Package fontspec Info: Font family 'SimSun(1)' created for font 'SimSun' with
 
 
 
-] [2])
-\tf@toc=\write6
-\openout6 = `thesis.toc'.
+]
+LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 167.
 
- [3] (./thesis.lot
-LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 15.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 15.
+(Font)              size <8> substituted on input line 167.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <8.43146> not available
-(Font)              size <8> substituted on input line 15.
+(Font)              size <8> substituted on input line 167.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 15.
+(Font)              size <8> substituted on input line 167.
 
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 10.84042pt on input line 15.
+(Font)              scaled to size 10.84042pt on input line 167.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 7.58826pt on input line 15.
+(Font)              scaled to size 7.58826pt on input line 167.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 5.4202pt on input line 15.
+(Font)              scaled to size 5.4202pt on input line 167.
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 15.
+(Font)              size <8> substituted on input line 167.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <8.43146> not available
-(Font)              size <8> substituted on input line 15.
+(Font)              size <8> substituted on input line 167.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 15.
+(Font)              size <8> substituted on input line 167.
 
-)
+[2])
+\tf@toc=\write6
+\openout6 = `thesis.toc'.
+
+ [3] (./thesis.lot)
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
@@ -1963,7 +1964,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 59.
+put line 60.
  [21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1992,11 +1993,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 354.
+line 355.
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 361.
+t line 362.
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
-line 364.
+line 365.
 
 [32] [33] [34]
 File: img/lsun_ptxt.png Graphic file (type bmp)
@@ -2007,6 +2008,9 @@ File: img/lsun_ctxt.png Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36]
 File: img/m.png Graphic file (type bmp)
 <img/m.png>
 File: img/m_comm.png Graphic file (type bmp)
@@ -2018,12 +2022,8 @@ File: img/k_comm.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36])
-(./data/chap04.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [37]
-[38] [39
+ [37])
+(./data/chap04.tex [38] [39
 
 
 ]
@@ -2032,11 +2032,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [40]
 File: img/dbscan-pre.png Graphic file (type bmp)
 <img/dbscan-pre.png>
-
-Overfull \hbox (27.6986pt too wide) in paragraph at lines 160--161
- [][] 
- []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2057,19 +2052,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [44]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
 File: img/sysmodel2.png Graphic file (type bmp)
 <img/sysmodel2.png>
 
-[45]
+[46]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `s3-anquanmoxing' on page 46 undefined on input line 3
-14.
-
-[46] [47]
+ [47]
 File: img/dbraw.png Graphic file (type bmp)
 <img/dbraw.png>
 File: img/db1.png Graphic file (type bmp)
 <img/db1.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48]
 File: img/db2.png Graphic file (type bmp)
 <img/db2.png>
 File: img/db3.png Graphic file (type bmp)
@@ -2078,25 +2078,19 @@ File: img/db4.png Graphic file (type bmp)
 <img/db4.png>
 File: img/db5.png Graphic file (type bmp)
 <img/db5.png>
+File: img/db_matrix.png Graphic file (type bmp)
+<img/db_matrix.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48]
-File: img/db_matrix.png Graphic file (type bmp)
-<img/db_matrix.png>
+ [49]
 File: img/dbres.png Graphic file (type bmp)
 <img/dbres.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [50]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [51]
-[52]
+[51] [52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [53]
@@ -2108,23 +2102,35 @@ File: img/db1.png Graphic file (type bmp)
 File: img/redbscan.png Graphic file (type bmp)
 <img/redbscan.png>
 
-[55]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [56]
-[57]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58]
+ [57]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 708.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\epsilon' on input line 708.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 708.
+
+[58]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [60]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [61]
+[61] [62]
 File: img/lsun_gt.png Graphic file (type bmp)
 <img/lsun_gt.png>
 File: img/s1_gt.png Graphic file (type bmp)
@@ -2132,9 +2138,6 @@ File: img/s1_gt.png Graphic file (type bmp)
 File: img/aggre_gt.png Graphic file (type bmp)
 <img/aggre_gt.png>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [63]
@@ -2163,29 +2166,37 @@ File: img/t3-aggre.jpg Graphic file (type bmp)
 File: img/km-aggre.png Graphic file (type bmp)
 <img/km-aggre.png>
 
-[64]
-Overfull \hbox (4.85828pt too wide) in paragraph at lines 975--988
- [][] 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [64]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [65]
+Overfull \hbox (4.85828pt too wide) in paragraph at lines 992--1005
+ [][] 
+ []
+
 File: img/timecompare.png Graphic file (type bmp)
 <img/timecompare.png>
 File: img/commcompare.png Graphic file (type bmp)
 <img/commcompare.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [66]
 File: img/testrc.png Graphic file (type bmp)
 <img/testrc.png>
 
-[66]) (./data/chap05.tex [67] [68
-
-
-]) (./data/ack.tex [69])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70
+ [67])
+(./data/chap05.tex [68] [69
+
+
+]) (./data/ack.tex [70])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [71
 
 ]
 Underfull \hbox (badness 1831) in paragraph at lines 117--117
@@ -2193,10 +2204,10 @@ Underfull \hbox (badness 1831) in paragraph at lines 117--117
 Collecting telemetry data privately[J].
  []
 
-[71
+[72
 
 
-] [72]
+] [73]
 Underfull \hbox (badness 1983) in paragraph at lines 117--117
 [] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [31] []Jäschke A, Armknecht F. Unsuperv
 ised machine learning on encrypted
@@ -2208,7 +2219,7 @@ Underfull \hbox (badness 1622) in paragraph at lines 117--117
 of outsourced k-means clustering[C]//
  []
 
-[73] [74] [75]
+[74] [75] [76]
 Underfull \hbox (badness 1348) in paragraph at lines 117--117
 [] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [74] []Beaver D. Efficient multiparty p
 rotocols using circuit randomization[C]//
@@ -2220,7 +2231,7 @@ Underfull \hbox (badness 2050) in paragraph at lines 117--117
 roperties on six clustering benchmark
  []
 
-[76] (./data/resume.tex [77]
+[77] (./data/resume.tex [78]
 \blx@maxsegment@1=\count564
 \blx@sectionciteorder@1=\count565
 Package biblatex Info: Reference section=1 on input line 14.
@@ -2231,7 +2242,7 @@ Package biblatex Info: Reference section=0 on input line 23.
 Package biblatex Info: Reference section=2 on input line 26.
 Package biblatex Info: Setting label 'refsection:2' on input line 26.
 Package biblatex Info: Reference section=0 on input line 35.
-) [78
+) [79
 
 ]
 \tf@thm=\write9
@@ -2246,13 +2257,10 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 75E72DF86363ECCC364E64A3E88DC35D;9059.
+(rerunfilecheck)             Checksum: 516B75D7712F2C1DA80943B3EA4F6E8C;9044.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
@@ -2260,10 +2268,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 Here is how much of TeX's memory you used:
  36215 strings out of 476919
  690928 string characters out of 5825423
- 1601008 words of memory out of 5000000
+ 1605048 words of memory out of 5000000
  55543 multiletter control sequences out of 15000+600000
  432904 words of font info for 216 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,13n,130p,1353b,4874s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,13n,130p,1353b,4868s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (91 pages).
+Output written on thesis.pdf (92 pages).
