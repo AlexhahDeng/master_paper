@@ -1,4 +1,4 @@
-\chapter{隐私保护外包K-means聚类方法研究}
+\chapter{隐私保护外包K-means聚类技术研究}
 
 \section{引言}
 %搬运开题报告
@@ -245,7 +245,7 @@ Kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.08]{img/fig1.png}%width=\linewidth
-	\caption{大数据集上的安全极值协议 (SMin(L))}
+	\caption{大数据集上的安全极值协议（SMin(L)）}
 	\label{sminl}
 \end{figure}
 \subsection{安全过滤协议}
@@ -393,7 +393,7 @@ PPOKC方案的细节在算法\ref{alg_ppokc}中给出，虽然这里提供了一
 \begin{table}[htbp]
 	\centering
 	\renewcommand{\arraystretch}{1.3}
-	\caption{计算开销}
+	\caption{计算开销理论分析}
 	\label{s3-table-compucost}
 	\scalebox{1.0}{
 		\begin{tabular}{c|c|c|c}% 通过添加 | 来表示是否需要绘制竖线c|
@@ -481,7 +481,7 @@ PPOKC方案的细节在算法\ref{alg_ppokc}中给出，虽然这里提供了一
 	\hfill%
 	\begin{minipage}[t]{0.5\linewidth}
 		\includegraphics[width=\linewidth]{img/lsun_ctxt.png}
-		\caption{隐私保护K-means聚类结果}
+		\caption{隐私保护K-means方案聚类结果}
 		\label{f5}
 	\end{minipage}
 \end{figure}
@@ -491,42 +491,44 @@ PPOKC方案的细节在算法\ref{alg_ppokc}中给出，虽然这里提供了一
 
 这里考虑三个影响聚类的参数，分别是数据集大小$ n $、数据的维度$ m $以及簇的个数$ k $。为了准确的分析参数对于方案的性能影响，本文的策略是固定一个参数，然后变化另外两个参数的值来运行系统。实验运行的计算和通信开销如图\ref{f6}和图\ref{f7}所示。
 
-对于图\ref{f6}，首先从曲线的变化可以看到计算开销和通信开销的变化趋势相似，其次二者均随着数据量$ n $的增加而增加，但是从跨度来看，随着$ n $的变化，计算开销的跨度较小，原因在于人工合成的数据集，数据分布比较规范，同时初始簇中心选择在每个生成的簇内，因此算法会快速收敛，冗余计算大大减少。维度$ m $对通信开销的影响几乎可以忽略不计，而对于计算开销的影响则较小。具体原因在于，维度的变化只会对密文计算中的加法和乘法次数产生影响，不会影响安全比较协议的运行次数，而后者才是隐私保护聚类方案的瓶颈，此外，乘法操作的次数还可以通过引入并行操作进行优化。
-
-对于图\ref{f7}，计算开销随着簇个数$ k $的增加而呈现线性变化趋势，不同数据量之间的变化则较小，也符合上面的观察和解释。通信开销则对$ k $的变化并不敏感，对数据量的变化
-计算开销随着$ k $的变化呈线性变化，而$ k $对通信开销的影响则较小。值得一提的是，给定相同的$ k $值，不同的数据量对于计算开销的影响较小。
-
-通过分析实验结果，本文提出的方案兼具高效与安全性，并且能够适应大型数据集。与研究\cite{wu2020secure,rong2017privacy}相比，本文的方案在$ k $较大时，实验表现更好。基于Kd-tree的改进K-means算法允许减少大量冗余计算，进一步加速聚类过程，此外，SIMD操作可以很轻松被引入方案来提升效率。
-
 \begin{figure}[htbp] %[htbp]
-	%	\captionsetup{font=scriptsize}
 	\begin{minipage}[t]{0.5\linewidth}
-		\includegraphics[width=\linewidth]{img/m.png}
+		\includegraphics[width=\linewidth]{img/newm_time.png}
 		
 	\end{minipage}%
 	\hfill%
 	\begin{minipage}[t]{0.5\linewidth}
-		\includegraphics[width=\linewidth]{img/m_comm.png}
+		\includegraphics[width=\linewidth]{img/newm_comm.png}
 		
 	\end{minipage}
-	\caption{$k=3, T=20$}
+	\caption{维度$ m $对方案开销的影响}
 	\label{f6}
 \end{figure}
+
+对于图\ref{f6}，这里固定$k=3, T=20$，变化维度$ m $的大小来观察计算和通信开销的变化。
+首先从曲线的变化可以看到计算开销和通信开销的变化趋势相似，其次二者均随着数据量$ n $的增加而增加，但是从跨度来看，随着$ n $的变化，计算开销和通信开销的跨度均较小，原因在于人工合成的数据集，数据分布比较规范，同时实验中令初始簇中心选择在每个生成的簇内，因此算法会快速收敛，冗余计算大大减少。
+维度$ m $对两种开销的影响几乎可以忽略不计。具体原因在于，维度的变化只会对密文计算中的加法和乘法次数产生影响，不会影响安全比较协议的运行次数，而后者才是隐私保护聚类方案的瓶颈，此外，乘法操作的次数还可以通过引入并行操作进行优化，进一步减少开销。
 
 \begin{figure}[htbp]
 	%	\captionsetup{font=scriptsize}
 	\begin{minipage}[t]{0.5\linewidth}
-		\includegraphics[width=\linewidth]{img/k.png}
+		\includegraphics[width=\linewidth]{img/newk_time.png}
 		
 	\end{minipage}%
 	\hfill%
 	\begin{minipage}[t]{0.5\linewidth}
-		\includegraphics[width=\linewidth]{img/k_comm.png}
+		\includegraphics[width=\linewidth]{img/newk_comm.png}
 		
 	\end{minipage}
-	\caption{$m=5, T=20$}
+	\caption{簇个数$ k $对方案开销的影响}
 	\label{f7}
 \end{figure}
+
+对于图\ref{f7}，这里固定$ m=5,T=20 $，变化簇个数$ k $的大小，观察计算和通信开销的变化趋势。
+计算开销和通信开销随着簇个数$ k $的增加而呈现近似线性变化趋势，从数据跨度角度进行分析，当$ k $较小时，不同数据集之间的开销差异较小；当$ k $较大时，不同数据集之间的开销差异显著增加，以计算开销为例，当k=15时，n=10000的数据集与n=60000的数据集之间的用时差异约为4000s。实验结果符合对于方案的分析，随着簇个数$ k $的增加，安全过滤算法中安全比较以及安全极值协议的运行次数也会显著增加。
+
+通过分析实验结果，本文提出的方案兼具高效与安全性，并且能够适应大型数据集。与研究\cite{wu2020secure,rong2017privacy}相比，本文的方案在$ k $较大时，实验表现更好。基于Kd-tree的改进K-means算法允许减少大量冗余计算，进一步加速聚类过程，此外，SIMD操作可以很轻松被引入方案来提升效率。
+
 \section{本章小结}
 \label{s3-xiaojie}
 % 简述存在的问题
