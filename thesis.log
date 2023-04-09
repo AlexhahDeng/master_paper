@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  8 APR 2023 16:41
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.21)  8 APR 2023 22:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1896,7 +1896,7 @@ nput line 177.
 File: img/timeline.png Graphic file (type bmp)
 <img/timeline.png>
 
-Underfull \vbox (badness 2384) has occurred while \output is active []
+Underfull \vbox (badness 2443) has occurred while \output is active []
 
  [9]
 [10]
@@ -2232,18 +2232,7 @@ Underfull \hbox (badness 2050) in paragraph at lines 117--117
 roperties on six clustering benchmark
  []
 
-[79] (./data/resume.tex [80]
-\blx@maxsegment@1=\count564
-\blx@sectionciteorder@1=\count565
-Package biblatex Info: Reference section=1 on input line 14.
-Package biblatex Info: Setting label 'refsection:1' on input line 14.
-Package biblatex Info: Reference section=0 on input line 23.
-\blx@maxsegment@2=\count566
-\blx@sectionciteorder@2=\count567
-Package biblatex Info: Reference section=2 on input line 26.
-Package biblatex Info: Setting label 'refsection:2' on input line 26.
-Package biblatex Info: Reference section=0 on input line 35.
-) [81
+[79] (./data/resume.tex [80]) [81
 
 ]
 \tf@thm=\write9
@@ -2258,25 +2247,27 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 7431D9B2D53F56039B049A8FC93B29CF;9036.
 
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                thesis
+(biblatex)                and rerun LaTeX afterwards.
 
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: F2E5208009205B872E69A4E9B11AB723;9036
-(rerunfilecheck)             After:  C24B9ED0FFA4AD1BF555A0DADDF7D55E;9036.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36222 strings out of 476919
- 691168 string characters out of 5825424
- 1601155 words of memory out of 5000000
- 55549 multiletter control sequences out of 15000+600000
+ 36195 strings out of 476919
+ 690543 string characters out of 5825423
+ 1600612 words of memory out of 5000000
+ 55522 multiletter control sequences out of 15000+600000
  432904 words of font info for 216 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,13n,130p,1353b,4868s stack positions out of 5000i,500n,10000p,200000b,80000s
