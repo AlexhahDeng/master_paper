@@ -349,7 +349,7 @@ DBSCAN能够应用于任意维度的数据集。明文算法最坏情况下的�
 数据持有者首先利用加性秘密共享来将数据划分为两份，分别发送给两个云服务器。采用加性秘密共享分发数据的方式允许系统中加入任意多个数据持有者提供聚类数据。此外，本文所述系统能够支持任何数据划分方式，例如水平划分、垂直划分以及混合划分。水平划分方式指的是，不同用户分别持有完整但是互异的数据\cite{gheid2016efficient}，垂直划分方式则是指不同用户持有相同数据记录的不同参数\cite{doganay2008distributed}，混合划分方式则是上述两种方式的结合\cite{yu2010multi}。
 \section{基于秘密共享的隐私保护计算模块}
 \label{s4-subpro}
-在\ref{s3-mokuai}节所述算法的基础上，根据隐私保护DBSCAN方案的特点设计了如下计算模块。
+在\ref{s3-mokuai}节所述安全计算协议的基础上，根据隐私保护DBSCAN方案的特点设计了如下计算模块。
 \subsection{安全排序协议}
 安全排序协议主要由安全比较协议构成，用户输入秘密共享的数组后，期望能够得到按照升序排列的密文结果。协议的核心思想为，将$ n $个数据上的排序拆分为$ n $次求解序列最值。
 \begin{algorithm}[htbp]
@@ -358,23 +358,23 @@ DBSCAN能够应用于任意维度的数据集。明文算法最坏情况下的�
 	\caption{安全排序协议}
 	\label{alg_sort}
 	\begin{algorithmic}[1]
-		\REQUIRE $ D = \{\langle x\rangle_1, \langle x\rangle_2,...,\langle x\rangle_n\} $
-		\ENSURE sorted result $ D^{\prime}\{\langle x^{\prime}\rangle_1, \langle x^{\prime}\rangle_2,...,\langle x^{\prime}\rangle_n\} $
+		\REQUIRE $ D = \{\langle  x_1 \rangle, \langle  x_2 \rangle,...,\langle  x_n \rangle\} $
+		\ENSURE 排序结果 $ D^{\prime}\{\langle  x^{\prime}_1 \rangle, \langle  x^{\prime}_2 \rangle,...,\langle  x^{\prime}_n \rangle\} $
 		\FOR{$ i=1 $ to $ n $}
-		\STATE $ \{\langle t\rangle_1,...\langle t \rangle_n\} \leftarrow \text{smin}(D)$
+		\STATE $ \{\langle  t_1 \rangle,...\langle  t_n \rangle\} \leftarrow \text{smin}(D)$
 		\STATE $ res \leftarrow 0 $
 		\FOR {$ j=1 $ to $ n $}
-		\STATE $ res \leftarrow res + \text{mul}(\langle t \rangle_j, D[j]) $
-		\STATE $ D[j] \leftarrow \text{mul}(D[j],1-\langle t \rangle_j) + \text{mul}(maxv, \langle t \rangle_j)$
+		\STATE $ res \leftarrow res + \text{mul}(\langle  t_j \rangle, D[j]) $
+		\STATE $ D[j] \leftarrow \text{mul}(D[j],1-\langle  t_j \rangle) + \text{mul}(maxv, \langle  t_j \rangle)$
 		\ENDFOR
 		\STATE $ r[i] \leftarrow res $
 		\ENDFOR
 	\end{algorithmic}
 \end{algorithm}
 
-具体过程如算法\ref{alg_sort}所示，进行$ n $次迭代，首先求解最小值，结果为秘密共享值$ \langle t \rangle_i \in \{0,1\}, i\in[1,n] $，数组中最小值的位置为1，其余均为0。
+具体过程如算法\ref{alg_sort}所示，进行$ n $次迭代，首先求解最小值，结果为秘密共享值$ \langle t_i \rangle \in \{0,1\}, i\in[1,n] $，数组中最小值的位置为1，其余均为0。
 然后，开始遍历每个结果，$ res $通过累加记录最小值的具体值，并更新原始数组，通过将最小值变为全局最大值，以消除对后续计算的影响。
-若当前元素为最小值（即$\langle t \rangle_i=1  $ ），则对应$ D[i] $中的值变为最大值maxv，若不是则保留原值，不做修改。
+若当前元素为最小值（即$\langle t_i \rangle=1  $ ），则对应$ D[i] $中的值变为最大值maxv，若不是则保留原值，不做修改。
 
 
 \section{隐私保护DBSCAN方案}
@@ -454,7 +454,7 @@ DBSCAN能够应用于任意维度的数据集。明文算法最坏情况下的�
 
 \subsection{预处理元素}
 % 首先介绍input element
-云平台在获取的秘密共享数据基础上，进行初始化。对于每个秘密共享的数据，构造sharedElem对象。cluId, cluId $ \in [1, n]$为初始簇中心，值取该数据在数组中的顺序，比如第一个数据初始化cluId为1，最后一个数据的cluId则为n。
+云平台在获取的秘密共享数据基础上进行初始化。对于每个秘密共享的数据，构造sharedElem对象。cluId, cluId $ \in [1, n]$为初始簇中心，值取该数据在数组中的顺序，比如第一个数据初始化cluId为1，最后一个数据的cluId则为n。
 isMark, isMark$ \in [0,1] $表示该数据对象是否已经被划分到簇中，0表示未被划分到簇中，1则表示已经被划分。
 data则存储该数据对应的秘密共享值，是一个大小为$ m $的向量。
 最后isCore ,isCore$ \in[0,1]$标识数据对象是否为核心点，主要用于在聚类时参与计算，详细内容如算法\ref{s4-sharedelem}所示。
@@ -475,6 +475,10 @@ data则存储该数据对应的秘密共享值，是一个大小为$ m $的向�
 在初始化阶段，我需要们计算对象之间的距离，获取相邻关系，同时判断每个元素是否为核心点。
 具体过程如算法\ref{alg_t1_s1}所示。
 
+首先，构造数组cnt存储每个元素邻域范围内包含其他元素的个数。
+然后，通过DIST计算元素之间的欧式距离，去掉根号便于计算,将第$ i $个元素与其他所有元素的距离$ d[j],j\in[n] $与$ \epsilon $进行一次安全比较，判断二者是否相邻,结果存储到二维数组$ u[i][j],i,j\in[n] $中，最后累加$ u[i]$的值，统计元素$ i $邻域范围内包含点的个数，存储到cnt中。
+最后，并行比较存储邻域点个数的cnt数组与长度为$ n $的值均为minPts的数组之间的大小关系，并更新sharedList的isCore属性。
+
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
 	\renewcommand{\algorithmicensure}{\textbf{输出:}}
@@ -486,10 +490,10 @@ data则存储该数据对应的秘密共享值，是一个大小为$ m $的向�
 		\STATE $ cnt \leftarrow [0,...,0]_n $
 		\FOR {$ i=1 $ to $ n $}
 		\FOR {$ j=1 $ to $ n $}
-		\STATE $ d_{j} \leftarrow \text{DIST}(x[i], x[j]) $
+		\STATE $ d[j] \leftarrow \text{DIST}(x[i], x[j]) $
 		\ENDFOR
-		\STATE $ u_i \leftarrow \text{SC}(d, [\epsilon,...,\epsilon]_n) $
-		\STATE $ cnt \leftarrow \text{sum}(u_{ij})$ for $j \in [n] $
+		\STATE $ u[i] \leftarrow \text{SC}(d, [\epsilon,...,\epsilon]_n) $
+		\STATE $ cnt[i] \leftarrow \text{sum}(u[i][j])$ for $j \in [n] $
 		\ENDFOR
 		\STATE $ r \leftarrow \text{SC}(cnt, [minPts,...]_n) $
 		\FOR {$ i=1 $ to $ n $}
@@ -498,16 +502,12 @@ data则存储该数据对应的秘密共享值，是一个大小为$ m $的向�
 	\end{algorithmic}
 \end{algorithm}
 
-首先，构造数组cnt存储每个元素邻域范围内包含其他元素的个数。
-然后，通过DIST计算元素之间的欧式距离，去掉根号便于计算,将第$ i $个元素与其他所有元素的距离$ d_j,j\in[n] $与$ \epsilon $进行一次安全比较，判断二者是否相邻,结果存储到二维数组$ u_{ij},i,j\in[n] $中，最后累加$ u_i$的值，统计元素$ i $邻域范围内包含点的个数，存储到cnt中。
-最后，并行比较存储邻域点个数的cnt数组与长度为$ n $的值均为minPts的数组之间的大小关系，并更新sharedList的isCore属性。
-
 值得一提的是，这里的$\epsilon$值与明文DBSCAN算法中的不同，对欧式距离计算舍去根号，因此$\epsilon$值在原来的基础上取平方，为了方便表示，这里省略了详细说明。
 
 
 \subsection{密度聚类}
 \label{t1-julei}
-初始化之后，获得了元素的isCore信息，以及元素之间的相邻关系$ u_{ij},i,j\in[n],u_{ij}\in\{0,1\} $。接下来，这里将详细说明如何根据预处理过程中已经获取的信息聚类的过程。
+初始化之后，获得了元素的isCore信息，以及元素之间的相邻关系$ u[i][j] \in \{0,1\},i,j\in[n]$。接下来，这里将详细说明如何根据预处理过程中已经获取的信息聚类的过程。
 
 在本节的开头提到了基于DBSCAN设计隐私保护聚类方案的难点，论文\cite{bozdemir2021privacy}为了解决这个问题，提出了两种解决办法，一方面可以人工设置了最大迭代深度，但是该方法不具备普适性，每次都需要结合数据集的特点给出最大迭代深度；另一方面则是通过还原1比特的数据来判断是否需要终止迭代。
 

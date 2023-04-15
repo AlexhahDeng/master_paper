@@ -10,97 +10,97 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.5}{\ignorespaces DBSCAN与K-means聚类结果对比\relax }}{7}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.6}{\ignorespaces 同态加密发展时间线\relax }}{9}{figure.caption.13}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces 同态加密发展时间线\relax }}{10}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.7}{\ignorespaces 论文组织结构\relax }}{15}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces 系统模型\relax }}{24}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 系统模型\relax }}{25}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 小数据集上的安全极值协议（SMin（S））\relax }}{28}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 小数据集上的安全极值协议（SMin（S））\relax }}{29}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces 大数据集上的安全极值协议（SMin(L)）\relax }}{29}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 大数据集上的安全极值协议（SMin(L)）\relax }}{30}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces 明文K-means聚类结果\relax }}{36}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 明文K-means聚类结果\relax }}{37}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces 隐私保护K-means方案聚类结果\relax }}{36}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces 隐私保护K-means方案聚类结果\relax }}{37}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces 维度$ m $对方案开销的影响\relax }}{36}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces 维度$ m $对方案开销的影响\relax }}{38}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces 簇个数$ k $对方案开销的影响\relax }}{37}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces 簇个数$ k $对方案开销的影响\relax }}{38}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces DBSCAN相关概念可视化\relax }}{42}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces DBSCAN相关概念可视化\relax }}{43}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces 测试数据集\relax }}{43}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces 测试数据集\relax }}{44}{figure.caption.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces DBSCAN聚类结果\relax }}{43}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces DBSCAN聚类结果\relax }}{44}{figure.caption.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces 数据打乱后，DBSCAN聚类结果\relax }}{43}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces 数据打乱后，DBSCAN聚类结果\relax }}{44}{figure.caption.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces 改进的DBSCAN算法划分结果\relax }}{43}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 改进的DBSCAN算法划分结果\relax }}{44}{figure.caption.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces 多密度数据集可视化\relax }}{44}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces 多密度数据集可视化\relax }}{45}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces 隐私保护DBSCAN方案系统模型\relax }}{46}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces 隐私保护DBSCAN方案系统模型\relax }}{47}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces 示例数据可视化\relax }}{49}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces 示例数据可视化\relax }}{50}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces 核心对象与边界对象\relax }}{49}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces 核心对象与边界对象\relax }}{50}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces $ p_1 $处理结果\relax }}{49}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces $ p_1 $处理结果\relax }}{50}{figure.caption.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces 聚类处理过程\relax }}{50}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces 聚类处理过程\relax }}{51}{figure.caption.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((a))}{\ignorespaces {$ p_2 $处理结果}}}{50}{subfigure.11.1}%
+\contentsline {subfigure}{\numberline {((a))}{\ignorespaces {$ p_2 $处理结果}}}{51}{subfigure.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((b))}{\ignorespaces {$ p_3 $处理结果}}}{50}{subfigure.11.2}%
+\contentsline {subfigure}{\numberline {((b))}{\ignorespaces {$ p_3 $处理结果}}}{51}{subfigure.11.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((c))}{\ignorespaces {$ p_8 $处理结果}}}{50}{subfigure.11.3}%
+\contentsline {subfigure}{\numberline {((c))}{\ignorespaces {$ p_8 $处理结果}}}{51}{subfigure.11.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces 临时簇相连关系\relax }}{50}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces 临时簇相连关系\relax }}{51}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces 还原聚类结果\relax }}{50}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces 还原聚类结果\relax }}{51}{figure.caption.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.14}{\ignorespaces 初始数据集\relax }}{56}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces 初始数据集\relax }}{57}{figure.caption.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.15}{\ignorespaces 处理边界对象\relax }}{56}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces 处理边界对象\relax }}{57}{figure.caption.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Lsun、S1和Aggregation数据集正确划分结果\relax }}{64}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Lsun、S1和Aggregation数据集正确划分结果\relax }}{65}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((a))}{\ignorespaces {}}}{64}{subfigure.16.1}%
+\contentsline {subfigure}{\numberline {((a))}{\ignorespaces {}}}{65}{subfigure.16.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((b))}{\ignorespaces {}}}{64}{subfigure.16.2}%
+\contentsline {subfigure}{\numberline {((b))}{\ignorespaces {}}}{65}{subfigure.16.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((c))}{\ignorespaces {}}}{64}{subfigure.16.3}%
+\contentsline {subfigure}{\numberline {((c))}{\ignorespaces {}}}{65}{subfigure.16.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.17}{\ignorespaces 聚类结果可视化比较\relax }}{66}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces 聚类结果可视化比较\relax }}{67}{figure.caption.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((a))}{\ignorespaces {}}}{66}{subfigure.17.1}%
+\contentsline {subfigure}{\numberline {((a))}{\ignorespaces {}}}{67}{subfigure.17.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((b))}{\ignorespaces {}}}{66}{subfigure.17.2}%
+\contentsline {subfigure}{\numberline {((b))}{\ignorespaces {}}}{67}{subfigure.17.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((c))}{\ignorespaces {}}}{66}{subfigure.17.3}%
+\contentsline {subfigure}{\numberline {((c))}{\ignorespaces {}}}{67}{subfigure.17.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((d))}{\ignorespaces {}}}{66}{subfigure.17.4}%
+\contentsline {subfigure}{\numberline {((d))}{\ignorespaces {}}}{67}{subfigure.17.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((e))}{\ignorespaces {}}}{66}{subfigure.17.5}%
+\contentsline {subfigure}{\numberline {((e))}{\ignorespaces {}}}{67}{subfigure.17.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((f))}{\ignorespaces {}}}{66}{subfigure.17.6}%
+\contentsline {subfigure}{\numberline {((f))}{\ignorespaces {}}}{67}{subfigure.17.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((g))}{\ignorespaces {}}}{66}{subfigure.17.7}%
+\contentsline {subfigure}{\numberline {((g))}{\ignorespaces {}}}{67}{subfigure.17.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((h))}{\ignorespaces {}}}{66}{subfigure.17.8}%
+\contentsline {subfigure}{\numberline {((h))}{\ignorespaces {}}}{67}{subfigure.17.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((i))}{\ignorespaces {}}}{66}{subfigure.17.9}%
+\contentsline {subfigure}{\numberline {((i))}{\ignorespaces {}}}{67}{subfigure.17.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((j))}{\ignorespaces {}}}{66}{subfigure.17.10}%
+\contentsline {subfigure}{\numberline {((j))}{\ignorespaces {}}}{67}{subfigure.17.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((k))}{\ignorespaces {}}}{66}{subfigure.17.11}%
+\contentsline {subfigure}{\numberline {((k))}{\ignorespaces {}}}{67}{subfigure.17.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((l))}{\ignorespaces {}}}{66}{subfigure.17.12}%
+\contentsline {subfigure}{\numberline {((l))}{\ignorespaces {}}}{67}{subfigure.17.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.18}{\ignorespaces 耗时对比\relax }}{68}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces 耗时对比\relax }}{69}{figure.caption.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.19}{\ignorespaces 通信开销对比\relax }}{68}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces 通信开销对比\relax }}{69}{figure.caption.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.20}{\ignorespaces 聚类与还原结果耗时比较\relax }}{68}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces 聚类与还原结果耗时比较\relax }}{70}{figure.caption.50}%
 \contentsfinish 

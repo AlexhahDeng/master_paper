@@ -1,7 +1,13 @@
 \documentclass[12pt, a4paper, oneside]{ctexart}
 \usepackage{amsmath, amsthm, amssymb, appendix, bm, graphicx, hyperref, mathrsfs}
 \usepackage{algorithm,algorithmic}
-
+\usepackage{caption}
+\usepackage{listings}
+\lstset{
+	basicstyle=\ttfamily,
+	frame=single
+}
+\renewcommand{\lstlistingname}{列表}
 \title{\textbf{论文标题}}
 \author{Dylaaan}
 \date{\today}
@@ -21,6 +27,15 @@
 \setcounter{page}{0}
 \maketitle
 \thispagestyle{empty}
+
+\begin{lstlisting}[caption={Shared element},label=l1]
+class sharedElem(sdata, idx):
+	cluId = idx
+	isMark = 0
+	data = sdata
+	isCore = 0
+	resCId = 0
+\end{lstlisting}
 
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}

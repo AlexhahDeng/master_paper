@@ -51,7 +51,7 @@
 %
 %7. 如果是专硕，则使用prof选项
 \documentclass[master,biber,resumebib,ttf,prof]{nudtpaper}
-%
+
 % \documentclass[doctor,twoside,biber,resumebib,fz]{nudtpaper}
 \addbibresource[location=local]{ref/refs.bib}
 \usepackage{mynudt}
@@ -64,15 +64,15 @@
 \author{邓晏湘}
 \zhdate{\zhtoday}
 \entitle{Research on Key Technologies of Privacy-preserving Clustering Method in Cloud Environment}
-\enauthor{Deng Yanxiang}
+\enauthor{Yanxiang Deng}
 \endate{\entoday}
-\subject{工程硕士}
+\subject{电子信息}
 \ensubject{Computer Technology}
 \researchfield{计算机技术}
 \supervisor{付绍静\quad{}教授}
 \cosupervisor{柳林\quad{}副教授} % 没有就空着
-\ensupervisor{Prof. Fu ShaoJing}%{Prof. Fu ShaoJing}
-\encosupervisor{Associate Prof. Liu Lin}%{Lecture. Liu Lin} % 没有就空着
+\ensupervisor{Prof. Shaojing Fu}%{Prof. Fu ShaoJing}
+\encosupervisor{Associate Prof. Lin Liu}%{Lecture. Liu Lin} 
 \papertype{工学}
 \enpapertype{Engineering}
 % 加入makenomenclature命令可用nomencl制作符号列表。
@@ -91,7 +91,7 @@
 \listoffigures
 
 %如果不是送审论文，则将true改为false即可
-\newif\ifreview\reviewfalse
+\newif\ifreview\reviewtrue
 
     \midmatter
     \input{data/abstract}

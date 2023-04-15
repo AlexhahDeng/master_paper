@@ -10,19 +10,23 @@
 \RequirePackage{algorithmic}
 
 % 配置Lstlisting
+%\lstset{
+%  columns=flexible,sensitive=true,lineskip=-3pt,
+%  basicstyle=\small\ttfamily,
+%  keywordstyle=\color{blue}\bfseries,
+%  stringstyle=\ttfamily,
+%  commentstyle=\color{red!50!green!50!blue!50},
+%  numbers=left,numberstyle=\tiny,
+%  xleftmargin=0.5em,xrightmargin=0.5em,aboveskip=0.5em,
+%  showstringspaces=false,breaklines=true,extendedchars=true,escapeinside=``,
+%  frame=shadowbox,%
+%  %frame=tb,
+%  rulesepcolor=\color{red!20!green!20!blue!20}}
 \lstset{
-  columns=flexible,sensitive=true,lineskip=-3pt,
-  basicstyle=\small\ttfamily,
-  keywordstyle=\color{blue}\bfseries,
-  stringstyle=\ttfamily,
-  commentstyle=\color{red!50!green!50!blue!50},
-  numbers=left,numberstyle=\tiny,
-  xleftmargin=0.5em,xrightmargin=0.5em,aboveskip=0.5em,
-  showstringspaces=false,breaklines=true,extendedchars=true,escapeinside=``,
-  frame=shadowbox,%
-  %frame=tb,
-  rulesepcolor=\color{red!20!green!20!blue!20}}
-
+	basicstyle=\ttfamily,
+	frame=single
+}
+\renewcommand{\lstlistingname}{列表}
 % 配置算法包
 \algsetup{indent=3em}
 \floatname{algorithm}{算法}
@@ -116,6 +120,12 @@
 \def\endthenomenclature{%
 \end{longtable}%
 \nompostamble%
+}
+
+% 3. 去掉目录，图片，参考文献等超链接的颜色
+\hypersetup{
+% colorlinks=false
+hidelinks
 }
 
 % %

@@ -186,8 +186,8 @@ Kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
 	\caption{SC $\rightarrow (\langle \delta \rangle_0, \langle \delta \rangle_1)$}
 	\label{alg_sc}
 	\begin{algorithmic}[1]
-		\REQUIRE $C_0,C_1$输入$\langle x \rangle_i, \langle y \rangle_i, i\in [0,1]$.
-		\ENSURE $C_0,C_1$获得$\langle \delta\rangle_0, \langle \delta\rangle_1$
+		\REQUIRE 在$C_0,C_1$上秘密共享的$ \langle x \rangle, \langle y \rangle $
+		\ENSURE $C_0,C_1$分别获得$\langle \delta\rangle_0, \langle \delta\rangle_1$
 		\STATE $C_0$ 生成随机数$a, a\in \mathbb{Z}_N$, $\langle r \rangle_0=\langle x \rangle_0-\langle y\rangle_0+a$，将$\langle r \rangle_0$发送给$C_1$
 		\STATE $C_1$计算$\langle r \rangle_1 = \langle x \rangle_1-\langle y\rangle_1$，还原$r$值$r=\langle r \rangle_0 + \langle r \rangle_1 = x-y+a$
 		\STATE $C_0$和$C_1$使用百万富翁协议来比较$a$和$r$，获得结果$\langle v \rangle_i^B, i\in[0,1]$，$\langle v \rangle_i^B$代表$\langle LT(a,r)\rangle_i^B$
@@ -221,16 +221,16 @@ Kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
 	\caption{SMin(S) $\rightarrow \{\langle r_1 \rangle,...,\langle r_n\rangle\}$}
 	\label{alg_smins}
 	\begin{algorithmic}[1]
-		\REQUIRE $C_0,C_1$输入$ \{\langle x_1 \rangle,...,\rangle x_n\rangle\} $
+		\REQUIRE $C_0,C_1$输入$ \{\langle x_1 \rangle,...,\langle x_n\rangle\} $
 		\ENSURE $C_0,C_1$获得$\{\langle r_1 \rangle,...,\langle r_n\rangle\}$
 		\STATE 构造$ n(n-1) $对比较数据，分别存储在$ l_1 $和$ l_2 $中
 		\FOR{$i=1$ to $n$}
 		\FOR{$j=1$ to $ n $, $j\neq i$}
-		\STATE $ l_1[i*(n-1)+j] \leftarrow \langle x_i \rangle $
-		\STATE $ l_2[i*(n-1)+j] \leftarrow \langle x+j \rangle $
+		\STATE $ l1[i*(n-1)+j] \leftarrow \langle x_i \rangle $
+		\STATE $ l2[i*(n-1)+j] \leftarrow \langle x_j \rangle $
 		\ENDFOR
 		\ENDFOR
-		\STATE 比较大小获取结果$ \langle t \rangle \leftarrow \text{SC}(l_1, l_2) $
+		\STATE 比较大小获取结果$ \langle t \rangle \leftarrow \text{SC}(l1, l2) $
 		\FOR{$ i=1 $ to $n$}
 		\STATE 将$ \langle x_i\rangle $相关比较结果相乘$ \langle r_i \rangle \leftarrow \text{MUL}(\langle t_{i*(n-1)+1}\rangle,...,\langle t_{i*n} \rangle)$
 		\ENDFOR
@@ -256,40 +256,37 @@ Kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
 	\caption{SF}
 	\label{alg_sf}
 	\begin{algorithmic}[1]
-		\REQUIRE Kd-tree $\langle tr \rangle$以及簇$\langle z \rangle_j, j\in[k]$
-		\ENSURE 新的簇中心$\langle z'\rangle_j,j\in[k]$
+		\REQUIRE Kd-tree $\langle tr \rangle$以及初始簇$\{\langle z_j \rangle\}, j\in[k]$
+		\ENSURE 新的簇中心$\{\langle z^{\prime}_j\rangle\},j\in[k]$
 		\FOR {$i=1$ to $n$}
 		\FOR {$j=1$ to $k$}
-		\STATE $\langle d \rangle_j \leftarrow$ SED$(\langle z \rangle_j, \langle c \rangle_i)$ %首先计算到每个簇的距离
+		\STATE $\langle d_j \rangle \leftarrow$ SED$(\langle z_j \rangle, \langle c_i \rangle)$ %首先计算到每个簇的距离
 		\ENDFOR
-		\STATE $\{\langle r\rangle_1,...,\langle r\rangle_k\} \leftarrow$ SMin$(\langle d \rangle_1,...,\langle d \rangle_k)$
-		\STATE 计算最近候选簇$\langle z^* \rangle \leftarrow \sum_{p=1}^k$MUL$(\langle r \rangle,\langle z\rangle_p)$ %找到最近簇
+		\STATE $\{\langle r_1\rangle,...,\langle r_k\rangle\} \leftarrow$ SMin$(\langle d_1 \rangle,...,\langle d_k \rangle)$
+		\STATE 计算最近候选簇$\langle z^* \rangle \leftarrow \sum_{p=1}^k$MUL$(\langle r_p \rangle,\langle z_p\rangle)$ %找到最近簇
 		\FOR {$j=1$ to $k$} %遍历每个簇
-		\STATE $\langle r \rangle \leftarrow$ SC$(\langle u \rangle, 0)$, $\langle \mu \rangle \leftarrow \langle z^{*} \rangle - \langle z\rangle_j$%比较u每个维度和0的大小
-		\STATE $\langle v \rangle \leftarrow$ MUL$(\langle r\rangle, \langle c \rangle_{min})+ $MUL$(1-\langle r\rangle,\langle c\rangle_{max})$
-		\STATE $\langle d^{*}\rangle \leftarrow$ SED$(\langle z^{*}, \langle v \rangle)$, $\langle d_j \rangle \leftarrow$ SED$(\langle z\rangle_j,\langle v\rangle)$ %如果prune,z_j就是0
-		\STATE $\langle r\rangle_j \leftarrow$ SC$(\langle d^{*}\rangle, \langle d\rangle_j)$
+		\STATE $\langle r \rangle \leftarrow$ SC$(\langle u \rangle, 0)$, $\langle \mu \rangle \leftarrow \langle z^{*} \rangle - \langle z_j\rangle$%比较u每个维度和0的大小
+		\STATE $\langle v \rangle \leftarrow$ MUL$(\langle r\rangle, \langle c_i \rangle_{min})+ $MUL$(1-\langle r\rangle,\langle c_i\rangle_{max})$
+		\STATE $\langle d^{*}\rangle \leftarrow$ SED$(\langle z^{*}, \langle v \rangle)$, $\langle d_j \rangle \leftarrow$ SED$(\langle z_j\rangle,\langle v\rangle)$ %如果prune,z_j就是0
+		\STATE $\langle r_j\rangle \leftarrow$ SC$(\langle d^{*}\rangle, \langle d_j\rangle)$
 		\ENDFOR
 		\STATE $\langle f \rangle \leftarrow$ SC$(\sum_{j=1}^{k}\langle r\rangle_j, 1)$
 		\IF{$\langle f \rangle_0 + \langle f \rangle_1 == 1$}
-		\STATE $\langle \mu \rangle_j \leftarrow \langle \mu \rangle_j +$ MUL$(\langle r\rangle_j, \langle c \rangle),j\in[k]$ %累加
+		\STATE $\langle z^{\prime}_j \rangle \leftarrow \langle z^{\prime}_j \rangle +$ MUL$(\langle r_j\rangle, \langle c \rangle),j\in[k]$ %累加
 		\ELSE
-		\STATE $\langle z \rangle_j \leftarrow$ MUL$(\langle z \rangle_j, \langle r\rangle_j), j\in[k]$
-		\STATE 将候选集$\{\langle z \rangle_1,...,\langle z\rangle_k\}$传递给子节点，并重复上述过程
+		\STATE $\langle z_j \rangle \leftarrow$ MUL$(\langle z_j \rangle, \langle r_j\rangle), j\in[k]$
+		\STATE 将候选集$\{\langle z_1 \rangle,...,\langle z_k\rangle\}$传递给子节点，并重复上述过程
 		\ENDIF
 		\ENDFOR
 	\end{algorithmic}
 \end{algorithm}
 
-自根节点开始，依次遍历所有节点来判断当前节点中包含的所有数据点是否可以被划分到某一个簇中。
-针对每个节点，维护一个候选簇集合，该集合中所有簇都可能是节点内所有数据的最终所属簇。
-在迭代中，不断删除不符合条件的候选簇直到仅剩一个候选簇，即节点所属簇。
+自根节点开始，依次遍历所有节点来判断当前节点中包含的所有数据点是否可以被划分到某一个簇中。针对每个节点，维护一个候选簇集合，该集合中所有簇都可能是节点内所有数据的最终所属簇。在迭代中，不断删除不符合条件的候选簇直到仅剩一个候选簇，即节点所属簇。
 
-具体过程如算法\ref{alg_sf}所示。首先，计算Kd-tree中当前节点到每个候选簇中心的距离，然后借助安全极值协议找到距离最近的候选簇并标记为$z^*$。
-然后，执行一系列子协议来排除不符合候选条件的簇，排除依据为，与候选簇$z_j,z_j\neq z^*$相比，节点中包含所有数据点在空间上都离$z^*$更近，则认为$z_j$非候选簇，更加详细的规则解释在论文\cite{kanungo2002efficient}中给出。
-
-在此之后，通过乘法将被排除的候选簇标记为0，累加结果并执行安全比较协议来判断候选簇集合是否仅剩一个簇。
-如果是，则将节点中所有数据划分到该候选簇中，并停止向下迭代，否则继续对子节点重复上述操作。若聚类过程即将收敛，那么能够快速排除其他簇进行划分，子节点可以不用进行冗余的距离计算和比较，节省大量计算资源。
+具体过程如算法\ref{alg_sf}所示。首先，计算Kd-tree中当前节点的中心$ \langle  c_i  \rangle $到每个候选簇中心$ \langle  z_j  \rangle $的距离，然后借助安全极值协议SMin找到距离最近的候选簇并标记为$ \langle z^* \rangle $。
+然后，执行一系列子协议来排除不符合候选条件的簇，排除依据为，与候选簇$ \langle z_j\rangle $相比，节点中包含所有数据点在空间上都离$ \langle z^* \rangle $更近，则认为$ \langle z_j \rangle $非候选簇，首先将最近候选簇$ \langle  z^*  \rangle $与其他候选簇$ \langle  z_j  \rangle $按维度相减得到中间结果$ \langle  \mu  \rangle $，然后比较$ \langle  \mu  \rangle $每个维度与0的大小关系得到$ \langle  r  \rangle $，对于$ \langle  \mu  \rangle $中每个值，若小于0，则取当前树节点$ \langle  c_i  \rangle $中该维度数据的最小值，否则取最大值，得到$ \langle  v  \rangle $。分别计算$ \langle  z^*  \rangle $和$ \langle  z_j  \rangle $到$ \langle  v  \rangle $的距离$ \langle  d^*  \rangle $和$ \langle  d_j  \rangle $，比较二者的大小关系。若候选簇$ \langle  z_j  \rangle $被排除，则对应的$ \langle  r_j  \rangle $的结果为0，否则为1。更加详细的规则解释在论文\cite{kanungo2002efficient}中给出。
+在此之后，累加结果并执行安全比较协议来判断候选簇集合是否仅剩一个簇。
+如果是，则将节点中所有数据划分到新簇$ \langle  z^{\prime}_j  \rangle $中，并停止向下迭代，否则继续对子节点重复上述操作。若聚类过程即将收敛，那么能够快速排除其他簇进行划分，子节点可以不用进行冗余的距离计算和比较，节省大量计算资源。
 然而上述方案泄露了一比特数据来判断是否终止子节点迭代，这样少量的数据仅仅轻微泄露了迭代过程的信息，但是带来了效率的巨大提升。论文\cite{bozdemir2021privacy,boldyreva2021privacy}中采取了类似的方法作为一个交换来获取性能提升。
 
 值得一提的是，不同节点之间包含的数据不相交，并且划分的过程和结果不会相互影响，因此可以引入并行处理来加速不同节点之间处理和计算，进一步提升安全过滤算法的效率。
