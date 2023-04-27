@@ -1867,6 +1867,13 @@ Defense Technology}\fi}\\
   \hfill 日期：\hfill\hfill 年\hfill 月 \hfill 日\par}
 }\fi
 
+\ifisanon{~}\else{%
+        \cleardoublepage%
+        \newpage
+        \thispagestyle{empty}
+        \includepdf[pages=-]{1.pdf}
+    }\fi
+
   \normalsize % normal, 正文开始
   \def\@tabular{\wuhao[1.25]\old@tabular} % 之后表格字体使用5号
   \cleardoublepage%
