@@ -136,41 +136,41 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.4}基于DBSCAN的层次聚类}{46}{subsection.4.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}问题描述}{48}{section.4.3}%
+\contentsline {section}{\numberline {4.3}问题描述}{46}{section.4.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.1}系统模型}{48}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}安全模型}{49}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.2}安全模型}{48}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}设计目标}{49}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.3}设计目标}{48}{subsection.4.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.4}系统输入}{49}{subsection.4.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}基于秘密共享的隐私保护计算模块}{50}{section.4.4}%
+\contentsline {section}{\numberline {4.4}基于秘密共享的隐私保护计算模块}{49}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}安全排序协议}{50}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.1}安全排序协议}{49}{subsection.4.4.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.5}隐私保护DBSCAN方案}{50}{section.4.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.5.1}预处理元素}{53}{subsection.4.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}密度聚类}{55}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.2}密度聚类}{54}{subsection.4.5.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.5.3}还原聚类结果}{56}{subsection.4.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}改进的隐私保护DBSCAN}{58}{section.4.6}%
+\contentsline {section}{\numberline {4.6}改进的隐私保护DBSCAN}{57}{section.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.1}初始化}{59}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.1}初始化}{58}{subsection.4.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6.2}核心对象聚类}{60}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.2}核心对象聚类}{59}{subsection.4.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}基于DBSCAN的隐私保护层次聚类}{60}{section.4.7}%
+\contentsline {section}{\numberline {4.7}基于DBSCAN的隐私保护层次聚类}{59}{section.4.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.1}获取$\epsilon $值}{61}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.1}获取$\epsilon $值}{60}{subsection.4.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.2}计算初始簇}{62}{subsection.4.7.2}%
+\contentsline {subsection}{\numberline {4.7.2}计算初始簇}{61}{subsection.4.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.3}合并初始簇}{64}{subsection.4.7.3}%
+\contentsline {subsection}{\numberline {4.7.3}合并初始簇}{63}{subsection.4.7.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.8}系统评估与性能分析}{64}{section.4.8}%
 \defcounter {refsection}{0}\relax 
@@ -180,21 +180,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.8.2.1}实验设置}{65}{subsubsection.4.8.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.8.2.2}聚类质量分析}{66}{subsubsection.4.8.2.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.2}聚类质量分析}{67}{subsubsection.4.8.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.8.2.3}性能分析}{68}{subsubsection.4.8.2.3}%
+\contentsline {subsubsection}{\numberline {4.8.2.3}性能分析}{69}{subsubsection.4.8.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.9}本章小结}{71}{section.4.9}%
+\contentsline {section}{\numberline {4.9}本章小结}{72}{section.4.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}总结与展望}{72}{chapter.5}%
+\contentsline {chapter}{\numberline {5}总结与展望}{73}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}工作总结}{72}{section.5.1}%
+\contentsline {section}{\numberline {5.1}工作总结}{73}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}研究展望}{72}{section.5.2}%
+\contentsline {section}{\numberline {5.2}研究展望}{73}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{致谢}{74}{chapter*.52}%
+\contentsline {chapter}{致谢}{75}{chapter*.52}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{参考文献}{76}{section*.53}%
+\contentsline {chapter}{参考文献}{77}{section*.53}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{作者在学期间取得的学术成果}{83}{chapter*.55}%
+\contentsline {chapter}{作者在学期间取得的学术成果}{84}{chapter*.55}%
 \contentsfinish 

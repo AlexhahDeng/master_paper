@@ -227,17 +227,18 @@ DBSCAN能够应用于任意维度的数据集。明文算法最坏情况下的�
 \subsection{基于DBSCAN的层次聚类}
 传统DBSCAN算法中，minPts和$ \epsilon $的取值对于聚类效果有极大影响，但同时又难以确定最合适的取值，因为二者受数据分布的影响较大。
 同时，实际应用中数据大多不是均匀分布的，包含多个密度，若仅选择固定的一个$ \epsilon $值来进行聚类，难以获取全面的划分的结果。
-
-以\ref{s4-dbhcexa}为例，图中包含三个簇C1、C2和C3，三者密度截然不同，若按照传统DBSCAN算法进行聚类，选择一个$ \epsilon $值，划分结果较差。
-因为若选择的$ \epsilon $值适合簇C3，簇C1和C2会被划分到同一个簇中；若选择的$ \epsilon $值适合簇C1，那么簇C2和C3会被划分为噪声。
+适合高密度簇的$ \epsilon $值较小，能够对数据密集的区域进行较好的聚类，但是对于数据分布比较稀疏的簇聚类效果较差，可能会将较多数据划分为噪声。
 因此，需要设置多个$ \epsilon $值来获取正确的聚类结果，这样的问题在高维数据集中更为常见。
-\begin{figure}[htbp] %[htbp]
-	\centering
-	%	\captionsetup{font=scriptsize}
-	\includegraphics[scale=0.6]{img/dbhcexa.png}
-	\caption{多密度数据集可视化}
-	\label{s4-dbhcexa}
-\end{figure}
+%以\ref{s4-dbhcexa}为例，图中包含三个簇C1、C2和C3，三者密度截然不同，若按照传统DBSCAN算法进行聚类，选择一个$ \epsilon $值，划分结果较差。
+%因为若选择的$ \epsilon $值适合簇C3，簇C1和C2会被划分到同一个簇中；若选择的$ \epsilon $值适合簇C1，那么簇C2和C3会被划分为噪声。
+%因此，需要设置多个$ \epsilon $值来获取正确的聚类结果，这样的问题在高维数据集中更为常见。
+%\begin{figure}[htbp] %[htbp]
+%	\centering
+%	%	\captionsetup{font=scriptsize}
+%	\includegraphics[scale=0.6]{img/dbhcexa.png}
+%	\caption{多密度数据集可视化}
+%	\label{s4-dbhcexa}
+%\end{figure}
 
 为了解决上述问题，论文\cite{latifi2021dbhc}提出一种基于DBSCAN的层次聚类方案。首先借助$ k $近邻算法和$ k $线图来获取多个$ \epsilon $值。
 最后，若最终结果所得簇个数$ |C| $超过了用户实际需要的数量$ k $，则反复选择最近的簇进行合并，直到满足要求。
@@ -826,19 +827,19 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 		\STATE $ m2 \leftarrow \text{MUL}(x[i].isCore, 1-x[i],isMark, x[j].isCore, 1-x[j].isMark, u[i][j]) $
 		\STATE 记录新的元素(x[i].cluId, x[j].isCore, m2)到plist中
 		\STATE $ x[j].isMark \leftarrow x[j].isMark + m1 - \text{MUL}(x[j].isMark, m1) $
-%		\STATE $ t1 \leftarrow  \text{MUL}(x[i].isCore,1-x[i].isMark)$
-%		\STATE $ t2 \leftarrow \text{MUL}(u[i][j],1-x[j].isMark) $
-%		\STATE $ t3 \leftarrow \text{MUL}(t2, 1-x[j].isCore)$
-%		\STATE $ t \leftarrow \text{MUL}(t1, t3) $
-%		\STATE $x[j].cluId \leftarrow \text{MUL}(t, x[i].cluid) + \text{MUL}(1-t, x[j].cluId)$
-%		\STATE $m[j] \leftarrow m[j] + t - \text{MUL}(m[j], t)$
-%		% record pair info
-%		\STATE $r \leftarrow \text{MUL}(t, x[j].isCore)$
-%		\STATE 记录新的元素(x[i].cluId, x[j].isCore, r)到plist中
+		%		\STATE $ t1 \leftarrow  \text{MUL}(x[i].isCore,1-x[i].isMark)$
+		%		\STATE $ t2 \leftarrow \text{MUL}(u[i][j],1-x[j].isMark) $
+		%		\STATE $ t3 \leftarrow \text{MUL}(t2, 1-x[j].isCore)$
+		%		\STATE $ t \leftarrow \text{MUL}(t1, t3) $
+		%		\STATE $x[j].cluId \leftarrow \text{MUL}(t, x[i].cluid) + \text{MUL}(1-t, x[j].cluId)$
+		%		\STATE $m[j] \leftarrow m[j] + t - \text{MUL}(m[j], t)$
+		%		% record pair info
+		%		\STATE $r \leftarrow \text{MUL}(t, x[j].isCore)$
+		%		\STATE 记录新的元素(x[i].cluId, x[j].isCore, r)到plist中
 		\ENDFOR
 		\ENDFOR
 		\FOR{$i=1$ to $n$}
-		\STATE  x[i].isMark $ \leftarrow $ x[i].isCore+x[i].isMark - \text{MUL}(x[i].isCore,x[i].isMark) 
+		\STATE  x[i].isMark $ \leftarrow $ x[i].isCore+x[i].isMark - \text{MUL}(x[i].isCore,x[i].isMark)
 		\ENDFOR
 
 	\end{algorithmic}
@@ -915,7 +916,21 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 
 \textbf{场景：}隐私保护DBSCAN方案既可以应用于外包计算也可以应用于两方安全计算的场景。此外，聚类的数据可以采取任意划分形式，例如水平划分、垂直划分或者是混合划分。在以下实验中，基于外包计算的场景，用户将数据秘密共享后分别发送给两个不共谋的云服务器。值得一提的是，外包计算场景下，参与聚类的用户数量不受限制，实验中假设单个用户上传所有数据。方案可以直接应用到用户更多的场景中，只要数据、参数和簇个数和实验保持一致即可。
 
-\textbf{数据集：}为了更好地评估聚类方案，本文在多个不同的数据集上进行了实验。其中两个是为了和论文\cite{bozdemir2021privacy}对比方案的效率和实用性。
+\begin{figure}[htbp]
+	\centering
+	\subfloat[\label{fig:a}]{
+		\includegraphics[width=.45\textwidth]{img/lsun_gt.png}}
+	\subfloat[\label{fig:c}]{
+		\includegraphics[width=.45\textwidth]{img/s1_gt.png}}
+	\\
+	\subfloat[\label{fig:e}]{
+		\includegraphics[width=.45\textwidth]{img/aggre_gt.png}}
+	\subfloat[\label{fig:dd}]{
+		\includegraphics[width=.45\textwidth]{img/expnew.png}}
+	\caption{Lsun、S1和Aggregation数据集正确划分结果}
+\end{figure}
+
+\textbf{数据集：}为了更好地评估聚类方案，本文在多个不同的数据集上进行了实验。其中Lsun与S1数据集是为了和论文\cite{bozdemir2021privacy}对比方案的效率和实用性。
 
 \begin{compactitem}
 	\item \textbf{Lsun：}图\ref{fig:a}中的Lsun数据集\cite{ultsch2005clustering}在论文\cite{wu2020secure,bozdemir2021privacy}分别用于评估隐私保护K-means和隐私保护DBSCAN方案的性能。它的正确划分结果中包含3个簇，分别拥有不同的方差和簇距离。三个簇分别包含200、100和100个元素，彼此没有重叠的部分。
@@ -923,18 +938,9 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 	\textbf{S1：}图\ref{fig:c}中的S1\cite{franti2018k}数据集是一个人工合成的二维数据集，包含5000个样本，可以划分为15个不同的球形高斯簇，分别包含300到350个元素。其中簇之间有9\%的重叠部分。该数据集在论文\cite{bozdemir2021privacy,mohassel2019practical,su2007privacy}中被用于分析聚类效果。
 	\item
 	\textbf{Aggregation：}图\ref{fig:e}中的Aggregation数据集\cite{gionis2007clustering}为人工合成的二维数据集，包含788个数据，7个分类。在后续实验中，将通过该数据集分析K-means和DBSCAN聚类结果的差异，数据之间有极少重叠部分。
+	\item
+	\textbf{人造数据集：}图\ref{fig:dd}为实验构造包含不同密度数据的二维数据集，用来衡量三个方案的聚类效果。为了方便观察和对比分析，数据集包含数据量较少，分布较简单，不同簇之间的密度差异较大。其中分别包含3个簇，C1密度最大，C3密度最小而C2的密度在二者之间。实验中，$ \epsilon $设置不同值，观察最终划分结果。
 \end{compactitem}
-
-\begin{figure}[htbp]
-	\centering
-	\subfloat[\label{fig:a}]{
-		\includegraphics[scale=0.19]{img/lsun_gt.png}}
-	\subfloat[\label{fig:c}]{
-		\includegraphics[scale=0.19]{img/s1_gt.png}}
-	\subfloat[\label{fig:e}]{
-		\includegraphics[scale=0.19]{img/aggre_gt.png}}
-	\caption{Lsun、S1和Aggregation数据集正确划分结果}
-\end{figure}
 
 \textbf{编码：}Lsun数据集由有理数组成。参考前述工作\cite{jaschke2019unsupervised}，将数据放大$ 10^6 $全部转化为整数后执行协议。相应的，Aggregation数据集放大$ 10^2 $倍。S1数据集由整数构成不进行放缩。
 
@@ -956,6 +962,8 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 			S1          & 2    & 15     & 5000   & $ 2.25\times 10^9 $ & 50     \\
 			\hline
 			Aggregation & 2    & 7      & 788    & $ 3.5\times 10^4 $  & 3      \\
+			\hline
+			人造数据集 & 2 & 3 & 27 & - & 3 \\
 			\hline
 		\end{tabular}
 	}
@@ -979,11 +987,11 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 			\hline  % 在表格最上方绘制横线
 			数据集      & K-means & ppDBSCAN\cite{bozdemir2021privacy} & 方案一 & 方案二 & 方案三 \\
 			\hline % 在表格最下方绘制横线
-			Lsun        & 0.4386  & 1.0  & 1.0    & 1.0    & 0.3779 \\%$n^2\log n$
+			Lsun        & 0.4386  & 1.0                                & 1.0    & 1.0    & 0.3779 \\%$n^2\log n$
 			\hline
-			S1          & 0.9254  & 0.9757 & 0.9766 & 0.9778 & 0.9510 \\
+			S1          & 0.9254  & 0.9757                             & 0.9766 & 0.9778 & 0.9510 \\
 			\hline
-			Aggregation & 0.7621  & -  & 0.8089 & 0.8089 & 0.7548 \\
+			Aggregation & 0.7621  & -                                  & 0.8089 & 0.8089 & 0.7548 \\
 			\hline
 		\end{tabular}
 	}
@@ -1000,7 +1008,6 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 	\textbf{方案一二三比较：}在Lsun数据集上，方案一二结果一致，均能够正确划分簇，但是方案三聚类效果较差，原因可能是根据系列eps值聚类，会导致产生很多初始簇，按照最近簇合并的方式，可能会导致某些数据集上划分效果较差。在S1这种包含重叠部分的数据集上，方案二的表现最好，原因在于该方案能够获取稳定的数据划分结果，使得在数据集包含较多重叠部分时，让边界对象划分到最近的核心对象所属簇中，提升聚类质量。方案三在包含不同密度数据的数据集上表现会更好，虽然能够自适应选择关键参数，但是适用场景有限，开销较大。
 \end{compactitem}
 
-\textbf{可视化比较：}图\ref{s4-img-clures}中，给出了聚类的可视化结果，行依次对应Lsun、S1和Aggregation数据集，列依次为方案一、二、三和明文K-means的聚类结果。其中黑色为DBSCAN结果中的噪声点。可以看到方案一二均划分的较好，但是方案三在簇内部产生较多噪声点，划分结果产生一些误差。K-means在非球形数据集上容易将单一簇划分为两个，效果较差（\ref{s4-img-clures}.d/\ref{s4-img-clures}.l）。对比图\ref{s4-img-clures}.e和\ref{s4-img-clures}.f可以看到在不同簇之间的重叠部分划分结果不一样，方案二打乱数据后，重复运行结果保持一致，方案一则会产生变化。
 \begin{figure}[htb]
 	\centering
 	\subfloat[]{\includegraphics[width=.25\textwidth]{img/t1-lsun.png}}
@@ -1019,6 +1026,31 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 	\caption{聚类结果可视化比较}
 	\label{s4-img-clures}
 \end{figure}
+
+\textbf{可视化比较：}图\ref{s4-img-clures}中，给出了聚类的可视化结果，行依次对应Lsun、S1和Aggregation数据集，列依次为方案一、二、三和明文K-means的聚类结果。其中黑色为DBSCAN结果中的噪声点。可以看到方案一二均划分的较好，但是方案三在簇内部产生较多噪声点，划分结果产生一些误差。K-means在非球形数据集上容易将单一簇划分为两个，效果较差（\ref{s4-img-clures}.d/\ref{s4-img-clures}.l）。对比图\ref{s4-img-clures}.e和\ref{s4-img-clures}.f可以看到在不同簇之间的重叠部分划分结果不一样，方案二打乱数据后，重复运行结果保持一致，方案一则会产生变化。
+
+\textbf{多密度数据集聚类结果对比：}这里在人造数据集（如图\ref{fig:dd}）上分别运行方案一和方案三。根据数据分布的特点，针对方案一需要手动设置$ \epsilon $，这里根据密度最大的簇C1，设置$ \epsilon $为4，根据密度最小的簇C3，设置$ \epsilon $为16。针对方案三，按照算法自动获取$ \epsilon $的值。对于minpts，设置为3。具体结果如下所示，图\ref{dbhcexp1}中的$ \epsilon $值适合密度较大的簇，C1和C2均能够被正确划分，C3则被划分为噪声点。图\ref{dbhcexp2}中，C3能够被正确划分，而C1和C2则被划分到同一个簇中。最后如图\ref{dbhcexp3}所示，方案三的划分结果和数据集真实划分情况完全一致。综上所述，方案三在多密度数据集上划分效果显著优于方案一和方案二。
+
+
+\begin{figure}[htbp] %[htbp]
+	\begin{minipage}[t]{0.33\linewidth}
+		\includegraphics[width=\linewidth]{img/dbhc-exp-1.png}
+		\caption{方案一（$ \epsilon = 4 $）}
+		\label{dbhcexp1}
+	\end{minipage}%
+	\hfill%
+	\begin{minipage}[t]{0.33\linewidth}
+		\includegraphics[width=\linewidth]{img/dbhc-exp-2.png}
+		\caption{方案一（$ \epsilon = 16 $）}
+		\label{dbhcexp2}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.33\linewidth}
+	\includegraphics[width=\linewidth]{img/dbhc-exp-3.png}
+	\caption{方案三（多$ \epsilon $）}
+	\label{dbhcexp3}
+	\end{minipage}
+\end{figure}\textbf{}
 
 \subsubsection{性能分析}
 本小节，将详细讨论本文提出的系列隐私保护DBSCAN方案与隐私保护K-means方案\cite{mohassel2019practical}以及同类研究工作\cite{bozdemir2021privacy}的耗时对比。上述两个方案均较好的平衡了效率与安全，论文\cite{mohassel2019practical}在多方计算场景下提出了一种完全安全的高效隐私保护K-means方案，但是受限于K-means聚类本身的缺陷，聚类的效果较差，适用场景较少。而论文\cite{bozdemir2021privacy}所提出的方案虽然高效但是方案可能会存在轻微的数据泄露问题。其他隐私保护DBSCAN相关研究均存在较大的数据安全问题，同时没有给出具体的实现和详细的实验分析，因此这里不进行对比分析。
@@ -1040,9 +1072,9 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 		\hline
 		数据集       & Mohassel等人\cite{mohassel2019practical} & Bozdemir等人\cite{bozdemir2021privacy} & 方案一  & 方案二   & 方案三   \\
 		\hline
-		Lsun         & 22.21s（T=15）                                   & 420.72s                                & 4 .12s  & 27.90s   & 2508.27s \\
+		Lsun         & 22.21s（T=15）                           & 420.72s                                & 4 .12s  & 27.90s   & 2508.27s \\
 		\hline
-		S1           & 1472.6s（T=30）                                  & 620,912.70s                            & 301.12s & 1002.55s & -        \\
+		S1           & 1472.6s（T=30）                          & 620,912.70s                            & 301.12s & 1002.55s & -        \\
 		\hline
 		Aggregation  & -                                        & -                                      & 103.77s & 639.10s  & 19620.2s \\
 		\hline
@@ -1086,6 +1118,7 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 	\label{s4-exp-recover}
 \end{figure}
 
+\newpage
 \section{本章小结}
 \label{s4-xiaojie}
 现有的隐私保护DBSCAN相关研究相对隐私保护K-means聚类研究较少，许多研究不够完善，没有给出代码实现和实验分析。最近的同类方案\cite{bozdemir2021privacy}则存在数据泄漏风险，因此需要设计一个兼顾效率与安全的隐私保护DBSCAN聚类方案。

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  26 APR 2023 08:54
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  28 APR 2023 21:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1855,13 +1855,13 @@ LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <8.43146> not available
 
  [4
 
-] (./thesis.lof)
+] (./thesis.lof [5
+
+])
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
- [5
-
-] [6] (./data/abstract.tex
+ [6] (./data/abstract.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1
@@ -2105,8 +2105,8 @@ File: img/expres.png Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [45]
-File: img/dbhcexa.png Graphic file (type bmp)
-<img/dbhcexa.png>
+File: img/sysmodel2.png Graphic file (type bmp)
+<img/sysmodel2.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2114,18 +2114,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [47]
-File: img/sysmodel2.png Graphic file (type bmp)
-<img/sysmodel2.png>
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [48]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [49]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [50]
 File: img/dbraw.png Graphic file (type bmp)
 <img/dbraw.png>
 File: img/db1.png Graphic file (type bmp)
@@ -2135,7 +2129,7 @@ File: img/db2.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51]
+ [50]
 File: img/db3.png Graphic file (type bmp)
 <img/db3.png>
 File: img/db4.png Graphic file (type bmp)
@@ -2149,17 +2143,17 @@ File: img/dbres.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [51]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [52]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [53]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [54]
+[53] [54]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [55]
-[56]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [57]
@@ -2168,32 +2162,27 @@ File: img/db1.png Graphic file (type bmp)
 File: img/redbscan.png Graphic file (type bmp)
 <img/redbscan.png>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [58]
+[58]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [59]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 738.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\epsilon' on input line 738.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 738.
+
+[60]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 737.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\epsilon' on input line 737.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 737.
-
-[61]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [62]
-Underfull \hbox (badness 4328) in paragraph at lines 826--827
+ [61]
+Underfull \hbox (badness 4328) in paragraph at lines 827--828
 [] []$\OML/cmm/m/it/12 m\OT1/cmr/m/n/12 2 \OMS/cmsy/m/n/12   []\OT1/cmr/m/n/12 
 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 i\OT1/cmr/m/n/12 ]\OML/cmm
 /m/it/12 :isCore; \OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 x\OT1
@@ -2205,24 +2194,27 @@ Underfull \hbox (badness 4328) in paragraph at lines 826--827
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
-[64]
+ [62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [65]
+ [63]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [64]
 File: img/lsun_gt.png Graphic file (type bmp)
 <img/lsun_gt.png>
 File: img/s1_gt.png Graphic file (type bmp)
 <img/s1_gt.png>
 File: img/aggre_gt.png Graphic file (type bmp)
 <img/aggre_gt.png>
+File: img/expnew.png Graphic file (type bmp)
+<img/expnew.png>
 
+[65]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [66]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [67]
+[67]
 File: img/t1-lsun.png Graphic file (type bmp)
 <img/t1-lsun.png>
 File: img/t2-lsun.png Graphic file (type bmp)
@@ -2248,44 +2240,51 @@ File: img/t3-aggre.jpg Graphic file (type bmp)
 File: img/km-aggre.png Graphic file (type bmp)
 <img/km-aggre.png>
 
-[68]
-Overfull \hbox (4.85828pt too wide) in paragraph at lines 1037--1050
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68]
+File: img/dbhc-exp-1.png Graphic file (type bmp)
+<img/dbhc-exp-1.png>
+File: img/dbhc-exp-2.png Graphic file (type bmp)
+<img/dbhc-exp-2.png>
+File: img/dbhc-exp-3.png Graphic file (type bmp)
+<img/dbhc-exp-3.png>
+
+[69]
+Overfull \hbox (4.85828pt too wide) in paragraph at lines 1069--1082
  [][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [69]
 File: img/timecompare.png Graphic file (type bmp)
 <img/timecompare.png>
 File: img/commcompare.png Graphic file (type bmp)
 <img/commcompare.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [70]
 File: img/testrc.png Graphic file (type bmp)
 <img/testrc.png>
 
+[71]) (./data/chap05.tex [72] [73
+
+
+]) (./data/ack.tex [74]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70])
-(./data/chap05.tex [71] [72
-
-
-]) (./data/ack.tex [73]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [74
+ [75
 
 ])
-[75]
+[76]
 Underfull \hbox (badness 1831) in paragraph at lines 117--117
 [] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [15] []Ding B, Kulkarni J, Yekhanin S. 
 Collecting telemetry data privately[J].
  []
 
-[76
+[77
 
 
-] [77]
+] [78]
 Underfull \hbox (badness 1983) in paragraph at lines 117--117
 [] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [31] []Jäschke A, Armknecht F. Unsuperv
 ised machine learning on encrypted
@@ -2297,7 +2296,7 @@ Underfull \hbox (badness 1622) in paragraph at lines 117--117
 of outsourced k-means clustering[C]//
  []
 
-[78] [79] [80]
+[79] [80] [81]
 Underfull \hbox (badness 1348) in paragraph at lines 117--117
 [] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [74] []Beaver D. Efficient multiparty p
 rotocols using circuit randomization[C]//
@@ -2309,7 +2308,7 @@ Underfull \hbox (badness 2050) in paragraph at lines 117--117
 roperties on six clustering benchmark
  []
 
-[81] (./data/resume.tex [82]) [83
+[82] (./data/resume.tex [83]) [84
 
 ]
 \tf@thm=\write9
@@ -2333,12 +2332,12 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36742 strings out of 476919
- 694621 string characters out of 5825424
- 1613535 words of memory out of 5000000
- 56048 multiletter control sequences out of 15000+600000
+ 36764 strings out of 476919
+ 695001 string characters out of 5825424
+ 1615747 words of memory out of 5000000
+ 56067 multiletter control sequences out of 15000+600000
  432896 words of font info for 215 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,17n,130p,1151b,4868s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,17n,130p,1151b,4874s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (97 pages).
+Output written on thesis.pdf (98 pages).
