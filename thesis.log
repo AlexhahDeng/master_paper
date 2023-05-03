@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.21)  3 MAY 2023 09:06
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  3 MAY 2023 22:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1761,23 +1761,6 @@ LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <16.06> not available
 
 [2
 
-]
-File: 1.pdf Graphic file (type pdf)
-<use 1.pdf>
-File: 1.pdf Graphic file (type pdf)
-<use 1.pdf>
-File: 1.pdf Graphic file (type pdf)
-<use 1.pdf, page 1>
-File: 1.pdf Graphic file (type pdf)
-<use 1.pdf, page 1>
-File: 1.pdf Graphic file (type pdf)
-<use 1.pdf, page 1>
-File: 1.pdf Graphic file (type pdf)
-<use 1.pdf, page 1>
-File: 1.pdf Graphic file (type pdf)
-<use 1.pdf, page 1>
- [3
-
 ] (./thesis.toc
 
 Package fontspec Info: Could not resolve font "SimSun/BI" (it probably doesn't
@@ -1808,38 +1791,38 @@ Package fontspec Info: Font family 'SimSun(1)' created for font 'SimSun' with
 
 
 ]
-LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 169.
+LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 163.
 
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 169.
+(Font)              size <8> substituted on input line 163.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <8.43146> not available
-(Font)              size <8> substituted on input line 169.
+(Font)              size <8> substituted on input line 163.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 169.
+(Font)              size <8> substituted on input line 163.
 
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 10.84042pt on input line 169.
+(Font)              scaled to size 10.84042pt on input line 163.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 7.58826pt on input line 169.
+(Font)              scaled to size 7.58826pt on input line 163.
 LaTeX Font Info:    Font shape `U/fsy/m/n' will be
-(Font)              scaled to size 5.4202pt on input line 169.
+(Font)              scaled to size 5.4202pt on input line 163.
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 169.
+(Font)              size <8> substituted on input line 163.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <8.43146> not available
-(Font)              size <8> substituted on input line 169.
+(Font)              size <8> substituted on input line 163.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 169.
+(Font)              size <8> substituted on input line 163.
 
 [2])
 \tf@toc=\write6
@@ -1874,7 +1857,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 
 LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
-(Font)              using `TU/SimHei(0)/m/n' instead on input line 57.
+(Font)              using `TU/SimHei(0)/m/n' instead on input line 56.
 
 ) (./data/denotation.tex [4]) [5
 
@@ -2007,7 +1990,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 60.
+put line 61.
  [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2026,8 +2009,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
-File: img/fig4.png Graphic file (type bmp)
-<img/fig4.png>
+File: img/fig4new.png Graphic file (type bmp)
+<img/fig4new.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2041,14 +2024,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32]
-[33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33]
+[34]
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
-line 360.
+line 373.
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 367.
+t line 380.
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
-line 370.
- [34] [35] [36]
+line 383.
+ [35] [36]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [37]
@@ -2056,20 +2042,23 @@ File: img/lsun_ptxt.png Graphic file (type bmp)
 <img/lsun_ptxt.png>
 File: img/lsun_ctxt.png Graphic file (type bmp)
 <img/lsun_ctxt.png>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38]
 File: img/newm_time.png Graphic file (type bmp)
 <img/newm_time.png>
 File: img/newm_comm.png Graphic file (type bmp)
 <img/newm_comm.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38]
 File: img/newk_time.png Graphic file (type bmp)
 <img/newk_time.png>
 File: img/newk_comm.png Graphic file (type bmp)
 <img/newk_comm.png>
 
-[39]) (./data/chap04.tex [40] [41
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39])
+(./data/chap04.tex [40] [41
 
 
 ]
@@ -2156,24 +2145,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [59]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 741.
+(hyperref)                removing `math shift' on input line 735.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\epsilon' on input line 741.
+(hyperref)                removing `\epsilon' on input line 735.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 741.
+(hyperref)                removing `math shift' on input line 735.
 
-[60]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [60]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [61]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [62]
-Underfull \hbox (badness 4328) in paragraph at lines 836--837
+Underfull \hbox (badness 4328) in paragraph at lines 830--831
 [] []$\OML/cmm/m/it/12 m\OT1/cmr/m/n/12 2 \OMS/cmsy/m/n/12   []\OT1/cmr/m/n/12 
 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 i\OT1/cmr/m/n/12 ]\OML/cmm
 /m/it/12 :isCore; \OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 x\OT1
@@ -2199,10 +2191,7 @@ File: img/expnew.png Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [65]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [66]
-[67]
+[66]
 File: img/t1-lsun.png Graphic file (type bmp)
 <img/t1-lsun.png>
 File: img/t2-lsun.png Graphic file (type bmp)
@@ -2230,7 +2219,7 @@ File: img/km-aggre.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [68]
+ [67]
 File: img/dbhc-exp-1.png Graphic file (type bmp)
 <img/dbhc-exp-1.png>
 File: img/dbhc-exp-2.png Graphic file (type bmp)
@@ -2238,65 +2227,63 @@ File: img/dbhc-exp-2.png Graphic file (type bmp)
 File: img/dbhc-exp-3.png Graphic file (type bmp)
 <img/dbhc-exp-3.png>
 
-[69]
-Overfull \hbox (4.85828pt too wide) in paragraph at lines 1074--1087
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68]
+Overfull \hbox (4.85828pt too wide) in paragraph at lines 1060--1073
  [][] 
  []
 
+[69]
 File: img/timecompare.png Graphic file (type bmp)
 <img/timecompare.png>
 File: img/commcompare.png Graphic file (type bmp)
 <img/commcompare.png>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [70]
 File: img/testrc.png Graphic file (type bmp)
 <img/testrc.png>
+ [70]) (./data/chap05.tex [71] [72
 
-[71]) (./data/chap05.tex [72] [73
 
-
-]) (./data/ack.tex [74]
+]) (./data/ack.tex [73]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [75
+ [74
 
 ])
-[76]
+[75]
 Underfull \hbox (badness 1831) in paragraph at lines 117--117
 [] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [15] []Ding B, Kulkarni J, Yekhanin S. 
 Collecting telemetry data privately[J].
  []
 
-[77
+[76
 
 
-]
+] [77]
 Underfull \hbox (badness 1983) in paragraph at lines 117--117
-[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [29] []Jäschke A, Armknecht F. Unsuperv
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [31] []Jäschke A, Armknecht F. Unsuperv
 ised machine learning on encrypted
  []
 
-[78]
+
 Underfull \hbox (badness 1622) in paragraph at lines 117--117
-[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [37] []Liu D, Bertino E, Yi X. Privacy 
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [39] []Liu D, Bertino E, Yi X. Privacy 
 of outsourced k-means clustering[C]//
  []
 
-[79] [80] [81]
+[78] [79] [80]
 Underfull \hbox (badness 1348) in paragraph at lines 117--117
-[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [72] []Beaver D. Efficient multiparty p
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [74] []Beaver D. Efficient multiparty p
 rotocols using circuit randomization[C]//
  []
 
 
 Underfull \hbox (badness 2050) in paragraph at lines 117--117
-[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [80] []Fränti P, Sieranoja S. K-means p
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [82] []Fränti P, Sieranoja S. K-means p
 roperties on six clustering benchmark
  []
 
-[82] (./data/resume.tex [83]) [84
+[81] (./data/resume.tex [82]) [83
 
 ]
 \tf@thm=\write9
@@ -2310,19 +2297,27 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 117DEA719AF11E3029D4563E48A6329F;8934.
+(rerunfilecheck)             Checksum: ECE6C871B750F0EB74834871A6092705;8899.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                thesis
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36759 strings out of 476919
- 694788 string characters out of 5825423
- 1613639 words of memory out of 5000000
- 56062 multiletter control sequences out of 15000+600000
+ 36754 strings out of 476919
+ 694905 string characters out of 5825424
+ 1615585 words of memory out of 5000000
+ 56060 multiletter control sequences out of 15000+600000
  432896 words of font info for 215 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,17n,130p,1151b,4874s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,14n,130p,1151b,4839s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (98 pages).
+Output written on thesis.pdf (96 pages).
