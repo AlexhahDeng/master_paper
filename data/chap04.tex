@@ -18,7 +18,7 @@
 
 目前，已有许多关于隐私保护聚类方案的研究，其中数量最多的是与K-means相关的隐私保护研究\cite{hegde2021sok}。然而，K-means聚类存在诸多限制与缺点，其计算过程相对比较简单、聚类结果受到初始簇中心影响较大并且只能检测到凸型簇，因此适用场景极其有限。此外，簇的数量$k$必须要根据专业领域知识提前给出，如果只了解数据集的子集难以确定$k$的值。同时，K-means聚类不包含噪声的概念，聚类的结果对异常值非常敏感，因为每一个输入都要被划分到某一个簇中，影响该簇中心的位置（簇中所有数据的平均值）。
 
-因此，一些研究人员转向基于DBSCAN的隐私保护聚类方案研究。DBSCAN是一种由论文\cite{ester1996density}提出的更加灵活的聚类算法，能够检测到任意形状的簇。此外，簇的数量根据数据集的特点灵活产生，无需人工确定。该算法对异常值不敏感，会将其标记为噪声。关于隐私保护DBSCAN的相关研究相对较少，Rahman等人\cite{rahman2017towards}基于同态加密技术提出了一种外包隐私保护DBSCAN聚类方案，然而该方案泄露了簇大小和数据相邻关系，存在安全隐患。Bozdemir等人\cite{bozdemir2021privacy}基于ABY安全计算框架提出了一种高效的隐私保护DBSCAN方案，显著提升了聚类的效率减少了耗时，但是方案设计不够完善，引入了人工设置参数。
+因此，一些研究人员转向基于DBSCAN的隐私保护聚类方案研究。DBSCAN是一种由Ester等人\cite{ester1996density}提出的更加灵活的聚类算法，能够检测到任意形状的簇。此外，簇的数量根据数据集的特点灵活产生，无需人工确定。该算法对异常值不敏感，会将其标记为噪声。关于隐私保护DBSCAN的相关研究相对较少，Rahman等人\cite{rahman2017towards}基于同态加密技术提出了一种外包隐私保护DBSCAN聚类方案，然而该方案泄露了簇大小和数据相邻关系，存在安全隐患。Bozdemir等人\cite{bozdemir2021privacy}基于ABY安全计算框架提出了一种高效的隐私保护DBSCAN方案，显著提升了聚类的效率减少了耗时，但是方案设计不够完善，引入了人工设置参数。
 %同时，前述隐私保护K-means聚类方案不支持多用户上传数据进行协同聚类的场景，阻断了不同机构之间合作的桥梁，不利于提升聚类结果的质量。
 
 % 2.隐私保护DBSCAN的好处
@@ -46,7 +46,7 @@
 	\item $ d $为在$ U $中不在同一类，且在$ V $中也不属于同一类别的数据元素对数。
 \end{compactitem}
 
-具体情况可以由如下表格概括：
+具体情况可以由如表格\ref{ri-table}概括：
 
 \begin{table}[htbp]
 	\centering
@@ -65,7 +65,7 @@
 			\hline
 		\end{tabular}
 	}
-	\label{s4-table-dataset}
+	\label{ri-table}
 \end{table}
 
 因此，最终兰德系数计算方式如公式\ref{ri}所示：
@@ -182,7 +182,7 @@ DBSCAN围绕每个数据点以$\epsilon$为半径构建圈，并将数据点划�
 DBSCAN能够应用于任意维度的数据集。明文算法最坏情况下的复杂度为$ O(n^2) $，其中$ n $为数据的数量。设置好$ \epsilon $和minPts后，无需指定$ k $值，运行算法即可自动划分成簇，噪声点对聚类结果影响较小，最后不会被划分到任何簇中。
 
 \subsection{改进的DBSCAN}
-正如提出DBSCAN的论文\cite{ester1996density}中所说，该算法在检测相邻簇的边界数据点时划分结果不稳定。若核心点$ x_1 $与$ x_2 $分别属于不同的簇$ C_1 $和$ C_2 $，二者邻域范围内均包含边界点$ x_3 $，则依据DBSCAN划分标准，$ x_3 $既可以被划分到$ C_1 $，也可以被划分到$ C_2 $中，划分结果主要取决于$ x_3 $在算法运行时被处理的顺序。
+正如提出DBSCAN的论文中所说，该算法在检测相邻簇的边界数据点时划分结果不稳定\cite{ester1996density}。若核心点$ x_1 $与$ x_2 $分别属于不同的簇$ C_1 $和$ C_2 $，二者邻域范围内均包含边界点$ x_3 $，则依据DBSCAN划分标准，$ x_3 $既可以被划分到$ C_1 $，也可以被划分到$ C_2 $中，划分结果主要取决于$ x_3 $在算法运行时被处理的顺序。
 
 下面给出一个具体的示例，假设二维数据集中包含两个簇，分别包含约250个数据，球形簇中间有部分数据相邻，按照DBSCAN算法的逻辑，这些边界数据既可以划分到左簇也可以被划分到右簇中。
 图\ref{s4-img-f1}为测试数据集的正确划分结果，
@@ -225,30 +225,24 @@ DBSCAN能够应用于任意维度的数据集。明文算法最坏情况下的�
 \end{figure}
 
 \subsection{基于DBSCAN的层次聚类}
+%先说问题
 传统DBSCAN算法中，minPts和$ \epsilon $的取值对于聚类效果有极大影响，但同时又难以确定最合适的取值，因为二者受数据分布的影响较大。
 同时，实际应用中数据大多不是均匀分布的，包含多个密度，若仅选择固定的一个$ \epsilon $值来进行聚类，难以获取全面的划分的结果。
 适合高密度簇的$ \epsilon $值较小，能够对数据密集的区域进行较好的聚类，但是对于数据分布比较稀疏的簇聚类效果较差，可能会将较多数据划分为噪声。
-因此，需要设置多个$ \epsilon $值来获取正确的聚类结果，这样的问题在高维数据集中更为常见。
-%以\ref{s4-dbhcexa}为例，图中包含三个簇C1、C2和C3，三者密度截然不同，若按照传统DBSCAN算法进行聚类，选择一个$ \epsilon $值，划分结果较差。
-%因为若选择的$ \epsilon $值适合簇C3，簇C1和C2会被划分到同一个簇中；若选择的$ \epsilon $值适合簇C1，那么簇C2和C3会被划分为噪声。
-%因此，需要设置多个$ \epsilon $值来获取正确的聚类结果，这样的问题在高维数据集中更为常见。
-%\begin{figure}[htbp] %[htbp]
-%	\centering
-%	%	\captionsetup{font=scriptsize}
-%	\includegraphics[scale=0.6]{img/dbhcexa.png}
-%	\caption{多密度数据集可视化}
-%	\label{s4-dbhcexa}
-%\end{figure}
+因此，需要设置多个$ \epsilon $值来获取正确的聚类结果，这样的问题在高维数据集中比较常见。
 
-为了解决上述问题，论文\cite{latifi2021dbhc}提出一种基于DBSCAN的层次聚类方案。首先借助$ k $近邻算法和$ k $线图来获取多个$ \epsilon $值。
-最后，若最终结果所得簇个数$ |C| $超过了用户实际需要的数量$ k $，则反复选择最近的簇进行合并，直到满足要求。
+%再说解决
+为了解决上述问题，论文\cite{latifi2021dbhc}提出一种基于DBSCAN的层次聚类方案。
+该算法的核心思想是，首先借助$ k $近邻算法和$ k $线图来获取多个$ \epsilon $值。
+然后根据不同的$ \epsilon $值分别运行DBSCAN算法进行聚类，已经被聚类的内容不再参与后续聚类过程，直到遍历完所有$ \epsilon $值。
+最后，若划分所得簇个数$ |C| $超过了用户实际需要的数量$ k $，则反复选择最近的簇进行合并，直到满足要求。
 
-关于参数minPts、k以及$\epsilon$的获取依据见论文\cite{latifi2021dbhc}。这里主要阐述核心步骤，minPts值越小，形成的簇个数越多，相反则越少。如果minPts=1，则会创建密度为1的簇，不合理。若minPts=2，则DBSCAN的结果近似于层次聚类的结果，因此minPts的最小值应为3，最大值则是通过数据集大小$ M $和簇的个数$ C $给出，$ minPts_{max} = M\div C $。
-经过分析，若minPts取值为3，则$ k $的取值为必须为2，具体依据在论文\cite{latifi2021dbhc}的3.1节给出。
+%最后说说参数
+关于参数minPts、k以及$\epsilon$的获取依据论文已经详细给出，这里仅进行简单概况。minPts值越小，形成的簇个数越多，相反则越少。
+如果minPts=1，则会创建密度为1的簇，不合理。若minPts=2，则DBSCAN的结果近似于层次聚类的结果，因此minPts的最小值应为3，最大值则是通过数据集大小$ M $和簇的个数$ C $给出，$ minPts_{max} = M\div C $。
+经过分析，若minPts取值为3，则$ k $的取值为必须为2，具体依据在论文\cite{latifi2021dbhc}的3.1节。
+由于数据集中具体包含多少个不同的密度是无法获知的，因此采取用系列$\epsilon$值迭代聚类的策略来获取最终结果，$\epsilon$的取值主要借助$ k $线图。方法在算法\ref{alg_dbhc1}中给出：
 
-最后，由于数据集中具体包含多少个不同的密度是无法获知的，因此采取用系列$\epsilon$值迭代聚类的策略来获取最终结果，$\epsilon$的取值主要借助$ k $线图。方法在算法\ref{alg_dbhc1}中给出：
-
-首先，获取数据集的大小$ m $，在计算点之间的距离后，找到每个点第二近的距离。按照升序排列所有距离值$ Dist $，然后以$ \sqrt{m} $为间隔在$ Dist $中取值，即所需$\epsilon$值。
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
 	\renewcommand{\algorithmicensure}{\textbf{输出:}}
@@ -270,10 +264,13 @@ DBSCAN能够应用于任意维度的数据集。明文算法最坏情况下的�
 	\end{algorithmic}
 \end{algorithm}
 
-其次，获取划分的初始簇，具体流程如算法\ref{alg_dbhc2}所示。
+首先，获取数据集的大小$ m $，在计算点之间的距离后，找到每个点第二近的距离。按照升序排列所有距离值$ Dist $，然后以$ \sqrt{m} $为间隔在$ Dist $中取值，即所需$\epsilon$值。
+
+根据$ \epsilon $值获取划分初始簇的具体流程如算法\ref{alg_dbhc2}所示。
 每次取最小的$\epsilon$值来执行DBSCAN，设置minPts的值为3。
 然后，将本轮划分好的数据从原始数据集中剔除，不再参与后续聚类过程。
 最后，将本轮迭代所用的$\epsilon$值剔除，重复上述过程，直到遍历完所有$\epsilon$值。
+值得一提的是，这里没有被划分的点视为噪声，不会影响最终的聚类结果。
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
 	\renewcommand{\algorithmicensure}{\textbf{输出:}}
@@ -292,10 +289,10 @@ DBSCAN能够应用于任意维度的数据集。明文算法最坏情况下的�
 	\end{algorithmic}
 \end{algorithm}
 
-最后，将初始簇进行合并获取最终结果。
+最后，将算法\ref{alg_dbhc2}中获取的初始簇进行合并获取最终结果。
 如算法\ref{alg_dbhc3}所示，首先计算所有簇的中心，即累加簇中所有数据的值并取平均。
-然后计算簇中心之间的距离，选择最近的两个簇合并，形成一个新的簇，重新计算簇中心，并且更新数据点的划分关系，初始簇集合大小减一。
-重复上述过程，直到剩余簇个数为给出的$ k $个。
+然后计算簇中心之间的距离，选择最近的两个簇合并，形成一个新的簇，重新计算簇中心，并且更新数据点的划分关系，将合并簇中所有数据的标识统一，初始簇集合大小减一。
+重复上述过程，直到剩余簇个数为给出的$ k $个，即完成聚类。
 
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
@@ -355,6 +352,11 @@ DBSCAN能够应用于任意维度的数据集。明文算法最坏情况下的�
 在\ref{s3-mokuai}节所述安全计算协议的基础上，根据隐私保护DBSCAN方案的特点设计了如下计算模块。
 \subsection{安全排序协议}
 安全排序协议主要由安全比较协议构成，用户输入秘密共享的数组后，期望能够得到按照升序排列的密文结果。协议的核心思想为，将$ n $个数据上的排序拆分为$ n $次求解序列最值。
+
+具体过程如算法\ref{alg_sort}所示，进行$ n $次迭代，首先求解最小值，结果为秘密共享值$ \langle t_i \rangle \in \{0,1\}, i\in[1,n] $，数组中最小值的位置为1，其余均为0。
+然后，开始遍历每个结果，$ res $通过累加记录最小值的具体值，并更新原始数组，通过将最小值变为全局最大值，以消除对后续计算的影响。
+若当前元素为最小值（即$\langle t_i \rangle=1  $ ），则对应$ D[i] $中的值变为最大值maxv，若不是则保留原值，不做修改。最后，将累加获得最小值$ res $存放到$ D^{\prime}[i] $中以获得升序排列的结果。
+
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
 	\renewcommand{\algorithmicensure}{\textbf{输出:}}
@@ -374,20 +376,12 @@ DBSCAN能够应用于任意维度的数据集。明文算法最坏情况下的�
 		\ENDFOR
 	\end{algorithmic}
 \end{algorithm}
-
-具体过程如算法\ref{alg_sort}所示，进行$ n $次迭代，首先求解最小值，结果为秘密共享值$ \langle t_i \rangle \in \{0,1\}, i\in[1,n] $，数组中最小值的位置为1，其余均为0。
-然后，开始遍历每个结果，$ res $通过累加记录最小值的具体值，并更新原始数组，通过将最小值变为全局最大值，以消除对后续计算的影响。
-若当前元素为最小值（即$\langle t_i \rangle=1  $ ），则对应$ D[i] $中的值变为最大值maxv，若不是则保留原值，不做修改。最后，将累加获得最小值$ res $存放到$ D^{\prime}[i] $中以获得升序排列的结果。
-
-
 \section{隐私保护DBSCAN方案}
 \label{s4-t1}
 在正式介绍本文设计的隐私保护DBSCAN方案之前，首先通过一个示例来详细阐述方案的核心思想。在DBSCAN算法的基础上，本文引入了临时簇的概念，令核心对象与其$ \epsilon $范围内未被划分的边界对象组成独立的临时簇，临时簇内所有数据对象的簇标识保持一致。
 在遍历的过程中对于核心对象，修改其$ \epsilon $范围内未被划分的边界对象的簇标识，与当前核心对象保持一致。对于核心对象$ \epsilon $范围内的其他核心对象，记录二者的相邻关系。
 在还原聚类结果时，根据相邻关系构造邻接矩阵（相邻对象在矩阵中对应值大于0），通过深度优先遍历算法找到相邻的临时簇合并，不相邻的临时簇不受影响。
 
-假设当前有一个包含10个点的数据集$ \{p_1,...,p_{10}\} $，令minPts为2，用圆圈框出所有数据对象的$ \epsilon $邻域，数据集可视化后如图\ref{dataraw}所示，其中虚线框为边界对象$ \epsilon $邻域，实线框为核心对象$ \epsilon $邻域。
-在图\ref{dbraw}中，我们用蓝色表示核心对象，绿色表示边界对象，噪声点在聚类过程中不会进行任何处理，为了简化表示，示例数据集没有噪声点。
 \begin{figure}[htbp]
 	\begin{minipage}[t]{0.48\linewidth}
 		\centering
@@ -404,6 +398,9 @@ DBSCAN能够应用于任意维度的数据集。明文算法最坏情况下的�
 	\end{minipage}
 \end{figure}
 
+假设当前有一个包含10个点的数据集$ \{p_1,...,p_{10}\} $，令minPts为2，用圆圈框出所有数据对象的$ \epsilon $邻域，数据集可视化后如图\ref{dataraw}所示，其中虚线框为边界对象$ \epsilon $邻域，实线框为核心对象$ \epsilon $邻域。
+在图\ref{dbraw}中，我们用蓝色表示核心对象，绿色表示边界对象，噪声点在聚类过程中不会进行任何处理，为了简化表示，示例数据集没有噪声点。
+
 接下来，在上述示例数据集的基础上，将详细介绍聚类的过程。下述过程按照编号$ \{1,2,...,10\} $进行遍历，每一个数据对象的初始簇标识为图中序号。首先，对$ p_1 $进行处理，在其$ \epsilon $范围内，有边界对象$ p_6$、$p_4 $和核心对象$ p_2 $。针对边界对象，我们修改其编号与$ p_1 $保持一致；针对核心对象，我们记录相邻关系；不在$ \epsilon $范围内的点（例如$ p_3 $和$ p_9 $），不做任何处理。对$ p_1 $遍历完所有数据对象后，结果如图\ref{db_one}所示。
 
 \begin{figure}[htbp]
@@ -417,9 +414,9 @@ DBSCAN能够应用于任意维度的数据集。明文算法最坏情况下的�
 
 \begin{figure}[htbp]
 	\centering
-	\subfloat[$ p_2 $处理结果]{\includegraphics[width=0.3\textwidth]{img/db3.png}}
-	\subfloat[$ p_3 $处理结果]{\includegraphics[width=0.3\textwidth]{img/db4.png}}
-	\subfloat[$ p_8 $处理结果]{\includegraphics[width=0.3\textwidth]{img/db5.png}}
+	\subfloat[$ p_2 $处理结果]{\includegraphics[width=0.29\textwidth]{img/db3.png}}
+	\subfloat[$ p_3 $处理结果]{\includegraphics[width=0.29\textwidth]{img/db4.png}}
+	\subfloat[$ p_8 $处理结果]{\includegraphics[width=0.29\textwidth]{img/db5.png}}
 	\caption{聚类处理过程}
 	\label{db_process}
 \end{figure}
@@ -433,7 +430,7 @@ DBSCAN能够应用于任意维度的数据集。明文算法最坏情况下的�
 	\label{db_matrix}
 \end{figure}
 
-经过合并后，得到最终聚类结果，如图\ref{dbres}所示，可以看到数据集包含两个簇，其中黄色为簇1，紫色为簇2。
+经过合并后，得到最终聚类结果，如图\ref{dbres}所示，可以看到数据集包含两个簇，其中黄色对象被划分到簇1中，紫色对象被划分到簇2中。
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.6\textwidth]{img/dbres.png}
@@ -534,16 +531,7 @@ resCId记录最终划分结果，在用户还原结果时使用，初始化为0�
 	\end{algorithmic}
 \end{algorithm}
 
-在初始化的过程中，默认每个元素的初始cluId为下标$ \{1,2,...,n\} $。在聚类的过程中，对于核心对象，修改其$ \epsilon $范围内所有未被标记的边界对象的cluId，并将状态修改为已标记。对于所有非核心点，无法修改其他点的属性，并且被标记后，无法再被其他核心点标记，噪声不会受到任何影响。经过上述过程，数据集已经被划分为若干临时簇，同一临时簇内所有数据对象的簇标识cluId一致。
-
-具体流程如算法\ref{alg_t1_s2}所示，为了简化说明，将输入数组sharedList简写为$ x $，并将相连关系的结果记录在plist数组中作为输出结果，每个元素的结构为info类型。
-
-在整个算法的执行过程中，通过各种运算来实现逻辑与和逻辑或，借助计算一些辅助标识来控制是否修改内容。
-首先，获取标识$ m_1 $来辅助后续计算，若x[i]为核心对象、x[j]为非核心对象并且二者相邻，则$ m_1 $为1，否则为0。
-若在$ m_1 $为1的情况下，x[j]未被标记，则$ m_2 $为1。这里根据$ m_2 $来控制是否修改x[j]的cluId，若不满足条件，则x[j]的cluId保持原样，否则修改为与x[i]的cluId一致。
-conn反映的是x[i]与x[j]是否相连，若x[i]和x[j]均为核心对象并且$ u[i][j]=1 $则conn等于1，否则为0，然后新增info类型的数据到plist中。值得一提的是，这里无论是否相邻，都会记录新的info信息，因此最终plist的长度为$ n(n-1) $。
-最后，更新x[j]的isMark标识，若x[j]已被划分（isMark=1）或者本次迭代过程中被划分（$ m_1 = 1 $），则x[j]的isMark标识为1，否则为0。算法中的计算方式体现的是逻辑或关系。
-
+在初始化的过程中，默认每个元素的初始cluId为下标$ \{1,2,...,n\} $。在聚类的过程中，对于核心对象，修改其$ \epsilon $范围内所有未被标记的边界对象的cluId，并将状态修改为已标记。对于所有非核心点，无法修改其他点的属性，并且被标记后，无法再被其他核心点标记，噪声不会受到任何影响。经过上述过程，数据集已经被划分为若干临时簇，同一临时簇内所有数据对象的簇标识cluId一致。具体流程如算法\ref{alg_t1_s2}所示，为了简化说明，将输入数组sharedList简写为$ x $，并将相连关系的结果记录在plist数组中作为输出结果，每个元素的结构为info类型。
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
 	\renewcommand{\algorithmicensure}{\textbf{输出:}}
@@ -565,12 +553,19 @@ conn反映的是x[i]与x[j]是否相连，若x[i]和x[j]均为核心对象并且
 	\end{algorithmic}
 \end{algorithm}
 
+在整个算法的执行过程中，通过各种运算来实现逻辑与和逻辑或，借助计算一些辅助标识来控制是否修改内容。
+首先，获取标识$ m_1 $来辅助后续计算，若x[i]为核心对象、x[j]为非核心对象并且二者相邻，则$ m_1 $为1，否则为0。
+若在$ m_1 $为1的情况下，x[j]未被标记，则$ m_2 $为1。这里根据$ m_2 $来控制是否修改x[j]的cluId，若不满足条件，则x[j]的cluId保持原样，否则修改为与x[i]的cluId一致。
+conn反映的是x[i]与x[j]是否相连，若x[i]和x[j]均为核心对象并且$ u[i][j]=1 $则conn等于1，否则为0，然后新增info类型的数据到plist中。值得一提的是，这里无论是否相邻，都会记录新的info信息，因此最终plist的长度为$ n(n-1) $。
+最后，更新x[j]的isMark标识，若x[j]已被划分（isMark=1）或者本次迭代过程中被划分（$ m_1 = 1 $），则x[j]的isMark标识为1，否则为0。算法中的计算方式体现的是逻辑或关系。
+
 论文\cite{bozdemir2021privacy}中提出的ppDBSCAN方案将复杂度从$ O(n^3)$降为$ O(maxIterations \cdot n^2) $，本节中，上述聚类过程的复杂度为$ O(n^2) $，并且不会产生任何精度损失也不会泄露任何密文信息，方案更加安全高效。
 
 \subsection{还原聚类结果}
 \label{task1-huanyuan}
 聚类后，在plist中记录了所有临时簇的相邻关系，云服务器分别将自己持有的秘密共享信息发送给用户。值得一提的是，其中sharedElem中的data、isCore以及isMark信息均不对用户揭露。
-用户运行$ \text{Rec}(\cdot,\cdot) $还原结果后，在本地分别运行还原算法以获取最终结果。方案较简单，对计算资源要求较低。在算法\ref{alg_t1_s3}和算法\ref{alg_t1_s4}中将详细说明如何还原结果。
+用户运行$ \text{Rec}(\cdot,\cdot) $还原结果后，在本地分别运行还原算法以获取最终结果。方案较简单，对计算资源要求较低。
+%在算法\ref{alg_t1_s3}和算法\ref{alg_t1_s4}中将详细说明如何还原结果。
 
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
@@ -604,6 +599,14 @@ conn反映的是x[i]与x[j]是否相连，若x[i]和x[j]均为核心对象并且
 	\end{algorithmic}
 \end{algorithm}
 
+首先，在算法\ref{alg_t1_s3}中构造大小为$ n \times n $的全零邻接矩阵，来存储邻接关系。
+根据plist信息来还原相连信息，若相邻则邻接矩阵中，对应位置的值大于0。
+然后，初始化一个数组visited来标记每个数据是否已经被划分到最终所属簇中，若已经被划分，则不再继续处理，这里用mark表示最终结果的簇编号，自1开始累加。
+随后，开始遍历，若第$ i $个元素已被划分，则跳出当前循环，开始下一次。
+若未被划分，则更新mark值自增1，然后开始构建新簇，从当前元素$ i $开始执行深度优先遍历（DFS）找到所有与$ i $相连的元素纳入到新簇中。
+DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，将相连的簇进行合并。
+最后，根据resmap映射关系，更新所有元素的最终簇编号resCId，这一步操作可以将属于同一个簇的所有临时簇中的数据点的cluId修改一致。
+
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
 	\renewcommand{\algorithmicensure}{\textbf{输出:}}
@@ -624,14 +627,6 @@ conn反映的是x[i]与x[j]是否相连，若x[i]和x[j]均为核心对象并且
 		\ENDFOR
 	\end{algorithmic}
 \end{algorithm}
-
-首先，在算法\ref{alg_t1_s3}中构造大小为$ n \times n $的全零邻接矩阵，来存储邻接关系。
-根据plist信息来还原相连信息，若相邻则邻接矩阵中，对应位置的值大于0。
-然后，初始化一个数组visited来标记每个数据是否已经被划分到最终所属簇中，若已经被划分，则不再继续处理，这里用mark表示最终结果的簇编号，自1开始累加。
-随后，开始遍历，若第$ i $个元素已被划分，则跳出当前循环，开始下一次。
-若未被划分，则更新mark值自增1，然后开始构建新簇，从当前元素$ i $开始执行深度优先遍历（DFS）找到所有与$ i $相连的元素纳入到新簇中。
-DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，将相连的簇进行合并。
-最后，根据resmap映射关系，更新所有元素的最终簇编号resCId，这一步操作可以将属于同一个簇的所有临时簇中的数据点的cluId修改一致。
 
 深度优先算法在这里应用的目的是将相连的临时簇合并成一个整体，从而获取最终的结果。在遍历的过程中，若判断相连，则建立该数据cluId到最终结果mark的映射关系。
 
@@ -666,7 +661,14 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 \subsection{初始化}
 不同于方案一的初始化过程，这里需要对每个非核心对象求最近的核心对象，并修改cluId，与最近的核心对象保持一致。上述操作需要运行安全极值协议，计算和通信开销相较于方案一的预处理过程略微增加。
 
-具体流程如算法\ref{alg_t2_s1}所示：
+具体流程如算法\ref{alg_t2_s1}所示。首先，计算每个元素到其他元素的距离，同时获取邻域关系存储在$ u $中，并且记录每个元素邻域范围内包含点的个数$ s[j],j\in[n] $。然后，并行比较$ s $与minPts的大小关系，并更新每个元素的isCore属性。
+
+计算完isCore信息后，开始本节算法的核心部分，即更新非核心对象的cluId。
+预设标识$ m $来判断是否对元素$ x[i] $更新cluId，判断依据是若$ x[i] $为非核心对象并且邻域范围内存在核心对象，则可以修改。若$ x[j] $为核心对象且与$ x[i] $相邻，则$ t1[j] $为1，否则$ t2[j] $为1。
+对所有元素进行遍历之后，若$ m=1 $则代表$ \epsilon $邻域内存在核心对象，否则不存在。此时通过乘法排除$ x[i] $为核心对象的情况，若为核心对象则无论邻域内是否有其他核心对象均不修改cluId。
+根据$ t1 $、$ t2 $以及距离值，计算出$ r1 $，过滤出所有相邻核心对象的距离，无关对象的距离设为最大值$ max $，避免影响求解距离最近的核心对象。
+最后，通过逐个相乘后累加来求解最近相邻核心对象的cluId，并根据前述$ m $值来控制是否更新cluId。
+
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
 	\renewcommand{\algorithmicensure}{\textbf{输出:}}
@@ -691,7 +693,8 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 		\STATE $ t2[j] \leftarrow 1-t1[j] $
 		\STATE $ m = t1[j] + m - \text{MUL}(m, t1[j]) $
 		\ENDFOR
-		\STATE $ r1 \leftarrow \text{MUL}(x[i], t1) + \text{MUL}([max]_n, t2) $
+		\STATE $ m \leftarrow \text{MUL}(m, 1-x[i].isCore) $
+		\STATE $ r1 \leftarrow \text{MUL}(d[i], t1) + \text{MUL}([max]_n, t2) $
 		\STATE $ r2 \leftarrow \text{SMin}(r1) $
 		\STATE $ nId \leftarrow \text{sum}(\text{MUL}(r2[j], x[j].cluId))\ \text{for}\ j \in [n] $
 		\STATE $ x[i].cluId \leftarrow \text{MUL}(nId, m) + \text{MUL}(1-m, x[i].cluId)$
@@ -699,13 +702,12 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 	\end{algorithmic}
 \end{algorithm}
 
-首先，计算每个元素到其他元素的距离，同时获取邻域关系存储在$ u $中，并且记录每个元素邻域范围内包含点的个数$ s[j],j\in[n] $。然后，并行比较$ s $与minPts的大小关系，并更新每个元素的isCore属性。
-计算完isCore信息后，开始本节算法的核心部分，即更新非核心对象的cluId。预设标识$ m $来判断是否对元素更新cluId，判断依据是若邻域范围内存在核心点，则可以修改。若$ x[j] $为核心点且与$ x[i] $相邻，则$ t1[j] $为1，否则$ t2[j] $为1。
-根据该值计算出$ r1 $，过滤出所有相邻核心对象的距离，无关距离设为最大值，避免影响求解距离最近的核心对象。最后，通过逐个相乘后累加来求解最近相邻核心对象的cluId，并根据前述$ m $值来更新cluId。
+值得一提的是，对于核心对象，$ m = 0 $无需修改cluId。对于边界对象，依据算法将修改cluId与最近相邻核心对象保持一致。对于噪声$ m=0 $，因此cluId不会发生改变。
 
-值得一提的是，对于核心对象，$ m = 1 $需要修改cluId，但是最近相邻核心点为自身，因此cluId未改变。对于边界对象，依据算法将修改cluId与最近相邻核心对象保持一致。对于噪声，$ m=0 $因此cluId不会发生改变。
 \subsection{核心对象聚类}
-在初始化的过程中，所有边界元素均已被划分到最近相邻核心点所属簇中。因此相较于方案一中的聚类过程（见算法\ref{alg_t1_s2}），本方案的聚类过程更加简单便捷，在算法\ref{alg_t2_s2}中只要记录相连的临时簇信息即可，当且仅当x[i]与x[j]均为核心对象并且距离小于$ \epsilon $，则认为二者相连。
+在初始化的过程中，所有边界元素均已被划分到最近相邻核心对象所属簇中，因此相较于方案一中的聚类过程（见算法\ref{alg_t1_s2}），本方案的聚类过程更加简单便捷。
+在算法\ref{alg_t2_s2}中只要记录相连的临时簇信息即可，当且仅当x[i]与x[j]均为核心对象并且距离小于$ \epsilon $，则认为二者相连。
+%算法的复杂度为$ O(n^2) $，仅涉及简单的乘法操作，聚类效率较高。
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
 	\renewcommand{\algorithmicensure}{\textbf{输出:}}
@@ -722,6 +724,7 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 		\ENDFOR
 	\end{algorithmic}
 \end{algorithm}
+
 \section{基于DBSCAN的隐私保护层次聚类}
 \label{s4-t3}
 方案一（\ref{s4-t1}节）和方案二（\ref{s4-t2}节）均是在用户给出$\epsilon$和minPts值的基础上，实现隐私保护DBSCAN。但是现实情况中，多个独立用户协同聚类时，不知道彼此拥有的具体数据信息，难以根据数据分布特点给出适合的参数，从而导致聚类效果较差。
@@ -738,6 +741,8 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 \subsection{获取$\epsilon$值}
 %todo 修改下排版
 本小节将详细阐述如何通过$ k $线图来获取所有聚类所需的$\epsilon$值，$ k $线图的绘制方式为，首先计算每个点到其最近的第$ k $个点的距离，然后按照升序方式排列，最后根据这些排序值绘图。在算法\ref{alg_t3_s1}中，将详细说明计算流程。
+
+由于现实数据集的复杂性，目前没有办法准确找到每个数据集具体包含多少种不同的密度，DBHC方案\cite{latifi2021dbhc}经过分析，选择在$ k $线图中固定间隔来选取$\epsilon$的值，数据集的大小为$ n $，则间隔为$ \sqrt{n} $。因此DBSCAN的执行次数也为$ \sqrt{n} $次。
 
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
@@ -768,8 +773,6 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 		\ENDFOR
 	\end{algorithmic}
 \end{algorithm}
-
-由于现实数据集的复杂性，目前没有办法准确找到每个数据集具体包含多少种不同的密度，DBHC方案\cite{latifi2021dbhc}经过分析，选择在$ k $线图中固定间隔来选取$\epsilon$的值，数据集的大小为$ n $，则间隔为$ \sqrt{n} $。因此DBSCAN的执行次数也为$ \sqrt{n} $次。
 
 首先，计算元素与元素之间的距离，由于距离是相对的$ d[i][j]=d[j][i] $，因此缩减了一半的计算量。然后，取$ k=2 $，计算每个点第二近的距离来绘制$ k $线图。$ d $为二维矩阵，$ d[i] $存储元素$ i $所有距离值，首先求距离最小值，然后通过乘法和加法使得$ d[i] $中的最小值化为最大值，在此之后，再求解一次最小值，即可获得第$ k $小的值。
 通过乘法使得数组中只保留第$ k $小的值，其他值均为0，然后通过计算数组累加值来获取最终结果存储到$ d2 $中。其中，借助安全排序算法\ref{alg_sort}来对$ d2 $数组进行升序排列，结果存放到$ sdist $中。
@@ -812,6 +815,12 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 最后，比较邻域范围内点个数与minPts的大小关系，并据此更新$x[i]$的isCore属性。
 最后根据上述信息，执行DBSCAN聚类。
 
+在算法\ref{alg_t3_s2-2}中将详细解释执行聚类的过程。
+首先判断是否更新x[j].cluId，计算标识m1。更新依据为，当且仅当x[i]为未标记核心对象（x[i].isCore=1，x[i].isMark=0）并且x[j]为未标记非核心对象（x[j].isCore=0，x[j].isMark=0)且二者相邻（u[i][j]=1）时，有m1=1，修改x[j]的cluId与x[i]保持一致。
+然后记录相邻关系，当且仅当x[i]与x[j]均为未标记核心点且二者相邻时，有m2=1，将信息记录到plist中。
+最后更新x[j]的isMark标识，这里实现的是逻辑或关系，若x[j]已经被标记（x[j].isMark=1）或者在本次迭代中被标记（m1=1），则x[j].isMark=1。注意这里只有非核心对象会更新。
+在遍历完所有点后，再对核心对象更新一次isMark标识，上述迭代过程中，只有未被标记的非核心对象会更新isMark标识，这里引入新一轮操作，对所有核心对象更新标识。以防止在下一次聚类过程中，出现已经聚类过的核心对象。
+
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
 	\renewcommand{\algorithmicensure}{\textbf{输出:}}
@@ -841,23 +850,15 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 		\FOR{$i=1$ to $n$}
 		\STATE  x[i].isMark $ \leftarrow $ x[i].isCore+x[i].isMark - \text{MUL}(x[i].isCore,x[i].isMark)
 		\ENDFOR
-
+		
 	\end{algorithmic}
 \end{algorithm}
 
-在算法\ref{alg_t3_s2-2}中将详细解释执行聚类的过程。
-首先判断是否更新x[j].cluId，计算标识m1。更新依据为，当且仅当x[i]为未标记核心对象（x[i].isCore=1，x[i].isMark=0）并且x[j]为未标记非核心对象（x[j].isCore=0，x[j].isMark=0)且二者相邻（u[i][j]=1）时，有m1=1，修改x[j]的cluId与x[i]保持一致。
-然后记录相邻关系，当且仅当x[i]与x[j]均为未标记核心点且二者相邻时，有m2=1，将信息记录到plist中。
-最后更新x[j]的isMark标识，这里实现的是逻辑或关系，若x[j]已经被标记（x[j].isMark=1）或者在本次迭代中被标记（m1=1），则x[j].isMark=1。注意这里只有非核心对象会更新。
-在遍历完所有点后，再对核心对象更新一次isMark标识，上述迭代过程中，只有未被标记的非核心对象会更新isMark标识，这里引入新一轮操作，对所有核心对象更新标识。以防止在下一次聚类过程中，出现已经聚类过的核心对象。
 %首先更新数据的cluId，只有在$x[i]$为未被标记的核心点，$x[j]$未被标记，且二者相邻$u[i][j]=1$的情况下，才将$x[j]$的cluId修改为与$x[i]$一致。
 %$ m[j] $记录是否更新$x[j]$的isMark信息，若$x[j]$的cluId被修改过，则认为该数据已被被划分。
 %然后，记录核心点相连信息，在上述判断是否修改cluId逻辑的基础上，加入$x[j]$为核心点的限制即可，随后构造新元素并将结果计入plist中。
 %最后，更新所有元素的isMark属性，若元素在之前聚类过程中已被聚类（isMark=1）或者在本次聚类中被划分（m[i]=1），则isMark属性标记为1。
 %isMark的作用是让本轮以及之前被划分好的数据不再参与后续聚类。
-
-\subsection{合并初始簇}
-本节的主要工作由用户独立完成。在算法\ref{alg_t3_s3}中，给出详细描述。首先根据算法\ref{alg_t1_s3}将临时簇进行合并还原成初始簇，并更新plist每个数据的resCId，即初始簇标识。然后对plist进行处理获取每个初始簇包含点的个数以及簇中心。反复求解集合$ C $中最近的两个簇$ c_a $和$ c_b $然后将数据进行合并，更新参数直到簇的个数为$ k $个。
 \begin{algorithm}[htbp]
 	\renewcommand{\algorithmicrequire}{\textbf{输入:}}
 	\renewcommand{\algorithmicensure}{\textbf{输出:}}
@@ -876,6 +877,10 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 		\ENDWHILE
 	\end{algorithmic}
 \end{algorithm}
+\subsection{合并初始簇}
+本节的主要工作由用户独立完成，在算法\ref{alg_t3_s3}中给出详细描述。
+首先根据算法\ref{alg_t1_s3}将临时簇进行合并还原成初始簇，并更新plist每个数据的resCId，即初始簇标识，然后对plist进行处理获取每个初始簇包含点的个数以及簇中心。反复求解集合$ C $中最近的两个簇$ c_a $和$ c_b $然后将数据进行合并，更新参数直到簇的个数为$ k $个。
+
 %\section{安全性分析}
 %\label{s4-lilun}
 \section{系统评估与性能分析}
@@ -916,6 +921,18 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 
 \textbf{场景：}隐私保护DBSCAN方案既可以应用于外包计算也可以应用于两方安全计算的场景。此外，聚类的数据可以采取任意划分形式，例如水平划分、垂直划分或者是混合划分。在以下实验中，基于外包计算的场景，用户将数据秘密共享后分别发送给两个不共谋的云服务器。值得一提的是，外包计算场景下，参与聚类的用户数量不受限制，实验中假设单个用户上传所有数据。方案可以直接应用到用户更多的场景中，只要数据、参数和簇个数和实验保持一致即可。
 
+\textbf{数据集：}为了更好地评估聚类方案，本文在多个不同的数据集上进行了实验。其中Lsun与S1数据集是为了和论文\cite{bozdemir2021privacy}对比方案的效率和实用性。
+
+\begin{compactitem}
+	\item \textbf{Lsun：}图\ref{fig:a}中的Lsun数据集\cite{ultsch2005clustering}在论文\cite{wu2020secure,bozdemir2021privacy}分别用于评估隐私保护K-means和隐私保护DBSCAN方案的性能。它的正确划分结果中包含3个簇，分别拥有不同的方差和簇距离。三个簇分别包含200、100和100个元素，彼此没有重叠的部分。
+	\item
+	\textbf{S1：}图\ref{fig:c}中的S1\cite{franti2018k}数据集是一个人工合成的二维数据集，包含5000个样本，可以划分为15个不同的球形高斯簇，分别包含300到350个元素。其中簇之间有9\%的重叠部分。该数据集在论文\cite{bozdemir2021privacy,mohassel2019practical,su2007privacy}中被用于分析聚类效果。
+	\item
+	\textbf{Aggregation：}图\ref{fig:e}中的Aggregation数据集\cite{gionis2007clustering}为人工合成的二维数据集，包含788个数据，7个分类。在后续实验中，将通过该数据集分析K-means和DBSCAN聚类结果的差异，数据之间有极少重叠部分。
+	\item
+	\textbf{人造数据集：}图\ref{fig:dd}为实验构造包含不同密度数据的二维数据集，用来衡量三个方案的聚类效果。为了方便观察和对比分析，数据集包含数据量较少，分布较简单，不同簇之间的密度差异较大。其中分别包含3个簇，C1密度最大，C3密度最小而C2的密度在二者之间。实验中，$ \epsilon $设置不同值，观察最终划分结果。
+\end{compactitem}
+
 \begin{figure}[htbp]
 	\centering
 	\subfloat[\label{fig:a}]{
@@ -930,28 +947,12 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 	\caption{Lsun、S1和Aggregation数据集正确划分结果}
 \end{figure}
 
-\textbf{数据集：}为了更好地评估聚类方案，本文在多个不同的数据集上进行了实验。其中Lsun与S1数据集是为了和论文\cite{bozdemir2021privacy}对比方案的效率和实用性。
-
-\begin{compactitem}
-	\item \textbf{Lsun：}图\ref{fig:a}中的Lsun数据集\cite{ultsch2005clustering}在论文\cite{wu2020secure,bozdemir2021privacy}分别用于评估隐私保护K-means和隐私保护DBSCAN方案的性能。它的正确划分结果中包含3个簇，分别拥有不同的方差和簇距离。三个簇分别包含200、100和100个元素，彼此没有重叠的部分。
-	\item
-	\textbf{S1：}图\ref{fig:c}中的S1\cite{franti2018k}数据集是一个人工合成的二维数据集，包含5000个样本，可以划分为15个不同的球形高斯簇，分别包含300到350个元素。其中簇之间有9\%的重叠部分。该数据集在论文\cite{bozdemir2021privacy,mohassel2019practical,su2007privacy}中被用于分析聚类效果。
-	\item
-	\textbf{Aggregation：}图\ref{fig:e}中的Aggregation数据集\cite{gionis2007clustering}为人工合成的二维数据集，包含788个数据，7个分类。在后续实验中，将通过该数据集分析K-means和DBSCAN聚类结果的差异，数据之间有极少重叠部分。
-	\item
-	\textbf{人造数据集：}图\ref{fig:dd}为实验构造包含不同密度数据的二维数据集，用来衡量三个方案的聚类效果。为了方便观察和对比分析，数据集包含数据量较少，分布较简单，不同簇之间的密度差异较大。其中分别包含3个簇，C1密度最大，C3密度最小而C2的密度在二者之间。实验中，$ \epsilon $设置不同值，观察最终划分结果。
-\end{compactitem}
-
 \textbf{编码：}Lsun数据集由有理数组成。参考前述工作\cite{jaschke2019unsupervised}，将数据放大$ 10^6 $全部转化为整数后执行协议。相应的，Aggregation数据集放大$ 10^2 $倍。S1数据集由整数构成不进行放缩。
-
-\textbf{参数：}方案一与方案二均需要人工设定$\epsilon$和minPts的值，参考论文\cite{bozdemir2021privacy}中的设置，并根据编码过程中的放缩值对参数进行修改，同时，由于算法中计算欧式距离去掉了根号，因此也对$\epsilon$值做出了相应的处理。
-具体信息在表格\ref{s4-table-dataset}中给出。
-方案三不需要提前根据数据特点分析给出$\epsilon$和minPts的值，在本节的实验中，目标簇个数$ k $根据数据集的明文簇个数给出。
 
 \begin{table}[htbp]
 	\centering
 	\renewcommand{\arraystretch}{1.3}
-	\caption{数据集详细信息}
+	\caption{数据集参数设置详细信息}
 	\scalebox{1.0}{
 		\begin{tabular}{c|c|c|c|c|c}% 通过添加 | 来表示是否需要绘制竖线c|
 			\hline  % 在表格最上方绘制横线
@@ -970,13 +971,17 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 	\label{s4-table-dataset}
 \end{table}
 
+\textbf{参数：}方案一与方案二均需要人工设定$\epsilon$和minPts的值，参考论文\cite{bozdemir2021privacy}中的设置，并根据编码过程中的放缩值对参数进行修改，同时，由于算法中计算欧式距离去掉了根号，因此也对$\epsilon$值做出了相应的处理。
+具体信息在表格\ref{s4-table-dataset}中给出。
+方案三不需要提前根据数据特点分析给出$\epsilon$和minPts的值，在本节的实验中，目标簇个数$ k $根据数据集的明文簇个数给出。
+
 \subsubsection{聚类质量分析}
 % 主要是衡量下ari指标以及聚类结果展示对比
 本小节，将根据调整兰德系数（ARI）在Lsun、S1和Aggregation数据集上进行实验来比较上述几个方案与论文\cite{bozdemir2021privacy}中提出的ppDBSCAN方案以及明文标准K-means算法的聚类质量。
 
 由于聚类是一种无监督机器学习算法，没有办法计算准确率，但是Lsun、S1与Aggregatin为人工合成数据集，主要用于对机器学习算法进行基准测试，所以正确的分类结果是已知的。因此，能够基于这些数据集对聚类算法用ARI指标来衡量聚类质量，这是一个广泛应用的外部聚类质量指标\cite{vinh2009information,arbelaitz2013extensive}，详细的计算方法在小节\ref{s4-ari-intro}给出。
 
-为了进行公平合理的比较，对每个方案都选择了最佳的参数设置。对于K-means，选择sklearn库中的标准K-means聚类方法\cite{buitinck2013api}来获取结果，提供准确的簇个数，同时为了使算法更快收敛和获取高质量的K-means聚类结果，选择K-means++参数来优化初始簇中心的选择（另一种选择为设置random参数，随机选择初始簇中心）。对于DBSCAN，按照表格\ref{s4-table-dataset}来设置参数运行所有方案。论文\cite{bozdemir2021privacy}没有给出基于Aggregation的实验结果，因此这里不进行对比分析。
+为了进行公平合理的比较，对每个方案都选择了最佳的参数设置。对于K-means，选择sklearn库中的标准K-means聚类方法来获取结果\cite{buitinck2013api}，提供准确的簇个数，同时为了使算法更快收敛和获取高质量的K-means聚类结果，选择K-means++参数来优化初始簇中心的选择（另一种选择为设置random参数，随机选择初始簇中心）。对于DBSCAN，按照表格\ref{s4-table-dataset}来设置参数运行所有方案。论文\cite{bozdemir2021privacy}没有给出基于Aggregation的实验结果，因此这里不进行对比分析。
 
 \begin{table}[htbp]
 	\centering
@@ -1001,7 +1006,7 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 在表格\ref{s4-table-arires}中，可以看到基于ARI的聚类质量评估结果。
 
 \begin{compactitem}
-	\item \textbf{与K-means比较：}在所有数据集上，本文所述三个方案的划分结果均优于K-means聚类的划分结果。特别在Lsun这种非球形数据集上，K-means的聚类质量显著落后于DBSCAN。S1为球形数据集，因此K-means方案的划分结果的ARI值与方案一二三相近。Aggregation数据集同时包含球形和非球形的数据集，因此方案一二三比K-means表现更好。值得一提的是，K-means算法的聚类效果受到初始簇中心的影响较大，若随机生成初始簇中心，ARI指标的计算值会更小。
+	\item \textbf{与K-means比较：}在所有数据集上，本文所述三个方案的划分结果均优于K-means聚类的划分结果。特别在Lsun这种非球形数据集上，K-means的聚类质量显著落后于DBSCAN。S1主要包含球形数据集，因此K-means方案的划分结果的ARI值与方案一二三相近。Aggregation数据集同时包含球形和非球形的数据集，因此方案一二三比K-means表现更好。值得一提的是，K-means算法的聚类效果受到初始簇中心的影响较大，若随机生成初始簇中心，ARI指标的计算值会更小。
 	\item
 	\textbf{与ppDBSCAN比较：}这里将方案一的聚类质量与ppDBSCAN进行对比分析，因为方案一和ppDBSCAN都是基于DBSCAN算法，聚类效果应当与明文DBSCAN一致。但是方案一在S1数据集上表现更好，具体来说可能有几方面的原因。首先是S1数据集有部分重叠，论文\cite{bozdemir2021privacy}为了简化密文方案复杂度，没有完全遵循明文DBSCAN的思路，设置了最大迭代深度来限制次数，该参数主要受到数据分布影响，可能会影响聚类结果。其次，数据集的顺序对DBSCAN的划分效果会产生影响，因此即便是ppDBSCAN的迭代深度设置正确，二者最终划分结果也可能会出现一些差异。
 	\item
@@ -1029,7 +1034,7 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 
 \textbf{可视化比较：}图\ref{s4-img-clures}中，给出了聚类的可视化结果，行依次对应Lsun、S1和Aggregation数据集，列依次为方案一、二、三和明文K-means的聚类结果。其中黑色为DBSCAN结果中的噪声点。可以看到方案一二均划分的较好，但是方案三在簇内部产生较多噪声点，划分结果产生一些误差。K-means在非球形数据集上容易将单一簇划分为两个，效果较差（\ref{s4-img-clures}.d/\ref{s4-img-clures}.l）。对比图\ref{s4-img-clures}.e和\ref{s4-img-clures}.f可以看到在不同簇之间的重叠部分划分结果不一样，方案二打乱数据后，重复运行结果保持一致，方案一则会产生变化。
 
-\textbf{多密度数据集聚类结果对比：}这里在人造数据集（如图\ref{fig:dd}）上分别运行方案一和方案三。根据数据分布的特点，针对方案一需要手动设置$ \epsilon $，这里根据密度最大的簇C1，设置$ \epsilon $为4，根据密度最小的簇C3，设置$ \epsilon $为16。针对方案三，按照算法自动获取$ \epsilon $的值。对于minpts，设置为3。具体结果如下所示，图\ref{dbhcexp1}中的$ \epsilon $值适合密度较大的簇，C1和C2均能够被正确划分，C3则被划分为噪声点。图\ref{dbhcexp2}中，C3能够被正确划分，而C1和C2则被划分到同一个簇中。最后如图\ref{dbhcexp3}所示，方案三的划分结果和数据集真实划分情况完全一致。综上所述，方案三在多密度数据集上划分效果显著优于方案一和方案二。
+\textbf{多密度数据集聚类结果对比：}这里在人造数据集（如图\ref{fig:dd}）上分别运行方案一和方案三。根据数据分布的特点，针对方案一需要手动设置$ \epsilon $，这里根据密度最大的簇C1，设置$ \epsilon $为4；根据密度最小的簇C3，设置$ \epsilon $为16。针对方案三，按照算法自动获取$ \epsilon $的值。对于minpts，设置为3。具体结果如下所示，图\ref{dbhcexp1}中的$ \epsilon $值适合密度较大的簇（即数据分布密集），C1和C2均能够被正确划分，C3则被划分为噪声点。图\ref{dbhcexp2}中，C3能够被正确划分，而C1和C2则被划分到同一个簇中。最后如图\ref{dbhcexp3}所示，方案三的划分结果和数据集真实划分情况完全一致。综上所述，方案三在多密度数据集上划分效果显著优于方案一和方案二。
 
 
 \begin{figure}[htbp] %[htbp]
@@ -1047,7 +1052,7 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 	\hfill
 	\begin{minipage}[t]{0.33\linewidth}
 	\includegraphics[width=\linewidth]{img/dbhc-exp-3.png}
-	\caption{方案三（多$ \epsilon $）}
+	\caption{方案三（多$ \epsilon $值）}
 	\label{dbhcexp3}
 	\end{minipage}
 \end{figure}\textbf{}
@@ -1084,8 +1089,6 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 值得一提的是，K-means聚类收敛的速度受到数据集和初始簇中心的影响，若初始簇中心随机得到的结果较差，收敛所需迭代次数可能会增加。ppDBSCAN算法中提供的一种迭代终止策略也依赖于数据分布特点。本文所述的三种方案均无需考虑这些因素，聚类所需用时不受数据分布的影响，方案耗时更加稳定。
 
 接下来，根据图\ref{s4-exp-tcost}和图\ref{s4-exp-ccost}来对安全比较协议、安全极值协议以及安全排序协议从耗时和通信开销两个角度进行对比分析。
-从图\ref{s4-exp-tcost}可以看到，三个协议随着数据量的增加耗时均有所增加，其中安全比较协议的耗时远远优于其他两个协议，主要原因是安全极值协议和安全排序协议由安全比较协议和其他操作组合而成，其中安全比较操作是性能瓶颈。
-
 \begin{figure}[htbp] %[htbp]
 	%	\captionsetup{font=scriptsize}
 	\begin{minipage}[t]{0.5\linewidth}
@@ -1099,7 +1102,9 @@ DFS的过程如算法\ref{alg_t1_s4}所示，边递归边记录映射关系，�
 		\caption{通信开销对比}
 		\label{s4-exp-ccost}
 	\end{minipage}
-\end{figure}\textbf{}
+\end{figure}
+
+从图\ref{s4-exp-tcost}可以看到，三个协议随着数据量的增加耗时均有所增加，其中安全比较协议的耗时远远优于其他两个协议，主要原因是安全极值协议和安全排序协议由安全比较协议和其他操作组合而成，其中安全比较操作是性能瓶颈。
 
 为了保证协议的顺利运行，设置数据传输的默认大小为$ 2^{20} $。在此基础上，可以看到安全排序协议的通信开销远超其他两个协议，原因在于对$ n $个数据进行安全排序，需要执行$ n $次安全极值协议，而每一次执行安全极值协议都需要进行一次安全比较，并行比较$ n(n-1) $对数据。
 由上述关系可以反映图中的变化规律，数据量的变化对安全比较协议耗费通信开销的增长速度影响较小，其他协议则不然。

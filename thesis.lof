@@ -40,9 +40,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.6}{\ignorespaces 隐私保护DBSCAN方案系统模型\relax }}{48}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces 示例数据可视化\relax }}{51}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces 示例数据可视化\relax }}{50}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces 核心对象与边界对象\relax }}{51}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces 核心对象与边界对象\relax }}{50}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.9}{\ignorespaces $ p_1 $处理结果\relax }}{51}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
@@ -62,15 +62,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.14}{\ignorespaces 处理边界对象\relax }}{58}{figure.caption.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Lsun、S1和Aggregation数据集正确划分结果\relax }}{65}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Lsun、S1和Aggregation数据集正确划分结果\relax }}{66}{figure.caption.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((a))}{\ignorespaces {}}}{65}{subfigure.15.1}%
+\contentsline {subfigure}{\numberline {((a))}{\ignorespaces {}}}{66}{subfigure.15.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((b))}{\ignorespaces {}}}{65}{subfigure.15.2}%
+\contentsline {subfigure}{\numberline {((b))}{\ignorespaces {}}}{66}{subfigure.15.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((c))}{\ignorespaces {}}}{65}{subfigure.15.3}%
+\contentsline {subfigure}{\numberline {((c))}{\ignorespaces {}}}{66}{subfigure.15.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {((d))}{\ignorespaces {}}}{65}{subfigure.15.4}%
+\contentsline {subfigure}{\numberline {((d))}{\ignorespaces {}}}{66}{subfigure.15.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.16}{\ignorespaces 聚类结果可视化比较\relax }}{68}{figure.caption.46}%
 \defcounter {refsection}{0}\relax 
@@ -102,11 +102,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.18}{\ignorespaces 方案一（$ \epsilon = 16 $）\relax }}{69}{figure.caption.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.19}{\ignorespaces 方案三（多$ \epsilon $）\relax }}{69}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces 方案三（多$ \epsilon $值）\relax }}{69}{figure.caption.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.20}{\ignorespaces 耗时对比\relax }}{71}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces 耗时对比\relax }}{70}{figure.caption.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.21}{\ignorespaces 通信开销对比\relax }}{71}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces 通信开销对比\relax }}{70}{figure.caption.49}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.22}{\ignorespaces 聚类与还原结果耗时比较\relax }}{71}{figure.caption.50}%
 \contentsfinish 

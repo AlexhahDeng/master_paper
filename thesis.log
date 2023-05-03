@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.23)  28 APR 2023 21:38
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.21)  3 MAY 2023 09:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1473,11 +1473,7 @@ Package tocbasic Info: babel extension for `nls' omitted
 \@quotelevel=\count563
 \@quotereset=\count564
 
-(./thesis.aux
-
-LaTeX Warning: Label `s4-table-dataset' multiply defined.
-
-)
+(./thesis.aux)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
@@ -1951,8 +1947,8 @@ Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
 nput line 181.
 
 [9]
-File: img/timeline.png Graphic file (type bmp)
-<img/timeline.png>
+File: img/he-timeline.png Graphic file (type bmp)
+<img/he-timeline.png>
  [10] [11]
 
 Package fontspec Info: Font family 'FreeSerif(0)' created for font 'FreeSerif'
@@ -2105,31 +2101,26 @@ File: img/expres.png Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [45]
-File: img/sysmodel2.png Graphic file (type bmp)
-<img/sysmodel2.png>
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [46]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [47]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+File: img/sysmodel2.png Graphic file (type bmp)
+<img/sysmodel2.png>
 
- [48]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [49]
+[48] [49]
 File: img/dbraw.png Graphic file (type bmp)
 <img/dbraw.png>
 File: img/db1.png Graphic file (type bmp)
 <img/db1.png>
-File: img/db2.png Graphic file (type bmp)
-<img/db2.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [50]
+File: img/db2.png Graphic file (type bmp)
+<img/db2.png>
 File: img/db3.png Graphic file (type bmp)
 <img/db3.png>
 File: img/db4.png Graphic file (type bmp)
@@ -2154,35 +2145,35 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [56]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [57]
+[57]
 File: img/db1.png Graphic file (type bmp)
 <img/db1.png>
 File: img/redbscan.png Graphic file (type bmp)
 <img/redbscan.png>
-
-[58]
+ [58]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [59]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 738.
+(hyperref)                removing `math shift' on input line 741.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\epsilon' on input line 738.
+(hyperref)                removing `\epsilon' on input line 741.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 738.
+(hyperref)                removing `math shift' on input line 741.
 
 [60]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [61]
-Underfull \hbox (badness 4328) in paragraph at lines 827--828
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [62]
+Underfull \hbox (badness 4328) in paragraph at lines 836--837
 [] []$\OML/cmm/m/it/12 m\OT1/cmr/m/n/12 2 \OMS/cmsy/m/n/12   []\OT1/cmr/m/n/12 
 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 i\OT1/cmr/m/n/12 ]\OML/cmm
 /m/it/12 :isCore; \OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 x\OT1
@@ -2194,13 +2185,8 @@ Underfull \hbox (badness 4328) in paragraph at lines 827--828
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [63]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [64]
+[64]
 File: img/lsun_gt.png Graphic file (type bmp)
 <img/lsun_gt.png>
 File: img/s1_gt.png Graphic file (type bmp)
@@ -2210,7 +2196,9 @@ File: img/aggre_gt.png Graphic file (type bmp)
 File: img/expnew.png Graphic file (type bmp)
 <img/expnew.png>
 
-[65]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [65]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [66]
@@ -2251,7 +2239,7 @@ File: img/dbhc-exp-3.png Graphic file (type bmp)
 <img/dbhc-exp-3.png>
 
 [69]
-Overfull \hbox (4.85828pt too wide) in paragraph at lines 1069--1082
+Overfull \hbox (4.85828pt too wide) in paragraph at lines 1074--1087
  [][] 
  []
 
@@ -2284,27 +2272,27 @@ Collecting telemetry data privately[J].
 [77
 
 
-] [78]
+]
 Underfull \hbox (badness 1983) in paragraph at lines 117--117
-[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [31] []Jäschke A, Armknecht F. Unsuperv
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [29] []Jäschke A, Armknecht F. Unsuperv
 ised machine learning on encrypted
  []
 
-
+[78]
 Underfull \hbox (badness 1622) in paragraph at lines 117--117
-[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [39] []Liu D, Bertino E, Yi X. Privacy 
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [37] []Liu D, Bertino E, Yi X. Privacy 
 of outsourced k-means clustering[C]//
  []
 
 [79] [80] [81]
 Underfull \hbox (badness 1348) in paragraph at lines 117--117
-[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [74] []Beaver D. Efficient multiparty p
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [72] []Beaver D. Efficient multiparty p
 rotocols using circuit randomization[C]//
  []
 
 
 Underfull \hbox (badness 2050) in paragraph at lines 117--117
-[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [82] []Fränti P, Sieranoja S. K-means p
+[] \TU/TimesNewRomanPSStd(0)/b/n/12.045 [80] []Fränti P, Sieranoja S. K-means p
 roperties on six clustering benchmark
  []
 
@@ -2322,9 +2310,6 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 117DEA719AF11E3029D4563E48A6329F;8934.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
@@ -2332,10 +2317,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36764 strings out of 476919
- 695001 string characters out of 5825424
- 1615747 words of memory out of 5000000
- 56067 multiletter control sequences out of 15000+600000
+ 36759 strings out of 476919
+ 694788 string characters out of 5825423
+ 1613639 words of memory out of 5000000
+ 56062 multiletter control sequences out of 15000+600000
  432896 words of font info for 215 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,17n,130p,1151b,4874s stack positions out of 5000i,500n,10000p,200000b,80000s

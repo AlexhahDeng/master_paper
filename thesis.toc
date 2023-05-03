@@ -136,7 +136,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.4}基于DBSCAN的层次聚类}{46}{subsection.4.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}问题描述}{46}{section.4.3}%
+\contentsline {section}{\numberline {4.3}问题描述}{48}{section.4.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.1}系统模型}{48}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
@@ -164,13 +164,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.6.2}核心对象聚类}{59}{subsection.4.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}基于DBSCAN的隐私保护层次聚类}{59}{section.4.7}%
+\contentsline {section}{\numberline {4.7}基于DBSCAN的隐私保护层次聚类}{60}{section.4.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.7.1}获取$\epsilon $值}{60}{subsection.4.7.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.7.2}计算初始簇}{61}{subsection.4.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.7.3}合并初始簇}{63}{subsection.4.7.3}%
+\contentsline {subsection}{\numberline {4.7.3}合并初始簇}{64}{subsection.4.7.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.8}系统评估与性能分析}{64}{section.4.8}%
 \defcounter {refsection}{0}\relax 
