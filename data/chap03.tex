@@ -263,11 +263,11 @@ Kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
 
 自根节点开始，依次遍历所有节点来判断当前节点中包含的所有数据点是否可以被划分到某一个簇中。针对每个节点，维护一个候选簇集合，该集合中所有簇都可能是节点内所有数据的最终所属簇。在迭代中，不断删除不符合条件的候选簇直到仅剩一个候选簇，即节点所属簇。
 
-过程如算法\ref{alg_sf}所示。$ p_i $用于标识对于节点$ c $候选簇$ z_i $是否被剪枝，若$ p=1 $则$ z_i $仍为节点$ c $的候选簇，否则不是。
+过程如算法\ref{alg_sf}所示。$ p_i $用于标识对于节点$ c $候选簇$ z_i $是否被剪枝，若$ p_i=1 $则$ z_i $仍为节点$ c $的候选簇，否则不是。
 首先，计算Kd-tree中当前节点的中心$ \langle  c  \rangle $到每个候选簇中心$ \langle  z_j  \rangle $的距离，并结合数组$ p $与乘法运算，将非候选簇的距离设置为最大值。然后借助安全极值协议SMin（S）找到距离最近的候选簇并标记为$ \langle z^* \rangle $。
 
 安全过滤算法的核心为执行一系列子协议来排除不符合候选条件的簇，排除依据为，与候选簇$ \langle z_j\rangle $相比，节点中包含所有数据点在空间上都离$ \langle z^* \rangle $更近，则认为$ \langle z_j \rangle $非候选簇。
-判断是否排除候选簇的具体计算方式为，首先将最近候选簇$ \langle  z^*  \rangle $与其他候选簇$ \langle  z_j  \rangle $按维度相减得到中间结果$ \langle  \mu  \rangle $，然后比较$ \langle  \mu  \rangle $每个维度与0的大小关系得到$ \langle  r  \rangle $，对于$ \langle  r  \rangle $中每个值，若小于0，则取当前树节点$ \langle  c  \rangle $中该维度数据的最小值，否则取最大值，得到$ \langle  v  \rangle $。
+判断是否排除候选簇的具体计算方式为，首先将其他候选簇$ \langle  z_j  \rangle $与其他候选簇$ \langle  z^*  \rangle $按维度相减得到中间结果$ \langle  \mu  \rangle $，然后比较$ \langle  \mu  \rangle $每个维度与0的大小关系得到$ \langle  r  \rangle $，对于$ \langle  r  \rangle $中每个值，若小于0，则取当前树节点$ \langle  c  \rangle $中该维度数据的最小值，否则取最大值，得到$ \langle  v  \rangle $。
 分别计算$ \langle  z^*  \rangle $和$ \langle  z_j  \rangle $到$ \langle  v  \rangle $的距离$ \langle  d^*  \rangle $和$ \langle  d_j  \rangle $，比较二者的大小关系，若$ d^* < d_j $，则候选簇$ \langle  z_j  \rangle $被排除，对应的$ \langle  p_j  \rangle $的结果为0，否则为1。
 在此之后，累加结果并执行安全比较协议来判断候选簇集合是否仅剩一个簇，还原安全比较结果后返回。
 值得一提的是，最后运行的安全比较协议获取的是小于关系的标识，因此这里令比较对象为2。
@@ -286,8 +286,8 @@ Kd-tree数据结构有两个主要的优势，一方面，它能够将可能属�
 		\STATE $\{\langle r_1\rangle,...,\langle r_k\rangle\} \leftarrow$ SMin$(\langle d_1 \rangle,...,\langle d_k \rangle)$
 		\STATE 计算最近候选簇$\langle z^* \rangle \leftarrow \sum_{m=1}^k$MUL$(\langle r_m \rangle,\langle z_m\rangle)$ %找到最近簇
 		\FOR {$j=1$ to $k$} %遍历每个簇
-		\STATE $\langle r \rangle \leftarrow$ SC$(\langle u \rangle, 0)$
 		\STATE $\langle \mu \rangle \leftarrow \langle z_j \rangle - \langle z^{*}\rangle$%比较u每个维度和0的大小
+		\STATE $\langle r \rangle \leftarrow$ SC$(\langle \mu \rangle, 0)$
 		\STATE $\langle v \rangle \leftarrow$ MUL$(\langle r\rangle, \langle c \rangle_{min})+ $MUL$(1-\langle r\rangle,\langle c\rangle_{max})$
 		\STATE $\langle d^{*}\rangle \leftarrow$ SED$(\langle z^{*}, \langle v \rangle)$
 		\STATE $\langle d_j \rangle \leftarrow$ SED$(\langle z_j\rangle,\langle v\rangle)$ %如果prune,z_j就是0
@@ -338,7 +338,7 @@ PPOKC方案的细节在算法\ref{alg_ppokc}中给出。首先，用户在本地
 		\ELSE
 		\STATE 对$ c $的子节点重复上述过程
 		\ENDIF
-		\STATE $\langle r \rangle \leftarrow \sum_{i=1}^{n}\sum_{j=1}^{m}$SC$(\langle z_{ij}\rangle-\langle z_{ij}^{\prime}\rangle, 1)$
+		\STATE $\langle r \rangle \leftarrow \sum_{i=1}^{k}\sum_{j=1}^{m}$SC$(\langle z_{ij}\rangle-\langle z_{ij}^{\prime}\rangle, 1)$
 		\IF{$\langle r \rangle_0 + \langle r\rangle_1 == 1$}
 		\STATE 终止迭代，返回结果给用户
 		\ELSE
